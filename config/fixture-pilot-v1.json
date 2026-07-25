@@ -1,0 +1,34 @@
+{
+  "run_id": "fixture-pilot-2026-07-23",
+  "publication_eligible": false,
+  "source_revision": "local-pilot-v0.1.0",
+  "region": "local-fixture",
+  "task_suite_path": "../tasks/fixture-tool-use-v1.json",
+  "runs_per_task": 5,
+  "timeout_s": 10,
+  "seed": 20260723,
+  "model": {
+    "provider": "local",
+    "id": "deterministic-fixture-v1",
+    "temperature": 0
+  },
+  "analysis": {
+    "bootstrap_replicates": 2000,
+    "confidence_level": 0.95,
+    "estimator": "median_paired_difference"
+  },
+  "subjects": [
+    {
+      "id": "fixture-stable",
+      "version": "1.0.0",
+      "adapter": "fixture_stable",
+      "adapter_version": "1.0.0"
+    },
+    {
+      "id": "fixture-variable",
+      "version": "1.0.0",
+      "adapter": "fixture_variable",
+      "adapter_version": "1.0.0"
+    }
+  ]
+}

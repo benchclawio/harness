@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments (users create their own)
+.venv/
+.venvs/
+venv/
+env/
+
+# Downloaded wheels (users download their own)
+.wheelhouse/
+*.whl
+
+# Harness run artifacts
+artifacts/
+
+# Raw benchmark result files (never committed — contain run data)
+*.jsonl
+operations/
+
+# Local credentials (must never be committed)
+*.key
+credentials/
+.env
+.env.*
+secrets/
+
+# Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,41 @@
+{
+  "suite_id": "fixture-tool-use",
+  "suite_version": "1.0.0",
+  "tasks": [
+    {
+      "id": "sum-three-values",
+      "input": { "operation": "sum", "values": [4, 7, 9] },
+      "expected": 20
+    },
+    {
+      "id": "select-highest-score",
+      "input": {
+        "operation": "max_by_score",
+        "items": [
+          { "name": "alpha", "score": 0.61 },
+          { "name": "beta", "score": 0.84 },
+          { "name": "gamma", "score": 0.73 }
+        ]
+      },
+      "expected": "beta"
+    },
+    {
+      "id": "recover-then-count",
+      "input": {
+        "operation": "recover_then_count",
+        "recoverable_error": true,
+        "values": ["a", "b", "c", "d"]
+      },
+      "expected": 4
+    },
+    {
+      "id": "structured-output",
+      "input": {
+        "operation": "structured",
+        "name": "benchclaw",
+        "status": "ready"
+      },
+      "expected": { "name": "benchclaw", "status": "ready" }
+    }
+  ]
+}
