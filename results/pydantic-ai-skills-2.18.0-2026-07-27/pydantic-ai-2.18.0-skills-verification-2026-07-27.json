@@ -19,5 +19,11 @@
   "capability_module_count": 32,
   "skill_modules": [],
   "skill_exports": [],
-  "native_skill_md_reader": false
+  "python_files_scanned": 254,
+  "skill_md_reader_hits": [],
+  "files_mentioning_skill": [
+    "models/anthropic.py"
+  ],
+  "local_skill_md_reader": false,
+  "provider_side_skills_support": true
 }

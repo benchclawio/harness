@@ -18,6 +18,7 @@ Checks:
 import asyncio
 import json
 import pkgutil
+from pathlib import Path
 
 import pydantic_ai
 from pydantic_ai import Agent
@@ -88,7 +89,33 @@ async def main() -> None:
     results["capability_module_count"] = len(modules)
     results["skill_modules"] = [m for m in modules if "skill" in m.lower()]
     results["skill_exports"] = [n for n in dir(caps) if "skill" in n.lower()]
-    results["native_skill_md_reader"] = bool(results["skill_modules"] or results["skill_exports"])
+
+    # Whole-package search, not just the capabilities subpackage, and by CONTENT
+    # rather than by module name — an earlier name-only scan of `capabilities`
+    # was too narrow to support the claim it was being used for.
+    import pydantic_ai as pai
+
+    root = Path(pai.__file__).parent
+    py_files = [p for p in root.rglob("*.py")]
+    reader_tokens = ("SKILL.md", "skill_md", "skills_dir", "load_skill")
+    reader_hits: list[str] = []
+    skill_mentions: list[str] = []
+    for f in py_files:
+        text = f.read_text(errors="ignore")
+        rel = str(f.relative_to(root))
+        if any(tok in text for tok in reader_tokens):
+            reader_hits.append(rel)
+        if "skill" in text.lower():
+            skill_mentions.append(rel)
+
+    results["python_files_scanned"] = len(py_files)
+    results["skill_md_reader_hits"] = reader_hits
+    results["files_mentioning_skill"] = sorted(skill_mentions)
+    results["local_skill_md_reader"] = bool(reader_hits)
+    # Provider-side skills DO exist: Anthropic's Skills beta via container params.
+    results["provider_side_skills_support"] = any(
+        "anthropic" in m for m in skill_mentions
+    )
 
     print(json.dumps(results, indent=2))
 
