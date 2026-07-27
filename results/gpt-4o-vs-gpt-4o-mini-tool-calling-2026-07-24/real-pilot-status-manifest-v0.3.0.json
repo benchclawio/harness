@@ -1,0 +1,179 @@
+{
+  "adapter_validation": {
+    "langgraph_1_2_9": {
+      "acceptance_tests": "adapters/test_adapters.py",
+      "all_tests_passed": true,
+      "failure_modes_verified": [
+        "budget_exhausted",
+        "wrong_args",
+        "malformed_output",
+        "wrong_output",
+        "forbidden_tool"
+      ],
+      "finding": "LangGraph 1.2.9 @tool decorator coerces int\u2192str via Pydantic validation before ToolRuntime type check; ToolNode requires graph context for invocation",
+      "happy_path_tasks": 4,
+      "validated_utc": "2026-07-24",
+      "worker": "adapters/worker_langgraph.py"
+    },
+    "pydantic_ai_2_13_0": {
+      "acceptance_tests": "adapters/test_adapters.py",
+      "all_tests_passed": true,
+      "failure_modes_verified": [
+        "budget_exhausted",
+        "wrong_args",
+        "malformed_output",
+        "wrong_output",
+        "forbidden_tool"
+      ],
+      "finding": "Pydantic AI 2.13.0 wraps ToolContractError as UnexpectedModelBehavior; FunctionModel + tool_plain dispatches correctly with exec-built typed functions",
+      "happy_path_tasks": 4,
+      "validated_utc": "2026-07-24",
+      "worker": "adapters/worker_pydantic_ai.py"
+    }
+  },
+  "approval_boundaries": [
+    "Smoke tests may not use credentials, network access, telemetry, or model calls.",
+    "Adapter implementation does not authorize live framework execution against a model.",
+    "Every paid model call requires fresh allow-once approval under the standing policy.",
+    "No skill installation is part of this pilot."
+  ],
+  "completion_report": {
+    "path": "docs/framework-environment-installation-report-2026-07-23.md",
+    "sha256": "014a3abf1f05790863080d4acf04f850fd8bcee49932861f0d2c878aef7667c0"
+  },
+  "environment": {
+    "ensurepip_executed": false,
+    "environments_created": true,
+    "environments_remain_pipless": true,
+    "frameworks_installed_offline": true,
+    "index_access_used_for_installation": false,
+    "python_build": "20260718",
+    "python_version": "3.12.13",
+    "runtime_created": true,
+    "system_site_packages_enabled": false,
+    "wheelhouses_acquired": true
+  },
+  "execution": {
+    "behavioral_smoke_tests_completed": true,
+    "credentials_configured": true,
+    "framework_import_smoke_tests_completed": true,
+    "model_id": "gpt-4o-mini",
+    "model_provider": "openai",
+    "paid_calls_approved": true,
+    "scored_runs_completed": true,
+    "subject_adapters_implemented": true,
+    "warmups_completed": true
+  },
+  "extends_freeze_manifest": {
+    "path": "methodology/real-pilot-freeze-manifest-v0.2.0.json",
+    "sha256": "fcfd2c02dfedd11088919e4510f93c59aa5cc9c53dffc8da3db799dc1f1512a1"
+  },
+  "model_configuration": {
+    "credential_file": "redacted_local_secret_store",
+    "credential_permissions": "600",
+    "credential_verified_utc": "2026-07-24",
+    "langgraph_client": "httpx_openai_compat",
+    "max_tokens": "per_task_output_tokens_limit",
+    "model_id": "gpt-4o-mini",
+    "parallel_tool_calls": false,
+    "provider": "openai",
+    "pydantic_ai_client": "OpenAIChatModel_OpenAIProvider",
+    "temperature": 0
+  },
+  "next_gate": "none \u2014 pilot complete; publication requires new pre-declared run",
+  "publication_eligible": false,
+  "sanitization": {
+    "analysis_clean": true,
+    "completed_utc": "2026-07-24",
+    "raw_results_clean": true,
+    "reasons": [
+      "pilot designed as non-publishable from inception",
+      "task suite updated mid-pilot (v0.1.0 \u2192 v0.1.1)",
+      "warmup required multiple iterations and harness fixes",
+      "OOM incident during scored run required resume script",
+      "single model tested (gpt-4o-mini); publication requires \u22652"
+    ],
+    "report_path": "operations/evidence-sanitization-report-2026-07-24.md",
+    "report_sha256": "fb42b8435a87a0c8d099159d69fd6b9fcbeee10382ddece7c4c4135e8da1df93",
+    "verdict": "not_publication_eligible"
+  },
+  "schema_version": "0.3.0",
+  "scored_pilot": {
+    "analysis": "operations/scored-pilot-analysis-2026-07-24.json",
+    "finding_summary": "Both frameworks identical in correctness (75%); PydanticAI ~1.9x slower wall time; model failure on date-grounded task accounts for all misses.",
+    "model_id": "gpt-4o-mini",
+    "per_subject_completion": {
+      "langgraph_1_2_9": "15/20",
+      "pydantic_ai_2_13_0": "15/20"
+    },
+    "raw_results": "operations/scored-pilot-raw-2026-07-24.jsonl",
+    "total_cost_usd": 0.0057177,
+    "total_runs": 40
+  },
+  "status": "pilot_complete_evidence_sanitized",
+  "subjects": [
+    {
+      "installed_distribution_count": 35,
+      "installed_inventory_sha256": "99a2531cc763cde1bbdaf7ae939387cea21b84b569ca3d1418dc63c27e4a1573",
+      "lock_path": "locks/candidates/langgraph-py312-linux-x86_64-2026-07-23.lock",
+      "lock_sha256": "7cc4b414db158c7749e144cd7b00060c23dc6726c0ae7ae1e694ff7595c29815",
+      "missing_or_unexpected_distributions": 0,
+      "missing_or_unexpected_wheels": 0,
+      "name": "LangGraph",
+      "version": "1.2.9",
+      "wheel_checksum_aggregate_sha256": "2c8038f75cbb8ce14ee4ee9982ddcba89766dcb36be3c11911b7d0199cfef3c2",
+      "wheel_count": 35
+    },
+    {
+      "extra": "openai",
+      "installed_distribution_count": 30,
+      "installed_inventory_sha256": "9fe5d3a46a0cedb538e8dba1113cb83303775073c6e7c31e1730a6c2bbeb289e",
+      "lock_path": "locks/candidates/pydantic-ai-slim-openai-py312-linux-x86_64-2026-07-23.lock",
+      "lock_sha256": "da72d9c45112812a057d112cfa428cd950a8ffaaed935b3ee74910de8bac12d4",
+      "missing_or_unexpected_distributions": 0,
+      "missing_or_unexpected_wheels": 0,
+      "name": "Pydantic AI Slim",
+      "version": "2.13.0",
+      "wheel_checksum_aggregate_sha256": "d1a15942eee774aa536fc3781061fc85871c404e6e894194f6218766830365c9",
+      "wheel_count": 30
+    }
+  ],
+  "task_suite_update": {
+    "expected_output_unchanged": true,
+    "limits_unchanged": true,
+    "reason": "Prompts updated 2026-07-24 to specify exact output key names and derivation rules.",
+    "reference_traces_unchanged": true,
+    "suite_version": "0.1.1",
+    "task_suite_sha256_v0.1.1": "ec72e7440ea177d150ee550ea6dbe908b02410cae6e45f78aefa9eed29f339bf"
+  },
+  "verified_utc": "2026-07-24",
+  "warmup_report": {
+    "completed_utc": "2026-07-24",
+    "findings": [
+      "Task suite prompts updated to v0.1.1: explicit output key names and derivation rules required for exact-match scoring.",
+      "Markdown fence stripping added to score_run() in shared_tools.py: gpt-4o-mini returns JSON wrapped in ```json ... ``` fences even when instructed otherwise.",
+      "Identical token counts across both frameworks confirm both send equivalent API payloads.",
+      "Pydantic AI wall time (4.4s) > LangGraph (1.9s) due to async-to-sync overhead in run_sync()."
+    ],
+    "model_id": "gpt-4o-mini",
+    "results": {
+      "langgraph_1_2_9": {
+        "completed": true,
+        "status": "success",
+        "tokens_in": 311,
+        "tokens_out": 45,
+        "tool_calls": 1,
+        "wall_time_s": 1.871
+      },
+      "pydantic_ai_2_13_0": {
+        "completed": true,
+        "status": "success",
+        "tokens_in": 311,
+        "tokens_out": 45,
+        "tool_calls": 1,
+        "wall_time_s": 4.4245
+      }
+    },
+    "task": "inventory-reorder"
+  }
+}

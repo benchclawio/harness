@@ -1,0 +1,85 @@
+{
+  "model_id": "gpt-4o",
+  "total_runs": 40,
+  "total_cost_usd": 0.094275,
+  "subjects": {
+    "langgraph_1_2_9_gpt4o_live": {
+      "inventory-reorder": {
+        "completed": 5,
+        "total": 5,
+        "pct": 100,
+        "cost_usd": 0.006737,
+        "tokens_in": 1555,
+        "tokens_out": 285,
+        "avg_wall_time_s": 3.56
+      },
+      "dependent-shipping-quote": {
+        "completed": 5,
+        "total": 5,
+        "pct": 100,
+        "cost_usd": 0.014238,
+        "tokens_in": 3955,
+        "tokens_out": 435,
+        "avg_wall_time_s": 4.94
+      },
+      "recover-stale-revision": {
+        "completed": 5,
+        "total": 5,
+        "pct": 100,
+        "cost_usd": 0.010488,
+        "tokens_in": 3075,
+        "tokens_out": 280,
+        "avg_wall_time_s": 4.61
+      },
+      "refund-policy-minimal-tools": {
+        "completed": 5,
+        "total": 5,
+        "pct": 100,
+        "cost_usd": 0.015675,
+        "tokens_in": 4630,
+        "tokens_out": 410,
+        "avg_wall_time_s": 5.54
+      },
+      "_total": "20/20"
+    },
+    "pydantic_ai_2_13_0_gpt4o_live": {
+      "inventory-reorder": {
+        "completed": 5,
+        "total": 5,
+        "pct": 100,
+        "cost_usd": 0.006737,
+        "tokens_in": 1555,
+        "tokens_out": 285,
+        "avg_wall_time_s": 5.65
+      },
+      "dependent-shipping-quote": {
+        "completed": 5,
+        "total": 5,
+        "pct": 100,
+        "cost_usd": 0.014238,
+        "tokens_in": 3955,
+        "tokens_out": 435,
+        "avg_wall_time_s": 6.56
+      },
+      "recover-stale-revision": {
+        "completed": 5,
+        "total": 5,
+        "pct": 100,
+        "cost_usd": 0.010488,
+        "tokens_in": 3075,
+        "tokens_out": 280,
+        "avg_wall_time_s": 6.68
+      },
+      "refund-policy-minimal-tools": {
+        "completed": 5,
+        "total": 5,
+        "pct": 100,
+        "cost_usd": 0.015675,
+        "tokens_in": 4630,
+        "tokens_out": 410,
+        "avg_wall_time_s": 6.21
+      },
+      "_total": "20/20"
+    }
+  }
+}

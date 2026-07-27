@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "generated_utc": "2026-07-24",
+  "publication_eligible": false,
+  "model_id": "gpt-4o-mini",
+  "runs_per_pair": 5,
+  "total_runs": 40,
+  "totals": {
+    "tokens_in": 26430,
+    "tokens_out": 2922,
+    "cost_usd": 0.0057177
+  },
+  "per_subject": {
+    "langgraph_1_2_9": {
+      "overall_completion_rate": 0.75,
+      "avg_wall_time_s": 2.688,
+      "per_task": {
+        "inventory-reorder": {
+          "completion_rate": 1.0,
+          "completions": 5,
+          "runs": 5
+        },
+        "dependent-shipping-quote": {
+          "completion_rate": 1.0,
+          "completions": 5,
+          "runs": 5
+        },
+        "recover-stale-revision": {
+          "completion_rate": 1.0,
+          "completions": 5,
+          "runs": 5
+        },
+        "refund-policy-minimal-tools": {
+          "completion_rate": 0.0,
+          "completions": 0,
+          "runs": 5
+        }
+      }
+    },
+    "pydantic_ai_2_13_0": {
+      "overall_completion_rate": 0.75,
+      "avg_wall_time_s": 4.629,
+      "per_task": {
+        "inventory-reorder": {
+          "completion_rate": 1.0,
+          "completions": 5,
+          "runs": 5
+        },
+        "dependent-shipping-quote": {
+          "completion_rate": 1.0,
+          "completions": 5,
+          "runs": 5
+        },
+        "recover-stale-revision": {
+          "completion_rate": 1.0,
+          "completions": 5,
+          "runs": 5
+        },
+        "refund-policy-minimal-tools": {
+          "completion_rate": 0.0,
+          "completions": 0,
+          "runs": 5
+        }
+      }
+    }
+  },
+  "findings": [
+    "LangGraph 1.2.9 and Pydantic AI 2.13.0 show identical correctness: 15/20 (75%) each.",
+    "3 of 4 tasks: 100% completion for both frameworks.",
+    "refund-policy-minimal-tools: 0% for both. gpt-4o-mini computes days_since_delivery=19 (inclusive both endpoints) and then incorrectly concludes eligible=false. This is a model reasoning error, not a framework defect.",
+    "PydanticAI wall time is ~1.9x LangGraph (async-to-sync run_sync overhead).",
+    "Identical token counts across both frameworks confirm equivalent API payloads for all tasks."
+  ],
+  "oom_incident": {
+    "description": "Parent runner process OOM-killed after 34/40 runs (exit 137). 6 missing runs resumed in separate bounded script. All 40 results verified.",
+    "mitigations_for_future": "Run scored pilot in bounded batches of \u226410 from a fresh process."
+  }
+}
