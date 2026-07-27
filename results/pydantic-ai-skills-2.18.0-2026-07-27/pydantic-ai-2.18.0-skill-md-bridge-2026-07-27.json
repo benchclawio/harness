@@ -1,0 +1,12 @@
+{
+  "version": "2.18.0",
+  "parsed_id": "refunds",
+  "parsed_description": "Use for refund eligibility, refund status, or processing a refund.",
+  "defer_loading": true,
+  "catalog_entry_present": true,
+  "skill_body_absent_before_load": true,
+  "load_capability_offered": true,
+  "model_requests": 2,
+  "final_output": "Order ABC-123: refund issued.",
+  "instructions_returned_as_tool_result": true
+}

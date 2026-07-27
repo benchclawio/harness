@@ -1,0 +1,23 @@
+{
+  "version": "2.18.0",
+  "catalog_line_in_instructions": true,
+  "requests_observed": 2,
+  "agentinfo_tools_before_load": [
+    "load_capability",
+    "refund_status",
+    "search_tools"
+  ],
+  "agentinfo_tools_after_load": [
+    "load_capability",
+    "refund_status",
+    "search_tools"
+  ],
+  "load_capability_tool_present": true,
+  "local_search_tools_fallback_present": true,
+  "agentinfo_reflects_deferral": false,
+  "token_claim_measurable_here": false,
+  "capability_module_count": 32,
+  "skill_modules": [],
+  "skill_exports": [],
+  "native_skill_md_reader": false
+}
