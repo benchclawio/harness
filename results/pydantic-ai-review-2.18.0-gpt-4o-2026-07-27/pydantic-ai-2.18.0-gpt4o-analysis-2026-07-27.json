@@ -1,0 +1,283 @@
+{
+  "analysis_date": "2026-07-27",
+  "validation": {
+    "status": "pass",
+    "errors": [],
+    "raw_jsonl_sha256": "f5471d0fec08452e0d58f7c16c3b1188924fd40a487fe2e2d953de6c75443d30",
+    "task_counts": {
+      "inventory-reorder": 20,
+      "dependent-shipping-quote": 20,
+      "recover-stale-revision": 20,
+      "refund-policy-minimal-tools": 20
+    }
+  },
+  "pins": {
+    "subject": "pydantic-ai-slim[openai]==2.18.0",
+    "comparison_subject": "pydantic-ai-slim[openai]==2.13.0",
+    "model_id": "gpt-4o",
+    "temperature": 0,
+    "task_suite": "0.1.1",
+    "runs_per_task": 20
+  },
+  "current_2_18_0": {
+    "overall": {
+      "completed": 80,
+      "total": 80,
+      "completion_rate": 1.0,
+      "completion_wilson_95": [
+        0.9542,
+        1.0
+      ],
+      "cost_usd_total": 0.18855,
+      "cost_usd_median": 0.0024725,
+      "cost_usd_min": 0.0013475,
+      "cost_usd_max": 0.003135,
+      "tokens_in_total": 52860,
+      "tokens_in_median": 703.0,
+      "tokens_out_total": 5640,
+      "tokens_out_median": 69.5,
+      "wall_time_s_median": 4.6668,
+      "wall_time_s_p95": 6.0592,
+      "wall_time_s_min": 3.3898,
+      "wall_time_s_max": 10.4273,
+      "failure_taxonomy": {}
+    },
+    "tasks": {
+      "inventory-reorder": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1.0
+        ],
+        "cost_usd_total": 0.02695,
+        "cost_usd_median": 0.0013475,
+        "cost_usd_min": 0.0013475,
+        "cost_usd_max": 0.0013475,
+        "tokens_in_total": 6220,
+        "tokens_in_median": 311.0,
+        "tokens_out_total": 1140,
+        "tokens_out_median": 57.0,
+        "wall_time_s_median": 4.1574,
+        "wall_time_s_p95": 7.0968,
+        "wall_time_s_min": 3.3898,
+        "wall_time_s_max": 10.4273,
+        "failure_taxonomy": {}
+      },
+      "dependent-shipping-quote": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1.0
+        ],
+        "cost_usd_total": 0.05695,
+        "cost_usd_median": 0.0028475,
+        "cost_usd_min": 0.0028475,
+        "cost_usd_max": 0.0028475,
+        "tokens_in_total": 15820,
+        "tokens_in_median": 791.0,
+        "tokens_out_total": 1740,
+        "tokens_out_median": 87.0,
+        "wall_time_s_median": 4.6001,
+        "wall_time_s_p95": 5.2067,
+        "wall_time_s_min": 4.2214,
+        "wall_time_s_max": 6.5267,
+        "failure_taxonomy": {}
+      },
+      "recover-stale-revision": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1.0
+        ],
+        "cost_usd_total": 0.04195,
+        "cost_usd_median": 0.0020975,
+        "cost_usd_min": 0.0020975,
+        "cost_usd_max": 0.0020975,
+        "tokens_in_total": 12300,
+        "tokens_in_median": 615.0,
+        "tokens_out_total": 1120,
+        "tokens_out_median": 56.0,
+        "wall_time_s_median": 5.0542,
+        "wall_time_s_p95": 5.7811,
+        "wall_time_s_min": 4.3728,
+        "wall_time_s_max": 6.0592,
+        "failure_taxonomy": {}
+      },
+      "refund-policy-minimal-tools": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1.0
+        ],
+        "cost_usd_total": 0.0627,
+        "cost_usd_median": 0.003135,
+        "cost_usd_min": 0.003135,
+        "cost_usd_max": 0.003135,
+        "tokens_in_total": 18520,
+        "tokens_in_median": 926.0,
+        "tokens_out_total": 1640,
+        "tokens_out_median": 82.0,
+        "wall_time_s_median": 4.6762,
+        "wall_time_s_p95": 5.3607,
+        "wall_time_s_min": 4.2724,
+        "wall_time_s_max": 6.886,
+        "failure_taxonomy": {}
+      }
+    }
+  },
+  "historical_2_13_0": {
+    "overall": {
+      "completed": 80,
+      "total": 80,
+      "completion_rate": 1.0,
+      "completion_wilson_95": [
+        0.9542,
+        1.0
+      ],
+      "cost_usd_total": 0.18863,
+      "cost_usd_median": 0.0024725,
+      "cost_usd_min": 0.0013475,
+      "cost_usd_max": 0.003135,
+      "tokens_in_total": 52860,
+      "tokens_in_median": 703.0,
+      "tokens_out_total": 5648,
+      "tokens_out_median": 62.0,
+      "wall_time_s_median": 4.0004,
+      "wall_time_s_p95": 4.7705,
+      "wall_time_s_min": 3.0405,
+      "wall_time_s_max": 8.6512,
+      "failure_taxonomy": {}
+    },
+    "tasks": {
+      "inventory-reorder": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1.0
+        ],
+        "cost_usd_total": 0.02695,
+        "cost_usd_median": 0.0013475,
+        "cost_usd_min": 0.0013475,
+        "cost_usd_max": 0.0013475,
+        "tokens_in_total": 6220,
+        "tokens_in_median": 311.0,
+        "tokens_out_total": 1140,
+        "tokens_out_median": 57.0,
+        "wall_time_s_median": 3.3051,
+        "wall_time_s_p95": 4.0287,
+        "wall_time_s_min": 3.0405,
+        "wall_time_s_max": 4.1361,
+        "failure_taxonomy": {}
+      },
+      "dependent-shipping-quote": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1.0
+        ],
+        "cost_usd_total": 0.05718,
+        "cost_usd_median": 0.0028475,
+        "cost_usd_min": 0.0028475,
+        "cost_usd_max": 0.0030775,
+        "tokens_in_total": 15820,
+        "tokens_in_median": 791.0,
+        "tokens_out_total": 1763,
+        "tokens_out_median": 87.0,
+        "wall_time_s_median": 4.0528,
+        "wall_time_s_p95": 5.3757,
+        "wall_time_s_min": 3.7542,
+        "wall_time_s_max": 8.6512,
+        "failure_taxonomy": {}
+      },
+      "recover-stale-revision": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1.0
+        ],
+        "cost_usd_total": 0.04195,
+        "cost_usd_median": 0.0020975,
+        "cost_usd_min": 0.0020975,
+        "cost_usd_max": 0.0020975,
+        "tokens_in_total": 12300,
+        "tokens_in_median": 615.0,
+        "tokens_out_total": 1120,
+        "tokens_out_median": 56.0,
+        "wall_time_s_median": 4.2178,
+        "wall_time_s_p95": 4.9554,
+        "wall_time_s_min": 3.6727,
+        "wall_time_s_max": 5.3506,
+        "failure_taxonomy": {}
+      },
+      "refund-policy-minimal-tools": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1.0
+        ],
+        "cost_usd_total": 0.06255,
+        "cost_usd_median": 0.003135,
+        "cost_usd_min": 0.002985,
+        "cost_usd_max": 0.003135,
+        "tokens_in_total": 18520,
+        "tokens_in_median": 926.0,
+        "tokens_out_total": 1625,
+        "tokens_out_median": 82.0,
+        "wall_time_s_median": 4.0003,
+        "wall_time_s_p95": 4.6642,
+        "wall_time_s_min": 3.6427,
+        "wall_time_s_max": 4.7705,
+        "failure_taxonomy": {}
+      }
+    }
+  },
+  "version_comparison": {
+    "overall_completion_rate_delta_pp": 0.0,
+    "overall_median_latency_delta_s": 0.6664,
+    "overall_median_latency_delta_pct": 16.66,
+    "overall_cost_delta_usd": -8e-05,
+    "tasks": {
+      "inventory-reorder": {
+        "completion_rate_delta_pp": 0.0,
+        "median_latency_delta_s": 0.8523,
+        "median_latency_delta_pct": 25.79,
+        "cost_delta_usd": 0.0
+      },
+      "dependent-shipping-quote": {
+        "completion_rate_delta_pp": 0.0,
+        "median_latency_delta_s": 0.5473,
+        "median_latency_delta_pct": 13.5,
+        "cost_delta_usd": -0.00023
+      },
+      "recover-stale-revision": {
+        "completion_rate_delta_pp": 0.0,
+        "median_latency_delta_s": 0.8364,
+        "median_latency_delta_pct": 19.83,
+        "cost_delta_usd": 0.0
+      },
+      "refund-policy-minimal-tools": {
+        "completion_rate_delta_pp": 0.0,
+        "median_latency_delta_s": 0.6759,
+        "median_latency_delta_pct": 16.9,
+        "cost_delta_usd": 0.00015
+      }
+    },
+    "interpretation": "No measurable completion-rate difference: both versions completed 80/80 runs and both overall 95% Wilson intervals are 95.42%-100%. Latency is reported as an environment-specific observation, not a causal framework-version effect."
+  }
+}

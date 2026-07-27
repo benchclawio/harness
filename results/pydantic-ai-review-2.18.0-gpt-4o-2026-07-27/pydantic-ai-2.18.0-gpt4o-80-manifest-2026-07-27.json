@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-07-27T11:07:36.006994+00:00",
+  "completed_utc": "2026-07-27T11:16:15.375753+00:00",
+  "status": "complete",
+  "subject": "pydantic-ai-slim[openai]==2.18.0",
+  "model_id": "gpt-4o",
+  "temperature": 0,
+  "parallel_tool_calls": false,
+  "framework_retries": 0,
+  "provider_retries": 0,
+  "task_suite": "0.1.1",
+  "task_suite_sha256": "ec72e7440ea177d150ee550ea6dbe908b02410cae6e45f78aefa9eed29f339bf",
+  "worker_sha256": "533dea135672b533a5323a503fa70f338a7ed8faf605d1af460c312f1e220526",
+  "runs_per_task": 20,
+  "total_runs": 80,
+  "spend_ceiling_usd": 0.25,
+  "actual_cost_usd": 0.18855,
+  "raw_jsonl": "pydantic-ai-2.18.0-gpt4o-80-raw-2026-07-27.jsonl",
+  "raw_jsonl_sha256": "f5471d0fec08452e0d58f7c16c3b1188924fd40a487fe2e2d953de6c75443d30"
+}
