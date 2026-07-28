@@ -1,0 +1,139 @@
+{
+  "verified_utc": "2026-07-28",
+  "environment": "isolated, offline, no model calls",
+  "versions": {
+    "langgraph": "1.2.9",
+    "langchain_core": "1.5.0",
+    "langgraph_checkpoint": "4.1.1",
+    "langgraph_prebuilt": "1.1.0",
+    "langgraph_sdk": "0.4.2"
+  },
+  "langgraph_requires_dist": [
+    "langchain-core<2,>=1.4.7",
+    "langgraph-checkpoint<5.0.0,>=4.1.0",
+    "langgraph-prebuilt<1.2.0,>=1.1.0",
+    "langgraph-sdk<0.5.0,>=0.4.2",
+    "pydantic>=2.7.4",
+    "xxhash>=3.5.0"
+  ],
+  "langchain_core_pin": "langchain-core<2,>=1.4.7",
+  "langgraph_can_be_installed_without_langchain_core": false,
+  "import_scan": {
+    "python_files": 102,
+    "files_importing_langchain_core": 41,
+    "percent_importing": 40.2,
+    "top_modules": [
+      [
+        "langchain_core.runnables",
+        31
+      ],
+      [
+        "langchain_core.messages",
+        11
+      ],
+      [
+        "langchain_core.runnables.config",
+        10
+      ],
+      [
+        "langchain_core.callbacks",
+        8
+      ],
+      [
+        "langchain_core.tools",
+        7
+      ],
+      [
+        "langchain_core.runnables.graph",
+        6
+      ],
+      [
+        "langchain_core.tracers._streaming",
+        5
+      ],
+      [
+        "langchain_core.callbacks.manager",
+        4
+      ],
+      [
+        "langchain_core.runnables.base",
+        4
+      ],
+      [
+        "langchain_core.embeddings",
+        3
+      ],
+      [
+        "langchain_core._api",
+        2
+      ],
+      [
+        "langchain_core.messages.tool",
+        1
+      ]
+    ],
+    "top_symbols": [
+      [
+        "RunnableConfig",
+        27
+      ],
+      [
+        "Runnable",
+        7
+      ],
+      [
+        "BaseCallbackHandler",
+        4
+      ],
+      [
+        "tool",
+        4
+      ],
+      [
+        "_StreamingCallbackHandler",
+        4
+      ],
+      [
+        "Embeddings",
+        3
+      ],
+      [
+        "BaseTool",
+        3
+      ],
+      [
+        "BaseMessage",
+        3
+      ],
+      [
+        "Graph",
+        3
+      ],
+      [
+        "AnyMessage",
+        2
+      ],
+      [
+        "AIMessage",
+        2
+      ],
+      [
+        "get_executor_for_config",
+        2
+      ],
+      [
+        "Callbacks",
+        2
+      ],
+      [
+        "AsyncParentRunManager",
+        2
+      ],
+      [
+        "ParentRunManager",
+        2
+      ]
+    ],
+    "source_sha256": "70739a943af0b7c64f0dcf926ae3de42ea53ecd55b5aead317fecfca8d6ef4a3"
+  }
+}
