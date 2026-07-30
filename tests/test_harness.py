@@ -17,7 +17,7 @@ from benchclaw_harness.validation import validate_event, verify_bundle
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REAL_PILOT_SUITE = ROOT.parent / "methodology/real-pilot-task-suite-v0.1.0.json"
+REAL_PILOT_SUITE = ROOT / "task-suites" / "pilot-v0.1.1.json"
 
 
 class HarnessTest(unittest.TestCase):

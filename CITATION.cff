@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or its published evidence bundles, please cite the versioned release."
+title: "BenchClaw Harness"
+type: software
+version: 0.2.0
+date-released: 2026-07-30
+authors:
+  - family-names: Reeves
+    given-names: Jordan
+abstract: "A reproducible measurement and evidence layer for AI-agent framework benchmarks, including frozen task suites, sanitized run events, paired analysis, and verifiable manifests."
+repository-code: "https://github.com/benchclawio/harness"
+url: "https://benchclaw.io/harness/"
+license: Apache-2.0
+keywords:
+  - AI agents
+  - agent benchmarks
+  - evaluation harness
+  - LangGraph
+  - Pydantic AI

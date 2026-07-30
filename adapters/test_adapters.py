@@ -21,7 +21,7 @@ from typing import Any
 # --- paths -------------------------------------------------------------------
 ADAPTERS_DIR = Path(__file__).parent.resolve()
 PROJECT_ROOT = ADAPTERS_DIR.parent
-TASK_SUITE_PATH = PROJECT_ROOT / "methodology" / "real-pilot-task-suite-v0.1.0.json"
+TASK_SUITE_PATH = PROJECT_ROOT / "task-suites" / "pilot-v0.1.1.json"
 
 VENVS = PROJECT_ROOT / ".venvs"
 LG_PYTHON = str(VENVS / "langgraph" / "bin" / "python")

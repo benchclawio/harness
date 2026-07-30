@@ -1,0 +1,239 @@
+{
+  "run_id": "bc-004-full-2026-07-25",
+  "model_id": "gpt-4o",
+  "temperature": 0,
+  "subjects": {
+    "langgraph": "langgraph==1.2.9",
+    "pydantic_ai": "pydantic-ai-slim[openai]==2.13.0"
+  },
+  "task_suite": "real-pilot-task-suite-v0.1.0.json",
+  "runs_per_task_per_subject": 20,
+  "total_runs": 160,
+  "total_cost_usd": 0.3767,
+  "date": "2026-07-25",
+  "publication_eligible": true,
+  "tasks": {
+    "inventory-reorder": {
+      "langgraph_1_2_9_gpt4o_live": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1
+        ],
+        "tokens_in_median": 311,
+        "tokens_out_median": 57,
+        "cost_usd_total": 0.02695,
+        "cost_usd_per_run": 0.001347,
+        "wall_time_s_median": 3.168,
+        "wall_time_s_p95": 3.765,
+        "wall_time_s_min": 2.981,
+        "wall_time_s_max": 3.765,
+        "failure_taxonomy": {}
+      },
+      "pydantic_ai_2_13_0_gpt4o_live": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1
+        ],
+        "tokens_in_median": 311,
+        "tokens_out_median": 57,
+        "cost_usd_total": 0.02695,
+        "cost_usd_per_run": 0.001347,
+        "wall_time_s_median": 4.838,
+        "wall_time_s_p95": 5.777,
+        "wall_time_s_min": 4.489,
+        "wall_time_s_max": 5.777,
+        "failure_taxonomy": {}
+      }
+    },
+    "dependent-shipping-quote": {
+      "langgraph_1_2_9_gpt4o_live": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1
+        ],
+        "tokens_in_median": 791,
+        "tokens_out_median": 87,
+        "cost_usd_total": 0.05695,
+        "cost_usd_per_run": 0.002848,
+        "wall_time_s_median": 4.211,
+        "wall_time_s_p95": 16.196,
+        "wall_time_s_min": 3.63,
+        "wall_time_s_max": 16.196,
+        "failure_taxonomy": {}
+      },
+      "pydantic_ai_2_13_0_gpt4o_live": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1
+        ],
+        "tokens_in_median": 791,
+        "tokens_out_median": 87,
+        "cost_usd_total": 0.05718,
+        "cost_usd_per_run": 0.002859,
+        "wall_time_s_median": 5.614,
+        "wall_time_s_p95": 10.228,
+        "wall_time_s_min": 5.382,
+        "wall_time_s_max": 10.228,
+        "failure_taxonomy": {}
+      }
+    },
+    "recover-stale-revision": {
+      "langgraph_1_2_9_gpt4o_live": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1
+        ],
+        "tokens_in_median": 615,
+        "tokens_out_median": 56,
+        "cost_usd_total": 0.04195,
+        "cost_usd_per_run": 0.002097,
+        "wall_time_s_median": 3.894,
+        "wall_time_s_p95": 4.736,
+        "wall_time_s_min": 3.562,
+        "wall_time_s_max": 4.736,
+        "failure_taxonomy": {}
+      },
+      "pydantic_ai_2_13_0_gpt4o_live": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1
+        ],
+        "tokens_in_median": 615,
+        "tokens_out_median": 56,
+        "cost_usd_total": 0.04195,
+        "cost_usd_per_run": 0.002097,
+        "wall_time_s_median": 5.723,
+        "wall_time_s_p95": 6.804,
+        "wall_time_s_min": 5.153,
+        "wall_time_s_max": 6.804,
+        "failure_taxonomy": {}
+      }
+    },
+    "refund-policy-minimal-tools": {
+      "langgraph_1_2_9_gpt4o_live": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1
+        ],
+        "tokens_in_median": 926,
+        "tokens_out_median": 82,
+        "cost_usd_total": 0.06225,
+        "cost_usd_per_run": 0.003113,
+        "wall_time_s_median": 3.866,
+        "wall_time_s_p95": 5.134,
+        "wall_time_s_min": 3.636,
+        "wall_time_s_max": 5.134,
+        "failure_taxonomy": {}
+      },
+      "pydantic_ai_2_13_0_gpt4o_live": {
+        "completed": 20,
+        "total": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8389,
+          1
+        ],
+        "tokens_in_median": 926,
+        "tokens_out_median": 82,
+        "cost_usd_total": 0.06255,
+        "cost_usd_per_run": 0.003128,
+        "wall_time_s_median": 5.511,
+        "wall_time_s_p95": 6.248,
+        "wall_time_s_min": 4.977,
+        "wall_time_s_max": 6.248,
+        "failure_taxonomy": {}
+      }
+    }
+  },
+  "overall": {
+    "langgraph_1_2_9_gpt4o_live": {
+      "completed": 80,
+      "total": 80,
+      "completion_rate": 1.0,
+      "completion_wilson_95": [
+        0.9542,
+        1.0
+      ],
+      "cost_usd_total": 0.1881,
+      "wall_time_s_median": 3.863,
+      "wall_time_s_p95": 4.736,
+      "wall_time_s_max": 16.196
+    },
+    "pydantic_ai_2_13_0_gpt4o_live": {
+      "completed": 80,
+      "total": 80,
+      "completion_rate": 1.0,
+      "completion_wilson_95": [
+        0.9542,
+        1.0
+      ],
+      "cost_usd_total": 0.1886,
+      "wall_time_s_median": 5.526,
+      "wall_time_s_p95": 6.406,
+      "wall_time_s_max": 10.228
+    }
+  },
+  "paired_wall_time_comparison": {
+    "inventory-reorder": {
+      "langgraph_median_s": 3.168,
+      "pydantic_ai_median_s": 4.838,
+      "median_diff_lg_minus_pa_s": -1.669,
+      "bootstrap_95_ci": [
+        -1.918,
+        -1.4805
+      ],
+      "interpretation": "LangGraph faster"
+    },
+    "dependent-shipping-quote": {
+      "langgraph_median_s": 4.211,
+      "pydantic_ai_median_s": 5.614,
+      "median_diff_lg_minus_pa_s": -1.43,
+      "bootstrap_95_ci": [
+        -1.6855,
+        -1.2405
+      ],
+      "interpretation": "LangGraph faster"
+    },
+    "recover-stale-revision": {
+      "langgraph_median_s": 3.894,
+      "pydantic_ai_median_s": 5.723,
+      "median_diff_lg_minus_pa_s": -1.842,
+      "bootstrap_95_ci": [
+        -2.1005,
+        -1.6575
+      ],
+      "interpretation": "LangGraph faster"
+    },
+    "refund-policy-minimal-tools": {
+      "langgraph_median_s": 3.866,
+      "pydantic_ai_median_s": 5.511,
+      "median_diff_lg_minus_pa_s": -1.645,
+      "bootstrap_95_ci": [
+        -1.911,
+        -1.4265
+      ],
+      "interpretation": "LangGraph faster"
+    }
+  }
+}

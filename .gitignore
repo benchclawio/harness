@@ -19,8 +19,10 @@ env/
 # Harness run artifacts
 artifacts/
 
-# Raw benchmark result files (never committed — contain run data)
+# Raw local run files are ignored by default. Sanitized published evidence
+# bundles under results/ are reviewed before being committed.
 *.jsonl
+!results/**/*.jsonl
 operations/
 
 # Local credentials (must never be committed)

@@ -1,0 +1,47 @@
+{
+  "run_id": "bc-004-full-2026-07-25",
+  "schema_version": "0.1.0",
+  "date": "2026-07-25",
+  "model": {
+    "provider": "openai",
+    "id": "gpt-4o",
+    "temperature": 0
+  },
+  "subjects": [
+    {
+      "id": "langgraph_1_2_9",
+      "package": "langgraph==1.2.9",
+      "adapter": "adapters/worker_langgraph.py"
+    },
+    {
+      "id": "pydantic_ai_2_13_0",
+      "package": "pydantic-ai-slim[openai]==2.13.0",
+      "adapter": "adapters/worker_pydantic_ai.py"
+    }
+  ],
+  "task_suite": {
+    "path": "task-suites/pilot-v0.1.1.json",
+    "sha256": "ec72e7440ea177d150ee550ea6dbe908b02410cae6e45f78aefa9eed29f339bf",
+    "size_bytes": 12620
+  },
+  "artifacts": {
+    "raw_jsonl": {
+      "path": "results/langgraph-vs-pydantic-ai-2026-07-25/bc004-full-raw-2026-07-25.jsonl",
+      "sha256": "357e740c3bec777b0ff5a2f6f26c92b9c7be6e13d8a33f7eaca15a3aa103b930",
+      "size_bytes": 60342,
+      "lines": 160
+    },
+    "analysis_json": {
+      "path": "results/langgraph-vs-pydantic-ai-2026-07-25/bc004-analysis-2026-07-25.json",
+      "sha256": "d88fbd30ac4b4d63472055d046cae5e53d3daf8b83967d7742a885c987ea3488",
+      "size_bytes": 6401
+    }
+  },
+  "run_counts": {
+    "per_task_per_subject": 20,
+    "total": 160
+  },
+  "total_cost_usd": 0.3767,
+  "publication_eligible": true,
+  "notes": "Full 20-run scored benchmark. 160/160 completed, zero failures. Both subjects completed all four tasks. Latency results are specific to the synchronous harness and test conditions documented in the article."
+}
