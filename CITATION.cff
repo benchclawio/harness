@@ -4,6 +4,7 @@ title: "BenchClaw Harness"
 type: software
 version: 0.2.0
 date-released: 2026-07-30
+doi: 10.5281/zenodo.21703726
 authors:
   - family-names: Reeves
     given-names: Jordan

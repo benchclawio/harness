@@ -2,7 +2,7 @@
 
 The BenchClaw measurement and evidence layer for reproducible AI-agent framework benchmarks.
 
-[![DOI pending](https://img.shields.io/badge/DOI-pending-lightgrey)](https://github.com/benchclawio/harness/releases)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21703726.svg)](https://doi.org/10.5281/zenodo.21703726)
 
 ## What this is
 
@@ -102,6 +102,9 @@ For a published study, verify the files against its `SHA256SUMS`, then inspect t
 ## Citation
 
 Use GitHub's **Cite this repository** control or the metadata in [`CITATION.cff`](CITATION.cff). Versioned releases are archived with Zenodo; the release-specific DOI should be preferred when citing an exact version.
+
+- **Release `v0.2.0`:** [10.5281/zenodo.21703726](https://doi.org/10.5281/zenodo.21703726)
+- **All versions:** [10.5281/zenodo.21703725](https://doi.org/10.5281/zenodo.21703725)
 
 ## License
 
