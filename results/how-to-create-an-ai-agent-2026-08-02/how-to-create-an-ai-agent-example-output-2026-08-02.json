@@ -1,0 +1,22 @@
+{
+  "executed_at": "2026-08-02",
+  "executions": 5,
+  "byte_identical": true,
+  "model_api_calls": 0,
+  "model_cost_usd": 0.0,
+  "stdout_sha256": "499dee8dc80ae658c97b045c5c651bdc8c5bb3e932eeda28ed6239551eb79af0",
+  "stdout": {
+    "python": "3.14.4",
+    "happy_path": {
+      "answer": "Order A100 is shipped; ETA 2026-08-05.",
+      "steps": 2,
+      "tool_calls": 1,
+      "trace": [
+        "tool:lookup_order",
+        "final"
+      ]
+    },
+    "unknown_tool": "Blocked tool: delete_order",
+    "step_limit": "Stopped after 3 steps without a final answer"
+  }
+}
