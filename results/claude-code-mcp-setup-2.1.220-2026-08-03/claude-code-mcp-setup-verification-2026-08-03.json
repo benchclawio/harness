@@ -1,0 +1,13 @@
+{
+  "claude_code_version": "2.1.220",
+  "checked_at_utc": "2026-08-03",
+  "add_local_stdio": true,
+  "get_local_stdio_connected": true,
+  "add_project_stdio": true,
+  "add_project_http": true,
+  "list_includes_all_three": true,
+  "project_file_has_playwright": true,
+  "project_file_has_context7": true,
+  "removed_all_three": true,
+  "network_or_authentication_tested": false
+}
