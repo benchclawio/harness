@@ -1,0 +1,63 @@
+skill                               always  SKILL.md    bundle    % md  % bundle
+--------------------------------------------------------------------------------
+skill-creator                           96      2769     35865    3.5%     0.27%
+meme-maker                              91      2210     27848    4.1%     0.33%
+model-usage                            113      2415     20682    4.7%     0.55%
+himalaya                               105      1752      9638    6.0%     1.09%
+1password                              105      5870      8638    1.8%     1.22%
+sherpa-onnx-tts                         71      3754      8568    1.9%     0.83%
+taskflow                               123      4748      7385    2.6%     1.67%
+peekaboo                                60      7075      7078    0.8%     0.85%
+tmux                                   115      1948      7037    5.9%     1.63%
+session-logs                            91      6933      6946    1.3%     1.31%
+gh-issues                              130      6320      6320    2.1%     2.06%
+diagram-maker                          103      2354      5681    4.4%     1.81%
+openai-whisper-api                     107      2070      5287    5.2%     2.02%
+oracle                                 124      4889      4894    2.5%     2.53%
+gog                                     79      4558      4561    1.7%     1.73%
+node-connect                           119      4477      4477    2.7%     2.66%
+coding-agent                           133      4324      4327    3.1%     3.07%
+notion                                 116      3864      3867    3.0%     3.00%
+node-inspect-debugger                  106      3573      3576    3.0%     2.96%
+things-mac                             113      3388      3390    3.3%     3.33%
+apple-reminders                        101      3037      3039    3.3%     3.32%
+trello                                  69      2953      2956    2.3%     2.33%
+obsidian                               132      2939      2942    4.5%     4.49%
+weather                                132      2903      2905    4.5%     4.54%
+xurl                                   126      2745      2748    4.6%     4.59%
+bear-notes                              64      2648      2651    2.4%     2.41%
+gifgrep                                 86      2607      2610    3.3%     3.30%
+taskflow-inbox-triage                  120      2566      2569    4.7%     4.67%
+python-debugpy                         101      2552      2552    4.0%     3.96%
+healthcheck                            117      2537      2537    4.6%     4.61%
+sonoscli                                67      2454      2457    2.7%     2.73%
+openhue                                 65      2420      2423    2.7%     2.68%
+ordercli                                90      2388      2391    3.8%     3.76%
+video-frames                            67       956      2306    7.0%     2.91%
+sag                                     51      2299      2302    2.2%     2.22%
+github                                 104      2235      2238    4.7%     4.65%
+summarize                              110      2122      2125    5.2%     5.18%
+apple-notes                            101      1976      1979    5.1%     5.10%
+spike                                   96      1888      1891    5.1%     5.08%
+spotify-player                          87      1685      1688    5.2%     5.15%
+mcporter                               108      1609      1612    6.7%     6.70%
+clawhub                                136      1503      1503    9.0%     9.05%
+goplaces                               110      1470      1473    7.5%     7.47%
+blogwatcher                             82      1414      1417    5.8%     5.79%
+songsee                                 94      1313      1316    7.2%     7.14%
+gemini                                  95      1156      1158    8.2%     8.20%
+eightctl                                74      1093      1096    6.8%     6.75%
+camsnap                                 55      1088      1091    5.1%     5.04%
+blucli                                  68      1019      1022    6.7%     6.65%
+nano-pdf                                76       951       954    8.0%     7.97%
+openai-whisper                          69       911       914    7.6%     7.55%
+--------------------------------------------------------------------------------
+skills measured           : 51
+always-loaded total       : 4,953 bytes
+SKILL.md total            : 140,728 bytes
+bundled total             : 248,930 bytes
+always-loaded share of md : 3.52%
+always-loaded share of all: 1.99%
+median share of md        : 4.49%
+median share of bundle    : 3.30%
+deferred until triggered  : 98.01%
