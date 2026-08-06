@@ -1,0 +1,28 @@
+{
+  "started_utc": "2026-08-06T13:31:27.601267+00:00",
+  "completed_utc": "2026-08-06T13:40:45.465900+00:00",
+  "status": "complete",
+  "stage": "scored",
+  "subject": "pydantic-ai-slim[openai]==2.24.0",
+  "model_id": "gpt-4o",
+  "temperature": 0,
+  "parallel_tool_calls": false,
+  "framework_retries": 0,
+  "provider_retries": 0,
+  "task_suite": "bc025-v0.1.0",
+  "task_suite_sha256": "dc66630cafd5abe48a2a902185e2efce69db8b554ab13e1c6b90d382ebb5553d",
+  "worker_sha256": "9a358433bd29fc23a93895da67c56164b77ee59d1bee1e0d76adfca210539b8c",
+  "capability_count": 20,
+  "cells": [
+    "A-chat",
+    "B-chat",
+    "A-resp",
+    "B-resp"
+  ],
+  "runs_per_task_per_cell": 5,
+  "total_runs": 80,
+  "spend_ceiling_usd": 1.0,
+  "actual_cost_usd": 0.279585,
+  "raw_jsonl": "bc025-scored-raw-2026-08-06.jsonl",
+  "raw_jsonl_sha256": "8d573e4ba4a14da9eb6fd1965b34ffbc0c641ac533db18e735adcc4f5c1615e2"
+}

@@ -1,0 +1,587 @@
+{
+  "schema_version": 1,
+  "suite_id": "bc025-deferred-disclosure",
+  "suite_version": "bc025-v0.1.0",
+  "publication_eligible": true,
+  "purpose": "Measure the real input-token, round-trip and correctness cost of progressive disclosure by running an identical task set with 20 capabilities always-on versus the same 20 behind deferred loading.",
+  "execution": {
+    "model_id": "gpt-4o",
+    "temperature": 0,
+    "parallel_tool_calls": false,
+    "framework_retries": 0,
+    "provider_retries": 0
+  },
+  "capability_count": 20,
+  "limits": {
+    "model_requests": 6,
+    "tool_calls": 4,
+    "input_tokens": 40000,
+    "output_tokens": 512,
+    "total_tokens": 40512
+  },
+  "output_policy": "Exact match against expected_output after JSON parsing. Markdown code fences are stripped before parsing: gpt-4o wraps JSON in fences and that is a formatting artefact, not a correctness failure.",
+  "capabilities": [
+    {
+      "name": "inventory_lookup",
+      "description": "Return the canonical synthetic inventory record for one exact SKU.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "sku": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "sku"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "BCL-204": {
+          "sku": "BCL-204",
+          "name": "Trace Beacon",
+          "available": 7,
+          "reorder_point": 10
+        }
+      }
+    },
+    {
+      "name": "shipment_status",
+      "description": "Return the current synthetic status record for one exact tracking identifier.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "tracking_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "tracking_id"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "TRK-8891": {
+          "tracking_id": "TRK-8891",
+          "carrier": "Northline",
+          "days_in_transit": 9,
+          "promised_days": 5
+        }
+      }
+    },
+    {
+      "name": "currency_convert",
+      "description": "Convert an amount between two currency codes using a fixed synthetic rate table.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number"
+          },
+          "from_currency": {
+            "type": "string"
+          },
+          "to_currency": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "amount",
+          "from_currency",
+          "to_currency"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "USD:EUR": 0.92,
+        "EUR:USD": 1.087,
+        "USD:GBP": 0.79,
+        "GBP:USD": 1.266
+      }
+    },
+    {
+      "name": "defect_rate",
+      "description": "Return the recorded defect rate and control threshold for one production line.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "line_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "line_id"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "LINE-3": {
+          "line_id": "LINE-3",
+          "defect_rate_pct": 4.6,
+          "threshold_pct": 3.0,
+          "units_sampled": 500
+        }
+      }
+    },
+    {
+      "name": "customer_record",
+      "description": "Return the synthetic account record for one exact customer identifier.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "customer_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "customer_id"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "CUS-1042": {
+          "customer_id": "CUS-1042",
+          "tier": "gold",
+          "open_tickets": 2
+        }
+      }
+    },
+    {
+      "name": "invoice_total",
+      "description": "Return the line-item total and currency for one exact invoice identifier.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "invoice_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "invoice_id"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "INV-7781": {
+          "invoice_id": "INV-7781",
+          "total": 4820.5,
+          "currency": "USD"
+        }
+      }
+    },
+    {
+      "name": "refund_eligibility",
+      "description": "Return the refund window and policy class for one exact order identifier.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "order_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "order_id"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "ORD-3312": {
+          "order_id": "ORD-3312",
+          "window_days": 30,
+          "policy_class": "standard"
+        }
+      }
+    },
+    {
+      "name": "warehouse_capacity",
+      "description": "Return used and total pallet capacity for one warehouse site code.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "site_code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "site_code"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "WH-NORTH": {
+          "site_code": "WH-NORTH",
+          "pallets_used": 812,
+          "pallets_total": 1000
+        }
+      }
+    },
+    {
+      "name": "carrier_rate",
+      "description": "Return the quoted synthetic carrier rate for a lane and billable weight.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "weight_kg": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "origin",
+          "destination",
+          "weight_kg"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "LDN:BER": {
+          "base": 42.0,
+          "per_kg": 1.15
+        }
+      }
+    },
+    {
+      "name": "tax_rate",
+      "description": "Return the applicable synthetic sales tax rate for one region code.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "region_code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "region_code"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "EU-DE": {
+          "region_code": "EU-DE",
+          "rate_pct": 19.0
+        }
+      }
+    },
+    {
+      "name": "sla_target",
+      "description": "Return the response and resolution SLA targets for one support tier.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "tier": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "tier"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "gold": {
+          "tier": "gold",
+          "response_hours": 2,
+          "resolution_hours": 24
+        }
+      }
+    },
+    {
+      "name": "return_window",
+      "description": "Return the permitted return window in days for one product class.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "product_class": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "product_class"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "electronics": {
+          "product_class": "electronics",
+          "window_days": 14
+        }
+      }
+    },
+    {
+      "name": "supplier_lead_time",
+      "description": "Return quoted and historical lead times for one supplier identifier.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "supplier_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "supplier_id"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "SUP-55": {
+          "supplier_id": "SUP-55",
+          "quoted_days": 21,
+          "historical_days": 27
+        }
+      }
+    },
+    {
+      "name": "batch_expiry",
+      "description": "Return the manufacture and expiry dates for one production batch.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "batch_id"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "BATCH-901": {
+          "batch_id": "BATCH-901",
+          "manufactured": "2026-01-10",
+          "expires": "2027-01-10"
+        }
+      }
+    },
+    {
+      "name": "temperature_log",
+      "description": "Return the last recorded reading and permitted range for one cold-chain sensor.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "sensor_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "sensor_id"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "SEN-12": {
+          "sensor_id": "SEN-12",
+          "last_celsius": 6.4,
+          "max_celsius": 5.0
+        }
+      }
+    },
+    {
+      "name": "staffing_roster",
+      "description": "Return scheduled and required headcount for one shift code.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "shift_code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "shift_code"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "SH-NIGHT": {
+          "shift_code": "SH-NIGHT",
+          "scheduled": 11,
+          "required": 14
+        }
+      }
+    },
+    {
+      "name": "fuel_surcharge",
+      "description": "Return the current synthetic fuel surcharge percentage for one delivery zone.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "zone": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "zone"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "Z4": {
+          "zone": "Z4",
+          "surcharge_pct": 7.5
+        }
+      }
+    },
+    {
+      "name": "packaging_spec",
+      "description": "Return carton dimensions and unit count for one packaged SKU.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "sku": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "sku"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "BCL-204": {
+          "sku": "BCL-204",
+          "units_per_carton": 12,
+          "carton_kg": 8.4
+        }
+      }
+    },
+    {
+      "name": "customs_code",
+      "description": "Return the tariff classification code and duty rate for one product class.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "product_class": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "product_class"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "electronics": {
+          "product_class": "electronics",
+          "hs_code": "8517.62",
+          "duty_pct": 2.6
+        }
+      }
+    },
+    {
+      "name": "insurance_premium",
+      "description": "Return the calculated synthetic insurance premium band for a declared value.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "declared_value": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "declared_value"
+        ],
+        "additionalProperties": false
+      },
+      "fixture": {
+        "bands": [
+          [
+            0,
+            1000,
+            12.0
+          ],
+          [
+            1000,
+            10000,
+            48.0
+          ],
+          [
+            10000,
+            1000000,
+            210.0
+          ]
+        ]
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "inventory-reorder",
+      "target_capability": "inventory_lookup",
+      "prompt": "Look up SKU BCL-204 using the inventory_lookup tool. Return ONLY a JSON object with exactly these keys: `sku` (string), `available` (integer), `reorder_required` (boolean, true when available is strictly less than reorder_point). Include no other keys or text.",
+      "reference_trace": [
+        {
+          "tool": "inventory_lookup",
+          "arguments": {
+            "sku": "BCL-204"
+          }
+        }
+      ],
+      "expected_output": {
+        "sku": "BCL-204",
+        "available": 7,
+        "reorder_required": true
+      }
+    },
+    {
+      "id": "shipment-delay",
+      "target_capability": "shipment_status",
+      "prompt": "Look up tracking id TRK-8891 using the shipment_status tool. Return ONLY a JSON object with exactly these keys: `tracking_id` (string), `carrier` (string), `delayed` (boolean, true when days_in_transit is strictly greater than promised_days). Include no other keys or text.",
+      "reference_trace": [
+        {
+          "tool": "shipment_status",
+          "arguments": {
+            "tracking_id": "TRK-8891"
+          }
+        }
+      ],
+      "expected_output": {
+        "tracking_id": "TRK-8891",
+        "carrier": "Northline",
+        "delayed": true
+      }
+    },
+    {
+      "id": "currency-conversion",
+      "target_capability": "currency_convert",
+      "prompt": "Convert 250 USD to EUR using the currency_convert tool. Return ONLY a JSON object with exactly these keys: `from_currency` (string), `to_currency` (string), `converted` (number, the tool's returned amount). Include no other keys or text.",
+      "reference_trace": [
+        {
+          "tool": "currency_convert",
+          "arguments": {
+            "amount": 250,
+            "from_currency": "USD",
+            "to_currency": "EUR"
+          }
+        }
+      ],
+      "expected_output": {
+        "from_currency": "USD",
+        "to_currency": "EUR",
+        "converted": 230.0
+      }
+    },
+    {
+      "id": "defect-threshold",
+      "target_capability": "defect_rate",
+      "prompt": "Look up production line LINE-3 using the defect_rate tool. Return ONLY a JSON object with exactly these keys: `line_id` (string), `defect_rate_pct` (number), `above_threshold` (boolean, true when defect_rate_pct is strictly greater than threshold_pct). Include no other keys or text.",
+      "reference_trace": [
+        {
+          "tool": "defect_rate",
+          "arguments": {
+            "line_id": "LINE-3"
+          }
+        }
+      ],
+      "expected_output": {
+        "line_id": "LINE-3",
+        "defect_rate_pct": 4.6,
+        "above_threshold": true
+      }
+    }
+  ]
+}

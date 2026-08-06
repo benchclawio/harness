@@ -1,0 +1,167 @@
+{
+  "source_jsonl": "bc025-scored-raw-2026-08-06.jsonl",
+  "total_runs": 80,
+  "total_cost_usd": 0.279585,
+  "method": {
+    "ci": "bootstrap percentile, 10000 resamples, seed 20260806",
+    "comparison_rule": "within transport path only; chat and responses are never compared"
+  },
+  "cells": {
+    "A-chat": {
+      "runs": 20,
+      "tokens_in_mean": 1361.5,
+      "tokens_in_median": 1362.0,
+      "tokens_in_stdev": 10.32,
+      "tokens_out_mean": 42.35,
+      "model_requests_mean": 2.0,
+      "tool_search_calls_mean": 0.0,
+      "cost_usd_mean": 0.00382725,
+      "cost_usd_total": 0.076545,
+      "wall_s_mean": 5.483,
+      "exact_match_rate": 1.0,
+      "correct_tool_rate": 1.0
+    },
+    "A-resp": {
+      "runs": 20,
+      "tokens_in_mean": 1353.75,
+      "tokens_in_median": 1354.5,
+      "tokens_in_stdev": 10.57,
+      "tokens_out_mean": 51.1,
+      "model_requests_mean": 2.0,
+      "tool_search_calls_mean": 0.0,
+      "cost_usd_mean": 0.00389537,
+      "cost_usd_total": 0.0779075,
+      "wall_s_mean": 7.474,
+      "exact_match_rate": 1.0,
+      "correct_tool_rate": 1.0
+    },
+    "B-chat": {
+      "runs": 20,
+      "tokens_in_mean": 945.25,
+      "tokens_in_median": 859.0,
+      "tokens_in_stdev": 190.84,
+      "tokens_out_mean": 65.25,
+      "model_requests_mean": 3.0,
+      "tool_search_calls_mean": 2.0,
+      "cost_usd_mean": 0.00301563,
+      "cost_usd_total": 0.0603125,
+      "wall_s_mean": 6.531,
+      "exact_match_rate": 1.0,
+      "correct_tool_rate": 1.0
+    },
+    "B-resp": {
+      "runs": 20,
+      "tokens_in_mean": 1001.0,
+      "tokens_in_median": 882.0,
+      "tokens_in_stdev": 263.13,
+      "tokens_out_mean": 73.85,
+      "model_requests_mean": 3.0,
+      "tool_search_calls_mean": 2.0,
+      "cost_usd_mean": 0.003241,
+      "cost_usd_total": 0.06482,
+      "wall_s_mean": 8.396,
+      "exact_match_rate": 1.0,
+      "correct_tool_rate": 1.0
+    }
+  },
+  "comparisons": {
+    "chat": {
+      "control": "A-chat",
+      "treatment": "B-chat",
+      "tokens_in": {
+        "observed_diff": -416.25,
+        "ci95_low": -491.55,
+        "ci95_high": -328.95,
+        "pct_change": -30.57,
+        "crosses_zero": false
+      },
+      "tokens_out": {
+        "observed_diff": 22.9,
+        "ci95_low": 20.1,
+        "ci95_high": 25.45,
+        "pct_change": 54.07,
+        "crosses_zero": false
+      },
+      "model_requests": {
+        "observed_diff": 1.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0,
+        "pct_change": 50.0,
+        "crosses_zero": false
+      },
+      "cost_usd": {
+        "observed_diff": -0.0008,
+        "ci95_low": -0.001,
+        "ci95_high": -0.0006,
+        "pct_change": -21.21,
+        "crosses_zero": false
+      },
+      "wall_s": {
+        "observed_diff": 1.0475,
+        "ci95_low": 0.2877,
+        "ci95_high": 1.7374,
+        "pct_change": 19.1,
+        "crosses_zero": false
+      }
+    },
+    "responses": {
+      "control": "A-resp",
+      "treatment": "B-resp",
+      "tokens_in": {
+        "observed_diff": -352.75,
+        "ci95_low": -456.85,
+        "ci95_high": -231.2,
+        "pct_change": -26.06,
+        "crosses_zero": false
+      },
+      "tokens_out": {
+        "observed_diff": 22.75,
+        "ci95_low": 19.05,
+        "ci95_high": 26.8,
+        "pct_change": 44.52,
+        "crosses_zero": false
+      },
+      "model_requests": {
+        "observed_diff": 1.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0,
+        "pct_change": 50.0,
+        "crosses_zero": false
+      },
+      "cost_usd": {
+        "observed_diff": -0.0007,
+        "ci95_low": -0.0009,
+        "ci95_high": -0.0003,
+        "pct_change": -16.8,
+        "crosses_zero": false
+      },
+      "wall_s": {
+        "observed_diff": 0.9226,
+        "ci95_low": -0.3256,
+        "ci95_high": 2.1601,
+        "pct_change": 12.34,
+        "crosses_zero": true
+      }
+    }
+  },
+  "accuracy_by_task_cell": {
+    "currency-conversion|A-chat": 1.0,
+    "currency-conversion|A-resp": 1.0,
+    "currency-conversion|B-chat": 1.0,
+    "currency-conversion|B-resp": 1.0,
+    "defect-threshold|A-chat": 1.0,
+    "defect-threshold|A-resp": 1.0,
+    "defect-threshold|B-chat": 1.0,
+    "defect-threshold|B-resp": 1.0,
+    "inventory-reorder|A-chat": 1.0,
+    "inventory-reorder|A-resp": 1.0,
+    "inventory-reorder|B-chat": 1.0,
+    "inventory-reorder|B-resp": 1.0,
+    "shipment-delay|A-chat": 1.0,
+    "shipment-delay|A-resp": 1.0,
+    "shipment-delay|B-chat": 1.0,
+    "shipment-delay|B-resp": 1.0
+  },
+  "failure_count": 0,
+  "failures": []
+}
