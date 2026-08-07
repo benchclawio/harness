@@ -1,0 +1,88 @@
+{"metric": "arm_meta", "arm": "herdr", "version": "0.8.0", "binary": "/root/.local/bin/herdr", "ts": 1786100802.5911567}
+{"metric": "arm_meta", "arm": "tmux34", "version": "3.4", "binary": "/usr/bin/tmux", "ts": 1786100802.5912454}
+{"metric": "arm_meta", "arm": "tmux37b", "version": "3.7b", "binary": "/opt/tmux37b/bin/tmux", "ts": 1786100802.591271}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 0, "value": 8.592016000022795, "ts": 1786100808.7630014}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 1, "value": 9.344365999993443, "ts": 1786100808.7724946}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 2, "value": 7.373483000009173, "ts": 1786100808.7800162}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 0, "value": 12.448040000009541, "ts": 1786100808.792766}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 1, "value": 9.716828999984273, "ts": 1786100808.8026347}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 2, "value": 5.9957130000043435, "ts": 1786100808.8087156}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 0, "value": 5.118092999992996, "ts": 1786100808.8140156}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 1, "value": 5.174130000000332, "ts": 1786100808.8193216}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 2, "value": 4.980975999984594, "ts": 1786100808.8244715}
+{"metric": "create_ms", "arm": "herdr", "rep": 0, "value": 17.959686000011743, "ts": 1786100808.8427634}
+{"metric": "create_ms", "arm": "herdr", "rep": 1, "value": 11.798182999996243, "ts": 1786100808.8670666}
+{"metric": "create_ms", "arm": "herdr", "rep": 2, "value": 9.20294900001295, "ts": 1786100808.8950915}
+{"metric": "create_ms", "arm": "tmux34", "rep": 0, "value": 13.23420800000008, "ts": 1786100809.0205972}
+{"metric": "create_ms", "arm": "tmux34", "rep": 1, "value": 12.449868000004471, "ts": 1786100809.0406342}
+{"metric": "create_ms", "arm": "tmux34", "rep": 2, "value": 14.563898000005793, "ts": 1786100809.064924}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 0, "value": 5.242202999994561, "ts": 1786100809.078474}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 1, "value": 4.4370960000037485, "ts": 1786100809.0871227}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 2, "value": 4.276628000013716, "ts": 1786100809.0953915}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 0, "value": 17.784917999989602, "ok": true, "ts": 1786100810.1254983}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 1, "value": 13.570947999994587, "ok": true, "ts": 1786100810.1392171}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 2, "value": 9.692212000004474, "ok": true, "ts": 1786100810.14911}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 0, "value": 19.240521999989824, "ok": true, "ts": 1786100811.1985226}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 1, "value": 19.275732000011203, "ok": true, "ts": 1786100811.2180085}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 2, "value": 13.867777000001524, "ok": true, "ts": 1786100811.2319887}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 0, "value": 10.329015999985813, "ok": true, "ts": 1786100812.258354}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 1, "value": 10.542096000023093, "ok": true, "ts": 1786100812.268992}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 2, "value": 7.787723999996388, "ok": true, "ts": 1786100812.2769704}
+{"metric": "survive", "arm": "herdr", "rep": 0, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100824.1426716}
+{"metric": "survive", "arm": "herdr", "rep": 1, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100836.027044}
+{"metric": "survive", "arm": "herdr", "rep": 2, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100847.923133}
+{"metric": "survive", "arm": "herdr", "rep": 3, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100859.8008082}
+{"metric": "survive", "arm": "herdr", "rep": 4, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100871.6690168}
+{"metric": "survive", "arm": "herdr", "rep": 5, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100883.5393772}
+{"metric": "survive", "arm": "herdr", "rep": 6, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100895.4416366}
+{"metric": "survive", "arm": "herdr", "rep": 7, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100907.3273525}
+{"metric": "survive", "arm": "herdr", "rep": 8, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100919.2224457}
+{"metric": "survive", "arm": "herdr", "rep": 9, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100931.1103292}
+{"metric": "survive", "arm": "tmux34", "rep": 0, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100942.9883378}
+{"metric": "survive", "arm": "tmux34", "rep": 1, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100954.8762653}
+{"metric": "survive", "arm": "tmux34", "rep": 2, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100966.7684126}
+{"metric": "survive", "arm": "tmux34", "rep": 3, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100978.6488383}
+{"metric": "survive", "arm": "tmux34", "rep": 4, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786100990.5196662}
+{"metric": "survive", "arm": "tmux34", "rep": 5, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101002.3769476}
+{"metric": "survive", "arm": "tmux34", "rep": 6, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101014.243464}
+{"metric": "survive", "arm": "tmux34", "rep": 7, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101026.1227787}
+{"metric": "survive", "arm": "tmux34", "rep": 8, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101038.020312}
+{"metric": "survive", "arm": "tmux34", "rep": 9, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101049.928483}
+{"metric": "survive", "arm": "tmux37b", "rep": 0, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101061.8055859}
+{"metric": "survive", "arm": "tmux37b", "rep": 1, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101073.6653345}
+{"metric": "survive", "arm": "tmux37b", "rep": 2, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101085.522783}
+{"metric": "survive", "arm": "tmux37b", "rep": 3, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101097.371744}
+{"metric": "survive", "arm": "tmux37b", "rep": 4, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101109.2214897}
+{"metric": "survive", "arm": "tmux37b", "rep": 5, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101121.0656536}
+{"metric": "survive", "arm": "tmux37b", "rep": 6, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101132.9139698}
+{"metric": "survive", "arm": "tmux37b", "rep": 7, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101144.7710443}
+{"metric": "survive", "arm": "tmux37b", "rep": 8, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101156.621192}
+{"metric": "survive", "arm": "tmux37b", "rep": 9, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101168.4836533}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 0, "value": 16352, "ts": 1786101168.5254037}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 1, "value": 21092, "ts": 1786101170.5838466}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 5, "value": 40040, "ts": 1786101172.6755188}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 10, "value": 63780, "ts": 1786101174.9950242}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 20, "value": 111384, "ts": 1786101177.3963583}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 40, "value": 206600, "ts": 1786101179.8040063}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 0, "value": 10628, "ts": 1786101180.186004}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 1, "value": 16264, "ts": 1786101182.2215161}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 5, "value": 38872, "ts": 1786101184.3177679}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 10, "value": 67136, "ts": 1786101186.4501815}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 20, "value": 123704, "ts": 1786101188.6988177}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 40, "value": 236968, "ts": 1786101191.2013218}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 0, "value": 9664, "ts": 1786101191.6847153}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 1, "value": 15344, "ts": 1786101193.7076633}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 5, "value": 37960, "ts": 1786101195.7688005}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 10, "value": 66224, "ts": 1786101197.8444765}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 20, "value": 122764, "ts": 1786101199.9831119}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 40, "value": 236256, "ts": 1786101202.2946398}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 0, "value": 9.007697000015469, "ok": true, "ts": 1786101203.6051605}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 1, "value": 5.30536700000539, "ok": true, "ts": 1786101205.6689036}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 2, "value": 8.604301999980635, "ok": true, "ts": 1786101207.7417467}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 3, "value": 7.652221999933317, "ok": true, "ts": 1786101209.8117166}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 4, "value": 10.0612319999982, "ok": true, "ts": 1786101211.8820107}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 5, "value": 38.474942999982886, "ok": true, "ts": 1786101213.9812233}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 6, "value": 9.904109999979482, "ok": true, "ts": 1786101216.155508}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 7, "value": 10.991321999995307, "ok": true, "ts": 1786101218.2335608}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 8, "value": 30.60515899994698, "ok": true, "ts": 1786101220.43343}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 9, "value": 13.43099500002154, "ok": true, "ts": 1786101222.5144403}

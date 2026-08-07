@@ -1,0 +1,363 @@
+{
+  "arms": {
+    "herdr": {
+      "version": "0.8.0",
+      "binary": "/root/.local/bin/herdr"
+    },
+    "tmux34": {
+      "version": "3.4",
+      "binary": "/usr/bin/tmux"
+    },
+    "tmux37b": {
+      "version": "3.7b",
+      "binary": "/opt/tmux37b/bin/tmux"
+    }
+  },
+  "resamples": 10000,
+  "seed": 20260807,
+  "metrics": {
+    "cli_overhead_ms": {
+      "herdr": {
+        "n": 30,
+        "mean": 4.717235533333526,
+        "median": 4.628832000037164,
+        "sd": 1.1790423934606558,
+        "min": 3.085306999992099,
+        "max": 9.491400000001704,
+        "ci95": [
+          4.334363733350226,
+          5.1656719333247265
+        ]
+      },
+      "tmux34": {
+        "n": 30,
+        "mean": 5.8209928666731985,
+        "median": 5.32401100002744,
+        "sd": 1.332018445778925,
+        "min": 4.745613000068261,
+        "max": 11.670804999994289,
+        "ci95": [
+          5.430448300004779,
+          6.360047599995748
+        ]
+      },
+      "tmux37b": {
+        "n": 30,
+        "mean": 4.38314893331911,
+        "median": 4.166606000012507,
+        "sd": 0.9688123267675423,
+        "min": 2.9585789999373446,
+        "max": 7.384451000007175,
+        "ci95": [
+          4.076214499980324,
+          4.737166833323651
+        ]
+      },
+      "diffs": {
+        "herdr_minus_tmux37b": {
+          "mean": 0.33408660001441604,
+          "ci95": [
+            -0.18121709998695223,
+            0.8867466667008248
+          ],
+          "significant": false
+        },
+        "herdr_minus_tmux34": {
+          "mean": -1.1037573333396722,
+          "ci95": [
+            -1.7507521666819539,
+            -0.49300990002241907
+          ],
+          "significant": true
+        },
+        "tmux37b_minus_tmux34": {
+          "mean": -1.4378439333540882,
+          "ci95": [
+            -2.06052813335873,
+            -0.8901736333541521
+          ],
+          "significant": true
+        }
+      }
+    },
+    "create_ms": {
+      "herdr": {
+        "n": 30,
+        "mean": 9.506059666663683,
+        "median": 9.479606499951387,
+        "sd": 3.085067760273752,
+        "min": 5.656187999989015,
+        "max": 19.5376030000034,
+        "ci95": [
+          8.46208936666244,
+          10.619170666670167
+        ]
+      },
+      "tmux34": {
+        "n": 30,
+        "mean": 14.578498266682042,
+        "median": 13.366246500027046,
+        "sd": 4.042511283387041,
+        "min": 10.242340999980115,
+        "max": 27.734526000017468,
+        "ci95": [
+          13.24415563333711,
+          16.117291733326056
+        ]
+      },
+      "tmux37b": {
+        "n": 30,
+        "mean": 5.1617959333346635,
+        "median": 4.796783500012225,
+        "sd": 1.1453278832009715,
+        "min": 3.6261000000195054,
+        "max": 8.54544599997098,
+        "ci95": [
+          4.776272299996738,
+          5.589701600005507
+        ]
+      },
+      "diffs": {
+        "herdr_minus_tmux37b": {
+          "mean": 4.3442637333290195,
+          "ci95": [
+            3.2504024666688265,
+            5.567835033320988
+          ],
+          "significant": true
+        },
+        "herdr_minus_tmux34": {
+          "mean": -5.072438600018359,
+          "ci95": [
+            -6.942206233369081,
+            -3.3507403666627997
+          ],
+          "significant": true
+        },
+        "tmux37b_minus_tmux34": {
+          "mean": -9.416702333347377,
+          "ci95": [
+            -10.98252610003859,
+            -8.035336833332469
+          ],
+          "significant": true
+        }
+      }
+    },
+    "roundtrip_ms": {
+      "herdr": {
+        "n": 30,
+        "mean": 14.546713999997488,
+        "median": 14.566566000041803,
+        "sd": 3.2055603283843874,
+        "min": 9.840368999903149,
+        "max": 21.58249700005399,
+        "ci95": [
+          13.428634000001693,
+          15.690143800016662
+        ]
+      },
+      "tmux34": {
+        "n": 30,
+        "mean": 11.41708390000152,
+        "median": 10.42742649997308,
+        "sd": 2.8430844969161804,
+        "min": 8.170156999995015,
+        "max": 18.69844399993781,
+        "ci95": [
+          10.471462666657771,
+          12.489808666665189
+        ]
+      },
+      "tmux37b": {
+        "n": 30,
+        "mean": 7.853355833337143,
+        "median": 7.374022000021796,
+        "sd": 1.7743232341460153,
+        "min": 5.255852000004779,
+        "max": 12.452940000002855,
+        "ci95": [
+          7.2821999000060105,
+          8.501225999998496
+        ]
+      },
+      "diffs": {
+        "herdr_minus_tmux37b": {
+          "mean": 6.693358166660345,
+          "ci95": [
+            5.396571933329142,
+            7.971821366682736
+          ],
+          "significant": true
+        },
+        "herdr_minus_tmux34": {
+          "mean": 3.1296300999959676,
+          "ci95": [
+            1.6387176666436662,
+            4.632810900003886
+          ],
+          "significant": true
+        },
+        "tmux37b_minus_tmux34": {
+          "mean": -3.5637280666643774,
+          "ci95": [
+            -4.74884906667891,
+            -2.426117799992273
+          ],
+          "significant": true
+        }
+      }
+    },
+    "server_start_ms": {
+      "herdr": {
+        "n": 20,
+        "mean": 20.18404980001378,
+        "median": 19.468645000074503,
+        "sd": 12.641883329111339,
+        "min": 5.54855299992596,
+        "max": 36.88503200010018,
+        "ci95": [
+          14.933039749996624,
+          25.636535450018982
+        ]
+      },
+      "tmux34": {
+        "n": 20,
+        "mean": 38.77871165000215,
+        "median": 36.93464600007701,
+        "sd": 8.657471477826771,
+        "min": 25.92445499999485,
+        "max": 51.25839799984533,
+        "ci95": [
+          35.150699549956244,
+          42.50067884997861
+        ]
+      },
+      "tmux37b": {
+        "n": 20,
+        "mean": 29.88877254997533,
+        "median": 29.21201649996874,
+        "sd": 5.700691614044007,
+        "min": 21.88219599997865,
+        "max": 40.21325600001546,
+        "ci95": [
+          27.49938479996672,
+          32.34371914998064
+        ]
+      },
+      "diffs": {
+        "herdr_minus_tmux37b": {
+          "mean": -9.704722749961547,
+          "ci95": [
+            -15.690701549954156,
+            -3.8903552999727253
+          ],
+          "significant": true
+        },
+        "herdr_minus_tmux34": {
+          "mean": -18.59466184998837,
+          "ci95": [
+            -25.23492720000604,
+            -12.088988749974305
+          ],
+          "significant": true
+        },
+        "tmux37b_minus_tmux34": {
+          "mean": -8.889939100026822,
+          "ci95": [
+            -13.179780450025191,
+            -4.469703649965595
+          ],
+          "significant": true
+        }
+      }
+    },
+    "survive": {
+      "herdr": {
+        "reps": 10,
+        "valid_reps": 10,
+        "invalid_reps": 0,
+        "survived": 10,
+        "rate": 1.0,
+        "server_up_after_all": true,
+        "all_on_target": true,
+        "lines_retained": [
+          9
+        ]
+      },
+      "tmux34": {
+        "reps": 10,
+        "valid_reps": 10,
+        "invalid_reps": 0,
+        "survived": 10,
+        "rate": 1.0,
+        "server_up_after_all": true,
+        "all_on_target": true,
+        "lines_retained": [
+          9
+        ]
+      },
+      "tmux37b": {
+        "reps": 10,
+        "valid_reps": 10,
+        "invalid_reps": 0,
+        "survived": 10,
+        "rate": 1.0,
+        "server_up_after_all": true,
+        "all_on_target": true,
+        "lines_retained": [
+          9
+        ]
+      }
+    },
+    "rss_kb_total": {
+      "herdr": {
+        "points_kb": {
+          "0": 16160,
+          "1": 20892,
+          "5": 39948,
+          "10": 63748,
+          "20": 111504,
+          "40": 206992
+        },
+        "baseline_kb": 16160,
+        "marginal_kb_per_session": 4770.8
+      },
+      "tmux34": {
+        "points_kb": {
+          "0": 10656,
+          "1": 16316,
+          "5": 38976,
+          "10": 67328,
+          "20": 123984,
+          "40": 237436
+        },
+        "baseline_kb": 10656,
+        "marginal_kb_per_session": 5669.5
+      },
+      "tmux37b": {
+        "points_kb": {
+          "0": 9708,
+          "1": 15376,
+          "5": 38036,
+          "10": 66472,
+          "20": 123180,
+          "40": 236764
+        },
+        "baseline_kb": 9708,
+        "marginal_kb_per_session": 5676.4
+      },
+      "crossover_sessions": {
+        "herdr_vs_tmux37b": 7.12455830388693,
+        "herdr_vs_tmux34": 6.124401913875599,
+        "tmux37b_vs_tmux34": 137.39130434783334
+      }
+    }
+  },
+  "notes": [
+    "Each tmux arm ran on its own -L socket; RSS is scoped to that socket's server PID tree, so the two tmux versions are never pooled.",
+    "roundtrip_ms includes one CLI invocation per poll; compare against cli_overhead_ms before attributing the difference to the runtime.",
+    "survive counts only reps where a real client was attached, confirmed on the target session, and killed; invalid reps are excluded, not scored.",
+    "Arms were interleaved per metric within a single run on one host."
+  ]
+}

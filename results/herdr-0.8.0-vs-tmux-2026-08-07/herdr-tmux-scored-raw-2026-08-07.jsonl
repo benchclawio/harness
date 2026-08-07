@@ -1,0 +1,381 @@
+{"metric": "arm_meta", "arm": "herdr", "version": "0.8.0", "binary": "/root/.local/bin/herdr", "ts": 1786101250.5439396}
+{"metric": "arm_meta", "arm": "tmux34", "version": "3.4", "binary": "/usr/bin/tmux", "ts": 1786101250.5440407}
+{"metric": "arm_meta", "arm": "tmux37b", "version": "3.7b", "binary": "/opt/tmux37b/bin/tmux", "ts": 1786101250.544064}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 0, "value": 4.6791280000206825, "ts": 1786101256.668436}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 1, "value": 3.5887389999516017, "ts": 1786101256.672123}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 2, "value": 3.5222540000177105, "ts": 1786101256.6757421}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 3, "value": 3.1879440000466275, "ts": 1786101256.679005}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 4, "value": 3.085306999992099, "ts": 1786101256.6821575}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 5, "value": 3.1497929999204644, "ts": 1786101256.6853719}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 6, "value": 4.807634000030703, "ts": 1786101256.6902552}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 7, "value": 3.903974000081689, "ts": 1786101256.694305}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 8, "value": 4.587099999980637, "ts": 1786101256.6989717}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 9, "value": 4.229790000067624, "ts": 1786101256.7032719}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 10, "value": 4.168095000068206, "ts": 1786101256.7075422}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 11, "value": 4.9695449999944685, "ts": 1786101256.71259}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 12, "value": 5.3786889999400955, "ts": 1786101256.7180572}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 13, "value": 5.4995899999994435, "ts": 1786101256.7236848}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 14, "value": 5.4111690000127055, "ts": 1786101256.729187}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 15, "value": 5.343770000081349, "ts": 1786101256.7346413}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 16, "value": 9.491400000001704, "ts": 1786101256.7442398}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 17, "value": 5.866554999897744, "ts": 1786101256.7502549}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 18, "value": 4.257171999938691, "ts": 1786101256.7546463}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 19, "value": 4.190805000007458, "ts": 1786101256.7589538}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 20, "value": 4.354771999942386, "ts": 1786101256.7634168}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 21, "value": 4.670564000093691, "ts": 1786101256.7681918}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 22, "value": 4.095812999935333, "ts": 1786101256.7724028}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 23, "value": 5.023201999961202, "ts": 1786101256.7775285}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 24, "value": 4.844033000040326, "ts": 1786101256.7824967}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 25, "value": 5.152293000037389, "ts": 1786101256.7878456}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 26, "value": 4.547560999981215, "ts": 1786101256.7924733}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 27, "value": 4.423778999921524, "ts": 1786101256.7969728}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 28, "value": 5.4043430000092485, "ts": 1786101256.8024638}
+{"metric": "cli_overhead_ms", "arm": "herdr", "rep": 29, "value": 5.682253000031778, "ts": 1786101256.808251}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 0, "value": 8.024461999980304, "ts": 1786101256.816464}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 1, "value": 6.877324000015506, "ts": 1786101256.8234763}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 2, "value": 6.807633999983409, "ts": 1786101256.8304307}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 3, "value": 5.777091000027212, "ts": 1786101256.8363335}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 4, "value": 11.670804999994289, "ts": 1786101256.8481877}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 5, "value": 6.744900000057896, "ts": 1786101256.8550303}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 6, "value": 6.770098000060898, "ts": 1786101256.861911}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 7, "value": 5.411694000031275, "ts": 1786101256.8674178}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 8, "value": 5.16819699998905, "ts": 1786101256.872682}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 9, "value": 5.004063000001224, "ts": 1786101256.8777966}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 10, "value": 5.343571000025804, "ts": 1786101256.8832722}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 11, "value": 5.162150999922233, "ts": 1786101256.8886056}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 12, "value": 5.258504000039466, "ts": 1786101256.8939798}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 13, "value": 4.745613000068261, "ts": 1786101256.8988822}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 14, "value": 5.184647999953995, "ts": 1786101256.9041753}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 15, "value": 5.048281999961546, "ts": 1786101256.9093385}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 16, "value": 5.021450999947774, "ts": 1786101256.9144986}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 17, "value": 5.262184999992314, "ts": 1786101256.9198933}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 18, "value": 5.136962000051426, "ts": 1786101256.9251423}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 19, "value": 4.833168999994086, "ts": 1786101256.9300964}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 20, "value": 5.304451000029076, "ts": 1786101256.9355145}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 21, "value": 5.295555000088825, "ts": 1786101256.940945}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 22, "value": 5.035971999973299, "ts": 1786101256.946091}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 23, "value": 5.764094000028308, "ts": 1786101256.9519815}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 24, "value": 5.671606999953838, "ts": 1786101256.9578145}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 25, "value": 5.927785000039876, "ts": 1786101256.963935}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 26, "value": 6.037800000058269, "ts": 1786101256.9701293}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 27, "value": 5.638791000023957, "ts": 1786101256.9759324}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 28, "value": 5.451637999954073, "ts": 1786101256.9814713}
+{"metric": "cli_overhead_ms", "arm": "tmux34", "rep": 29, "value": 5.249288999948476, "ts": 1786101256.9868188}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 0, "value": 3.7909909999598312, "ts": 1786101256.990761}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 1, "value": 3.356469999971523, "ts": 1786101256.9942498}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 2, "value": 3.21420099999159, "ts": 1786101256.9975638}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 3, "value": 2.9585789999373446, "ts": 1786101257.0005991}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 4, "value": 3.11422799995853, "ts": 1786101257.0038009}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 5, "value": 4.53145599999516, "ts": 1786101257.0084443}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 6, "value": 4.573472999936712, "ts": 1786101257.0131838}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 7, "value": 4.164178999985779, "ts": 1786101257.0175102}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 8, "value": 4.4640389999131, "ts": 1786101257.022073}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 9, "value": 4.045391999966341, "ts": 1786101257.026206}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 10, "value": 4.0387889999919935, "ts": 1786101257.0303185}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 11, "value": 3.9547769999899174, "ts": 1786101257.034379}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 12, "value": 4.0227029999186925, "ts": 1786101257.038502}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 13, "value": 3.909025999973892, "ts": 1786101257.0425203}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 14, "value": 3.7287500000502405, "ts": 1786101257.0463388}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 15, "value": 4.099602999986018, "ts": 1786101257.0505414}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 16, "value": 4.169033000039235, "ts": 1786101257.0548027}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 17, "value": 4.277916000091864, "ts": 1786101257.0592034}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 18, "value": 4.42765299999337, "ts": 1786101257.0637302}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 19, "value": 4.077305000009801, "ts": 1786101257.0679052}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 20, "value": 4.858791999936329, "ts": 1786101257.0728612}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 21, "value": 5.717279000009512, "ts": 1786101257.0786765}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 22, "value": 5.145471999981055, "ts": 1786101257.083942}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 23, "value": 4.965190999996594, "ts": 1786101257.0890284}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 24, "value": 4.765316999964853, "ts": 1786101257.0939088}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 25, "value": 4.436610999960067, "ts": 1786101257.0984802}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 26, "value": 3.643974000056005, "ts": 1786101257.1022277}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 27, "value": 6.936532999930023, "ts": 1786101257.1092293}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 28, "value": 4.7222850000707695, "ts": 1786101257.1140625}
+{"metric": "cli_overhead_ms", "arm": "tmux37b", "rep": 29, "value": 7.384451000007175, "ts": 1786101257.121569}
+{"metric": "create_ms", "arm": "herdr", "rep": 0, "value": 19.5376030000034, "ts": 1786101257.1414833}
+{"metric": "create_ms", "arm": "herdr", "rep": 1, "value": 9.485242999971888, "ts": 1786101257.164124}
+{"metric": "create_ms", "arm": "herdr", "rep": 2, "value": 7.663136000019222, "ts": 1786101257.181803}
+{"metric": "create_ms", "arm": "herdr", "rep": 3, "value": 14.902123000069878, "ts": 1786101257.312624}
+{"metric": "create_ms", "arm": "herdr", "rep": 4, "value": 8.737351000036142, "ts": 1786101257.3409584}
+{"metric": "create_ms", "arm": "herdr", "rep": 5, "value": 11.513022000031015, "ts": 1786101257.4661074}
+{"metric": "create_ms", "arm": "herdr", "rep": 6, "value": 9.582434999970246, "ts": 1786101257.5920436}
+{"metric": "create_ms", "arm": "herdr", "rep": 7, "value": 7.525337000060972, "ts": 1786101257.6083531}
+{"metric": "create_ms", "arm": "herdr", "rep": 8, "value": 14.057032999971852, "ts": 1786101257.7379854}
+{"metric": "create_ms", "arm": "herdr", "rep": 9, "value": 11.664064999990842, "ts": 1786101257.7663195}
+{"metric": "create_ms", "arm": "herdr", "rep": 10, "value": 7.9568799999378825, "ts": 1786101257.7868605}
+{"metric": "create_ms", "arm": "herdr", "rep": 11, "value": 7.479032999981428, "ts": 1786101257.8052971}
+{"metric": "create_ms", "arm": "herdr", "rep": 12, "value": 13.3087509999541, "ts": 1786101257.8309498}
+{"metric": "create_ms", "arm": "herdr", "rep": 13, "value": 7.528287000013734, "ts": 1786101257.8465426}
+{"metric": "create_ms", "arm": "herdr", "rep": 14, "value": 10.588298000016039, "ts": 1786101257.9710233}
+{"metric": "create_ms", "arm": "herdr", "rep": 15, "value": 10.32301100008226, "ts": 1786101258.0929165}
+{"metric": "create_ms", "arm": "herdr", "rep": 16, "value": 5.656187999989015, "ts": 1786101258.107625}
+{"metric": "create_ms", "arm": "herdr", "rep": 17, "value": 10.635902999979407, "ts": 1786101258.2311387}
+{"metric": "create_ms", "arm": "herdr", "rep": 18, "value": 9.473969999930887, "ts": 1786101258.3514688}
+{"metric": "create_ms", "arm": "herdr", "rep": 19, "value": 7.6299349999544575, "ts": 1786101258.3636181}
+{"metric": "create_ms", "arm": "herdr", "rep": 20, "value": 10.089809999954014, "ts": 1786101258.4032779}
+{"metric": "create_ms", "arm": "herdr", "rep": 21, "value": 6.1347099999693455, "ts": 1786101258.420321}
+{"metric": "create_ms", "arm": "herdr", "rep": 22, "value": 5.725556000015786, "ts": 1786101258.4329207}
+{"metric": "create_ms", "arm": "herdr", "rep": 23, "value": 5.965198000012606, "ts": 1786101258.446603}
+{"metric": "create_ms", "arm": "herdr", "rep": 24, "value": 8.711036000022432, "ts": 1786101258.5700464}
+{"metric": "create_ms", "arm": "herdr", "rep": 25, "value": 9.850583999991613, "ts": 1786101258.5894754}
+{"metric": "create_ms", "arm": "herdr", "rep": 26, "value": 9.629441000015504, "ts": 1786101258.7137454}
+{"metric": "create_ms", "arm": "herdr", "rep": 27, "value": 11.203013999988798, "ts": 1786101258.8389192}
+{"metric": "create_ms", "arm": "herdr", "rep": 28, "value": 6.434519999970689, "ts": 1786101258.8544743}
+{"metric": "create_ms", "arm": "herdr", "rep": 29, "value": 6.190317000005052, "ts": 1786101258.8669639}
+{"metric": "create_ms", "arm": "tmux34", "rep": 0, "value": 11.654998000039996, "ts": 1786101258.8842058}
+{"metric": "create_ms", "arm": "tmux34", "rep": 1, "value": 11.546860000066772, "ts": 1786101258.9046805}
+{"metric": "create_ms", "arm": "tmux34", "rep": 2, "value": 22.561444999951163, "ts": 1786101258.9350812}
+{"metric": "create_ms", "arm": "tmux34", "rep": 3, "value": 13.331255000025521, "ts": 1786101258.9596398}
+{"metric": "create_ms", "arm": "tmux34", "rep": 4, "value": 10.84168399995633, "ts": 1786101258.9782743}
+{"metric": "create_ms", "arm": "tmux34", "rep": 5, "value": 14.026044000047477, "ts": 1786101258.9986107}
+{"metric": "create_ms", "arm": "tmux34", "rep": 6, "value": 21.469072000058986, "ts": 1786101259.0282261}
+{"metric": "create_ms", "arm": "tmux34", "rep": 7, "value": 13.40123800002857, "ts": 1786101259.0576482}
+{"metric": "create_ms", "arm": "tmux34", "rep": 8, "value": 16.66831700003968, "ts": 1786101259.0828922}
+{"metric": "create_ms", "arm": "tmux34", "rep": 9, "value": 14.314853000087169, "ts": 1786101259.1077487}
+{"metric": "create_ms", "arm": "tmux34", "rep": 10, "value": 20.166249999988395, "ts": 1786101259.138056}
+{"metric": "create_ms", "arm": "tmux34", "rep": 11, "value": 27.734526000017468, "ts": 1786101259.1759365}
+{"metric": "create_ms", "arm": "tmux34", "rep": 12, "value": 12.240612999903533, "ts": 1786101259.1982203}
+{"metric": "create_ms", "arm": "tmux34", "rep": 13, "value": 14.815469000041048, "ts": 1786101259.220386}
+{"metric": "create_ms", "arm": "tmux34", "rep": 14, "value": 10.896566000042185, "ts": 1786101259.240761}
+{"metric": "create_ms", "arm": "tmux34", "rep": 15, "value": 12.486477000038576, "ts": 1786101259.2596595}
+{"metric": "create_ms", "arm": "tmux34", "rep": 16, "value": 11.1042290000114, "ts": 1786101259.2786684}
+{"metric": "create_ms", "arm": "tmux34", "rep": 17, "value": 16.706787999964945, "ts": 1786101259.3046477}
+{"metric": "create_ms", "arm": "tmux34", "rep": 18, "value": 14.358118000018294, "ts": 1786101259.3266022}
+{"metric": "create_ms", "arm": "tmux34", "rep": 19, "value": 13.851874000010866, "ts": 1786101259.3480284}
+{"metric": "create_ms", "arm": "tmux34", "rep": 20, "value": 11.573026000064601, "ts": 1786101259.3685036}
+{"metric": "create_ms", "arm": "tmux34", "rep": 21, "value": 11.821434000012232, "ts": 1786101259.3876858}
+{"metric": "create_ms", "arm": "tmux34", "rep": 22, "value": 10.242340999980115, "ts": 1786101259.4066823}
+{"metric": "create_ms", "arm": "tmux34", "rep": 23, "value": 13.197453999964637, "ts": 1786101259.4259417}
+{"metric": "create_ms", "arm": "tmux34", "rep": 24, "value": 19.477674000086154, "ts": 1786101259.4540534}
+{"metric": "create_ms", "arm": "tmux34", "rep": 25, "value": 11.363845999994737, "ts": 1786101259.4759946}
+{"metric": "create_ms", "arm": "tmux34", "rep": 26, "value": 12.838925999972162, "ts": 1786101259.4968057}
+{"metric": "create_ms", "arm": "tmux34", "rep": 27, "value": 12.94794099999308, "ts": 1786101259.5198882}
+{"metric": "create_ms", "arm": "tmux34", "rep": 28, "value": 14.19973999998092, "ts": 1786101259.5452847}
+{"metric": "create_ms", "arm": "tmux34", "rep": 29, "value": 15.51589000007425, "ts": 1786101259.5703008}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 0, "value": 7.0249379999722805, "ts": 1786101259.5907736}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 1, "value": 4.508771000018896, "ts": 1786101259.5985973}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 2, "value": 3.951086000029136, "ts": 1786101259.6064882}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 3, "value": 4.2754949998879965, "ts": 1786101259.614913}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 4, "value": 4.436910999970678, "ts": 1786101259.6232886}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 5, "value": 4.623377000029905, "ts": 1786101259.6320508}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 6, "value": 5.763298999909239, "ts": 1786101259.642025}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 7, "value": 4.687976000013805, "ts": 1786101259.6506865}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 8, "value": 4.2741429999750835, "ts": 1786101259.659311}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 9, "value": 4.151723000063612, "ts": 1786101259.6672707}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 10, "value": 3.6261000000195054, "ts": 1786101259.674911}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 11, "value": 3.690401999961068, "ts": 1786101259.682604}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 12, "value": 4.332180000005792, "ts": 1786101259.6902966}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 13, "value": 8.54544599997098, "ts": 1786101259.7032287}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 14, "value": 5.938256000035835, "ts": 1786101259.7134387}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 15, "value": 5.799503999924127, "ts": 1786101259.7236152}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 16, "value": 4.803723000009086, "ts": 1786101259.7328835}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 17, "value": 5.004312000096434, "ts": 1786101259.742333}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 18, "value": 5.187224999986029, "ts": 1786101259.7515528}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 19, "value": 4.789844000015364, "ts": 1786101259.760359}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 20, "value": 4.98960499999157, "ts": 1786101259.7692666}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 21, "value": 5.579664000038065, "ts": 1786101259.779109}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 22, "value": 6.593961000021409, "ts": 1786101259.7935133}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 23, "value": 6.51781299995946, "ts": 1786101259.8072755}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 24, "value": 7.440019000000575, "ts": 1786101259.8211582}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 25, "value": 5.280362000007699, "ts": 1786101259.8314328}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 26, "value": 5.414793999989342, "ts": 1786101259.8413901}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 27, "value": 4.180624000014177, "ts": 1786101259.8507066}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 28, "value": 4.779327000051126, "ts": 1786101259.8605573}
+{"metric": "create_ms", "arm": "tmux37b", "rep": 29, "value": 4.662998000071639, "ts": 1786101259.870464}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 0, "value": 18.853517000025022, "ok": true, "ts": 1786101260.9038813}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 1, "value": 12.580216999936056, "ok": true, "ts": 1786101260.9166455}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 2, "value": 10.847769999941193, "ok": true, "ts": 1786101260.927585}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 3, "value": 10.19739099990602, "ok": true, "ts": 1786101260.9378853}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 4, "value": 10.716790999936165, "ok": true, "ts": 1786101260.94871}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 5, "value": 14.519068000026891, "ok": true, "ts": 1786101260.9633474}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 6, "value": 12.477624999974068, "ok": true, "ts": 1786101260.9759445}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 7, "value": 14.766514000029929, "ok": true, "ts": 1786101260.990825}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 8, "value": 21.58249700005399, "ok": true, "ts": 1786101261.0125916}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 9, "value": 18.69359500005885, "ok": true, "ts": 1786101261.0314758}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 10, "value": 16.70189699996172, "ok": true, "ts": 1786101261.048358}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 11, "value": 17.483098999946378, "ok": true, "ts": 1786101261.0660107}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 12, "value": 14.614064000056715, "ok": true, "ts": 1786101261.0807874}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 13, "value": 11.927002999982506, "ok": true, "ts": 1786101261.092869}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 14, "value": 12.518626000087352, "ok": true, "ts": 1786101261.1054957}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 15, "value": 17.059557000038694, "ok": true, "ts": 1786101261.122675}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 16, "value": 11.368444000027011, "ok": true, "ts": 1786101261.134242}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 17, "value": 11.261701000080393, "ok": true, "ts": 1786101261.1456227}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 18, "value": 13.983652999968399, "ok": true, "ts": 1786101261.159709}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 19, "value": 9.840368999903149, "ok": true, "ts": 1786101261.1696362}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 20, "value": 9.956388999967203, "ok": true, "ts": 1786101261.1796827}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 21, "value": 16.544973999998547, "ok": true, "ts": 1786101261.1963336}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 22, "value": 19.602559000077235, "ok": true, "ts": 1786101261.2161293}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 23, "value": 17.44393800004218, "ok": true, "ts": 1786101261.2337084}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 24, "value": 14.633562999961214, "ok": true, "ts": 1786101261.2485778}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 25, "value": 11.80180599999403, "ok": true, "ts": 1786101261.2604654}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 26, "value": 16.50525299999117, "ok": true, "ts": 1786101261.277077}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 27, "value": 16.44188000000213, "ok": true, "ts": 1786101261.2936518}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 28, "value": 17.545488999985537, "ok": true, "ts": 1786101261.3113525}
+{"metric": "roundtrip_ms", "arm": "herdr", "rep": 29, "value": 13.93217099996491, "ok": true, "ts": 1786101261.3254387}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 0, "value": 13.830944999995154, "ok": true, "ts": 1786101262.3620532}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 1, "value": 10.784501999978602, "ok": true, "ts": 1786101262.372935}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 2, "value": 13.389197000037711, "ok": true, "ts": 1786101262.3864198}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 3, "value": 10.367834000021503, "ok": true, "ts": 1786101262.3968947}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 4, "value": 8.416709000016454, "ok": true, "ts": 1786101262.4054306}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 5, "value": 10.174770999924476, "ok": true, "ts": 1786101262.4156895}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 6, "value": 10.249496000028557, "ok": true, "ts": 1786101262.426025}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 7, "value": 9.210917000018526, "ok": true, "ts": 1786101262.435356}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 8, "value": 15.534803000036845, "ok": true, "ts": 1786101262.4510767}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 9, "value": 11.530966999998782, "ok": true, "ts": 1786101262.4627337}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 10, "value": 10.487018999924658, "ok": true, "ts": 1786101262.473346}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 11, "value": 9.958534000020336, "ok": true, "ts": 1786101262.4834225}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 12, "value": 9.773585000061757, "ok": true, "ts": 1786101262.4933062}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 13, "value": 9.01985399991645, "ok": true, "ts": 1786101262.5024512}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 14, "value": 8.618674999979703, "ok": true, "ts": 1786101262.511191}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 15, "value": 9.524243999976534, "ok": true, "ts": 1786101262.5208187}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 16, "value": 10.321101000045019, "ok": true, "ts": 1786101262.5312555}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 17, "value": 11.458614000048328, "ok": true, "ts": 1786101262.542859}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 18, "value": 10.27190000002065, "ok": true, "ts": 1786101262.553291}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 19, "value": 10.527539999998226, "ok": true, "ts": 1786101262.5639966}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 20, "value": 11.451147000002493, "ok": true, "ts": 1786101262.575595}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 21, "value": 15.938391999952728, "ok": true, "ts": 1786101262.5916433}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 22, "value": 11.44521599997006, "ok": true, "ts": 1786101262.6031735}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 23, "value": 8.507781000048453, "ok": true, "ts": 1786101262.6117728}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 24, "value": 9.084790999963843, "ok": true, "ts": 1786101262.6209972}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 25, "value": 8.170156999995015, "ok": true, "ts": 1786101262.6293023}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 26, "value": 16.87295300007463, "ok": true, "ts": 1786101262.6463647}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 27, "value": 11.508271000025161, "ok": true, "ts": 1786101262.6580026}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 28, "value": 18.69844399993781, "ok": true, "ts": 1786101262.6768177}
+{"metric": "roundtrip_ms", "arm": "tmux34", "rep": 29, "value": 17.384158000027128, "ok": true, "ts": 1786101262.6943445}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 0, "value": 11.921428000050582, "ok": true, "ts": 1786101263.7226148}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 1, "value": 12.452940000002855, "ok": true, "ts": 1786101263.7351727}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 2, "value": 9.144990999971014, "ok": true, "ts": 1786101263.744448}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 3, "value": 6.431060000068101, "ok": true, "ts": 1786101263.7509878}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 4, "value": 7.248006999930112, "ok": true, "ts": 1786101263.7583337}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 5, "value": 7.655808999970759, "ok": true, "ts": 1786101263.7661483}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 6, "value": 7.409597999981088, "ok": true, "ts": 1786101263.773667}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 7, "value": 7.570027000042501, "ok": true, "ts": 1786101263.781344}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 8, "value": 6.899917999930949, "ok": true, "ts": 1786101263.7883744}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 9, "value": 6.887772000027326, "ok": true, "ts": 1786101263.7953856}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 10, "value": 6.8300110000336645, "ok": true, "ts": 1786101263.8023398}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 11, "value": 7.0851240000138205, "ok": true, "ts": 1786101263.8095477}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 12, "value": 7.008923000057621, "ok": true, "ts": 1786101263.8166623}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 13, "value": 7.369921000076829, "ok": true, "ts": 1786101263.8241467}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 14, "value": 7.290742999998656, "ok": true, "ts": 1786101263.8315516}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 15, "value": 6.965451000041867, "ok": true, "ts": 1786101263.8386245}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 16, "value": 7.217281000066578, "ok": true, "ts": 1786101263.8459477}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 17, "value": 7.378122999966763, "ok": true, "ts": 1786101263.8534298}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 18, "value": 11.070648999975674, "ok": true, "ts": 1786101263.8646066}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 19, "value": 8.355766000022413, "ok": true, "ts": 1786101263.8731036}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 20, "value": 7.42596300005971, "ok": true, "ts": 1786101263.8806417}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 21, "value": 5.255852000004779, "ok": true, "ts": 1786101263.886}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 22, "value": 5.42165699994257, "ok": true, "ts": 1786101263.8915174}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 23, "value": 8.316436999962207, "ok": true, "ts": 1786101263.8999348}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 24, "value": 8.150451999995312, "ok": true, "ts": 1786101263.9081953}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 25, "value": 6.311401999937516, "ok": true, "ts": 1786101263.914588}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 26, "value": 6.2296610000203145, "ok": true, "ts": 1786101263.9209101}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 27, "value": 11.173288999998476, "ok": true, "ts": 1786101263.9321623}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 28, "value": 9.626855999954387, "ok": true, "ts": 1786101263.9418778}
+{"metric": "roundtrip_ms", "arm": "tmux37b", "rep": 29, "value": 7.495564000009836, "ok": true, "ts": 1786101263.949499}
+{"metric": "survive", "arm": "herdr", "rep": 0, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101275.8327}
+{"metric": "survive", "arm": "herdr", "rep": 1, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101287.7300189}
+{"metric": "survive", "arm": "herdr", "rep": 2, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101299.622124}
+{"metric": "survive", "arm": "herdr", "rep": 3, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101311.4922423}
+{"metric": "survive", "arm": "herdr", "rep": 4, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101323.3887062}
+{"metric": "survive", "arm": "herdr", "rep": 5, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101335.2786007}
+{"metric": "survive", "arm": "herdr", "rep": 6, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101347.165803}
+{"metric": "survive", "arm": "herdr", "rep": 7, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101359.060475}
+{"metric": "survive", "arm": "herdr", "rep": 8, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101370.937858}
+{"metric": "survive", "arm": "herdr", "rep": 9, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101382.812521}
+{"metric": "survive", "arm": "tmux34", "rep": 0, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101394.6955583}
+{"metric": "survive", "arm": "tmux34", "rep": 1, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101406.5786543}
+{"metric": "survive", "arm": "tmux34", "rep": 2, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101418.480513}
+{"metric": "survive", "arm": "tmux34", "rep": 3, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101430.379069}
+{"metric": "survive", "arm": "tmux34", "rep": 4, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101442.2632575}
+{"metric": "survive", "arm": "tmux34", "rep": 5, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101454.1497}
+{"metric": "survive", "arm": "tmux34", "rep": 6, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101466.0389013}
+{"metric": "survive", "arm": "tmux34", "rep": 7, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101477.9200008}
+{"metric": "survive", "arm": "tmux34", "rep": 8, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101489.8054357}
+{"metric": "survive", "arm": "tmux34", "rep": 9, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101501.6864164}
+{"metric": "survive", "arm": "tmux37b", "rep": 0, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101513.5464416}
+{"metric": "survive", "arm": "tmux37b", "rep": 1, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101525.392384}
+{"metric": "survive", "arm": "tmux37b", "rep": 2, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101537.2561295}
+{"metric": "survive", "arm": "tmux37b", "rep": 3, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101549.1220534}
+{"metric": "survive", "arm": "tmux37b", "rep": 4, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101560.9718485}
+{"metric": "survive", "arm": "tmux37b", "rep": 5, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101572.81966}
+{"metric": "survive", "arm": "tmux37b", "rep": 6, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101584.6724434}
+{"metric": "survive", "arm": "tmux37b", "rep": 7, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101596.5244164}
+{"metric": "survive", "arm": "tmux37b", "rep": 8, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101608.385479}
+{"metric": "survive", "arm": "tmux37b", "rep": 9, "value": 1, "valid": true, "client_attached": true, "client_on_target": true, "clients_killed": 1, "server_up_after": true, "pre_kill_retained": 3, "lines_retained": 9, "ts": 1786101620.2413192}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 0, "value": 16160, "ts": 1786101620.2874048}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 1, "value": 20892, "ts": 1786101622.3503184}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 5, "value": 39948, "ts": 1786101624.525137}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 10, "value": 63748, "ts": 1786101626.6159916}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 20, "value": 111504, "ts": 1786101628.9877934}
+{"metric": "rss_kb_total", "arm": "herdr", "sessions": 40, "value": 206992, "ts": 1786101631.614662}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 0, "value": 10656, "ts": 1786101632.2282536}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 1, "value": 16316, "ts": 1786101634.2807775}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 5, "value": 38976, "ts": 1786101636.389008}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 10, "value": 67328, "ts": 1786101638.5419877}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 20, "value": 123984, "ts": 1786101640.8010452}
+{"metric": "rss_kb_total", "arm": "tmux34", "sessions": 40, "value": 237436, "ts": 1786101643.3419147}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 0, "value": 9708, "ts": 1786101643.8925145}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 1, "value": 15376, "ts": 1786101645.92425}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 5, "value": 38036, "ts": 1786101647.990447}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 10, "value": 66472, "ts": 1786101650.0585222}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 20, "value": 123180, "ts": 1786101652.2203603}
+{"metric": "rss_kb_total", "arm": "tmux37b", "sessions": 40, "value": 236764, "ts": 1786101654.5421302}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 0, "value": 28.23351699998966, "ok": true, "ts": 1786101655.8757248}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 1, "value": 6.7742629998974735, "ok": true, "ts": 1786101657.9642277}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 2, "value": 32.48555999994096, "ok": true, "ts": 1786101660.0611637}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 3, "value": 6.027621000157524, "ok": true, "ts": 1786101662.229238}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 4, "value": 8.947282999997697, "ok": true, "ts": 1786101664.3028932}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 5, "value": 32.603803000029075, "ok": true, "ts": 1786101666.497365}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 6, "value": 32.64471600004981, "ok": true, "ts": 1786101668.5891476}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 7, "value": 5.54855299992596, "ok": true, "ts": 1786101670.6524682}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 8, "value": 33.59103299999333, "ok": true, "ts": 1786101672.7453141}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 9, "value": 10.501384999997754, "ok": true, "ts": 1786101674.8393164}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 10, "value": 8.998823999945671, "ok": true, "ts": 1786101677.0336215}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 11, "value": 32.232236000027115, "ok": true, "ts": 1786101679.126131}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 12, "value": 11.530356000093889, "ok": true, "ts": 1786101681.2011805}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 13, "value": 35.54137400010404, "ok": true, "ts": 1786101683.3032458}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 14, "value": 31.13584900006572, "ok": true, "ts": 1786101685.4190485}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 15, "value": 6.704116000037175, "ok": true, "ts": 1786101687.4905856}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 16, "value": 9.234057999947254, "ok": true, "ts": 1786101689.5570402}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 17, "value": 36.88503200010018, "ok": true, "ts": 1786101691.7601078}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 18, "value": 6.654482999920219, "ok": true, "ts": 1786101693.830338}
+{"metric": "server_start_ms", "arm": "herdr", "rep": 19, "value": 27.406934000055116, "ok": true, "ts": 1786101696.0216334}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 0, "value": 51.249273999928846, "ok": true, "ts": 1786101698.094892}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 1, "value": 51.07560500005093, "ok": true, "ts": 1786101700.1581674}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 2, "value": 47.943589000169595, "ok": true, "ts": 1786101702.2203794}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 3, "value": 27.100603999997475, "ok": true, "ts": 1786101704.2685287}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 4, "value": 36.75196900007904, "ok": true, "ts": 1786101706.3145506}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 5, "value": 27.220384999964153, "ok": true, "ts": 1786101708.3533683}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 6, "value": 35.94428500014146, "ok": true, "ts": 1786101710.404289}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 7, "value": 25.92445499999485, "ok": true, "ts": 1786101712.452106}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 8, "value": 37.4453760000506, "ok": true, "ts": 1786101714.5108597}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 9, "value": 36.08114000007845, "ok": true, "ts": 1786101716.5613163}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 10, "value": 43.700983999997334, "ok": true, "ts": 1786101718.6278203}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 11, "value": 45.98363800005245, "ok": true, "ts": 1786101720.693345}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 12, "value": 29.763051999907475, "ok": true, "ts": 1786101722.7526896}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 13, "value": 51.25839799984533, "ok": true, "ts": 1786101724.8180015}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 14, "value": 31.456627999887132, "ok": true, "ts": 1786101726.8703644}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 15, "value": 46.79371500014895, "ok": true, "ts": 1786101728.940016}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 16, "value": 46.40028399990115, "ok": true, "ts": 1786101731.000308}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 17, "value": 36.53152299989415, "ok": true, "ts": 1786101733.0519695}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 18, "value": 29.832005999878675, "ok": true, "ts": 1786101735.0938098}
+{"metric": "server_start_ms", "arm": "tmux34", "rep": 19, "value": 37.117323000074975, "ok": true, "ts": 1786101737.1411366}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 0, "value": 28.8241000000653, "ok": true, "ts": 1786101739.1907814}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 1, "value": 40.21325600001546, "ok": true, "ts": 1786101741.2439377}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 2, "value": 29.59993299987218, "ok": true, "ts": 1786101743.286309}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 3, "value": 36.756021999963195, "ok": true, "ts": 1786101745.3337877}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 4, "value": 30.698565999955463, "ok": true, "ts": 1786101747.3729045}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 5, "value": 30.99718699991172, "ok": true, "ts": 1786101749.413725}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 6, "value": 22.593131999883553, "ok": true, "ts": 1786101751.4459774}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 7, "value": 24.292420999927344, "ok": true, "ts": 1786101753.4806385}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 8, "value": 37.346548999948936, "ok": true, "ts": 1786101755.5293553}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 9, "value": 22.975254000130008, "ok": true, "ts": 1786101757.5630186}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 10, "value": 28.56687000007696, "ok": true, "ts": 1786101759.602262}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 11, "value": 25.87986899993666, "ok": true, "ts": 1786101761.6416342}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 12, "value": 21.88219599997865, "ok": true, "ts": 1786101763.6721842}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 13, "value": 26.76147600004697, "ok": true, "ts": 1786101765.707329}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 14, "value": 35.2042709998841, "ok": true, "ts": 1786101767.758354}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 15, "value": 22.83870099995511, "ok": true, "ts": 1786101769.7918727}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 16, "value": 31.206510999936654, "ok": true, "ts": 1786101771.8320205}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 17, "value": 34.77552799995465, "ok": true, "ts": 1786101773.879962}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 18, "value": 27.905594000003475, "ok": true, "ts": 1786101775.9161334}
+{"metric": "server_start_ms", "arm": "tmux37b", "rep": 19, "value": 38.458015000060186, "ok": true, "ts": 1786101777.9649813}
