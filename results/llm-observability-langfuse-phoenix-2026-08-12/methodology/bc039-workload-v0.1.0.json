@@ -1,0 +1,315 @@
+{
+  "suite_version": "bc039-v0.1.0",
+  "generated_by": "operations/bc039_workload.py",
+  "deterministic": true,
+  "control_flow": "scripted",
+  "control_flow_rationale": "The model is called at fixed points but never decides how many spans are emitted. Without this the capture denominator would vary per run and a drop would be indistinguishable from the model simply doing less work.",
+  "corpus": {
+    "policy-refund": "Refunds are issued within 18 days of delivery, exclusive of the delivery date.",
+    "policy-shipping": "Standard shipping is 5 business days; expedited is 2.",
+    "policy-warranty": "Hardware carries a 24-month limited warranty from the invoice date.",
+    "sku-BCL-204": "Trace Beacon, 7 in stock, reorder point 10.",
+    "sku-BCL-311": "Span Relay, 42 in stock, reorder point 15."
+  },
+  "tool_fixtures": {
+    "inventory_lookup": {
+      "BCL-204": {
+        "sku": "BCL-204",
+        "available": 7,
+        "reorder_point": 10
+      },
+      "BCL-311": {
+        "sku": "BCL-311",
+        "available": 42,
+        "reorder_point": 15
+      }
+    },
+    "shipment_status": {
+      "TRK-8891": {
+        "tracking_id": "TRK-8891",
+        "days_in_transit": 9,
+        "promised_days": 5
+      }
+    },
+    "price_lookup": {
+      "BCL-204": {
+        "sku": "BCL-204",
+        "unit_price": 129.0
+      },
+      "BCL-311": {
+        "sku": "BCL-311",
+        "unit_price": 64.5
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "id": "single-call",
+      "prompt": "Reply with the single word: acknowledged.",
+      "steps": [
+        {
+          "kind": "llm",
+          "name": "chat.completion",
+          "parent": null,
+          "fails": false,
+          "detail": {}
+        }
+      ],
+      "note": "Floor case. One LLM span, no children. An arm that drops this is broken, not slow."
+    },
+    {
+      "id": "tool-sequence",
+      "prompt": "Check stock for BCL-204, then look up its price, then state both.",
+      "steps": [
+        {
+          "kind": "llm",
+          "name": "chat.completion.plan",
+          "parent": null,
+          "fails": false,
+          "detail": {}
+        },
+        {
+          "kind": "tool",
+          "name": "inventory_lookup",
+          "parent": 0,
+          "fails": false,
+          "detail": {
+            "sku": "BCL-204"
+          }
+        },
+        {
+          "kind": "tool",
+          "name": "price_lookup",
+          "parent": 0,
+          "fails": false,
+          "detail": {
+            "sku": "BCL-204"
+          }
+        },
+        {
+          "kind": "llm",
+          "name": "chat.completion.summarise",
+          "parent": null,
+          "fails": false,
+          "detail": {}
+        }
+      ],
+      "note": "Two tool spans parented to the LLM span that requested them. The common shape."
+    },
+    {
+      "id": "retrieval-augmented",
+      "prompt": "Using the retrieved policy text, state the refund window in days.",
+      "steps": [
+        {
+          "kind": "retrieval",
+          "name": "corpus.fetch.policy",
+          "parent": null,
+          "fails": false,
+          "detail": {
+            "key": "policy-refund"
+          }
+        },
+        {
+          "kind": "retrieval",
+          "name": "corpus.fetch.shipping",
+          "parent": null,
+          "fails": false,
+          "detail": {
+            "key": "policy-shipping"
+          }
+        },
+        {
+          "kind": "llm",
+          "name": "chat.completion.answer",
+          "parent": null,
+          "fails": false,
+          "detail": {}
+        },
+        {
+          "kind": "tool",
+          "name": "shipment_status",
+          "parent": 2,
+          "fails": false,
+          "detail": {
+            "tracking_id": "TRK-8891"
+          }
+        }
+      ],
+      "note": "Retrieval spans are the signal most often missing from a default integration."
+    },
+    {
+      "id": "nested-deep",
+      "prompt": "Summarise stock and price for BCL-311 in one sentence.",
+      "steps": [
+        {
+          "kind": "llm",
+          "name": "chat.completion.outer",
+          "parent": null,
+          "fails": false,
+          "detail": {}
+        },
+        {
+          "kind": "tool",
+          "name": "inventory_lookup",
+          "parent": 0,
+          "fails": false,
+          "detail": {
+            "sku": "BCL-311"
+          }
+        },
+        {
+          "kind": "retrieval",
+          "name": "corpus.fetch.sku",
+          "parent": 1,
+          "fails": false,
+          "detail": {
+            "key": "sku-BCL-311"
+          }
+        },
+        {
+          "kind": "tool",
+          "name": "price_lookup",
+          "parent": 1,
+          "fails": false,
+          "detail": {
+            "sku": "BCL-311"
+          }
+        },
+        {
+          "kind": "llm",
+          "name": "chat.completion.inner",
+          "parent": 2,
+          "fails": false,
+          "detail": {}
+        }
+      ],
+      "note": "Depth 4. Tests whether nesting survives, not merely whether spans arrive."
+    },
+    {
+      "id": "tool-error",
+      "prompt": "Look up stock for the unknown SKU BCL-999 and report the failure honestly.",
+      "steps": [
+        {
+          "kind": "llm",
+          "name": "chat.completion.plan",
+          "parent": null,
+          "fails": false,
+          "detail": {}
+        },
+        {
+          "kind": "tool",
+          "name": "inventory_lookup",
+          "parent": 0,
+          "fails": true,
+          "detail": {
+            "sku": "BCL-999"
+          }
+        },
+        {
+          "kind": "tool",
+          "name": "price_lookup",
+          "parent": 0,
+          "fails": false,
+          "detail": {
+            "sku": "BCL-204"
+          }
+        },
+        {
+          "kind": "llm",
+          "name": "chat.completion.recover",
+          "parent": null,
+          "fails": false,
+          "detail": {}
+        }
+      ],
+      "note": "One injected tool exception. Error records are a counted signal, not a nuisance."
+    },
+    {
+      "id": "llm-error",
+      "prompt": "Reply with the single word: recovered.",
+      "steps": [
+        {
+          "kind": "llm",
+          "name": "chat.completion.doomed",
+          "parent": null,
+          "fails": true,
+          "detail": {}
+        },
+        {
+          "kind": "llm",
+          "name": "chat.completion.retry",
+          "parent": null,
+          "fails": false,
+          "detail": {}
+        }
+      ],
+      "note": "An LLM span that raises. Some integrations record only successful calls."
+    }
+  ],
+  "ground_truth": {
+    "per_scenario": {
+      "single-call": {
+        "llm": 1,
+        "tool": 0,
+        "retrieval": 0,
+        "errors": 0,
+        "nested_edges": 0,
+        "spans": 1,
+        "max_depth": 1
+      },
+      "tool-sequence": {
+        "llm": 2,
+        "tool": 2,
+        "retrieval": 0,
+        "errors": 0,
+        "nested_edges": 2,
+        "spans": 4,
+        "max_depth": 2
+      },
+      "retrieval-augmented": {
+        "llm": 1,
+        "tool": 1,
+        "retrieval": 2,
+        "errors": 0,
+        "nested_edges": 1,
+        "spans": 4,
+        "max_depth": 2
+      },
+      "nested-deep": {
+        "llm": 2,
+        "tool": 2,
+        "retrieval": 1,
+        "errors": 0,
+        "nested_edges": 4,
+        "spans": 5,
+        "max_depth": 4
+      },
+      "tool-error": {
+        "llm": 2,
+        "tool": 2,
+        "retrieval": 0,
+        "errors": 1,
+        "nested_edges": 2,
+        "spans": 4,
+        "max_depth": 2
+      },
+      "llm-error": {
+        "llm": 2,
+        "tool": 0,
+        "retrieval": 0,
+        "errors": 1,
+        "nested_edges": 0,
+        "spans": 2,
+        "max_depth": 1
+      }
+    },
+    "per_run_totals": {
+      "llm": 10,
+      "tool": 7,
+      "retrieval": 3,
+      "errors": 2,
+      "spans": 20,
+      "nested_edges": 9
+    }
+  }
+}

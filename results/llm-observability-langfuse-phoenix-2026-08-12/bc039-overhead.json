@@ -1,0 +1,14 @@
+{
+  "langfuse": {
+    "observed_diff_s": -0.2544,
+    "ci95_low": -1.1465,
+    "ci95_high": 0.7616,
+    "significant": false
+  },
+  "phoenix": {
+    "observed_diff_s": 1.4329,
+    "ci95_low": -0.0843,
+    "ci95_high": 3.1475,
+    "significant": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "host": "cpx41 8vCPU/16GB ash-dc1",
+  "os": "Ubuntu 24.04.4 LTS",
+  "kernel": "6.8.0-137-generic",
+  "langfuse_server_version": "4.10.0",
+  "langfuse_git_sha": "ddc198b49f1439f95ecf674c68863bfb0c2bd07f",
+  "langfuse_git_tag": "v4.10.0",
+  "docker": "Docker version 29.7.2, build a7dcaa6"
+}

@@ -1,0 +1,161 @@
+{
+  "source_raw": "/root/bc039-scored-2026-08-12-raw.jsonl",
+  "reconstruction_verified": true,
+  "runs_per_arm": {
+    "control": 20,
+    "langfuse": 20,
+    "phoenix": 20
+  },
+  "issued_totals": {
+    "control": {
+      "llm": 200,
+      "tool": 140,
+      "retrieval": 60,
+      "errors": 40,
+      "spans": 400,
+      "nested_edges": 180
+    },
+    "langfuse": {
+      "llm": 200,
+      "tool": 140,
+      "retrieval": 60,
+      "errors": 40,
+      "spans": 400,
+      "nested_edges": 180
+    },
+    "phoenix": {
+      "llm": 200,
+      "tool": 140,
+      "retrieval": 60,
+      "errors": 40,
+      "spans": 400,
+      "nested_edges": 180
+    }
+  },
+  "capture": {
+    "langfuse": {
+      "capture": {
+        "llm": {
+          "rate": 1.0,
+          "ci95_low": 0.981155,
+          "ci95_high": 1.0,
+          "n": 200,
+          "successes": 200
+        },
+        "tool": {
+          "rate": 1.0,
+          "ci95_low": 0.973294,
+          "ci95_high": 1.0,
+          "n": 140,
+          "successes": 140
+        },
+        "retrieval": {
+          "rate": 1.0,
+          "ci95_low": 0.939828,
+          "ci95_high": 1.0,
+          "n": 60,
+          "successes": 60
+        }
+      },
+      "capture_all_spans": {
+        "rate": 1.0,
+        "ci95_low": 0.990488,
+        "ci95_high": 1.0,
+        "n": 400,
+        "successes": 400
+      },
+      "nesting": {
+        "rate": 1.0,
+        "ci95_low": 0.979105,
+        "ci95_high": 1.0,
+        "n": 180,
+        "successes": 180
+      },
+      "errors": {
+        "rate": 1.0,
+        "ci95_low": 0.912378,
+        "ci95_high": 1.0,
+        "n": 40,
+        "successes": 40
+      },
+      "missing_spans": [],
+      "nesting_wrong": [],
+      "errors_missing": [],
+      "duplicate_exported_records": 0,
+      "exported_record_count": 402
+    },
+    "phoenix": {
+      "capture": {
+        "llm": {
+          "rate": 1.0,
+          "ci95_low": 0.981155,
+          "ci95_high": 1.0,
+          "n": 200,
+          "successes": 200
+        },
+        "tool": {
+          "rate": 1.0,
+          "ci95_low": 0.973294,
+          "ci95_high": 1.0,
+          "n": 140,
+          "successes": 140
+        },
+        "retrieval": {
+          "rate": 1.0,
+          "ci95_low": 0.939828,
+          "ci95_high": 1.0,
+          "n": 60,
+          "successes": 60
+        }
+      },
+      "capture_all_spans": {
+        "rate": 1.0,
+        "ci95_low": 0.990488,
+        "ci95_high": 1.0,
+        "n": 400,
+        "successes": 400
+      },
+      "nesting": {
+        "rate": 1.0,
+        "ci95_low": 0.979105,
+        "ci95_high": 1.0,
+        "n": 180,
+        "successes": 180
+      },
+      "errors": {
+        "rate": 1.0,
+        "ci95_low": 0.912378,
+        "ci95_high": 1.0,
+        "n": 40,
+        "successes": 40
+      },
+      "missing_spans": [],
+      "nesting_wrong": [],
+      "errors_missing": [],
+      "duplicate_exported_records": 0,
+      "exported_record_count": 428
+    }
+  },
+  "wall_time_s": {
+    "control": {
+      "n": 20,
+      "mean": 6.3301,
+      "min": 4.901,
+      "max": 10.0006
+    },
+    "langfuse": {
+      "n": 20,
+      "mean": 6.0757,
+      "min": 4.8688,
+      "max": 12.765
+    },
+    "phoenix": {
+      "n": 20,
+      "mean": 7.7631,
+      "min": 4.8574,
+      "max": 17.8623
+    }
+  },
+  "cost_usd_total": 0.099,
+  "provider_requests_total": 540
+}
