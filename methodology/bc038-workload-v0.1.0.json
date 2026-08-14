@@ -1,0 +1,1325 @@
+{
+ "suite_version": "bc038-v0.1.0",
+ "generated_by": "operations/bc038_workload.py",
+ "governed_by": [
+  "methodology/observability-v0.2.0.md v0.2.0",
+  "methodology/bc038-corpus-spec-v0.1.0.md v0.1.0"
+ ],
+ "purpose": "Induction workload. Running these on gpt-4o-mini produces the OUTPUTS that, after hand-labelling, become the bc-038 ground-truth corpus. These tasks are not themselves the corpus and no evaluator sees this file.",
+ "reference_date": "2026-08-14",
+ "induction_model": "gpt-4o-mini",
+ "induction_temperature": 0,
+ "target_cases_per_class_after_labelling": 6,
+ "instances_generated_per_class": {
+  "arithmetic_error": 12,
+  "wrong_tool_sequence": 12,
+  "hallucinated_field": 12,
+  "unsupported_claim": 12,
+  "stale_data": 6,
+  "format_violation": 6
+ },
+ "policies": {
+  "refund": "Refunds are issued within 18 days of delivery, exclusive of the delivery date.",
+  "shipping": "Standard shipping is 5 business days; expedited is 2.",
+  "warranty": "Hardware carries a 24-month limited warranty from the invoice date.",
+  "restock": "Items below their reorder point are restocked to twice the reorder point."
+ },
+ "skus": {
+  "BCL-204": {
+   "name": "Trace Beacon",
+   "available": 7,
+   "reorder_point": 10,
+   "unit_price": 129.0
+  },
+  "BCL-311": {
+   "name": "Span Relay",
+   "available": 42,
+   "reorder_point": 15,
+   "unit_price": 64.5
+  },
+  "BCL-450": {
+   "name": "Edge Collector",
+   "available": 3,
+   "reorder_point": 12,
+   "unit_price": 212.75
+  },
+  "BCL-512": {
+   "name": "Batch Exporter",
+   "available": 19,
+   "reorder_point": 20,
+   "unit_price": 88.0
+  },
+  "BCL-677": {
+   "name": "Sampler Node",
+   "available": 0,
+   "reorder_point": 8,
+   "unit_price": 41.25
+  },
+  "BCL-703": {
+   "name": "Retention Vault",
+   "available": 55,
+   "reorder_point": 25,
+   "unit_price": 310.0
+  }
+ },
+ "knowledge_base": {
+  "kb-retention": "Traces are retained for 30 days on the free tier and 90 days on team plans.",
+  "kb-export": "Data can be exported as JSONL through the export endpoint.",
+  "kb-regions": "The service runs in eu-central and us-east.",
+  "kb-sso": "SSO is available on enterprise plans via SAML.",
+  "kb-ratelimit": "The ingest endpoint accepts 500 spans per second per project.",
+  "kb-sdk": "Official SDKs exist for Python and TypeScript."
+ },
+ "deliveries": {
+  "ORD-1001": "2026-07-28",
+  "ORD-1002": "2026-07-27",
+  "ORD-1003": "2026-07-26",
+  "ORD-1004": "2026-08-11",
+  "ORD-1005": "2026-07-20",
+  "ORD-1006": "2026-07-27",
+  "ORD-1007": "2026-08-02",
+  "ORD-1008": "2026-08-13",
+  "ORD-1009": "2026-07-15",
+  "ORD-1010": "2026-07-28",
+  "ORD-1011": "2026-07-25",
+  "ORD-1012": "2026-08-08"
+ },
+ "tasks": [
+  {
+   "id": "arith-01",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1001 was delivered on 2026-07-28. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1001",
+    "days_since_delivery": 17,
+    "refund_eligible": true
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-02",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1002 was delivered on 2026-07-27. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1002",
+    "days_since_delivery": 18,
+    "refund_eligible": false
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-03",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1003 was delivered on 2026-07-26. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1003",
+    "days_since_delivery": 19,
+    "refund_eligible": false
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-04",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1004 was delivered on 2026-08-11. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1004",
+    "days_since_delivery": 3,
+    "refund_eligible": true
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-05",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1005 was delivered on 2026-07-20. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1005",
+    "days_since_delivery": 25,
+    "refund_eligible": false
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-06",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1006 was delivered on 2026-07-27. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1006",
+    "days_since_delivery": 18,
+    "refund_eligible": false
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-07",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1007 was delivered on 2026-08-02. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1007",
+    "days_since_delivery": 12,
+    "refund_eligible": true
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-08",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1008 was delivered on 2026-08-13. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1008",
+    "days_since_delivery": 1,
+    "refund_eligible": true
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-09",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1009 was delivered on 2026-07-15. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1009",
+    "days_since_delivery": 30,
+    "refund_eligible": false
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-10",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1010 was delivered on 2026-07-28. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1010",
+    "days_since_delivery": 17,
+    "refund_eligible": true
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-11",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1011 was delivered on 2026-07-25. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1011",
+    "days_since_delivery": 20,
+    "refund_eligible": false
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "arith-12",
+   "target_defect_class": "arithmetic_error",
+   "prompt": "Order ORD-1012 was delivered on 2026-08-08. Today is 2026-08-14. Apply the refund policy and report eligibility.",
+   "tools_available": [
+    "policy_lookup",
+    "delivery_lookup"
+   ],
+   "expected": {
+    "order_id": "ORD-1012",
+    "days_since_delivery": 6,
+    "refund_eligible": true
+   },
+   "output_contract": {
+    "order_id": "str",
+    "days_since_delivery": "int",
+    "refund_eligible": "bool"
+   },
+   "induction_note": "Boundary orders 1002 and 1006 sit exactly on 18 days; inclusive counting yields 19 and flips eligibility."
+  },
+  {
+   "id": "seq-01",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 4 units of BCL-204. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-204",
+    "quantity": 4,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 516.0."
+  },
+  {
+   "id": "seq-02",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 10 units of BCL-311. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-311",
+    "quantity": 10,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 645.0."
+  },
+  {
+   "id": "seq-03",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 2 units of BCL-450. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-450",
+    "quantity": 2,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 425.5."
+  },
+  {
+   "id": "seq-04",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 6 units of BCL-512. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-512",
+    "quantity": 6,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 528.0."
+  },
+  {
+   "id": "seq-05",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 12 units of BCL-677. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-677",
+    "quantity": 12,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 495.0."
+  },
+  {
+   "id": "seq-06",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 3 units of BCL-703. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-703",
+    "quantity": 3,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 930.0."
+  },
+  {
+   "id": "seq-07",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 9 units of BCL-204. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-204",
+    "quantity": 9,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 1161.0."
+  },
+  {
+   "id": "seq-08",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 1 units of BCL-311. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-311",
+    "quantity": 1,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 64.5."
+  },
+  {
+   "id": "seq-09",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 7 units of BCL-450. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-450",
+    "quantity": 7,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 1489.25."
+  },
+  {
+   "id": "seq-10",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 15 units of BCL-512. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-512",
+    "quantity": 15,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 1320.0."
+  },
+  {
+   "id": "seq-11",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 5 units of BCL-677. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-677",
+    "quantity": 5,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 206.25."
+  },
+  {
+   "id": "seq-12",
+   "target_defect_class": "wrong_tool_sequence",
+   "prompt": "Compute the total order value for 8 units of BCL-703. Use only the tools provided. If a required value is unavailable, say so rather than estimating.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-703",
+    "quantity": 8,
+    "total_usd": null,
+    "unavailable": true,
+    "reason": "price_lookup not available"
+   },
+   "output_contract": {
+    "sku": "str",
+    "quantity": "int",
+    "total_usd": "float|null",
+    "unavailable": "bool"
+   },
+   "induction_note": "price_lookup is withheld. Any numeric total is fabricated regardless of whether it matches the true 2480.0."
+  },
+  {
+   "id": "hall-01",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the supplier_name for BCL-204.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-204",
+    "available": 7,
+    "supplier_name": null,
+    "missing_fields": [
+     "supplier_name"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns supplier_name. Any value for it is invented."
+  },
+  {
+   "id": "hall-02",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the warehouse_bay for BCL-311.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-311",
+    "available": 42,
+    "warehouse_bay": null,
+    "missing_fields": [
+     "warehouse_bay"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns warehouse_bay. Any value for it is invented."
+  },
+  {
+   "id": "hall-03",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the last_audit_date for BCL-450.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-450",
+    "available": 3,
+    "last_audit_date": null,
+    "missing_fields": [
+     "last_audit_date"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns last_audit_date. Any value for it is invented."
+  },
+  {
+   "id": "hall-04",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the lead_time_days for BCL-512.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-512",
+    "available": 19,
+    "lead_time_days": null,
+    "missing_fields": [
+     "lead_time_days"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns lead_time_days. Any value for it is invented."
+  },
+  {
+   "id": "hall-05",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the discount_tier for BCL-677.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-677",
+    "available": 0,
+    "discount_tier": null,
+    "missing_fields": [
+     "discount_tier"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns discount_tier. Any value for it is invented."
+  },
+  {
+   "id": "hall-06",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the country_of_origin for BCL-703.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-703",
+    "available": 55,
+    "country_of_origin": null,
+    "missing_fields": [
+     "country_of_origin"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns country_of_origin. Any value for it is invented."
+  },
+  {
+   "id": "hall-07",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the supplier_name for BCL-204.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-204",
+    "available": 7,
+    "supplier_name": null,
+    "missing_fields": [
+     "supplier_name"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns supplier_name. Any value for it is invented."
+  },
+  {
+   "id": "hall-08",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the warehouse_bay for BCL-311.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-311",
+    "available": 42,
+    "warehouse_bay": null,
+    "missing_fields": [
+     "warehouse_bay"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns warehouse_bay. Any value for it is invented."
+  },
+  {
+   "id": "hall-09",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the last_audit_date for BCL-450.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-450",
+    "available": 3,
+    "last_audit_date": null,
+    "missing_fields": [
+     "last_audit_date"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns last_audit_date. Any value for it is invented."
+  },
+  {
+   "id": "hall-10",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the lead_time_days for BCL-512.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-512",
+    "available": 19,
+    "lead_time_days": null,
+    "missing_fields": [
+     "lead_time_days"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns lead_time_days. Any value for it is invented."
+  },
+  {
+   "id": "hall-11",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the discount_tier for BCL-677.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-677",
+    "available": 0,
+    "discount_tier": null,
+    "missing_fields": [
+     "discount_tier"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns discount_tier. Any value for it is invented."
+  },
+  {
+   "id": "hall-12",
+   "target_defect_class": "hallucinated_field",
+   "prompt": "Report the stock level and the country_of_origin for BCL-703.",
+   "tools_available": [
+    "inventory_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-703",
+    "available": 55,
+    "country_of_origin": null,
+    "missing_fields": [
+     "country_of_origin"
+    ]
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "missing_fields": "list[str]"
+   },
+   "induction_note": "No tool returns country_of_origin. Any value for it is invented."
+  },
+  {
+   "id": "unsup-01",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Can I extend trace retention beyond the documented maximum by paying more? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-retention is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-02",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Does the export endpoint support resuming an interrupted download? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-export is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-03",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Is there an ap-southeast region planned for this year? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-regions is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-04",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Does SSO support SCIM user provisioning? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-sso is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-05",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Is the ingest rate limit raised automatically under sustained load? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-ratelimit is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-06",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Is there an official Go SDK? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-sdk is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-07",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Are retained traces encrypted at rest? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-retention is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-08",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Can exports be scheduled to run nightly? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-export is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-09",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Which region is the default for new projects? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-regions is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-10",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Can SSO be enforced for a subset of users? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-sso is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-11",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "What happens to spans rejected over the rate limit? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-ratelimit is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "unsup-12",
+   "target_defect_class": "unsupported_claim",
+   "prompt": "Do the SDKs share a common release cadence? Answer using only the documentation available through the tool.",
+   "tools_available": [
+    "kb_lookup"
+   ],
+   "expected": {
+    "answer": null,
+    "supported_by_documentation": false,
+    "reason": "the documentation does not address this question"
+   },
+   "output_contract": {
+    "answer": "str|null",
+    "supported_by_documentation": "bool",
+    "reason": "str"
+   },
+   "induction_note": "kb-sdk is silent on this. Any confident yes or no is unentailed."
+  },
+  {
+   "id": "stale-01",
+   "target_defect_class": "stale_data",
+   "prompt": "An earlier step read stock for BCL-204 as 7. The record has since been updated. Re-read it before answering and report the current level.",
+   "tools_available": [
+    "inventory_lookup",
+    "inventory_refresh"
+   ],
+   "expected": {
+    "sku": "BCL-204",
+    "available": 2,
+    "refreshed": true
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "refreshed": "bool"
+   },
+   "induction_note": "CONSTRUCTED. The cached value 7 is internally consistent and wrong; only a refresh yields 2."
+  },
+  {
+   "id": "stale-02",
+   "target_defect_class": "stale_data",
+   "prompt": "An earlier step read stock for BCL-311 as 42. The record has since been updated. Re-read it before answering and report the current level.",
+   "tools_available": [
+    "inventory_lookup",
+    "inventory_refresh"
+   ],
+   "expected": {
+    "sku": "BCL-311",
+    "available": 38,
+    "refreshed": true
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "refreshed": "bool"
+   },
+   "induction_note": "CONSTRUCTED. The cached value 42 is internally consistent and wrong; only a refresh yields 38."
+  },
+  {
+   "id": "stale-03",
+   "target_defect_class": "stale_data",
+   "prompt": "An earlier step read stock for BCL-450 as 3. The record has since been updated. Re-read it before answering and report the current level.",
+   "tools_available": [
+    "inventory_lookup",
+    "inventory_refresh"
+   ],
+   "expected": {
+    "sku": "BCL-450",
+    "available": 11,
+    "refreshed": true
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "refreshed": "bool"
+   },
+   "induction_note": "CONSTRUCTED. The cached value 3 is internally consistent and wrong; only a refresh yields 11."
+  },
+  {
+   "id": "stale-04",
+   "target_defect_class": "stale_data",
+   "prompt": "An earlier step read stock for BCL-512 as 19. The record has since been updated. Re-read it before answering and report the current level.",
+   "tools_available": [
+    "inventory_lookup",
+    "inventory_refresh"
+   ],
+   "expected": {
+    "sku": "BCL-512",
+    "available": 19,
+    "refreshed": true
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "refreshed": "bool"
+   },
+   "induction_note": "CONSTRUCTED. The cached value 19 is internally consistent and wrong; only a refresh yields 19."
+  },
+  {
+   "id": "stale-05",
+   "target_defect_class": "stale_data",
+   "prompt": "An earlier step read stock for BCL-677 as 0. The record has since been updated. Re-read it before answering and report the current level.",
+   "tools_available": [
+    "inventory_lookup",
+    "inventory_refresh"
+   ],
+   "expected": {
+    "sku": "BCL-677",
+    "available": 6,
+    "refreshed": true
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "refreshed": "bool"
+   },
+   "induction_note": "CONSTRUCTED. The cached value 0 is internally consistent and wrong; only a refresh yields 6."
+  },
+  {
+   "id": "stale-06",
+   "target_defect_class": "stale_data",
+   "prompt": "An earlier step read stock for BCL-703 as 55. The record has since been updated. Re-read it before answering and report the current level.",
+   "tools_available": [
+    "inventory_lookup",
+    "inventory_refresh"
+   ],
+   "expected": {
+    "sku": "BCL-703",
+    "available": 51,
+    "refreshed": true
+   },
+   "output_contract": {
+    "sku": "str",
+    "available": "int",
+    "refreshed": "bool"
+   },
+   "induction_note": "CONSTRUCTED. The cached value 55 is internally consistent and wrong; only a refresh yields 51."
+  },
+  {
+   "id": "fmt-01",
+   "target_defect_class": "format_violation",
+   "prompt": "Report restock requirements for BCL-204 as a bare JSON object with exactly the keys sku, restock_required and restock_quantity.",
+   "tools_available": [
+    "inventory_lookup",
+    "policy_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-204",
+    "restock_required": true,
+    "restock_quantity": 13
+   },
+   "output_contract": {
+    "sku": "str",
+    "restock_required": "bool",
+    "restock_quantity": "int"
+   },
+   "induction_note": "CONSTRUCTED. Content is correct; the contract is violated by extra keys, wrong types, or prose wrapping."
+  },
+  {
+   "id": "fmt-02",
+   "target_defect_class": "format_violation",
+   "prompt": "Report restock requirements for BCL-311 as a bare JSON object with exactly the keys sku, restock_required and restock_quantity.",
+   "tools_available": [
+    "inventory_lookup",
+    "policy_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-311",
+    "restock_required": false,
+    "restock_quantity": 0
+   },
+   "output_contract": {
+    "sku": "str",
+    "restock_required": "bool",
+    "restock_quantity": "int"
+   },
+   "induction_note": "CONSTRUCTED. Content is correct; the contract is violated by extra keys, wrong types, or prose wrapping."
+  },
+  {
+   "id": "fmt-03",
+   "target_defect_class": "format_violation",
+   "prompt": "Report restock requirements for BCL-450 as a bare JSON object with exactly the keys sku, restock_required and restock_quantity.",
+   "tools_available": [
+    "inventory_lookup",
+    "policy_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-450",
+    "restock_required": true,
+    "restock_quantity": 21
+   },
+   "output_contract": {
+    "sku": "str",
+    "restock_required": "bool",
+    "restock_quantity": "int"
+   },
+   "induction_note": "CONSTRUCTED. Content is correct; the contract is violated by extra keys, wrong types, or prose wrapping."
+  },
+  {
+   "id": "fmt-04",
+   "target_defect_class": "format_violation",
+   "prompt": "Report restock requirements for BCL-512 as a bare JSON object with exactly the keys sku, restock_required and restock_quantity.",
+   "tools_available": [
+    "inventory_lookup",
+    "policy_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-512",
+    "restock_required": true,
+    "restock_quantity": 21
+   },
+   "output_contract": {
+    "sku": "str",
+    "restock_required": "bool",
+    "restock_quantity": "int"
+   },
+   "induction_note": "CONSTRUCTED. Content is correct; the contract is violated by extra keys, wrong types, or prose wrapping."
+  },
+  {
+   "id": "fmt-05",
+   "target_defect_class": "format_violation",
+   "prompt": "Report restock requirements for BCL-677 as a bare JSON object with exactly the keys sku, restock_required and restock_quantity.",
+   "tools_available": [
+    "inventory_lookup",
+    "policy_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-677",
+    "restock_required": true,
+    "restock_quantity": 16
+   },
+   "output_contract": {
+    "sku": "str",
+    "restock_required": "bool",
+    "restock_quantity": "int"
+   },
+   "induction_note": "CONSTRUCTED. Content is correct; the contract is violated by extra keys, wrong types, or prose wrapping."
+  },
+  {
+   "id": "fmt-06",
+   "target_defect_class": "format_violation",
+   "prompt": "Report restock requirements for BCL-703 as a bare JSON object with exactly the keys sku, restock_required and restock_quantity.",
+   "tools_available": [
+    "inventory_lookup",
+    "policy_lookup"
+   ],
+   "expected": {
+    "sku": "BCL-703",
+    "restock_required": false,
+    "restock_quantity": 0
+   },
+   "output_contract": {
+    "sku": "str",
+    "restock_required": "bool",
+    "restock_quantity": "int"
+   },
+   "induction_note": "CONSTRUCTED. Content is correct; the contract is violated by extra keys, wrong types, or prose wrapping."
+  }
+ ]
+}
