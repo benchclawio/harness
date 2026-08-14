@@ -1,0 +1,320 @@
+### starting naive at 2026-08-14T08:26:39+00:00
+{"arm": "naive", "positive_control": "passed", "gate_style": "label", "control_scores": [null, null]}
+naive 10 done
+naive 20 done
+naive 30 done
+naive 40 done
+naive 50 done
+naive 60 done
+naive 70 done
+naive 80 done
+naive 90 done
+naive 100 done
+naive 110 done
+naive 120 done
+naive 130 done
+naive 140 done
+naive 150 done
+naive 160 done
+naive 170 done
+naive 180 done
+naive 190 done
+naive 200 done
+naive 210 done
+{"arm": "naive", "evaluations": 210, "cost_usd_measured": 0.160178, "out": "bc038-eval-naive.jsonl"}
+### finished naive at 2026-08-14T08:28:37+00:00
+### starting phoenix at 2026-08-14T08:28:37+00:00
+{"arm": "phoenix", "positive_control": "passed", "gate_style": "label", "control_scores": [null, null]}
+phoenix 10 done
+phoenix 20 done
+phoenix 30 done
+phoenix 40 done
+phoenix 50 done
+phoenix 60 done
+phoenix 70 done
+phoenix 80 done
+phoenix 90 done
+phoenix 100 done
+phoenix 110 done
+phoenix 120 done
+phoenix 130 done
+phoenix 140 done
+phoenix 150 done
+phoenix 160 done
+phoenix 170 done
+phoenix 180 done
+phoenix 190 done
+phoenix 200 done
+phoenix 210 done
+{"arm": "phoenix", "evaluations": 210, "cost_usd_measured": 0.0, "out": "bc038-eval-phoenix.jsonl"}
+### finished phoenix at 2026-08-14T08:33:12+00:00
+### starting deepeval at 2026-08-14T08:33:12+00:00
+/opt/bc038/bc038_arms.py:104: DeprecationWarning: 'LLMTestCaseParams' is deprecated and will be removed in a future release. Use 'SingleTurnParams' instead.
+  from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+
+/opt/bc038/bc038_arms.py:104: DeprecationWarning: 'LLMTestCaseParams' is deprecated and will be removed in a future release. Use 'SingleTurnParams' instead.
+  from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+
+{"arm": "deepeval", "positive_control": "passed", "gate_style": "ordering", "control_scores": [0.9491339135671092, 0.24760872232932202]}
+
+
+
+
+
+
+
+
+
+
+deepeval 10 done
+
+
+
+
+
+
+
+
+
+
+deepeval 20 done
+
+
+
+/opt/bc038/bc038_arms.py:104: DeprecationWarning: 'LLMTestCaseParams' is deprecated and will be removed in a future release. Use 'SingleTurnParams' instead.
+  from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+
+
+
+
+
+
+
+deepeval 30 done
+
+
+
+
+
+
+
+
+
+
+deepeval 40 done
+
+
+
+
+
+
+
+
+
+
+deepeval 50 done
+
+
+
+
+
+
+
+
+
+
+deepeval 60 done
+
+
+
+
+
+
+
+
+
+
+deepeval 70 done
+
+
+
+
+
+
+
+
+
+
+deepeval 80 done
+
+
+
+
+
+
+
+
+
+
+deepeval 90 done
+
+
+
+
+
+
+
+
+
+
+deepeval 100 done
+
+
+
+
+
+
+
+
+
+
+deepeval 110 done
+
+
+
+
+
+
+
+
+
+
+deepeval 120 done
+
+
+
+
+
+
+
+
+
+
+deepeval 130 done
+
+
+
+
+
+
+
+
+
+
+deepeval 140 done
+
+
+
+
+
+
+
+
+
+
+deepeval 150 done
+
+
+
+
+
+
+
+
+
+
+deepeval 160 done
+
+
+
+
+
+
+
+
+
+
+deepeval 170 done
+
+
+
+
+
+
+
+
+
+
+deepeval 180 done
+
+
+
+
+
+
+
+
+
+
+deepeval 190 done
+
+
+
+
+
+
+
+
+
+
+deepeval 200 done
+
+
+
+
+
+
+
+
+
+
+deepeval 210 done
+{"arm": "deepeval", "evaluations": 210, "cost_usd_measured": 0.0, "out": "bc038-eval-deepeval.jsonl"}
+[PostHog] analytics lane received event Evaluation after shutdown, dropping it
+### finished deepeval at 2026-08-14T08:45:59+00:00
+### starting opik at 2026-08-14T08:45:59+00:00
+{"arm": "opik", "positive_control": "passed", "gate_style": "ordering", "control_scores": [0.9638721180462466, 0.0031257920106849647]}
+opik 10 done
+opik 20 done
+opik 30 done
+opik 40 done
+opik 50 done
+opik 60 done
+opik 70 done
+opik 80 done
+opik 90 done
+opik 100 done
+opik 110 done
+opik 120 done
+opik 130 done
+opik 140 done
+opik 150 done
+opik 160 done
+opik 170 done
+opik 180 done
+opik 190 done
+opik 200 done
+opik 210 done
+{"arm": "opik", "evaluations": 210, "cost_usd_measured": 0.0, "out": "bc038-eval-opik.jsonl"}
+### finished opik at 2026-08-14T08:52:06+00:00
+ALL ARMS DONE
