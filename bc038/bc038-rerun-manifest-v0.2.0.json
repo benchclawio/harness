@@ -1,0 +1,80 @@
+{
+  "manifest_version": "bc038-rerun-v0.2.0",
+  "frozen_date": "2026-08-14",
+  "status": "frozen before any v0.2.0 evaluation",
+  "pilot": {
+    "corpus": "bc038-corpus-v0.1.0",
+    "result": "invalid for ranking",
+    "audit": "operations/bc038-pilot-audit-2026-08-14.md"
+  },
+  "corpus": {
+    "path": "operations/bc038-corpus-v0.2.0.json",
+    "sha256": "156e332faa5531d65395c17535eded75cff5dee64c395dec83bf99184bc4e1e2",
+    "cases": 70,
+    "wrong": 35,
+    "correct": 35,
+    "repeats": 3
+  },
+  "judge": {
+    "requested_model": "gpt-4o-2024-08-06",
+    "temperature": 0,
+    "input_price_usd_per_million": 2.5,
+    "output_price_usd_per_million": 10.0,
+    "response_model_and_usage": "captured from every response by the prompt-free local ledger"
+  },
+  "arms_in_order": [
+    {
+      "id": "naive",
+      "package": "openai",
+      "version": "2.54.0",
+      "verdict": "direct pass/fail label"
+    },
+    {
+      "id": "phoenix",
+      "package": "arize-phoenix-evals",
+      "version": "3.4.0",
+      "verdict": "classifier pass/fail label"
+    },
+    {
+      "id": "deepeval",
+      "package": "deepeval",
+      "version": "4.1.8",
+      "verdict": "GEval score at threshold 0.5, fixed before labels"
+    },
+    {
+      "id": "opik",
+      "package": "opik",
+      "version": "2.2.28",
+      "verdict": "GEval score at BenchClaw threshold 0.5, fixed before labels"
+    }
+  ],
+  "controls": {
+    "positive_control": "one grounded correct and one grounded wrong case before every arm",
+    "label_arms_gate": "pass then fail",
+    "score_arms_gate": "correct score strictly greater than wrong score",
+    "model_and_temperature_enforcement": "local proxy rewrites every request to the frozen values",
+    "streaming": "disabled because complete usage is required"
+  },
+  "execution": {
+    "host_ceiling": "Hetzner CX23",
+    "os": "Ubuntu 24.04",
+    "isolation": "one virtual environment per arm",
+    "order": "every arm receives corpus file order, repeated three times",
+    "evaluations": 840,
+    "environment_provenance": "python version, OS release, pip freeze and package metadata saved for every arm"
+  },
+  "reporting": {
+    "primary_unit": "case-level majority verdict across three repeats",
+    "interval": "Wilson 95%",
+    "outcomes": ["false-pass rate", "false-fail rate"],
+    "forbidden": "combined accuracy score",
+    "secondary": [
+      "trial-level audit counts",
+      "per-class rates",
+      "verdict-flip cases",
+      "median and nearest-rank p95 wall time",
+      "exact token usage and induced model cost",
+      "reason and score inspectability"
+    ]
+  }
+}

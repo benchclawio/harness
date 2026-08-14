@@ -1,0 +1,1244 @@
+{
+  "schema_version": "bc038-analysis-v0.2.0",
+  "corpus": {
+    "path": "bc038-corpus-v0.2.0.json",
+    "sha256": "156e332faa5531d65395c17535eded75cff5dee64c395dec83bf99184bc4e1e2",
+    "cases": 70,
+    "wrong": 35,
+    "correct": 35,
+    "wrong_by_class": {
+      "arithmetic_error": 6,
+      "format_violation": 6,
+      "hallucinated_field": 6,
+      "stale_data": 5,
+      "unsupported_claim": 6,
+      "wrong_tool_sequence": 6
+    },
+    "origin_counts": {
+      "wrong_induced": 1,
+      "wrong_constructed": 34,
+      "correct_induced": 24,
+      "correct_constructed": 11
+    }
+  },
+  "reporting_rule": {
+    "primary": "case-level majority verdict across three repeats; Wilson 95% interval; the case, not the repeated judgment, is the statistical unit",
+    "trial_level": "reported as a secondary audit count only",
+    "p95": "nearest-rank"
+  },
+  "arms": {
+    "naive": {
+      "raw_file": "bc038-eval-naive-v0.2.0.jsonl",
+      "sha256": "f6fb3766143e82b8fa24e97a4d7ec6d4beb2836d80424f62ddd52a6e9cc4a8c2",
+      "evaluations": 210,
+      "errors": 0,
+      "errored_evaluations": [],
+      "scored_evaluations": 210,
+      "primary_case_level": {
+        "false_pass": {
+          "events": 5,
+          "total": 35,
+          "rate": 0.14285714285714285,
+          "low": 0.06260231079433715,
+          "high": 0.29375554086595146,
+          "case_ids": [
+            "arith-02-wrong",
+            "arith-03-wrong",
+            "arith-05-wrong",
+            "arith-06-wrong",
+            "fmt-06-wrong"
+          ]
+        },
+        "false_fail": {
+          "events": 11,
+          "total": 35,
+          "rate": 0.3142857142857143,
+          "low": 0.18550844674265818,
+          "high": 0.4797976361206918,
+          "case_ids": [
+            "arith-02-correct",
+            "arith-03-correct",
+            "seq-05-correct",
+            "seq-07-correct",
+            "seq-09-correct",
+            "seq-11-correct",
+            "hall-01-correct",
+            "hall-02-correct",
+            "hall-03-correct",
+            "fmt-01-correct",
+            "fmt-04-correct"
+          ]
+        }
+      },
+      "trial_level_audit": {
+        "false_pass": {
+          "events": 16,
+          "total": 105,
+          "rate": 0.1523809523809524,
+          "low": 0.09602664318525667,
+          "high": 0.2332730483940293
+        },
+        "false_fail": {
+          "events": 35,
+          "total": 105,
+          "rate": 0.3333333333333333,
+          "low": 0.2504591011249202,
+          "high": 0.42797225785144977
+        }
+      },
+      "per_class_case_level": {
+        "arithmetic_error": {
+          "false_pass": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "arith-02-wrong",
+              "arith-03-wrong",
+              "arith-05-wrong",
+              "arith-06-wrong"
+            ]
+          },
+          "false_fail": {
+            "events": 2,
+            "total": 6,
+            "rate": 0.3333333333333333,
+            "low": 0.09677141110578041,
+            "high": 0.700006684861608,
+            "case_ids": [
+              "arith-02-correct",
+              "arith-03-correct"
+            ]
+          }
+        },
+        "format_violation": {
+          "false_pass": {
+            "events": 1,
+            "total": 6,
+            "rate": 0.16666666666666666,
+            "low": 0.030053369748306635,
+            "high": 0.5635028221864702,
+            "case_ids": [
+              "fmt-06-wrong"
+            ]
+          },
+          "false_fail": {
+            "events": 2,
+            "total": 6,
+            "rate": 0.3333333333333333,
+            "low": 0.09677141110578041,
+            "high": 0.700006684861608,
+            "case_ids": [
+              "fmt-01-correct",
+              "fmt-04-correct"
+            ]
+          }
+        },
+        "hallucinated_field": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 3,
+            "total": 6,
+            "rate": 0.5,
+            "low": 0.18761630648265054,
+            "high": 0.8123836935173494,
+            "case_ids": [
+              "hall-01-correct",
+              "hall-02-correct",
+              "hall-03-correct"
+            ]
+          }
+        },
+        "stale_data": {
+          "false_pass": {
+            "events": 0,
+            "total": 5,
+            "rate": 0.0,
+            "low": 0.0,
+            "high": 0.43448246478317476,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 5,
+            "rate": 0.0,
+            "low": 0.0,
+            "high": 0.43448246478317476,
+            "case_ids": []
+          }
+        },
+        "unsupported_claim": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          }
+        },
+        "wrong_tool_sequence": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "seq-05-correct",
+              "seq-07-correct",
+              "seq-09-correct",
+              "seq-11-correct"
+            ]
+          }
+        }
+      },
+      "determinism": {
+        "verdict_flip_cases": 7,
+        "total_cases": 70,
+        "case_verdicts": {
+          "fmt-03-wrong": [
+            false,
+            false,
+            true
+          ],
+          "arith-03-correct": [
+            true,
+            false,
+            false
+          ],
+          "arith-06-correct": [
+            true,
+            false,
+            true
+          ],
+          "hall-03-correct": [
+            true,
+            false,
+            false
+          ],
+          "hall-06-correct": [
+            true,
+            false,
+            true
+          ],
+          "fmt-02-correct": [
+            true,
+            true,
+            false
+          ],
+          "fmt-03-correct": [
+            true,
+            true,
+            false
+          ]
+        }
+      },
+      "matched_pairs": {
+        "both_labels_correct": 21,
+        "total_pairs": 35,
+        "source_task_ids": [
+          "arith-01",
+          "arith-04",
+          "seq-02",
+          "seq-06",
+          "hall-04",
+          "hall-05",
+          "hall-06",
+          "unsup-09",
+          "unsup-02",
+          "unsup-04",
+          "unsup-05",
+          "unsup-07",
+          "unsup-08",
+          "stale-01",
+          "stale-02",
+          "stale-03",
+          "stale-05",
+          "stale-06",
+          "fmt-02",
+          "fmt-03",
+          "fmt-05"
+        ]
+      },
+      "wall_time": {
+        "median_s": 0.5934999999999999,
+        "p95_s_nearest_rank": 0.96,
+        "min_s": 0.457,
+        "max_s": 7.907,
+        "mean_s": 0.7245571428571429,
+        "stdev_s": 0.7103730531977555
+      },
+      "usage": {
+        "exact_cost_usd": 0.1665375,
+        "tokens_in": 65775,
+        "tokens_out": 210,
+        "available": true
+      }
+    },
+    "phoenix": {
+      "raw_file": "bc038-eval-phoenix-v0.2.0.jsonl",
+      "sha256": "3aea02e690933cabe69f7fa06e688042c27c3106921813502220a970c715e8a0",
+      "evaluations": 210,
+      "errors": 0,
+      "errored_evaluations": [],
+      "scored_evaluations": 210,
+      "primary_case_level": {
+        "false_pass": {
+          "events": 5,
+          "total": 35,
+          "rate": 0.14285714285714285,
+          "low": 0.06260231079433715,
+          "high": 0.29375554086595146,
+          "case_ids": [
+            "arith-02-wrong",
+            "arith-03-wrong",
+            "arith-05-wrong",
+            "arith-06-wrong",
+            "fmt-06-wrong"
+          ]
+        },
+        "false_fail": {
+          "events": 10,
+          "total": 35,
+          "rate": 0.2857142857142857,
+          "low": 0.16326536236434688,
+          "high": 0.45054934863182616,
+          "case_ids": [
+            "arith-02-correct",
+            "arith-03-correct",
+            "arith-06-correct",
+            "seq-05-correct",
+            "seq-07-correct",
+            "seq-09-correct",
+            "seq-11-correct",
+            "fmt-01-correct",
+            "fmt-03-correct",
+            "fmt-04-correct"
+          ]
+        }
+      },
+      "trial_level_audit": {
+        "false_pass": {
+          "events": 15,
+          "total": 105,
+          "rate": 0.14285714285714285,
+          "low": 0.0885248083936459,
+          "high": 0.22239953227000403
+        },
+        "false_fail": {
+          "events": 29,
+          "total": 105,
+          "rate": 0.2761904761904762,
+          "low": 0.19972132292742031,
+          "high": 0.36845793055513376
+        }
+      },
+      "per_class_case_level": {
+        "arithmetic_error": {
+          "false_pass": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "arith-02-wrong",
+              "arith-03-wrong",
+              "arith-05-wrong",
+              "arith-06-wrong"
+            ]
+          },
+          "false_fail": {
+            "events": 3,
+            "total": 6,
+            "rate": 0.5,
+            "low": 0.18761630648265054,
+            "high": 0.8123836935173494,
+            "case_ids": [
+              "arith-02-correct",
+              "arith-03-correct",
+              "arith-06-correct"
+            ]
+          }
+        },
+        "format_violation": {
+          "false_pass": {
+            "events": 1,
+            "total": 6,
+            "rate": 0.16666666666666666,
+            "low": 0.030053369748306635,
+            "high": 0.5635028221864702,
+            "case_ids": [
+              "fmt-06-wrong"
+            ]
+          },
+          "false_fail": {
+            "events": 3,
+            "total": 6,
+            "rate": 0.5,
+            "low": 0.18761630648265054,
+            "high": 0.8123836935173494,
+            "case_ids": [
+              "fmt-01-correct",
+              "fmt-03-correct",
+              "fmt-04-correct"
+            ]
+          }
+        },
+        "hallucinated_field": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          }
+        },
+        "stale_data": {
+          "false_pass": {
+            "events": 0,
+            "total": 5,
+            "rate": 0.0,
+            "low": 0.0,
+            "high": 0.43448246478317476,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 5,
+            "rate": 0.0,
+            "low": 0.0,
+            "high": 0.43448246478317476,
+            "case_ids": []
+          }
+        },
+        "unsupported_claim": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          }
+        },
+        "wrong_tool_sequence": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "seq-05-correct",
+              "seq-07-correct",
+              "seq-09-correct",
+              "seq-11-correct"
+            ]
+          }
+        }
+      },
+      "determinism": {
+        "verdict_flip_cases": 1,
+        "total_cases": 70,
+        "case_verdicts": {
+          "arith-06-correct": [
+            false,
+            true,
+            false
+          ]
+        }
+      },
+      "matched_pairs": {
+        "both_labels_correct": 23,
+        "total_pairs": 35,
+        "source_task_ids": [
+          "arith-01",
+          "arith-04",
+          "seq-02",
+          "seq-06",
+          "hall-01",
+          "hall-02",
+          "hall-03",
+          "hall-04",
+          "hall-05",
+          "hall-06",
+          "unsup-09",
+          "unsup-02",
+          "unsup-04",
+          "unsup-05",
+          "unsup-07",
+          "unsup-08",
+          "stale-01",
+          "stale-02",
+          "stale-03",
+          "stale-05",
+          "stale-06",
+          "fmt-02",
+          "fmt-05"
+        ]
+      },
+      "wall_time": {
+        "median_s": 1.1560000000000001,
+        "p95_s_nearest_rank": 1.79,
+        "min_s": 0.828,
+        "max_s": 5.272,
+        "mean_s": 1.249890476190476,
+        "stdev_s": 0.44819633471762976
+      },
+      "usage": {
+        "exact_cost_usd": null,
+        "tokens_in": null,
+        "tokens_out": null,
+        "available": false
+      }
+    },
+    "deepeval": {
+      "raw_file": "bc038-eval-deepeval-v0.2.0.jsonl",
+      "sha256": "ec5dc8491f8d72d6330cb7b28dbfe95881faad1622dd5dc2b8f1de6ee877a379",
+      "evaluations": 210,
+      "errors": 0,
+      "errored_evaluations": [],
+      "scored_evaluations": 210,
+      "primary_case_level": {
+        "false_pass": {
+          "events": 8,
+          "total": 35,
+          "rate": 0.22857142857142856,
+          "low": 0.12065879834191687,
+          "high": 0.3901731689199025,
+          "case_ids": [
+            "arith-02-wrong",
+            "arith-03-wrong",
+            "arith-05-wrong",
+            "arith-06-wrong",
+            "fmt-02-wrong",
+            "fmt-03-wrong",
+            "fmt-05-wrong",
+            "fmt-06-wrong"
+          ]
+        },
+        "false_fail": {
+          "events": 5,
+          "total": 35,
+          "rate": 0.14285714285714285,
+          "low": 0.06260231079433715,
+          "high": 0.29375554086595146,
+          "case_ids": [
+            "arith-05-correct",
+            "seq-05-correct",
+            "seq-07-correct",
+            "seq-09-correct",
+            "seq-11-correct"
+          ]
+        }
+      },
+      "trial_level_audit": {
+        "false_pass": {
+          "events": 24,
+          "total": 105,
+          "rate": 0.22857142857142856,
+          "low": 0.15868392846941415,
+          "high": 0.3176185704349597
+        },
+        "false_fail": {
+          "events": 15,
+          "total": 105,
+          "rate": 0.14285714285714285,
+          "low": 0.0885248083936459,
+          "high": 0.22239953227000403
+        }
+      },
+      "per_class_case_level": {
+        "arithmetic_error": {
+          "false_pass": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "arith-02-wrong",
+              "arith-03-wrong",
+              "arith-05-wrong",
+              "arith-06-wrong"
+            ]
+          },
+          "false_fail": {
+            "events": 1,
+            "total": 6,
+            "rate": 0.16666666666666666,
+            "low": 0.030053369748306635,
+            "high": 0.5635028221864702,
+            "case_ids": [
+              "arith-05-correct"
+            ]
+          }
+        },
+        "format_violation": {
+          "false_pass": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "fmt-02-wrong",
+              "fmt-03-wrong",
+              "fmt-05-wrong",
+              "fmt-06-wrong"
+            ]
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          }
+        },
+        "hallucinated_field": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          }
+        },
+        "stale_data": {
+          "false_pass": {
+            "events": 0,
+            "total": 5,
+            "rate": 0.0,
+            "low": 0.0,
+            "high": 0.43448246478317476,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 5,
+            "rate": 0.0,
+            "low": 0.0,
+            "high": 0.43448246478317476,
+            "case_ids": []
+          }
+        },
+        "unsupported_claim": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          }
+        },
+        "wrong_tool_sequence": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "seq-05-correct",
+              "seq-07-correct",
+              "seq-09-correct",
+              "seq-11-correct"
+            ]
+          }
+        }
+      },
+      "determinism": {
+        "verdict_flip_cases": 2,
+        "total_cases": 70,
+        "case_verdicts": {
+          "arith-03-correct": [
+            true,
+            false,
+            true
+          ],
+          "arith-05-correct": [
+            false,
+            false,
+            true
+          ]
+        }
+      },
+      "matched_pairs": {
+        "both_labels_correct": 23,
+        "total_pairs": 35,
+        "source_task_ids": [
+          "arith-01",
+          "arith-04",
+          "seq-02",
+          "seq-06",
+          "hall-01",
+          "hall-02",
+          "hall-03",
+          "hall-04",
+          "hall-05",
+          "hall-06",
+          "unsup-09",
+          "unsup-02",
+          "unsup-04",
+          "unsup-05",
+          "unsup-07",
+          "unsup-08",
+          "stale-01",
+          "stale-02",
+          "stale-03",
+          "stale-05",
+          "stale-06",
+          "fmt-01",
+          "fmt-04"
+        ]
+      },
+      "wall_time": {
+        "median_s": 3.8795,
+        "p95_s_nearest_rank": 4.738,
+        "min_s": 2.518,
+        "max_s": 7.504,
+        "mean_s": 3.9234285714285715,
+        "stdev_s": 0.6016121937890327
+      },
+      "usage": {
+        "exact_cost_usd": null,
+        "tokens_in": null,
+        "tokens_out": null,
+        "available": false
+      },
+      "threshold_sensitivity_case_level": {
+        "0.25": {
+          "false_pass": {
+            "events": 23,
+            "total": 35,
+            "rate": 0.6571428571428571,
+            "low": 0.4915194951399626,
+            "high": 0.7916830501295105
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 35,
+            "rate": 0.0,
+            "low": 6.938893903907228e-18,
+            "high": 0.09890099232440402
+          }
+        },
+        "0.5": {
+          "false_pass": {
+            "events": 8,
+            "total": 35,
+            "rate": 0.22857142857142856,
+            "low": 0.12065879834191687,
+            "high": 0.3901731689199025
+          },
+          "false_fail": {
+            "events": 5,
+            "total": 35,
+            "rate": 0.14285714285714285,
+            "low": 0.06260231079433715,
+            "high": 0.29375554086595146
+          }
+        },
+        "0.75": {
+          "false_pass": {
+            "events": 6,
+            "total": 35,
+            "rate": 0.17142857142857143,
+            "low": 0.08102640053701589,
+            "high": 0.3268228229904496
+          },
+          "false_fail": {
+            "events": 10,
+            "total": 35,
+            "rate": 0.2857142857142857,
+            "low": 0.16326536236434688,
+            "high": 0.45054934863182616
+          }
+        }
+      }
+    },
+    "opik": {
+      "raw_file": "bc038-eval-opik-v0.2.0.jsonl",
+      "sha256": "b7cd47561cea06689b4ed811c76533b71fb95a0f21be12a650e088c2d5ef3461",
+      "evaluations": 210,
+      "errors": 1,
+      "errored_evaluations": [
+        {
+          "case_id": "fmt-03-correct",
+          "repeat": 1,
+          "error": "BaseLLMError: LLM infrastructure error: Failed to calculate g-eval score"
+        }
+      ],
+      "scored_evaluations": 209,
+      "primary_case_level": {
+        "false_pass": {
+          "events": 0,
+          "total": 35,
+          "rate": 0.0,
+          "low": 6.938893903907228e-18,
+          "high": 0.09890099232440402,
+          "case_ids": []
+        },
+        "false_fail": {
+          "events": 16,
+          "total": 35,
+          "rate": 0.45714285714285713,
+          "low": 0.3046601928840721,
+          "high": 0.6181027493151624,
+          "case_ids": [
+            "arith-01-correct",
+            "arith-02-correct",
+            "arith-03-correct",
+            "arith-04-correct",
+            "arith-05-correct",
+            "arith-06-correct",
+            "seq-05-correct",
+            "seq-07-correct",
+            "seq-09-correct",
+            "seq-11-correct",
+            "hall-02-correct",
+            "hall-04-correct",
+            "fmt-01-correct",
+            "fmt-02-correct",
+            "fmt-03-correct",
+            "fmt-04-correct"
+          ]
+        }
+      },
+      "trial_level_audit": {
+        "false_pass": {
+          "events": 0,
+          "total": 105,
+          "rate": 0.0,
+          "low": 0.0,
+          "high": 0.035294076929109894
+        },
+        "false_fail": {
+          "events": 48,
+          "total": 104,
+          "rate": 0.46153846153846156,
+          "low": 0.3688100475176425,
+          "high": 0.5570069797417769
+        }
+      },
+      "per_class_case_level": {
+        "arithmetic_error": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 6,
+            "total": 6,
+            "rate": 1.0,
+            "low": 0.6096657120978346,
+            "high": 1.0,
+            "case_ids": [
+              "arith-01-correct",
+              "arith-02-correct",
+              "arith-03-correct",
+              "arith-04-correct",
+              "arith-05-correct",
+              "arith-06-correct"
+            ]
+          }
+        },
+        "format_violation": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "fmt-01-correct",
+              "fmt-02-correct",
+              "fmt-03-correct",
+              "fmt-04-correct"
+            ]
+          }
+        },
+        "hallucinated_field": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 2,
+            "total": 6,
+            "rate": 0.3333333333333333,
+            "low": 0.09677141110578041,
+            "high": 0.700006684861608,
+            "case_ids": [
+              "hall-02-correct",
+              "hall-04-correct"
+            ]
+          }
+        },
+        "stale_data": {
+          "false_pass": {
+            "events": 0,
+            "total": 5,
+            "rate": 0.0,
+            "low": 0.0,
+            "high": 0.43448246478317476,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 5,
+            "rate": 0.0,
+            "low": 0.0,
+            "high": 0.43448246478317476,
+            "case_ids": []
+          }
+        },
+        "unsupported_claim": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          }
+        },
+        "wrong_tool_sequence": {
+          "false_pass": {
+            "events": 0,
+            "total": 6,
+            "rate": 0.0,
+            "low": 2.7755575615628914e-17,
+            "high": 0.3903342879021653,
+            "case_ids": []
+          },
+          "false_fail": {
+            "events": 4,
+            "total": 6,
+            "rate": 0.6666666666666666,
+            "low": 0.299993315138392,
+            "high": 0.9032285888942195,
+            "case_ids": [
+              "seq-05-correct",
+              "seq-07-correct",
+              "seq-09-correct",
+              "seq-11-correct"
+            ]
+          }
+        }
+      },
+      "determinism": {
+        "verdict_flip_cases": 1,
+        "total_cases": 70,
+        "case_verdicts": {
+          "unsup-08-correct": [
+            false,
+            true,
+            true
+          ]
+        }
+      },
+      "matched_pairs": {
+        "both_labels_correct": 19,
+        "total_pairs": 35,
+        "source_task_ids": [
+          "seq-02",
+          "seq-06",
+          "hall-01",
+          "hall-03",
+          "hall-05",
+          "hall-06",
+          "unsup-09",
+          "unsup-02",
+          "unsup-04",
+          "unsup-05",
+          "unsup-07",
+          "unsup-08",
+          "stale-01",
+          "stale-02",
+          "stale-03",
+          "stale-05",
+          "stale-06",
+          "fmt-05",
+          "fmt-06"
+        ]
+      },
+      "wall_time": {
+        "median_s": 1.8325,
+        "p95_s_nearest_rank": 2.757,
+        "min_s": 0.996,
+        "max_s": 166.322,
+        "mean_s": 2.6816476190476193,
+        "stdev_s": 11.357252550772472
+      },
+      "usage": {
+        "exact_cost_usd": null,
+        "tokens_in": null,
+        "tokens_out": null,
+        "available": false
+      },
+      "threshold_sensitivity_case_level": {
+        "0.25": {
+          "false_pass": {
+            "events": 0,
+            "total": 35,
+            "rate": 0.0,
+            "low": 6.938893903907228e-18,
+            "high": 0.09890099232440402
+          },
+          "false_fail": {
+            "events": 14,
+            "total": 35,
+            "rate": 0.4,
+            "low": 0.2555072885938059,
+            "high": 0.5642729098710749
+          }
+        },
+        "0.5": {
+          "false_pass": {
+            "events": 0,
+            "total": 35,
+            "rate": 0.0,
+            "low": 6.938893903907228e-18,
+            "high": 0.09890099232440402
+          },
+          "false_fail": {
+            "events": 16,
+            "total": 35,
+            "rate": 0.45714285714285713,
+            "low": 0.3046601928840721,
+            "high": 0.6181027493151624
+          }
+        },
+        "0.75": {
+          "false_pass": {
+            "events": 0,
+            "total": 35,
+            "rate": 0.0,
+            "low": 6.938893903907228e-18,
+            "high": 0.09890099232440402
+          },
+          "false_fail": {
+            "events": 23,
+            "total": 35,
+            "rate": 0.6571428571428571,
+            "low": 0.4915194951399626,
+            "high": 0.7916830501295105
+          }
+        }
+      }
+    }
+  },
+  "ledger_cost": {
+    "source": "bc038_openai_ledger_proxy.py \u2014 every request the arm actually made, priced at gpt-4o-2024-08-06 list ($2.50/$10.00 per 1M)",
+    "note": "authoritative; framework-self-reported cost is 0.0 for phoenix/deepeval/opik because they do not expose it",
+    "by_arm": {
+      "phoenix": {
+        "api_calls": 212,
+        "tokens_in": 77723,
+        "tokens_out": 12385,
+        "cost_usd": 0.318158
+      },
+      "opik": {
+        "api_calls": 213,
+        "tokens_in": 197549,
+        "tokens_out": 33752,
+        "cost_usd": 0.831393
+      },
+      "naive": {
+        "api_calls": 212,
+        "tokens_in": 66275,
+        "tokens_out": 212,
+        "cost_usd": 0.167808
+      },
+      "deepeval": {
+        "api_calls": 424,
+        "tokens_in": 162209,
+        "tokens_out": 40792,
+        "cost_usd": 0.813443
+      }
+    },
+    "total_api_calls": 1061,
+    "total_cost_usd": 2.130802
+  },
+  "disputed_label_sensitivity": {
+    "disputed_case_ids": [
+      "seq-05-correct",
+      "seq-07-correct",
+      "seq-09-correct",
+      "seq-11-correct"
+    ],
+    "finding": "All four arms unanimously failed exactly the four wrong_tool_sequence controls where requested quantity exceeded available stock while the output asserted \"unavailable\": false, and unanimously passed the two where stock was sufficient. The correlation is perfect. These outputs carry a defect our construction did not intend, so the \"correct\" label is contestable and every arm false-fail count is inflated by 4 equally.",
+    "effect": "Excluding them lowers every false-fail rate; false-pass rates are untouched; ordering is unchanged.",
+    "by_arm": {
+      "naive": {
+        "false_fail_excluding_disputed": {
+          "events": 7,
+          "total": 31,
+          "rate": 0.22580645161290322,
+          "low": 0.11395135561262493,
+          "high": 0.3981241838334205
+        },
+        "false_pass_unchanged": {
+          "events": 5,
+          "total": 35,
+          "rate": 0.14285714285714285,
+          "low": 0.06260231079433715,
+          "high": 0.29375554086595146
+        }
+      },
+      "phoenix": {
+        "false_fail_excluding_disputed": {
+          "events": 6,
+          "total": 31,
+          "rate": 0.1935483870967742,
+          "low": 0.09187008361586096,
+          "high": 0.36280257811795463
+        },
+        "false_pass_unchanged": {
+          "events": 5,
+          "total": 35,
+          "rate": 0.14285714285714285,
+          "low": 0.06260231079433715,
+          "high": 0.29375554086595146
+        }
+      },
+      "deepeval": {
+        "false_fail_excluding_disputed": {
+          "events": 1,
+          "total": 31,
+          "rate": 0.03225806451612903,
+          "low": 0.005717221525416816,
+          "high": 0.16194105164724906
+        },
+        "false_pass_unchanged": {
+          "events": 8,
+          "total": 35,
+          "rate": 0.22857142857142856,
+          "low": 0.12065879834191687,
+          "high": 0.3901731689199025
+        }
+      },
+      "opik": {
+        "false_fail_excluding_disputed": {
+          "events": 12,
+          "total": 31,
+          "rate": 0.3870967741935484,
+          "low": 0.23733101420380254,
+          "high": 0.5617589138033927
+        },
+        "false_pass_unchanged": {
+          "events": 0,
+          "total": 35,
+          "rate": 0.0,
+          "low": 6.938893903907228e-18,
+          "high": 0.09890099232440402
+        }
+      }
+    }
+  }
+}
