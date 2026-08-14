@@ -11,6 +11,11 @@ Evidence for the BenchClaw article [AI Agent Evaluation Tools: We Measured How O
 - Judge: `gpt-4o-2024-08-06`, temperature 0
 - Total: 840 evaluations, 1,061 API calls, $2.1308 measured model cost
 
+The frozen manifest listed `openai` 2.54.0 for the naive arm, but the captured environment
+freeze shows 2.7.1 was installed for the run. The naive arm is a direct SDK call, not an
+evaluation framework. The manifest is preserved unchanged and the actual version is reported
+from `freeze-naive.txt`.
+
 The corpus contains 34 constructed wrong outputs and one organic model failure. It tests evaluator behaviour, not the prevalence of agent defects in production. Every Wilson 95% interval overlaps, so the study does not rank the tools.
 
 Four controls originally labelled correct contain an additional inventory defect. The analysis publishes both the frozen labels and a sensitivity analysis excluding those disputed controls. False-pass rates are unaffected.
