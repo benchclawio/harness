@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-08-15",
+  "release": "1.9.0",
+  "release_published_at": "2026-08-10T13:10:20Z",
+  "release_commit": "cdfa34e0a9d3e1ae6825345471f25185dd61d74e",
+  "release_build_date": "2026-08-10T13:05:34Z",
+  "repeats": 5,
+  "archive": "github-mcp-server_Linux_x86_64.tar.gz",
+  "archive_sha256": "cbf38bd3364518ccf80b6a25587d5ef11655b15d63cbb48bc066384d0b5b5964",
+  "version_output": "GitHub MCP Server\nVersion: 1.9.0\nCommit: cdfa34e0a9d3e1ae6825345471f25185dd61d74e\nBuild Date: 2026-08-10T13:05:34Z",
+  "read_only_scope_output": "Required OAuth scopes for enabled tools:\n\n  read:org\n  repo\n\nTotal: 2 unique scope(s)",
+  "config_shapes_parsed": [
+    "remote_http_oauth",
+    "local_docker_pat_reference"
+  ],
+  "claude_code_registration": {
+    "version": "2.1.220",
+    "runs": 1,
+    "command": "claude mcp add --transport http --scope user github https://api.githubcopilot.com/mcp/",
+    "output": "Added HTTP MCP server github with URL: https://api.githubcopilot.com/mcp to user config"
+  },
+  "tool_search_probe": {
+    "runs": 5,
+    "exit_code": 1,
+    "stderr": "Error: unknown command \"tool-search\" for \"server\"\nRun 'server --help' for usage.\nunknown command \"tool-search\" for \"server\""
+  },
+  "boundaries": [
+    "No GitHub credential was used",
+    "No authenticated GitHub API or MCP tool call was made",
+    "No hosted endpoint latency or reliability was measured"
+  ]
+}
