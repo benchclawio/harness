@@ -79,7 +79,8 @@ Each run produces a directory with:
 | Pydantic AI 2.18.0 review, 80 runs | [raw data, analysis, and manifest](results/pydantic-ai-review-2.18.0-gpt-4o-2026-07-27/) | [Review](https://benchclaw.io/pydantic-ai-review/) |
 | Pydantic AI 2.18.0 Skills verification | [scripts and outputs](results/pydantic-ai-skills-2.18.0-2026-07-27/) | [Skills guide](https://benchclaw.io/pydantic-ai-skills/) |
 | LangChain/LangGraph dependency verification | [scripts and outputs](results/langchain-vs-langgraph-2026-07-28/) | [Comparison](https://benchclaw.io/langchain-vs-langgraph/) |
-| Langfuse 4.10.0 vs Arize Phoenix 20.1.0 observability, 60 runs | [raw data, capture analysis, protocol, and code](results/llm-observability-langfuse-phoenix-2026-08-12/) | Article forthcoming |
+| Langfuse 4.10.0 vs Arize Phoenix 20.1.0 observability, 60 runs | [raw data, capture analysis, protocol, and code](results/llm-observability-langfuse-phoenix-2026-08-12/) | [Tools comparison](https://benchclaw.io/llm-observability-tools/) |
+| openai-agents 0.21.1 vs LangGraph 1.2.11 tool calling, 160 runs | [raw data, analysis, manifest, locks, adapters, and checksums](results/openai-agents-0.21.1-vs-langgraph-1.2.11-2026-08-17/) | [Framework guide](https://benchclaw.io/agentic-ai-frameworks/) |
 | AI agent evaluator false-pass rates, 840 evaluations | [corpus, raw results, ledgers, analysis, and code](bc038/) | [Benchmark report](https://benchclaw.io/ai-agent-evaluation-tools/) |
 
 The [BenchClaw methodology](https://benchclaw.io/methodology/) defines the evidence standard, scoring rules, failure taxonomy, and statistical plan. Published JSONL files are sanitized evidence exports; local, unreviewed run artifacts remain ignored by default.

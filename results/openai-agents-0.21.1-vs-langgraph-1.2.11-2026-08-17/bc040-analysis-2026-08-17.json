@@ -1,0 +1,811 @@
+{
+  "benchmark": "bc-040",
+  "date_utc": "2026-08-17",
+  "model_id": "gpt-4o",
+  "subject": "openai_agents_0_21_1",
+  "control": "langgraph_1_2_11",
+  "total_attempts": 160,
+  "total_cost_usd": 0.38482,
+  "runs_per_cell": 20,
+  "arms": {
+    "langgraph_1_2_11": {
+      "attempts": 80,
+      "completed": 80,
+      "completion_rate": 1.0,
+      "completion_wilson_95": [
+        0.9541818704644728,
+        0.9999999999999999
+      ],
+      "failure_counts": {},
+      "total_cost_usd": 0.18804,
+      "metrics": {
+        "tokens_in": {
+          "n": 80,
+          "mean": 660.75,
+          "median": 703.0,
+          "q25": 539.0,
+          "q75": 824.75,
+          "p95": 926.0,
+          "p95_interpretation": "exploratory"
+        },
+        "tokens_out": {
+          "n": 80,
+          "mean": 69.8625,
+          "median": 60.0,
+          "q25": 56.0,
+          "q75": 83.25,
+          "p95": 87.0,
+          "p95_interpretation": "exploratory"
+        },
+        "cost_usd": {
+          "n": 80,
+          "mean": 0.0023505,
+          "median": 0.0024725,
+          "q25": 0.0019099999999999998,
+          "q75": 0.0028718750000000003,
+          "p95": 0.003135,
+          "p95_interpretation": "exploratory"
+        },
+        "wall_time_s": {
+          "n": 80,
+          "mean": 2.23262375,
+          "median": 2.1269,
+          "q25": 1.926225,
+          "q75": 2.407375,
+          "p95": 3.5398749999999994,
+          "p95_interpretation": "exploratory"
+        },
+        "tool_calls": {
+          "n": 80,
+          "mean": 1.75,
+          "median": 2.0,
+          "q25": 1.75,
+          "q75": 2.0,
+          "p95": 2.0,
+          "p95_interpretation": "exploratory"
+        }
+      }
+    },
+    "openai_agents_0_21_1": {
+      "attempts": 80,
+      "completed": 80,
+      "completion_rate": 1.0,
+      "completion_wilson_95": [
+        0.9541818704644728,
+        0.9999999999999999
+      ],
+      "failure_counts": {},
+      "total_cost_usd": 0.19678,
+      "metrics": {
+        "tokens_in": {
+          "n": 80,
+          "mean": 711.0,
+          "median": 755.5,
+          "q25": 568.25,
+          "q75": 898.25,
+          "p95": 1004.0,
+          "p95_interpretation": "exploratory"
+        },
+        "tokens_out": {
+          "n": 80,
+          "mean": 68.225,
+          "median": 60.0,
+          "q25": 56.0,
+          "q75": 83.25,
+          "p95": 87.0,
+          "p95_interpretation": "exploratory"
+        },
+        "cost_usd": {
+          "n": 80,
+          "mean": 0.00245975,
+          "median": 0.00260375,
+          "q25": 0.001983125,
+          "q75": 0.003055625,
+          "p95": 0.00333,
+          "p95_interpretation": "exploratory"
+        },
+        "wall_time_s": {
+          "n": 80,
+          "mean": 2.5302687500000003,
+          "median": 2.4504,
+          "q25": 2.152,
+          "q75": 2.869975,
+          "p95": 3.44237,
+          "p95_interpretation": "exploratory"
+        },
+        "tool_calls": {
+          "n": 80,
+          "mean": 1.75,
+          "median": 2.0,
+          "q25": 1.75,
+          "q75": 2.0,
+          "p95": 2.0,
+          "p95_interpretation": "exploratory"
+        }
+      }
+    }
+  },
+  "by_task": {
+    "dependent-shipping-quote": {
+      "langgraph_1_2_11": {
+        "attempts": 20,
+        "completed": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "failure_counts": {},
+        "total_cost_usd": 0.05695,
+        "metrics": {
+          "tokens_in": {
+            "n": 20,
+            "mean": 791.0,
+            "median": 791.0,
+            "q25": 791.0,
+            "q75": 791.0,
+            "p95": 791.0,
+            "p95_interpretation": "exploratory"
+          },
+          "tokens_out": {
+            "n": 20,
+            "mean": 87.0,
+            "median": 87.0,
+            "q25": 87.0,
+            "q75": 87.0,
+            "p95": 87.0,
+            "p95_interpretation": "exploratory"
+          },
+          "cost_usd": {
+            "n": 20,
+            "mean": 0.0028475,
+            "median": 0.0028475,
+            "q25": 0.0028475,
+            "q75": 0.0028475,
+            "p95": 0.0028475,
+            "p95_interpretation": "exploratory"
+          },
+          "wall_time_s": {
+            "n": 20,
+            "mean": 2.6727350000000003,
+            "median": 2.3252,
+            "q25": 2.1412750000000003,
+            "q75": 2.5610749999999998,
+            "p95": 4.694640000000001,
+            "p95_interpretation": "exploratory"
+          },
+          "tool_calls": {
+            "n": 20,
+            "mean": 2.0,
+            "median": 2.0,
+            "q25": 2.0,
+            "q75": 2.0,
+            "p95": 2.0,
+            "p95_interpretation": "exploratory"
+          }
+        }
+      },
+      "openai_agents_0_21_1": {
+        "attempts": 20,
+        "completed": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "failure_counts": {},
+        "total_cost_usd": 0.06055,
+        "metrics": {
+          "tokens_in": {
+            "n": 20,
+            "mean": 863.0,
+            "median": 863.0,
+            "q25": 863.0,
+            "q75": 863.0,
+            "p95": 863.0,
+            "p95_interpretation": "exploratory"
+          },
+          "tokens_out": {
+            "n": 20,
+            "mean": 87.0,
+            "median": 87.0,
+            "q25": 87.0,
+            "q75": 87.0,
+            "p95": 87.0,
+            "p95_interpretation": "exploratory"
+          },
+          "cost_usd": {
+            "n": 20,
+            "mean": 0.0030275,
+            "median": 0.0030275,
+            "q25": 0.0030275,
+            "q75": 0.0030275,
+            "p95": 0.0030275,
+            "p95_interpretation": "exploratory"
+          },
+          "wall_time_s": {
+            "n": 20,
+            "mean": 2.778765,
+            "median": 2.6837,
+            "q25": 2.484575,
+            "q75": 2.9846,
+            "p95": 3.4423700000000004,
+            "p95_interpretation": "exploratory"
+          },
+          "tool_calls": {
+            "n": 20,
+            "mean": 2.0,
+            "median": 2.0,
+            "q25": 2.0,
+            "q75": 2.0,
+            "p95": 2.0,
+            "p95_interpretation": "exploratory"
+          }
+        }
+      }
+    },
+    "inventory-reorder": {
+      "langgraph_1_2_11": {
+        "attempts": 20,
+        "completed": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "failure_counts": {},
+        "total_cost_usd": 0.02663,
+        "metrics": {
+          "tokens_in": {
+            "n": 20,
+            "mean": 311.0,
+            "median": 311.0,
+            "q25": 311.0,
+            "q75": 311.0,
+            "p95": 311.0,
+            "p95_interpretation": "exploratory"
+          },
+          "tokens_out": {
+            "n": 20,
+            "mean": 55.4,
+            "median": 57.0,
+            "q25": 57.0,
+            "q75": 57.0,
+            "p95": 57.0,
+            "p95_interpretation": "exploratory"
+          },
+          "cost_usd": {
+            "n": 20,
+            "mean": 0.0013315,
+            "median": 0.0013475,
+            "q25": 0.0013475,
+            "q75": 0.0013475,
+            "p95": 0.0013475,
+            "p95_interpretation": "exploratory"
+          },
+          "wall_time_s": {
+            "n": 20,
+            "mean": 1.6518349999999997,
+            "median": 1.49445,
+            "q25": 1.3872749999999998,
+            "q75": 1.87575,
+            "p95": 2.431425,
+            "p95_interpretation": "exploratory"
+          },
+          "tool_calls": {
+            "n": 20,
+            "mean": 1.0,
+            "median": 1.0,
+            "q25": 1.0,
+            "q75": 1.0,
+            "p95": 1.0,
+            "p95_interpretation": "exploratory"
+          }
+        }
+      },
+      "openai_agents_0_21_1": {
+        "attempts": 20,
+        "completed": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "failure_counts": {},
+        "total_cost_usd": 0.02641,
+        "metrics": {
+          "tokens_in": {
+            "n": 20,
+            "mean": 329.0,
+            "median": 329.0,
+            "q25": 329.0,
+            "q75": 329.0,
+            "p95": 329.0,
+            "p95_interpretation": "exploratory"
+          },
+          "tokens_out": {
+            "n": 20,
+            "mean": 49.8,
+            "median": 57.0,
+            "q25": 41.0,
+            "q75": 57.0,
+            "p95": 57.0,
+            "p95_interpretation": "exploratory"
+          },
+          "cost_usd": {
+            "n": 20,
+            "mean": 0.0013205,
+            "median": 0.0013925,
+            "q25": 0.0012325,
+            "q75": 0.0013925,
+            "p95": 0.0013925,
+            "p95_interpretation": "exploratory"
+          },
+          "wall_time_s": {
+            "n": 20,
+            "mean": 1.9896999999999998,
+            "median": 1.9122,
+            "q25": 1.708925,
+            "q75": 2.1411,
+            "p95": 2.6934500000000003,
+            "p95_interpretation": "exploratory"
+          },
+          "tool_calls": {
+            "n": 20,
+            "mean": 1.0,
+            "median": 1.0,
+            "q25": 1.0,
+            "q75": 1.0,
+            "p95": 1.0,
+            "p95_interpretation": "exploratory"
+          }
+        }
+      }
+    },
+    "recover-stale-revision": {
+      "langgraph_1_2_11": {
+        "attempts": 20,
+        "completed": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "failure_counts": {},
+        "total_cost_usd": 0.04195,
+        "metrics": {
+          "tokens_in": {
+            "n": 20,
+            "mean": 615.0,
+            "median": 615.0,
+            "q25": 615.0,
+            "q75": 615.0,
+            "p95": 615.0,
+            "p95_interpretation": "exploratory"
+          },
+          "tokens_out": {
+            "n": 20,
+            "mean": 56.0,
+            "median": 56.0,
+            "q25": 56.0,
+            "q75": 56.0,
+            "p95": 56.0,
+            "p95_interpretation": "exploratory"
+          },
+          "cost_usd": {
+            "n": 20,
+            "mean": 0.0020975,
+            "median": 0.0020975,
+            "q25": 0.0020975,
+            "q75": 0.0020975,
+            "p95": 0.0020975,
+            "p95_interpretation": "exploratory"
+          },
+          "wall_time_s": {
+            "n": 20,
+            "mean": 2.214465,
+            "median": 2.0617,
+            "q25": 1.9743249999999999,
+            "q75": 2.220525,
+            "p95": 3.539875,
+            "p95_interpretation": "exploratory"
+          },
+          "tool_calls": {
+            "n": 20,
+            "mean": 2.0,
+            "median": 2.0,
+            "q25": 2.0,
+            "q75": 2.0,
+            "p95": 2.0,
+            "p95_interpretation": "exploratory"
+          }
+        }
+      },
+      "openai_agents_0_21_1": {
+        "attempts": 20,
+        "completed": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "failure_counts": {},
+        "total_cost_usd": 0.0436,
+        "metrics": {
+          "tokens_in": {
+            "n": 20,
+            "mean": 648.0,
+            "median": 648.0,
+            "q25": 648.0,
+            "q75": 648.0,
+            "p95": 648.0,
+            "p95_interpretation": "exploratory"
+          },
+          "tokens_out": {
+            "n": 20,
+            "mean": 56.0,
+            "median": 56.0,
+            "q25": 56.0,
+            "q75": 56.0,
+            "p95": 56.0,
+            "p95_interpretation": "exploratory"
+          },
+          "cost_usd": {
+            "n": 20,
+            "mean": 0.00218,
+            "median": 0.00218,
+            "q25": 0.00218,
+            "q75": 0.00218,
+            "p95": 0.00218,
+            "p95_interpretation": "exploratory"
+          },
+          "wall_time_s": {
+            "n": 20,
+            "mean": 2.42443,
+            "median": 2.3636999999999997,
+            "q25": 2.160175,
+            "q75": 2.6718,
+            "p95": 2.8614800000000002,
+            "p95_interpretation": "exploratory"
+          },
+          "tool_calls": {
+            "n": 20,
+            "mean": 2.0,
+            "median": 2.0,
+            "q25": 2.0,
+            "q75": 2.0,
+            "p95": 2.0,
+            "p95_interpretation": "exploratory"
+          }
+        }
+      }
+    },
+    "refund-policy-minimal-tools": {
+      "langgraph_1_2_11": {
+        "attempts": 20,
+        "completed": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "failure_counts": {},
+        "total_cost_usd": 0.06251,
+        "metrics": {
+          "tokens_in": {
+            "n": 20,
+            "mean": 926.0,
+            "median": 926.0,
+            "q25": 926.0,
+            "q75": 926.0,
+            "p95": 926.0,
+            "p95_interpretation": "exploratory"
+          },
+          "tokens_out": {
+            "n": 20,
+            "mean": 81.05,
+            "median": 82.0,
+            "q25": 82.0,
+            "q75": 82.0,
+            "p95": 82.0,
+            "p95_interpretation": "exploratory"
+          },
+          "cost_usd": {
+            "n": 20,
+            "mean": 0.0031255000000000007,
+            "median": 0.003135,
+            "q25": 0.003135,
+            "q75": 0.003135,
+            "p95": 0.003135,
+            "p95_interpretation": "exploratory"
+          },
+          "wall_time_s": {
+            "n": 20,
+            "mean": 2.39146,
+            "median": 2.33605,
+            "q25": 2.1180250000000003,
+            "q75": 2.5812500000000003,
+            "p95": 3.1150100000000003,
+            "p95_interpretation": "exploratory"
+          },
+          "tool_calls": {
+            "n": 20,
+            "mean": 2.0,
+            "median": 2.0,
+            "q25": 2.0,
+            "q75": 2.0,
+            "p95": 2.0,
+            "p95_interpretation": "exploratory"
+          }
+        }
+      },
+      "openai_agents_0_21_1": {
+        "attempts": 20,
+        "completed": 20,
+        "completion_rate": 1.0,
+        "completion_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "failure_counts": {},
+        "total_cost_usd": 0.06622,
+        "metrics": {
+          "tokens_in": {
+            "n": 20,
+            "mean": 1004.0,
+            "median": 1004.0,
+            "q25": 1004.0,
+            "q75": 1004.0,
+            "p95": 1004.0,
+            "p95_interpretation": "exploratory"
+          },
+          "tokens_out": {
+            "n": 20,
+            "mean": 80.1,
+            "median": 82.0,
+            "q25": 82.0,
+            "q75": 82.0,
+            "p95": 82.0,
+            "p95_interpretation": "exploratory"
+          },
+          "cost_usd": {
+            "n": 20,
+            "mean": 0.003311,
+            "median": 0.00333,
+            "q25": 0.00333,
+            "q75": 0.00333,
+            "p95": 0.0033299999999999996,
+            "p95_interpretation": "exploratory"
+          },
+          "wall_time_s": {
+            "n": 20,
+            "mean": 2.9281800000000002,
+            "median": 2.7796000000000003,
+            "q25": 2.372025,
+            "q75": 3.1537499999999996,
+            "p95": 4.034270000000001,
+            "p95_interpretation": "exploratory"
+          },
+          "tool_calls": {
+            "n": 20,
+            "mean": 2.0,
+            "median": 2.0,
+            "q25": 2.0,
+            "q75": 2.0,
+            "p95": 2.0,
+            "p95_interpretation": "exploratory"
+          }
+        }
+      }
+    }
+  },
+  "paired_differences": {
+    "note": "subject minus control, paired by (task_id, run_index); an interval crossing zero means no measurable difference",
+    "seed": 20260817,
+    "replicates": 10000,
+    "overall": {
+      "wall_time_s": {
+        "pairs": 80,
+        "subject_median": 2.4504,
+        "control_median": 2.1269,
+        "median_delta": 0.30989999999999984,
+        "bootstrap_95": [
+          0.1936,
+          0.4554
+        ],
+        "crosses_zero": false,
+        "interpretation": "difference outside the interval"
+      },
+      "tokens_in": {
+        "pairs": 80,
+        "subject_median": 755.5,
+        "control_median": 703.0,
+        "median_delta": 52.5,
+        "bootstrap_95": [
+          33.0,
+          72.0
+        ],
+        "crosses_zero": false,
+        "interpretation": "difference outside the interval"
+      },
+      "tokens_out": {
+        "pairs": 80,
+        "subject_median": 60.0,
+        "control_median": 60.0,
+        "median_delta": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "crosses_zero": true,
+        "interpretation": "no measurable difference"
+      },
+      "cost_usd": {
+        "pairs": 80,
+        "subject_median": 0.00260375,
+        "control_median": 0.0024725,
+        "median_delta": 8.250000000000011e-05,
+        "bootstrap_95": [
+          8.250000000000011e-05,
+          0.0001799999999999996
+        ],
+        "crosses_zero": false,
+        "interpretation": "difference outside the interval"
+      }
+    },
+    "by_task": {
+      "dependent-shipping-quote": {
+        "wall_time_s": {
+          "pairs": 20,
+          "subject_median": 2.6837,
+          "control_median": 2.3252,
+          "median_delta": 0.38954999999999984,
+          "bootstrap_95": [
+            0.11030000000000006,
+            0.58965
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        },
+        "tokens_in": {
+          "pairs": 20,
+          "subject_median": 863.0,
+          "control_median": 791.0,
+          "median_delta": 72.0,
+          "bootstrap_95": [
+            72.0,
+            72.0
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        },
+        "cost_usd": {
+          "pairs": 20,
+          "subject_median": 0.0030275,
+          "control_median": 0.0028475,
+          "median_delta": 0.0001799999999999996,
+          "bootstrap_95": [
+            0.0001799999999999996,
+            0.0001799999999999996
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        }
+      },
+      "inventory-reorder": {
+        "wall_time_s": {
+          "pairs": 20,
+          "subject_median": 1.9122,
+          "control_median": 1.49445,
+          "median_delta": 0.31779999999999997,
+          "bootstrap_95": [
+            0.19115000000000004,
+            0.5867000000000001
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        },
+        "tokens_in": {
+          "pairs": 20,
+          "subject_median": 329.0,
+          "control_median": 311.0,
+          "median_delta": 18.0,
+          "bootstrap_95": [
+            18.0,
+            18.0
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        },
+        "cost_usd": {
+          "pairs": 20,
+          "subject_median": 0.0013925,
+          "control_median": 0.0013475,
+          "median_delta": 4.500000000000012e-05,
+          "bootstrap_95": [
+            -0.00011499999999999987,
+            4.500000000000012e-05
+          ],
+          "crosses_zero": true,
+          "interpretation": "no measurable difference"
+        }
+      },
+      "recover-stale-revision": {
+        "wall_time_s": {
+          "pairs": 20,
+          "subject_median": 2.3636999999999997,
+          "control_median": 2.0617,
+          "median_delta": 0.2573000000000001,
+          "bootstrap_95": [
+            0.08424999999999971,
+            0.58345
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        },
+        "tokens_in": {
+          "pairs": 20,
+          "subject_median": 648.0,
+          "control_median": 615.0,
+          "median_delta": 33.0,
+          "bootstrap_95": [
+            33.0,
+            33.0
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        },
+        "cost_usd": {
+          "pairs": 20,
+          "subject_median": 0.00218,
+          "control_median": 0.0020975,
+          "median_delta": 8.250000000000011e-05,
+          "bootstrap_95": [
+            8.250000000000011e-05,
+            8.250000000000011e-05
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        }
+      },
+      "refund-policy-minimal-tools": {
+        "wall_time_s": {
+          "pairs": 20,
+          "subject_median": 2.7796000000000003,
+          "control_median": 2.33605,
+          "median_delta": 0.32699999999999996,
+          "bootstrap_95": [
+            -0.008299999999999974,
+            0.8520000000000001
+          ],
+          "crosses_zero": true,
+          "interpretation": "no measurable difference"
+        },
+        "tokens_in": {
+          "pairs": 20,
+          "subject_median": 1004.0,
+          "control_median": 926.0,
+          "median_delta": 78.0,
+          "bootstrap_95": [
+            78.0,
+            78.0
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        },
+        "cost_usd": {
+          "pairs": 20,
+          "subject_median": 0.00333,
+          "control_median": 0.003135,
+          "median_delta": 0.00019499999999999986,
+          "bootstrap_95": [
+            0.00019499999999999986,
+            0.00019499999999999986
+          ],
+          "crosses_zero": false,
+          "interpretation": "difference outside the interval"
+        }
+      }
+    }
+  }
+}

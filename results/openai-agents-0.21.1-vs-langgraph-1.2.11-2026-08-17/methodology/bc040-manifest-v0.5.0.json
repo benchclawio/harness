@@ -1,0 +1,136 @@
+{
+  "manifest_version": "0.5.0",
+  "benchmark_id": "bc-040",
+  "title": "openai-agents 0.21.1 vs langgraph 1.2.11, gpt-4o",
+  "protocol": "methodology/agent-frameworks-v0.1.0.md",
+  "date_utc": "2026-08-17",
+  "run_window_utc": {
+    "warmup": "2026-08-17T16:28Z",
+    "scored_start": "2026-08-17T17:02Z",
+    "scored_end": "2026-08-17T17:16Z"
+  },
+  "environment": {
+    "provider": "Hetzner Cloud",
+    "project": "benchclaw-sandbox",
+    "server_type": "cpx11",
+    "note": "CX23 unavailable in all six datacenters; cpx11 is the largest option strictly under the approved ceiling. Never upgraded.",
+    "location": "ash (Ashburn)",
+    "os": "Ubuntu 24.04",
+    "server_id": 162458019,
+    "created_utc": "2026-08-17T16:15:54Z",
+    "destroyed_utc": "2026-08-17T17:20:01Z",
+    "servers_remaining_after_destroy": 0
+  },
+  "model": {
+    "id": "gpt-4o",
+    "provider": "OpenAI",
+    "endpoint": "chat completions",
+    "temperature": 0,
+    "parallel_tool_calls": false,
+    "endpoint_note": "openai-agents defaults to the Responses API; it was forced to Chat Completions so both arms hit the same endpoint. Disclosed on the page."
+  },
+  "arms": {
+    "subject": {
+      "id": "openai_agents_0_21_1",
+      "package": "openai-agents",
+      "version": "0.21.1",
+      "released": "2026-08-16",
+      "client": "openai==3.1.0",
+      "lock": "operations/bc040-locks/openai-agents.lock",
+      "distributions": 40,
+      "tracing": "disabled three ways (OPENAI_AGENTS_DISABLE_TRACING, set_tracing_disabled, no-op processor); default is on and uploads prompts and tool payloads to api.openai.com/v1/traces/ingest"
+    },
+    "control": {
+      "id": "langgraph_1_2_11",
+      "package": "langgraph",
+      "version": "1.2.11",
+      "released": "2026-08-11",
+      "client": "langchain-core==1.5.5",
+      "lock": "operations/bc040-locks/langgraph.lock",
+      "distributions": 34,
+      "tracing": "off by default; LANGCHAIN_TRACING_V2 unset, LANGSMITH_TRACING=false",
+      "role": "same-day control, re-measured from scratch; not comparable to the published 1.2.9 numbers"
+    }
+  },
+  "shared": {
+    "pydantic": "2.13.4",
+    "isolation": "two pip-less, hash-verified virtualenvs; network blocked except api.openai.com"
+  },
+  "design": {
+    "task_suite": "methodology/real-pilot-task-suite-v0.1.0.json",
+    "task_suite_version": "0.1.1",
+    "task_suite_sha256": "ec72e7440ea177d150ee550ea6dbe908b02410cae6e45f78aefa9eed29f339bf",
+    "task_suite_frozen": "verified unchanged against the gpt4o pilot manifest before warmup",
+    "tasks": [
+      "inventory-reorder",
+      "dependent-shipping-quote",
+      "recover-stale-revision",
+      "refund-policy-minimal-tools"
+    ],
+    "runs_per_subject_per_task": 20,
+    "scored_attempts": 160,
+    "warmup_attempts": 8,
+    "warmup_passes": 1,
+    "order": "counterbalanced; even run indexes run the subject first, odd the control",
+    "process_boundary": "one attempt per subprocess"
+  },
+  "cost_usd": {
+    "warmup": 0.019,
+    "scored": 0.38482,
+    "total": 0.40382,
+    "requests_scored": 440,
+    "approved_bound": "~462 requests / ~$0.40"
+  },
+  "results_summary": {
+    "completion": {
+      "openai_agents_0_21_1": "80/80, Wilson 95% [0.954, 1.000]",
+      "langgraph_1_2_11": "80/80, Wilson 95% [0.954, 1.000]",
+      "verdict": "no measurable difference in correctness"
+    },
+    "paired_subject_minus_control": {
+      "wall_time_s": "+0.310 median, bootstrap 95% [+0.194, +0.455]",
+      "tokens_in": "+52.5 median, bootstrap 95% [+33, +72]",
+      "tokens_out": "0, bootstrap 95% [0, 0]",
+      "cost_usd": "+0.0001 median, bootstrap 95% [+0.0001, +0.0002]"
+    },
+    "failures": "zero in both arms; the failure taxonomy is empty for this run"
+  },
+  "artifacts": {
+    "scored_raw": {
+      "path": "operations/bc040-scored-raw-2026-08-17.jsonl",
+      "sha256": "1621f1ea4153a6160a2c0a8dbc53bb03fd4a1a4f1fdca587d5931eb607e289c7",
+      "lines": 160
+    },
+    "warmup_raw": {
+      "path": "operations/bc040-warmup-raw-2026-08-17.jsonl",
+      "sha256": "e43a2dde5ba6d37da12cf05535822fbd887281a6e29e06d372bcff4dfc29d51b",
+      "lines": 8
+    },
+    "analysis": "operations/bc040-analysis-2026-08-17.json",
+    "run_log": "operations/bc040-scored-run-2026-08-17.log",
+    "analysis_script": "operations/bc040_analyze.py",
+    "runner_sha256": "7e4b5292c0ffc53af8a1be3db4334f0c2a845773edc34d61558d194984733a15",
+    "subject_worker_sha256": "a52d31270a1ef8320d89be5b578219423237dc8dddacf481288bf90209887cef",
+    "control_worker_sha256": "5aa31cf8878029432e2f8d1a12707c5a2d9175c0a4f9ac51973287ceecfde6c6",
+    "static_audit": "operations/bc040-static-audit-2026-08-17.md",
+    "build_plan": "operations/bc040-build-plan-2026-08-17.md",
+    "serp_brief": "content/keyword-research/bc040-serp-brief-2026-08-17.md"
+  },
+  "publication_eligibility": {
+    "task_suite_frozen_before_warmup": true,
+    "model_pre_declared": true,
+    "warmup_single_pass": true,
+    "scored_run_uninterrupted": true,
+    "runs_per_cell_meets_protocol_minimum": true,
+    "same_day_control": true,
+    "evidence_sanitization_clean": true,
+    "verdict": "eligible"
+  },
+  "known_limitations": [
+    "One model only (gpt-4o). The comparison holds for this model; it is not a general claim.",
+    "The subject is OpenAI's own SDK benchmarked on an OpenAI model. The same-day control and the published raw data are the answer; the page should name the objection.",
+    "openai-agents 0.21.1 was one day old at measurement time.",
+    "Both arms forced onto Chat Completions; the subject ships defaulting to Responses. Latency as-shipped may differ.",
+    "Zero failures means the failure taxonomy has no data this run; the divergence found in fake-mode acceptance tests (openai-agents rejects malformed tool arguments as malformed_tool_call, LangGraph coerces and fails later as invalid_final_answer) is an adapter-test finding, not a scored-run finding."
+  ]
+}

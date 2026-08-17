@@ -1,0 +1,19 @@
+{
+  "benchmark_id": "bc-040",
+  "date_utc": "2026-08-17",
+  "host": "Hetzner Cloud cpx11, 2 vCPU / 4 GB, ash (Ashburn)",
+  "os": "Ubuntu 24.04",
+  "server_id": 162458019,
+  "server_created_utc": "2026-08-17T16:15:54Z",
+  "server_destroyed_utc": "2026-08-17T17:20:01Z",
+  "isolation": "two pip-less, hash-verified virtualenvs; network blocked except api.openai.com",
+  "subject": "openai-agents==0.21.1 (openai==3.1.0), 40 distributions",
+  "control": "langgraph==1.2.11 (langchain-core==1.5.5), 34 distributions",
+  "shared": "pydantic==2.13.4",
+  "model": "gpt-4o, temperature 0, parallel_tool_calls false, Chat Completions endpoint for both arms",
+  "task_suite_sha256": "ec72e7440ea177d150ee550ea6dbe908b02410cae6e45f78aefa9eed29f339bf",
+  "runner_sha256": "7e4b5292c0ffc53af8a1be3db4334f0c2a845773edc34d61558d194984733a15",
+  "subject_worker_sha256": "a52d31270a1ef8320d89be5b578219423237dc8dddacf481288bf90209887cef",
+  "control_worker_sha256": "5aa31cf8878029432e2f8d1a12707c5a2d9175c0a4f9ac51973287ceecfde6c6",
+  "note": "Kernel version was not captured on the host before it was destroyed, and is omitted rather than reconstructed."
+}
