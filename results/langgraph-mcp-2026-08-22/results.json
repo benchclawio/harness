@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-22",
+  "profile": "deterministic code-surface verification",
+  "cost_usd": 0,
+  "model_calls": 0,
+  "versions": {
+    "python": "3.12.13",
+    "langgraph": "1.2.11",
+    "langchain-mcp-adapters": "0.3.2",
+    "mcp": "1.29.0"
+  },
+  "current_release_check": {
+    "langgraph": "1.2.11",
+    "langchain-mcp-adapters": "0.3.2",
+    "mcp": "2.0.0",
+    "adapter_mcp_constraint": ">=1.24.0,<2.0.0"
+  },
+  "transports": {
+    "stdio": {
+      "runs": 5,
+      "passed": 5,
+      "discovered_tools": ["multiply"],
+      "tool_result": "42"
+    },
+    "streamable_http": {
+      "runs": 5,
+      "passed": 5,
+      "discovered_tools": ["multiply"],
+      "tool_result": "42"
+    }
+  },
+  "warning_observed": "IncompleteFieldDefinitionWarning from pydantic_settings during FastMCP startup"
+}
