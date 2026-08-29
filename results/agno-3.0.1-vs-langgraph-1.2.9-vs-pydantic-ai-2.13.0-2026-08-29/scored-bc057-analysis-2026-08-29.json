@@ -1,0 +1,134 @@
+{
+  "benchmark_id": "bc-057",
+  "run_date": "2026-08-29",
+  "model": "gpt-4o",
+  "total_runs": 60,
+  "frameworks_tested": [
+    "agno_3_0_1_gpt4o_live",
+    "langgraph_1_2_9_gpt4o_live",
+    "pydantic_ai_2_13_0_gpt4o_live"
+  ],
+  "tasks": [
+    "inventory-reorder",
+    "dependent-shipping-quote",
+    "recover-stale-revision",
+    "refund-policy-minimal-tools"
+  ],
+  "total_cost_usd": 0.141412,
+  "per_framework": {
+    "agno_3_0_1_gpt4o_live": {
+      "runs": 20,
+      "completed": 20,
+      "accuracy_pct": 100,
+      "cost_usd": 0.0471,
+      "tokens_in": 13215,
+      "tokens_out": 1410,
+      "wall_time_mean_s": 4.45,
+      "wall_time_median_s": 4.27,
+      "wall_time_min_s": 3.493,
+      "wall_time_max_s": 6.979
+    },
+    "langgraph_1_2_9_gpt4o_live": {
+      "runs": 20,
+      "completed": 20,
+      "accuracy_pct": 100,
+      "cost_usd": 0.0471,
+      "tokens_in": 13215,
+      "tokens_out": 1410,
+      "wall_time_mean_s": 2.922,
+      "wall_time_median_s": 2.682,
+      "wall_time_min_s": 1.647,
+      "wall_time_max_s": 8.752
+    },
+    "pydantic_ai_2_13_0_gpt4o_live": {
+      "runs": 20,
+      "completed": 20,
+      "accuracy_pct": 100,
+      "cost_usd": 0.0471,
+      "tokens_in": 13215,
+      "tokens_out": 1410,
+      "wall_time_mean_s": 4.101,
+      "wall_time_median_s": 3.623,
+      "wall_time_min_s": 2.889,
+      "wall_time_max_s": 13.684
+    }
+  },
+  "per_task": {
+    "inventory-reorder": {
+      "agno_3_0_1_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 3.759
+      },
+      "langgraph_1_2_9_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 2.44
+      },
+      "pydantic_ai_2_13_0_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 3.506
+      }
+    },
+    "dependent-shipping-quote": {
+      "agno_3_0_1_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 5.201
+      },
+      "langgraph_1_2_9_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 2.921
+      },
+      "pydantic_ai_2_13_0_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 5.611
+      }
+    },
+    "recover-stale-revision": {
+      "agno_3_0_1_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 4.37
+      },
+      "langgraph_1_2_9_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 3.865
+      },
+      "pydantic_ai_2_13_0_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 3.814
+      }
+    },
+    "refund-policy-minimal-tools": {
+      "agno_3_0_1_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 4.468
+      },
+      "langgraph_1_2_9_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 2.464
+      },
+      "pydantic_ai_2_13_0_gpt4o_live": {
+        "completed": 5,
+        "runs": 5,
+        "wall_time_mean_s": 3.474
+      }
+    }
+  },
+  "findings": [
+    "All 3 frameworks achieved 100% task accuracy on all 4 tasks with gpt-4o",
+    "Identical token usage across frameworks (13215 in, 1410 out per framework)",
+    "LangGraph fastest: 2.922s mean wall time",
+    "Pydantic AI: 4.101s mean (40% slower than LangGraph)",
+    "Agno: 4.45s mean (52% slower than LangGraph, 9% vs Pydantic AI)",
+    "refund-policy-minimal-tools: 100% all frameworks (gpt-4o corrects date-arithmetic failure seen with gpt-4o-mini)"
+  ]
+}
