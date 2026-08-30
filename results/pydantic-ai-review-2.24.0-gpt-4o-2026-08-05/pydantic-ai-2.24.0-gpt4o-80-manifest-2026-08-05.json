@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-08-05T14:19:11.142878+00:00",
+  "completed_utc": "2026-08-05T14:26:32.035935+00:00",
+  "status": "complete",
+  "subject": "pydantic-ai-slim[openai]==2.24.0",
+  "model_id": "gpt-4o",
+  "temperature": 0,
+  "parallel_tool_calls": false,
+  "framework_retries": 0,
+  "provider_retries": 0,
+  "task_suite": "0.1.1",
+  "task_suite_sha256": "ec72e7440ea177d150ee550ea6dbe908b02410cae6e45f78aefa9eed29f339bf",
+  "worker_sha256": "533dea135672b533a5323a503fa70f338a7ed8faf605d1af460c312f1e220526",
+  "runs_per_task": 20,
+  "total_runs": 80,
+  "spend_ceiling_usd": 0.25,
+  "actual_cost_usd": 0.18878,
+  "raw_jsonl": "/home/blackeyed/.openclaw/workspace/projects/benchclaw/operations/pydantic-ai-2.24.0-gpt4o-80-raw-2026-08-05.jsonl",
+  "raw_jsonl_sha256": "6e148bedc0ea12e3b064716e3e02f1a26464b813ebae1a2610e05208a9b4ce7e"
+}
