@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-09-07",
+  "endpoint": "https://registry.npmjs.org/-/npm/v1/keys",
+  "finding": "The single signature keyid observed on all 99 audited MCP packages matches npm's own registry key.",
+  "observed_keyid_on_all_packages": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+  "npm_published_keys": [
+    { "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA", "expires": "2025-01-29T00:00:00.000Z", "keytype": "ecdsa-sha2-nistp256" },
+    { "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U", "expires": null, "keytype": "ecdsa-sha2-nistp256" }
+  ],
+  "interpretation": "Registry signatures are applied by npm to packages it serves. They establish that the registry delivered the artifact intact. They do NOT establish publisher identity or which source tree built the artifact. Provenance attestations (SLSA) are the mechanism that binds an artifact to a source repository and CI run.",
+  "reproduce": "curl -s https://registry.npmjs.org/-/npm/v1/keys"
+}

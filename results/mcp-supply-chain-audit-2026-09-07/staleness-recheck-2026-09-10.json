@@ -1,0 +1,1632 @@
+{
+  "generated_at": "2026-09-10T10:42:12.933Z",
+  "method": "Read-only public npm registry metadata. No package installed, executed, or connected to. Sample = npm search 'mcp server', top 100 by registry relevance, filtered to names that identify an MCP package.",
+  "registry": "https://registry.npmjs.org",
+  "search_text": "mcp server",
+  "search_size": 100,
+  "search_total_matches": 393927,
+  "candidates_returned": 100,
+  "packages_audited": 100,
+  "packages_resolved": 100,
+  "errors": 0,
+  "totals": {
+    "with_registry_signature": 100,
+    "with_provenance_attestation": 56,
+    "pct_signed": 100,
+    "pct_attested": 56
+  },
+  "packages": [
+    {
+      "name": "@0xmonaco/mcp-server",
+      "version": "1.0.55",
+      "published_at": "2026-09-10T01:09:03.541Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": null,
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@agent-infra/mcp-server-browser",
+      "version": "1.2.29",
+      "published_at": "2025-12-15T06:31:26.364Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/bytedance/UI-TARS-desktop.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@aikidosec/mcp",
+      "version": "1.0.22",
+      "published_at": "2026-09-07T09:44:56.265Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "AGPL",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@apify/actors-mcp-server",
+      "version": "0.15.6",
+      "published_at": "2026-09-10T08:29:31.154Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@apify%2factors-mcp-server@0.15.6",
+      "repository_url": "https://github.com/apify/apify-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@arabold/docs-mcp-server",
+      "version": "3.1.0",
+      "published_at": "2026-08-29T14:33:49.936Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/arabold/docs-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@azure-devops/mcp",
+      "version": "2.10.0",
+      "published_at": "2026-09-09T14:14:57.396Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/microsoft/azure-devops-mcp.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@azure/mcp",
+      "version": "3.0.0-beta.42",
+      "published_at": "2026-09-09T00:30:51.339Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/microsoft/mcp.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@benborla29/mcp-server-mysql",
+      "version": "2.0.9",
+      "published_at": "2026-06-19T04:18:10.644Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/benborla/mcp-server-mysql.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@bitwarden/mcp-server",
+      "version": "2026.7.0",
+      "published_at": "2026-07-07T17:49:12.260Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/bitwarden/mcp-server.git",
+      "license": "SEE LICENSE IN LICENSE.txt",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@brave/brave-search-mcp-server",
+      "version": "2.1.3",
+      "published_at": "2026-08-20T16:09:35.894Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/brave/brave-search-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@browserstack/mcp-server",
+      "version": "1.3.2",
+      "published_at": "2026-09-09T07:27:07.037Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@browserstack%2fmcp-server@1.3.2",
+      "repository_url": "git+https://github.com/browserstack/mcp-server.git",
+      "license": "ISC",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@cap-js/mcp-server",
+      "version": "0.0.5",
+      "published_at": "2026-04-27T10:04:39.260Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@cap-js%2fmcp-server@0.0.5",
+      "repository_url": "git+https://github.com/cap-js/mcp-server.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@cloudflare/mcp-server-cloudflare",
+      "version": "0.2.0",
+      "published_at": "2025-03-14T10:41:19.350Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@coinbase/cds-mcp-server",
+      "version": "9.26.1",
+      "published_at": "2026-09-03T17:48:28.135Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@coinbase%2fcds-mcp-server@9.26.1",
+      "repository_url": "git+ssh://git@github.com/coinbase/cds.git",
+      "license": null,
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@contentful/mcp-server",
+      "version": "1.19.0",
+      "published_at": "2026-09-01T20:20:27.760Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/contentful/contentful-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@currents/mcp",
+      "version": "2.4.2",
+      "published_at": "2026-08-16T09:54:54.234Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@currents%2fmcp@2.4.2",
+      "repository_url": "git+https://github.com/currents-dev/currents-mcp.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@dbx-app/mcp-server",
+      "version": "0.4.84",
+      "published_at": "2026-09-09T18:04:09.392Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@dbx-app%2fmcp-server@0.4.84",
+      "repository_url": "git+https://github.com/t8y2/dbx.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@doitintl/doit-mcp-server",
+      "version": "1.4.0",
+      "published_at": "2026-09-09T08:00:19.683Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@doitintl%2fdoit-mcp-server@1.4.0",
+      "repository_url": "git+https://github.com/doitintl/doit-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@ehrocks/fe-mcp-server",
+      "version": "1.0.10",
+      "published_at": "2026-06-09T08:22:27.623Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/thinkei/fe-mcp-service.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@ericthered926/duckduckgo-mcp-server",
+      "version": "0.6.0",
+      "published_at": "2025-12-18T06:08:25.603Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/ericthered926/duckduckgo-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@esaio/esa-mcp-server",
+      "version": "0.14.0",
+      "published_at": "2026-08-18T07:36:01.901Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@esaio%2fesa-mcp-server@0.14.0",
+      "repository_url": "git+https://github.com/esaio/esa-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@eslint/mcp",
+      "version": "0.3.12",
+      "published_at": "2026-09-03T18:08:01.061Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@eslint%2fmcp@0.3.12",
+      "repository_url": "git+https://github.com/eslint/rewrite.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@gongrzhe/server-gmail-autoauth-mcp",
+      "version": "1.1.11",
+      "published_at": "2025-08-06T01:16:22.211Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/gongrzhe/server-gmail-autoauth-mcp.git",
+      "license": "ISC",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@heroku/mcp-server",
+      "version": "1.2.7",
+      "published_at": "2026-09-03T19:09:35.226Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@heroku%2fmcp-server@1.2.7",
+      "repository_url": "git+https://github.com/heroku/heroku-mcp-server.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@hubspot/mcp-server",
+      "version": "0.4.0",
+      "published_at": "2025-06-18T16:19:19.753Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@iobroker/mcp-server",
+      "version": "1.0.3",
+      "published_at": "2026-09-03T16:58:14.574Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@iobroker%2fmcp-server@1.0.3",
+      "repository_url": "git+https://github.com/ioBroker/mcp-package.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@ivotoby/openapi-mcp-server",
+      "version": "1.16.1",
+      "published_at": "2026-06-15T14:57:31.202Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@ivotoby%2fopenapi-mcp-server@1.16.1",
+      "repository_url": "git+https://github.com/ivo-toby/mcp-openapi-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@knip/mcp",
+      "version": "0.0.35",
+      "published_at": "2026-09-08T16:47:30.868Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/webpro-nl/knip.git",
+      "license": "ISC",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@mantine/mcp-server",
+      "version": "9.6.1",
+      "published_at": "2026-09-09T13:23:49.278Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@mantine%2fmcp-server@9.6.1",
+      "repository_url": "git+https://github.com/mantinedev/mantine.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@mapbox/mcp-server",
+      "version": "0.14.0",
+      "published_at": "2026-07-30T18:06:14.799Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/mapbox/mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@microsoft/clarity-mcp-server",
+      "version": "2.0.1",
+      "published_at": "2025-10-28T06:18:22.362Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/microsoft/clarity-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@modelcontextprotocol/server-everything",
+      "version": "2026.8.31",
+      "published_at": "2026-08-31T20:23:50.168Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@modelcontextprotocol%2fserver-everything@2026.8.31",
+      "repository_url": "git+https://github.com/modelcontextprotocol/servers.git",
+      "license": "SEE LICENSE IN LICENSE",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@modelcontextprotocol/server-filesystem",
+      "version": "2026.8.31",
+      "published_at": "2026-08-31T20:25:55.419Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@modelcontextprotocol%2fserver-filesystem@2026.8.31",
+      "repository_url": "git+https://github.com/modelcontextprotocol/servers.git",
+      "license": "SEE LICENSE IN LICENSE",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@modelcontextprotocol/server-sequential-thinking",
+      "version": "2026.8.31",
+      "published_at": "2026-08-31T20:23:44.857Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@modelcontextprotocol%2fserver-sequential-thinking@2026.8.31",
+      "repository_url": "git+https://github.com/modelcontextprotocol/servers.git",
+      "license": "SEE LICENSE IN LICENSE",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@mui/mcp",
+      "version": "0.1.5",
+      "published_at": "2026-09-04T11:21:31.223Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@mui%2fmcp@0.1.5",
+      "repository_url": "git+https://github.com/mui/mui-x.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@negokaz/excel-mcp-server",
+      "version": "0.12.0",
+      "published_at": "2025-07-19T13:12:10.722Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@nexus2520/jira-mcp-server",
+      "version": "1.2.0",
+      "published_at": "2026-05-19T15:05:17.244Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/pdogra1299/jira-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@notionhq/notion-mcp-server",
+      "version": "2.5.1",
+      "published_at": "2026-07-25T16:20:34.018Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@notionhq%2fnotion-mcp-server@2.5.1",
+      "repository_url": "git+ssh://git@github.com/makenotion/notion-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@pandacss/mcp",
+      "version": "1.12.1",
+      "published_at": "2026-09-04T07:10:34.841Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@pandacss%2fmcp@1.12.1",
+      "repository_url": "git+https://github.com/chakra-ui/panda.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@phantom/mcp-server",
+      "version": "1.2.7",
+      "published_at": "2026-04-28T09:22:50.215Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@phantom%2fmcp-server@1.2.7",
+      "repository_url": "git+https://github.com/phantom/phantom-connect-sdk.git",
+      "license": null,
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@qase/mcp-server",
+      "version": "2.4.1",
+      "published_at": "2026-09-08T14:03:09.871Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@qase%2fmcp-server@2.4.1",
+      "repository_url": "git+https://github.com/qase-tms/qase-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@roychri/mcp-server-asana",
+      "version": "1.8.0",
+      "published_at": "2026-03-29T22:57:42.258Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/roychri/mcp-server-asana.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@runpod/mcp-server",
+      "version": "3.3.0",
+      "published_at": "2026-08-17T17:43:33.532Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@runpod%2fmcp-server@3.3.0",
+      "repository_url": "git+https://github.com/runpod/runpod-mcp.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@salesforce/mcp",
+      "version": "0.30.15",
+      "published_at": "2026-07-09T14:42:18.783Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/salesforcecli/mcp.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@sap-ux/fiori-mcp-server",
+      "version": "1.12.3",
+      "published_at": "2026-09-08T05:09:06.076Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@sap-ux%2ffiori-mcp-server@1.12.3",
+      "repository_url": "https://github.com/SAP/open-ux-tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@sap/mdk-mcp-server",
+      "version": "0.4.0",
+      "published_at": "2026-07-29T03:08:20.383Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@sap%2fmdk-mcp-server@0.4.0",
+      "repository_url": "git+https://github.com/SAP/mdk-mcp-server.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@sentry/mcp-server",
+      "version": "0.39.0",
+      "published_at": "2026-08-27T06:47:36.921Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+ssh://git@github.com/getsentry/sentry-mcp.git",
+      "license": "FSL-1.1-ALv2",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@shortcut/mcp",
+      "version": "0.25.0",
+      "published_at": "2026-06-24T13:25:23.905Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@shortcut%2fmcp@0.25.0",
+      "repository_url": "git+https://github.com/useshortcut/mcp-server-shortcut.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@sigmacomputing/slack-mcp-server",
+      "version": "0.1.1",
+      "published_at": "2026-02-23T19:53:49.036Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@sigmacomputing%2fslack-mcp-server@0.1.1",
+      "repository_url": "git+https://github.com/sigmacomputing/slack-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@smartbear/mcp",
+      "version": "0.40.0",
+      "published_at": "2026-09-03T06:43:15.200Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+ssh://git@github.com/SmartBear/smartbear-mcp.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@softeria/ms-365-mcp-server",
+      "version": "0.151.0",
+      "published_at": "2026-09-08T08:50:36.640Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@softeria%2fms-365-mcp-server@0.151.0",
+      "repository_url": "git+https://github.com/Softeria/ms-365-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@storybook/mcp",
+      "version": "10.6.0",
+      "published_at": "2026-09-02T13:56:48.827Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@storybook%2fmcp@10.6.0",
+      "repository_url": "https://github.com/storybookjs/storybook.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@supabase/mcp-server-postgrest",
+      "version": "0.2.0",
+      "published_at": "2026-08-20T13:25:10.799Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@supabase%2fmcp-server-postgrest@0.2.0",
+      "repository_url": "git+https://github.com/supabase/mcp.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@supabase/mcp-server-supabase",
+      "version": "0.12.0",
+      "published_at": "2026-09-04T13:33:08.786Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@supabase%2fmcp-server-supabase@0.12.0",
+      "repository_url": "git+https://github.com/supabase/mcp.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@superblocksteam/mcp-server",
+      "version": "2.0.101-next.1",
+      "published_at": "2026-04-01T10:28:45.347Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "Superblocks Community Software License",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@taazkareem/clickup-mcp-server",
+      "version": "0.14.5",
+      "published_at": "2026-08-14T13:11:57.202Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/taazkareem/clickup-mcp-server.git",
+      "license": "Proprietary",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@theia/ai-mcp-server",
+      "version": "1.75.0",
+      "published_at": "2026-08-27T13:52:53.233Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@theia%2fai-mcp-server@1.75.0",
+      "repository_url": "git+https://github.com/eclipse-theia/theia.git",
+      "license": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@tocharianou/mcp-server-kibana",
+      "version": "0.10.0",
+      "published_at": "2026-08-14T17:07:44.112Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/TocharianOU/mcp-server-kibana.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-admin",
+      "version": "1.0.2",
+      "published_at": "2026-09-09T17:29:42.270Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-admin@1.0.2",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-assessment",
+      "version": "2.0.1",
+      "published_at": "2026-09-09T17:30:36.776Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-assessment@2.0.1",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-base",
+      "version": "2.1.0",
+      "published_at": "2026-09-09T17:29:42.022Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-base@2.1.0",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-consent",
+      "version": "1.0.2",
+      "published_at": "2026-09-09T17:29:42.474Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-consent@1.0.2",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-discovery",
+      "version": "1.0.2",
+      "published_at": "2026-09-09T17:29:41.863Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-discovery@1.0.2",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-docs",
+      "version": "0.4.4",
+      "published_at": "2026-09-09T17:29:42.364Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-docs@0.4.4",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-dsr",
+      "version": "1.0.2",
+      "published_at": "2026-09-09T17:29:42.082Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-dsr@1.0.2",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-inventory",
+      "version": "1.0.2",
+      "published_at": "2026-09-09T17:29:41.886Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-inventory@1.0.2",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-preferences",
+      "version": "0.7.5",
+      "published_at": "2026-09-09T17:31:49.976Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-preferences@0.7.5",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transcend-io/mcp-server-workflows",
+      "version": "1.0.2",
+      "published_at": "2026-09-09T17:29:46.203Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transcend-io%2fmcp-server-workflows@1.0.2",
+      "repository_url": "git+https://github.com/transcend-io/tools.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@transloadit/mcp-server",
+      "version": "0.3.30",
+      "published_at": "2026-09-01T10:18:53.354Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@transloadit%2fmcp-server@0.3.30",
+      "repository_url": "git+https://github.com/transloadit/node-sdk.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@tsmztech/mcp-server-salesforce",
+      "version": "0.0.7",
+      "published_at": "2026-08-09T18:36:31.288Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/tsmztech/mcp-server-salesforce.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@ui5/mcp-server",
+      "version": "0.2.19",
+      "published_at": "2026-09-09T12:07:47.860Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@ui5%2fmcp-server@0.2.19",
+      "repository_url": "git+https://github.com/UI5/mcp-server.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@unthread-io/mcp-server",
+      "version": "1.3.1",
+      "published_at": "2026-04-20T19:16:59.144Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/unthread-io/mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@upstash/context7-mcp",
+      "version": "4.0.7",
+      "published_at": "2026-09-09T14:03:21.539Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/upstash/context7.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@upstash/mcp-server",
+      "version": "0.3.0",
+      "published_at": "2026-08-24T09:29:30.426Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@upstash%2fmcp-server@0.3.0",
+      "repository_url": "git+https://github.com/upstash/mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@winor30/mcp-server-datadog",
+      "version": "1.8.0",
+      "published_at": "2026-06-22T12:19:38.392Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@winor30%2fmcp-server-datadog@1.8.0",
+      "repository_url": "git+https://github.com/winor30/mcp-server-datadog.git",
+      "license": null,
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@xeroapi/xero-mcp-server",
+      "version": "0.0.17",
+      "published_at": "2026-05-26T05:07:15.624Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git://github.com/XeroAPI/xero-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@z_ai/mcp-server",
+      "version": "0.1.5",
+      "published_at": "2026-08-27T06:27:11.056Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "@zereight/mcp-gitlab",
+      "version": "2.1.61",
+      "published_at": "2026-09-09T16:58:35.257Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/@zereight%2fmcp-gitlab@2.1.61",
+      "repository_url": "git+https://github.com/zereight/gitlab-mcp.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "agentation-mcp",
+      "version": "1.2.0",
+      "published_at": "2026-02-15T20:37:04.456Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "PolyForm-Shield-1.0.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "argocd-mcp",
+      "version": "0.9.0",
+      "published_at": "2026-08-11T15:33:14.317Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/argocd-mcp@0.9.0",
+      "repository_url": "git+https://github.com/argoproj-labs/mcp-for-argocd.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "chrome-devtools-mcp",
+      "version": "1.9.0",
+      "published_at": "2026-09-08T09:53:29.850Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/chrome-devtools-mcp@1.9.0",
+      "repository_url": "git+https://github.com/ChromeDevTools/chrome-devtools-mcp.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "datadog-mcp-server",
+      "version": "1.0.9",
+      "published_at": "2025-04-23T06:16:17.763Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/GeLi2001/datadog-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "dataforseo-mcp-server",
+      "version": "3.1.1",
+      "published_at": "2026-08-25T10:51:07.758Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/dataforseo-mcp-server@3.1.1",
+      "repository_url": "git+https://github.com/dataforseo/mcp-server-typescript.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "gezhe-mcp-server",
+      "version": "0.0.9",
+      "published_at": "2026-03-11T16:42:56.768Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "hostinger-api-mcp",
+      "version": "1.58.0",
+      "published_at": "2026-09-09T13:24:18.769Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/hostinger-api-mcp@1.58.0",
+      "repository_url": "git+https://github.com/hostinger/api-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "kubernetes-mcp-server",
+      "version": "0.0.66",
+      "published_at": "2026-07-31T14:05:32.103Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/kubernetes-mcp-server@0.0.66",
+      "repository_url": "git+https://github.com/containers/kubernetes-mcp-server.git",
+      "license": "Apache-2.0",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "langsmith-mcp-server",
+      "version": "0.1.7",
+      "published_at": "2026-02-14T13:39:54.702Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "malicious-mcp-server",
+      "version": "1.5.0",
+      "published_at": "2025-11-13T13:34:09.296Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/anysource-AI/malicious-mcp-server.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "mcp-hello-world",
+      "version": "1.1.2",
+      "published_at": "2025-04-20T15:39:29.689Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/lobehub/mcp-hello-world.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "mcp-searxng",
+      "version": "2.2.0",
+      "published_at": "2026-09-09T17:26:44.170Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/mcp-searxng@2.2.0",
+      "repository_url": "git+https://github.com/ihor-sokoliuk/mcp-searxng.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "mcp-server-kubernetes",
+      "version": "4.1.6",
+      "published_at": "2026-08-31T15:59:27.597Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/mcp-server-kubernetes@4.1.6",
+      "repository_url": "git+https://github.com/Flux159/mcp-server-kubernetes.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "next-devtools-mcp",
+      "version": "0.4.0",
+      "published_at": "2026-06-24T22:47:58.059Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/next-devtools-mcp@0.4.0",
+      "repository_url": "git+https://github.com/vercel/next-devtools-mcp.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "playwright-mcp-server",
+      "version": "1.0.0",
+      "published_at": "2025-04-18T00:27:01.084Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "prometheus-mcp",
+      "version": "1.1.3",
+      "published_at": "2025-07-14T08:53:10.334Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/prometheus-mcp@1.1.3",
+      "repository_url": "git+https://github.com/idanfishman/prometheus-mcp.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "scryfall-mcp-server",
+      "version": "0.1.1",
+      "published_at": "2025-02-26T20:08:00.502Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "serper-search-scrape-mcp-server",
+      "version": "0.1.2",
+      "published_at": "2025-02-20T23:35:31.983Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/marcopesani/mcp-server-serper.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "slite-mcp-server",
+      "version": "1.3.0",
+      "published_at": "2026-01-21T09:05:46.979Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "tavily-mcp",
+      "version": "0.2.22",
+      "published_at": "2026-08-05T16:49:02.196Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": "git+https://github.com/tavily-ai/tavily-mcp.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "terraform-mcp-server",
+      "version": "0.13.0",
+      "published_at": "2025-03-30T02:43:54.941Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": false,
+      "provenance_predicate": null,
+      "attestation_url": null,
+      "repository_url": null,
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    },
+    {
+      "name": "touchdesigner-mcp-server",
+      "version": "2.0.0",
+      "published_at": "2026-07-30T16:11:55.428Z",
+      "has_registry_signature": true,
+      "signature_keyids": [
+        "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      ],
+      "has_provenance_attestation": true,
+      "provenance_predicate": "https://slsa.dev/provenance/v1",
+      "attestation_url": "https://registry.npmjs.org/-/npm/v1/attestations/touchdesigner-mcp-server@2.0.0",
+      "repository_url": "git+https://github.com/8beeeaaat/touchdesigner-mcp.git",
+      "license": "MIT",
+      "deprecated": false,
+      "integrity_algorithm": "sha512"
+    }
+  ]
+}

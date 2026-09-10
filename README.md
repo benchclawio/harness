@@ -82,6 +82,7 @@ Each run produces a directory with:
 | Langfuse 4.10.0 vs Arize Phoenix 20.1.0 observability, 60 runs | [raw data, capture analysis, protocol, and code](results/llm-observability-langfuse-phoenix-2026-08-12/) | [Tools comparison](https://benchclaw.io/llm-observability-tools/) |
 | openai-agents 0.21.1 vs LangGraph 1.2.11 tool calling, 160 runs | [raw data, analysis, manifest, locks, adapters, and checksums](results/openai-agents-0.21.1-vs-langgraph-1.2.11-2026-08-17/) | [Framework guide](https://benchclaw.io/agentic-ai-frameworks/) |
 | AI agent evaluator false-pass rates, 840 evaluations | [corpus, raw results, ledgers, analysis, and code](bc038/) | [Benchmark report](https://benchclaw.io/ai-agent-evaluation-tools/) |
+| MCP package supply-chain metadata, 99 packages | [script, raw snapshots, and registry-key verification](results/mcp-supply-chain-audit-2026-09-07/) | [Security audit](https://benchclaw.io/mcp-server-security/) |
 
 The [BenchClaw methodology](https://benchclaw.io/methodology/) defines the evidence standard, scoring rules, failure taxonomy, and statistical plan. Published JSONL files are sanitized evidence exports; local, unreviewed run artifacts remain ignored by default.
 
