@@ -16,7 +16,7 @@ freeze shows 2.7.1 was installed for the run. The naive arm is a direct SDK call
 evaluation framework. The manifest is preserved unchanged and the actual version is reported
 from `freeze-naive.txt`.
 
-The corpus contains 34 constructed wrong outputs and one organic model failure. It tests evaluator behaviour, not the prevalence of agent defects in production. Every Wilson 95% interval overlaps, so the study does not rank the tools.
+The corpus contains 34 constructed wrong outputs and one organic model failure. It tests evaluator behaviour, not the prevalence of agent defects in production. Most Wilson 95% intervals overlap. The exceptions are the strictness trade-off: Opik's false-pass interval [0%, 9.9%] does not overlap DeepEval's [12.1%, 39.0%], and DeepEval's false-fail interval [6.3%, 29.4%] does not overlap Opik's [30.5%, 61.8%]. Neither separation makes one tool more accurate than the other, and the study is not designed to rank the tools: the corpus is constructed, and the pass/fail threshold moves the result more than the choice of framework does.
 
 Four controls originally labelled correct contain an additional inventory defect. The analysis publishes both the frozen labels and a sensitivity analysis excluding those disputed controls. False-pass rates are unaffected.
 
