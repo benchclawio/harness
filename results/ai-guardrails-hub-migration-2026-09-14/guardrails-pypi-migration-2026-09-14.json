@@ -1,0 +1,468 @@
+{
+  "checked_at_utc": "2026-09-14T19:03:58Z",
+  "hub_url": "https://guardrailsai.com/hub",
+  "validators_listed_on_hub": 65,
+  "found_on_pypi": 64,
+  "missing_from_pypi": [
+    "guardrails-ai-restricttotopic"
+  ],
+  "earliest_release": "2026-06-24",
+  "latest_release": "2026-07-14",
+  "results": [
+    {
+      "slug": "ban_list",
+      "package": "guardrails-ai-ban-list",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-24"
+    },
+    {
+      "slug": "bert_toxic",
+      "package": "guardrails-ai-bert-toxic",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-24"
+    },
+    {
+      "slug": "bias_check",
+      "package": "guardrails-ai-bias-check",
+      "found": true,
+      "version": "0.3.1",
+      "released": "2026-06-24"
+    },
+    {
+      "slug": "competitor_check",
+      "package": "guardrails-ai-competitor-check",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-06-24"
+    },
+    {
+      "slug": "contains_string",
+      "package": "guardrails-ai-contains-string",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-25"
+    },
+    {
+      "slug": "cucumber_expression_match",
+      "package": "guardrails-ai-cucumber-expression-match",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-25"
+    },
+    {
+      "slug": "detect_jailbreak",
+      "package": "guardrails-ai-detect-jailbreak",
+      "found": true,
+      "version": "0.1.6",
+      "released": "2026-06-25"
+    },
+    {
+      "slug": "detect_pii",
+      "package": "guardrails-ai-detect-pii",
+      "found": true,
+      "version": "0.0.6",
+      "released": "2026-06-25"
+    },
+    {
+      "slug": "detect_prompt_injection",
+      "package": "guardrails-ai-detect-prompt-injection",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-26"
+    },
+    {
+      "slug": "detect_system_prompt_leakage",
+      "package": "guardrails-ai-detect-system-prompt-leakage",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-27"
+    },
+    {
+      "slug": "endpoint_is_reachable",
+      "package": "guardrails-ai-endpoint-is-reachable",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-27"
+    },
+    {
+      "slug": "ends_with",
+      "package": "guardrails-ai-ends-with",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-27"
+    },
+    {
+      "slug": "exclude_sql_predicates",
+      "package": "guardrails-ai-exclude-sql-predicates",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-30"
+    },
+    {
+      "slug": "extracted_summary_sentences_match",
+      "package": "guardrails-ai-extracted-summary-sentences-match",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-30"
+    },
+    {
+      "slug": "gibberish_text",
+      "package": "guardrails-ai-gibberish-text",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-02"
+    },
+    {
+      "slug": "guardrails_pii",
+      "package": "guardrails-ai-guardrails-pii",
+      "found": true,
+      "version": "1.0.8",
+      "released": "2026-06-27"
+    },
+    {
+      "slug": "has_url",
+      "package": "guardrails-ai-has-url",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-28"
+    },
+    {
+      "slug": "internal_domains",
+      "package": "guardrails-ai-internal-domains",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-28"
+    },
+    {
+      "slug": "llamaguard_7b",
+      "package": "guardrails-ai-llamaguard-7b",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-28"
+    },
+    {
+      "slug": "llm_critic",
+      "package": "guardrails-ai-llm-critic",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-29"
+    },
+    {
+      "slug": "logic_check",
+      "package": "guardrails-ai-logic-check",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-29"
+    },
+    {
+      "slug": "lowercase",
+      "package": "guardrails-ai-lowercase",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-30"
+    },
+    {
+      "slug": "mentions_drugs",
+      "package": "guardrails-ai-mentions-drugs",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-06-30"
+    },
+    {
+      "slug": "nsfw_text",
+      "package": "guardrails-ai-nsfw-text",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-02"
+    },
+    {
+      "slug": "one_line",
+      "package": "guardrails-ai-one-line",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-02"
+    },
+    {
+      "slug": "politeness_check",
+      "package": "guardrails-ai-politeness-check",
+      "found": true,
+      "version": "0.0.3",
+      "released": "2026-07-02"
+    },
+    {
+      "slug": "presidio_gliner_pii",
+      "package": "guardrails-ai-presidio-gliner-pii",
+      "found": true,
+      "version": "1.0.4",
+      "released": "2026-07-03"
+    },
+    {
+      "slug": "profanity_free",
+      "package": "guardrails-ai-profanity-free",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-03"
+    },
+    {
+      "slug": "prompt_injection_detector",
+      "package": "guardrails-ai-prompt-injection-detector",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-03"
+    },
+    {
+      "slug": "provenance_embeddings",
+      "package": "guardrails-ai-provenance-embeddings",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-03"
+    },
+    {
+      "slug": "provenance_llm",
+      "package": "guardrails-ai-provenance-llm",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-06"
+    },
+    {
+      "slug": "provenance_nli",
+      "package": "guardrails-ai-provenance-nli",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-07"
+    },
+    {
+      "slug": "qa_relevance_llm_eval",
+      "package": "guardrails-ai-qa-relevance-llm-eval",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-04"
+    },
+    {
+      "slug": "quotes_price",
+      "package": "guardrails-ai-quotes-price",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-07"
+    },
+    {
+      "slug": "reading_level",
+      "package": "guardrails-ai-reading-level",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-04"
+    },
+    {
+      "slug": "reading_time",
+      "package": "guardrails-ai-reading-time",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-04"
+    },
+    {
+      "slug": "redundant_sentences",
+      "package": "guardrails-ai-redundant-sentences",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-05"
+    },
+    {
+      "slug": "regex_match",
+      "package": "guardrails-ai-regex-match",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-05"
+    },
+    {
+      "slug": "relevancy_evaluator",
+      "package": "guardrails-ai-relevancy-evaluator",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-05"
+    },
+    {
+      "slug": "response_evaluator",
+      "package": "guardrails-ai-response-evaluator",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-06"
+    },
+    {
+      "slug": "responsiveness_check",
+      "package": "guardrails-ai-responsiveness-check",
+      "found": true,
+      "version": "0.0.3",
+      "released": "2026-07-06"
+    },
+    {
+      "slug": "restricttotopic",
+      "package": "guardrails-ai-restricttotopic",
+      "found": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "slug": "saliency_check",
+      "package": "guardrails-ai-saliency-check",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-06"
+    },
+    {
+      "slug": "secrets_present",
+      "package": "guardrails-ai-secrets-present",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-07"
+    },
+    {
+      "slug": "sensitive_topics",
+      "package": "guardrails-ai-sensitive-topics",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-08"
+    },
+    {
+      "slug": "shieldgemma_2b",
+      "package": "guardrails-ai-shieldgemma-2b",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-07"
+    },
+    {
+      "slug": "similar_to_document",
+      "package": "guardrails-ai-similar-to-document",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-08"
+    },
+    {
+      "slug": "similar_to_previous_values",
+      "package": "guardrails-ai-similar-to-previous-values",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-09"
+    },
+    {
+      "slug": "sky_validator",
+      "package": "guardrails-ai-sky-validator",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-08"
+    },
+    {
+      "slug": "toxic_language",
+      "package": "guardrails-ai-toxic-language",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-09"
+    },
+    {
+      "slug": "toxic_language_llm",
+      "package": "guardrails-ai-toxic-language-llm",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-09"
+    },
+    {
+      "slug": "two_words",
+      "package": "guardrails-ai-two-words",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-09"
+    },
+    {
+      "slug": "unusual_prompt",
+      "package": "guardrails-ai-unusual-prompt",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-14"
+    },
+    {
+      "slug": "uppercase",
+      "package": "guardrails-ai-uppercase",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-10"
+    },
+    {
+      "slug": "valid_address",
+      "package": "guardrails-ai-valid-address",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-10"
+    },
+    {
+      "slug": "valid_choices",
+      "package": "guardrails-ai-valid-choices",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-10"
+    },
+    {
+      "slug": "valid_html",
+      "package": "guardrails-ai-valid-html",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-10"
+    },
+    {
+      "slug": "valid_json",
+      "package": "guardrails-ai-valid-json",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-14"
+    },
+    {
+      "slug": "valid_length",
+      "package": "guardrails-ai-valid-length",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-14"
+    },
+    {
+      "slug": "valid_open_api_spec",
+      "package": "guardrails-ai-valid-open-api-spec",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-11"
+    },
+    {
+      "slug": "valid_range",
+      "package": "guardrails-ai-valid-range",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-12"
+    },
+    {
+      "slug": "valid_sql",
+      "package": "guardrails-ai-valid-sql",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-13"
+    },
+    {
+      "slug": "valid_url",
+      "package": "guardrails-ai-valid-url",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-13"
+    },
+    {
+      "slug": "web_sanitization",
+      "package": "guardrails-ai-web-sanitization",
+      "found": true,
+      "version": "0.1.0",
+      "released": "2026-07-13"
+    },
+    {
+      "slug": "wiki_provenance",
+      "package": "guardrails-ai-wiki-provenance",
+      "found": true,
+      "version": "0.0.2",
+      "released": "2026-07-14"
+    }
+  ],
+  "note_on_missing": "The script's mechanical slug->package rule (underscores become dashes) missed one: the Hub lists this validator as 'restricttotopic' (no separator), but its PyPI package is 'guardrails-ai-restrict-to-topic' (checked by hand, 2026-09-14, version 0.1.0, released 2026-07-17). All 65 of 65 listed validators are therefore on PyPI; 64/65 is what the naive script finds unassisted."
+}
