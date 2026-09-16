@@ -1,0 +1,12 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "embedding_dim": 384,
+  "corpus_count": 5183,
+  "query_count": 300,
+  "corpus_embeddings_sha256": "e7046933dc79138ff7a5788bda2c94a03376dd8159a25c8a531e713e392b18e1",
+  "query_embeddings_sha256": "8d4fcd143c91df12ac8701089a060b2899fc6b591a026c7453df1fedc0baeb7a",
+  "corpus_ids_sha256": "910fa704be1169078067c56977e2444b34c7db4dbe19a12df254d5946fa9fbba",
+  "query_ids_sha256": "0861fbc593d5af63b9e7988bf98f56e50be1ce6a28fb96653ae56079023779e6",
+  "sentence_transformers_version": "6.0.1"
+}

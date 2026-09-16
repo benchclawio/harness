@@ -1,0 +1,98 @@
+{
+  "benchmark": "bc-084 vector database benchmark",
+  "question": "On one frozen retrieval corpus, which of Pinecone, Weaviate, Qdrant and Chroma returns the most relevant top-10 results, and what query-latency tradeoff accompanies that recall?",
+  "methodology": "methodology/vector-databases-v0.1.0.md",
+  "run_plan": "operations/bc084-vector-database-run-plan-2026-09-09.md",
+  "date": "2026-09-16",
+  "host": {
+    "provider": "Hetzner Cloud",
+    "server_type": "cx23",
+    "location": "nbg1 (Nuremberg)",
+    "os_image": "ubuntu-24.04",
+    "cores": 2,
+    "memory_gb": 4,
+    "network": "firewalled to SSH-only inbound; all DB containers bound to 127.0.0.1, never publicly exposed",
+    "destroyed_after_run": true
+  },
+  "subjects": {
+    "qdrant": {
+      "image": "qdrant/qdrant:v1.19.1",
+      "image_digest": "sha256:12364fe851b9f17356fc88189fc06d1b521262e04659ec7345975b00c9246a10",
+      "client_library": "qdrant-client==1.19.1"
+    },
+    "weaviate": {
+      "image": "semitechnologies/weaviate:1.39.5",
+      "image_digest": "sha256:c29b501d8fdab55d8b3fbe8c3db78e286ba0708536e7039d894d01a84ca6ba8b",
+      "client_library": "weaviate-client==4.23.1"
+    },
+    "chroma": {
+      "image": "chromadb/chroma:1.5.9",
+      "image_digest": "sha256:1e0b73a187a28757c572acba508c46f48c9e8b0acaf5c20e6d95cdedce1acdf6",
+      "client_library": "chromadb==1.5.9",
+      "known_advisory": "GHSA-f4j7-r4q5-qw2c (pre-auth code injection), unpatched at 1.5.9 as of 2026-09-16. Accepted for this throwaway, network-isolated, destroy-after benchmark host per explicit approval; not a production deployment."
+    },
+    "pinecone": {
+      "image": "ghcr.io/pinecone-io/pinecone-local:latest",
+      "image_digest": "sha256:0f944585830a30c37260ac6534c7c206280490947e1ddbb716474166b517b6c7",
+      "client_library": "pinecone==6.0.2",
+      "note": "Pinecone's current stable SDK (10.0.0) cannot create an index against Pinecone Local (missing 'dimension' field in the serialized request) — a real client/server incompatibility, confirmed 2026-09-16. Downgraded to SDK 6.0.2, Pinecone's own documented minimum-compatible version for Pinecone Local's 2025-01 API. Also required forcing the http:// scheme on the per-index host returned by describe_index(), which otherwise defaults to https and fails the TLS handshake against Pinecone Local's plain-HTTP server."
+    }
+  },
+  "deployment_class": "all four local, isolated, CPU-only Docker containers on the same host; one container active at a time",
+  "corpus": {
+    "name": "BEIR SciFact (test split)",
+    "source": "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/scifact.zip",
+    "license": "CC-BY-SA-4.0",
+    "corpus_document_count": 5183,
+    "test_query_count": 300,
+    "sha256": {
+      "scifact.zip": "536e14446a0ba56ed1398ab1055f39fe852686ecad24a6306c80c490fa8e0165",
+      "corpus.jsonl": "dec31c8182f3d744c7d2c09423756fd1d17cbef75808db13ba01cc0aab4d1ac6",
+      "queries.jsonl": "8ff84a7c903f722981cd8d595c022660140c51867b27608a6d4910db86080313",
+      "qrels/test.tsv": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c",
+      "qrels/train.tsv": "a53f2114831916c096b6c37d9e54da68cef4efdcdbd5ed46533601af972acf1d"
+    }
+  },
+  "embedding": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "sentence_transformers_version": "6.0.1",
+    "dimension": 384,
+    "normalization": "none (raw model output; cosine distance computed by each DB internally)",
+    "distance_metric": "cosine",
+    "computed_once_reused_by_all_arms": true,
+    "manifest_file": "embedding-manifest.json"
+  },
+  "protocol": {
+    "repetitions_per_subject": 20,
+    "fresh_index_per_repetition": true,
+    "run_order": "interleaved across subjects (qdrant, weaviate, chroma, pinecone) per repetition index; one subject's container active at a time",
+    "warmup_query_passes_per_repetition": 3,
+    "warmup_passes_scored": false,
+    "top_k": 10,
+    "primary_metric": "Recall@10, paired by query, 95% bootstrap CI over repetitions (n=10000 resamples) vs Qdrant baseline",
+    "practical_difference_threshold": 0.02
+  },
+  "cost": {
+    "server_hourly_usd": 0.0106,
+    "approx_hours_used": 1.7,
+    "approx_total_usd": 0.018,
+    "api_spend_usd": 0,
+    "note": "all four subjects run as local, unmetered services; the only real cost was the throwaway Hetzner Cloud host, destroyed immediately after the run"
+  },
+  "total_scored_repetitions": 80,
+  "total_wall_clock_seconds": 1812.7,
+  "files": {
+    "bc084_harness.py": "generic DBClient interface + run_repetition/validate_repetition driver, identical for every subject",
+    "bc084_adapters.py": "per-subject adapters implementing DBClient for Qdrant, Weaviate, Chroma, Pinecone",
+    "bc084_pilot.py": "non-scored single-repetition pilot script used to validate each subject before scoring",
+    "bc084_scored_run.py": "orchestrator: 20 interleaved fresh-index repetitions per subject, one container active at a time",
+    "bc084_analyze.py": "aggregation + paired bootstrap analysis over the raw scored results",
+    "embedding-manifest.json": "frozen embedding model revision + output hashes",
+    "corpus_ids.json / query_ids.json": "exact ordered id lists used for every arm",
+    "pilot-*.json": "raw non-scored pilot repetition records, one per subject",
+    "scored-results-raw.jsonl": "all 80 scored repetition records, one JSON object per line, including every query result",
+    "analysis-summary.json": "per-subject aggregate metrics and the paired bootstrap comparison vs Qdrant"
+  },
+  "what_this_does_not_prove": "One corpus (5,183 biomedical abstracts) and one scale do not establish production performance, multi-tenancy, durability, replication, filtering quality, hybrid-search quality, operational support, or total cost at another data size. This compares retrieval quality and latency under one frozen protocol only. Pinecone was tested via Pinecone Local, an official but explicitly non-production in-memory emulator — its latency numbers describe that emulator, not Pinecone's managed production service."
+}
