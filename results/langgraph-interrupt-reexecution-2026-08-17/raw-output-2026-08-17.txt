@@ -1,0 +1,4 @@
+after the pause,  side effects: ['charged the card']
+after the resume, side effects: ['charged the card', 'charged the card']
+
+times the pre-interrupt code ran: 2
