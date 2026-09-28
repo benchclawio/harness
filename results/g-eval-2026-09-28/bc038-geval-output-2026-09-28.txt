@@ -1,0 +1,3 @@
+evaluations: 210, off the 0.1 grid: 184
+cases: 70, identical score on all 3 repeats: 6, verdict flips at 0.5: 2
+step-generation calls: 212, distinct output lengths: 36

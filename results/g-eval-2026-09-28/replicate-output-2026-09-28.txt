@@ -1,0 +1,5 @@
+coherence: zero-scored 0, of which contain a valid 1-5 score 0 | orig rho=0.571 tau=0.463 docs=100 | fixed rho=0.571 tau=0.463
+consistency: zero-scored 159, of which contain a valid 1-5 score 78 | orig rho=0.501 tau=0.420 docs=96 | fixed rho=0.500 tau=0.419
+fluency: zero-scored 7, of which contain a valid 1-5 score 0 | orig rho=0.506 tau=0.455 docs=98 | fixed rho=0.507 tau=0.457
+relevance: zero-scored 0, of which contain a valid 1-5 score 0 | orig rho=0.564 tau=0.453 docs=100 | fixed rho=0.564 tau=0.453
+AVG orig rho 0.535 tau 0.448 | fixed rho 0.535 tau 0.448
