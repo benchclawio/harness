@@ -1,0 +1,46 @@
+ragas 0.4.3 wheel sha256 ef1d75f674c294e9a6e7d8e9ad261b6bf4697dad1c9cbd1a756ba7a6b4849a38 OK
+deepeval 4.2.6 wheel sha256 d3af4b9e36d46ad6c7fa640a423ee566dcb7e05f3ccc72516a821825e5d4fb4f OK
+
+== 1. Answer relevancy ==
+ragas _answer_relevance.py:114  ResponseRelevancy._calculate_score
+  scoring line: score = cosine_sim.mean() * int(not all_noncommittal)
+  embeddings used in ragas answer relevancy: True
+  strictness default: 3
+  required columns: ['response', 'user_input']
+  retrieved contexts read by ragas answer relevancy: False
+deepeval answer_relevancy.py:352  AnswerRelevancyMetric._calculate_score
+  passing verdicts: Verdict.YES, Verdict.BORDERLINE
+  occurrences of 'embed' in deepeval answer_relevancy.py: 0
+
+== 2. Zero extracted statements/claims (e.g. an empty or refused answer) ==
+deepeval utils/qag.py:113  score_qag_verdicts default empty_score = 1
+  ragas   faithfulness, 0 statements: nan
+  deepeval faithfulness, 0 claims:    1
+  deepeval answer relevancy, 0 statements: 1
+  ragas   context recall, 0 classifications: nan
+  deepeval contextual recall, 0 verdicts:   0
+
+== 3. Borderline verdicts (DeepEval faithfulness, verdicts yes,yes,borderline,no) ==
+deepeval faithfulness.py:432  FaithfulnessMetric._calculate_score
+  penalize_ambiguous_claims default: False
+  default (borderline passes):           0.75
+  penalize_ambiguous_claims=True:         0.5
+  legacy alias 'idk' normalises to: BORDERLINE
+  'No, it is off-topic' normalises to: NO
+
+== 4. Context precision (same weighted-precision-at-k formula) ==
+ragas _context_precision.py:113  LLMContextPrecisionWithReference._calculate_average_precision
+  ragas ContextPrecision is an alias subclass of: LLMContextPrecisionWithReference
+  ranked relevance [1,0,1,0]: ragas 0.8333 | deepeval 0.8333
+  ranked relevance [0,0,1,1]: ragas 0.4167 | deepeval 0.4167
+  ranked relevance [0,0,0]:   ragas 0 | deepeval 0
+  ranked relevance [] (no chunks): deepeval 0
+
+== 5. Required inputs ==
+  ragas faithfulness: ['response', 'retrieved_contexts', 'user_input']
+  ragas context recall (LLMContextRecall): ['reference', 'retrieved_contexts', 'user_input']
+  ragas context precision (LLMContextPrecisionWithReference): ['reference', 'retrieved_contexts', 'user_input']
+  deepeval answer relevancy: ['ACTUAL_OUTPUT', 'INPUT']
+  deepeval faithfulness: ['ACTUAL_OUTPUT', 'INPUT', 'RETRIEVAL_CONTEXT']
+  deepeval contextual recall: ['EXPECTED_OUTPUT', 'INPUT', 'RETRIEVAL_CONTEXT']
+  deepeval contextual precision: ['EXPECTED_OUTPUT', 'INPUT', 'RETRIEVAL_CONTEXT']
