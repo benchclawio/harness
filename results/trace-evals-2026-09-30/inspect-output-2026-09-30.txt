@@ -1,0 +1,156 @@
+mlflow 3.16.1 wheel sha256 e4dfe69ceae31dfc7b8480e76ffe6a7f36752bdfac30e058e6430ade1fb5920b OK
+deepeval 4.2.7 wheel sha256 8e325bac5a63cd90264a69ab91dd9ea0376f045d16b820193139dd56da2886bd OK
+phoenix-evals 3.9.0 wheel sha256 425b70bcd2d87cd85a30d812adb9ddbb4b434e51de75795b67d8a4f7d20e76cd OK
+
+=== 1. MLflow: what the online scorer looks at ===
+--- mlflow/genai/scorers/online/trace_checkpointer.py lines 91-110
+  91          current_time_ms = int(time.time() * 1000)
+  92          checkpoint = self.get_checkpoint()
+  93  
+  94          # Subtract a completion buffer from the upper bound so that traces which
+  95          # started recently still have time to finish before we advance past them.
+  96          buffer_seconds = max(0, MLFLOW_ONLINE_SCORING_DEFAULT_TRACE_COMPLETION_BUFFER_SECONDS.get())
+  97          max_trace_timestamp_ms = current_time_ms - buffer_seconds * 1000
+  98  
+  99          # Start from the checkpoint, but preserve a full MAX_LOOKBACK_MS window
+ 100          # behind the buffered upper bound regardless of the configured buffer.
+ 101          min_lookback_time_ms = max_trace_timestamp_ms - MAX_LOOKBACK_MS
+ 102          min_trace_timestamp_ms = max(
+ 103              checkpoint.timestamp_ms if checkpoint else min_lookback_time_ms,
+ 104              min_lookback_time_ms,
+ 105          )
+ 106  
+ 107          return OnlineTraceScoringTimeWindow(
+ 108              min_trace_timestamp_ms=min_trace_timestamp_ms,
+ 109              max_trace_timestamp_ms=max_trace_timestamp_ms,
+ 110          )
+--- mlflow/genai/scorers/online/trace_loader.py lines 125-131
+ 125  
+ 126              trace_batch, token = self._tracking_store.search_traces(
+ 127                  experiment_ids=[experiment_id],
+ 128                  filter_string=combined_filter,
+ 129                  max_results=batch_size,
+ 130                  order_by=[
+ 131                      "timestamp_ms ASC",
+--- mlflow/genai/scorers/online/trace_processor.py lines 192-203
+ 192              # Filter out traces at checkpoint boundary that have already been processed.
+ 193              # Traces are ordered by (timestamp_ms ASC, trace_id ASC), so we filter out
+ 194              # any traces with the checkpoint timestamp and trace_id <= checkpoint.trace_id.
+ 195              if checkpoint is not None and checkpoint.trace_id is not None:
+ 196                  trace_infos = [
+ 197                      t
+ 198                      for t in trace_infos
+ 199                      if not (
+ 200                          t.timestamp_ms == checkpoint.timestamp_ms
+ 201                          and t.trace_id <= checkpoint.trace_id
+ 202                      )
+ 203                  ]
+--- mlflow/genai/scorers/online/trace_processor.py lines 134-150
+ 134          # Find the trace with the latest timestamp to use for checkpoint
+ 135          if full_traces:
+ 136              latest_trace = max(
+ 137                  full_traces,
+ 138                  key=lambda t: (tasks[t.info.trace_id].timestamp_ms, t.info.trace_id),
+ 139              )
+ 140              checkpoint = OnlineTraceScoringCheckpoint(
+ 141                  timestamp_ms=tasks[latest_trace.info.trace_id].timestamp_ms,
+ 142                  trace_id=latest_trace.info.trace_id,
+ 143              )
+ 144          else:
+ 145              # If no traces were fetched, use the end of the time window as checkpoint
+ 146              checkpoint = OnlineTraceScoringCheckpoint(
+ 147                  timestamp_ms=time_window.max_trace_timestamp_ms,
+ 148                  trace_id=None,
+ 149              )
+ 150          self._checkpoint_manager.persist_checkpoint(checkpoint)
+--- constants.py
+# Maximum lookback period to prevent getting stuck on old failing traces (1 hour)
+MAX_LOOKBACK_MS = 60 * 60 * 1000
+# Maximum traces to include in a single scoring job
+MAX_TRACES_PER_JOB = 500
+# Maximum sessions to include in a single scoring job
+MAX_SESSIONS_PER_JOB = 100
+
+=== 2. Does any online-scoring file mention trace status? ===
+(no output above means no status check in any online-scoring file)
+--- environment_variables.py docstring for the trace buffer
+#: Default buffer time in seconds applied to the trace scoring window's upper bound.
+#: Traces that started within this buffer period before the current time are excluded from
+#: the scoring window, giving them time to finish before being evaluated. The buffer should
+#: exceed the expected trace duration; traces that remain IN_PROGRESS longer can still be skipped.
+#: (default: ``300`` (5 minutes))
+
+=== 3. Run MLflow's own calculate_time_window on a fake clock ===
+trace starts at t=1000000s, scorer polls every 60s (assumed), buffer 300s (default)
+  trace runs for  earliest score   state when scored
+            60s       +300s            COMPLETE
+           240s       +300s            COMPLETE
+           300s       +300s            COMPLETE
+           360s       +300s         IN_PROGRESS
+           600s       +300s         IN_PROGRESS
+          1800s       +300s         IN_PROGRESS
+
+After scoring the checkpoint sits on the trace's start time. Re-typed from lines 195-203:
+checkpoint=(t0, trace-b) -> candidates ['trace-a', 'trace-b', 'trace-c'] -> rescored ['trace-c']
+later window min == checkpoint start? True (trace-b itself is filtered by trace_id; nothing re-selects it)
+
+=== 4. Outage longer than the lookback: traces are dropped, not queued ===
+checkpoint at t0, scorer resumes 3 h later -> window starts 6900s (1.92 h) after the checkpoint
+traces that started inside that gap are outside every future window
+
+=== 5. DeepEval 4.2.7 ===
+--- deepeval/evaluate/execute/trace_scope.py lines 67-71
+  67      """Attach the test's live `@observe` trace to the active test run.
+  68  
+  69      Relies on the deepeval pytest plugin's eval scope to keep the trace live
+  70      across the test body so it can be read off `current_trace_context` here.
+  71      """
+--- deepeval/evaluate/execute/trace_scope.py lines 88-90
+  88      # Trace is mid-flight (outer wrapper span hasn't closed); stamp end_time.
+  89      if current_trace.end_time is None:
+  90          current_trace.end_time = time.perf_counter()
+--- deepeval/tracing/offline_evals/trace.py lines 6-8
+   6  def evaluate_trace(
+   7      trace_uuid: str, metric_collection: str, overwrite_metrics: bool = False
+   8  ):
+--- deepeval/tracing/offline_evals/trace.py lines 15-34
+  15      evaluate_trace_request_body = EvaluateTraceRequestBody(
+  16          metricCollection=metric_collection, overwriteMetrics=overwrite_metrics
+  17      )
+  18      try:
+  19          body = evaluate_trace_request_body.model_dump(
+  20              by_alias=True,
+  21              exclude_none=True,
+  22          )
+  23      except AttributeError:
+  24          # Pydantic version below 2.0
+  25          body = evaluate_trace_request_body.dict(
+  26              by_alias=True, exclude_none=True
+  27          )
+  28  
+  29      api.send_request(
+  30          method=HttpMethods.POST,
+  31          endpoint=Endpoints.EVALUATE_TRACE_ENDPOINT,
+  32          body=body,
+  33          url_params={"traceUuid": trace_uuid},
+  34      )
+buffer/inactivity/lookback logic in offline_evals/: none
+
+=== 6. Phoenix evals 3.9.0 ===
+--- phoenix/evals/evaluators.py lines 273-281
+ 273  def _add_trace_id_to_scores(scores: List[Score], trace_id: Optional[str]) -> List[Score]:
+ 274      """Add trace_id to Score metadata."""
+ 275      if not trace_id:
+ 276          return scores
+ 277  
+ 278      updated_scores = []
+ 279      for score in scores:
+ 280          updated_metadata = {**score.metadata, "trace_id": trace_id}
+ 281          updated_score = Score(
+--- phoenix/evals/evaluators.py lines 383-387
+ 383      @trace(
+ 384          span_name=_get_evaluator_span_name_sync,
+ 385          span_kind=OpenInferenceSpanKindValues.EVALUATOR,
+ 386          process_input={
+ 387              SpanAttributes.INPUT_VALUE: _get_remapped_input,
+trace-completion terms anywhere in phoenix-evals: none
