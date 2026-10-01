@@ -1,0 +1,379 @@
+{
+  "schema_version": "0.1.0",
+  "suite_id": "benchclaw-agent-framework-real-pilot",
+  "suite_version": "0.1.1",
+  "publication_eligible": false,
+  "purpose": "Unpublished adapter, accounting, failure-capture, and redaction validation only.",
+  "execution": {
+    "scored_runs_per_subject_task": 5,
+    "warmups_per_subject_task_shape": 1,
+    "pairing": "subject x task_id x run_index",
+    "order": "seeded counterbalanced",
+    "subject_concurrency": 1,
+    "model_request_concurrency": 1,
+    "parallel_tool_calls": false,
+    "stream": false,
+    "agent_retries": 0,
+    "provider_retries": 0,
+    "automatic_reruns": 0,
+    "request_timeout_seconds": 60,
+    "run_timeout_seconds": 180,
+    "tool_timeout_seconds": 10,
+    "max_output_tokens_per_request": 256,
+    "temperature": 0,
+    "top_p": 1,
+    "seed": null,
+    "seed_policy": "Do not claim deterministic model output unless the selected provider/model exposes and honors a seed.",
+    "model_id": null,
+    "model_policy": "One exact model ID and provider revision must be selected for both subjects before any warmup."
+  },
+  "tool_policy": {
+    "implementation": "Shared standard-library Python fixtures outside subject adapters.",
+    "network": false,
+    "filesystem": false,
+    "clock": false,
+    "randomness": false,
+    "side_effect_scope": "Per-run in-memory state only.",
+    "deferred_loading": false,
+    "native_provider_tools": false,
+    "framework_tool_retries": 0,
+    "errors": "Expected domain errors are returned as ordinary structured tool results; unexpected exceptions fail the run."
+  },
+  "output_policy": {
+    "format": "Strict JSON object with no surrounding prose.",
+    "validation": "Deterministic exact-field assertions; extra fields fail unless a task explicitly permits them.",
+    "grounding": "Every scored value must be derivable from the task prompt or observed tool result."
+  },
+  "tasks": [
+    {
+      "id": "inventory-reorder",
+      "stratum": [
+        "sequential tool selection and argument accuracy",
+        "structured final-answer generation grounded in tool outputs"
+      ],
+      "prompt": "Look up SKU BCL-204 using the inventory_lookup tool. Return ONLY a JSON object with exactly these keys: `sku` (string, the looked-up SKU), `name` (string, the canonical product name), `available` (integer, available unit count), `reorder_required` (boolean, true when available is strictly less than reorder_point). Include no other keys or text.",
+      "limits": {
+        "model_requests": 2,
+        "tool_calls": 1,
+        "input_tokens": 4000,
+        "output_tokens": 512,
+        "total_tokens": 4512
+      },
+      "tools": [
+        {
+          "name": "inventory_lookup",
+          "description": "Return the canonical synthetic inventory record for one exact SKU.",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "sku": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "sku"
+            ],
+            "additionalProperties": false
+          },
+          "fixture": {
+            "BCL-204": {
+              "sku": "BCL-204",
+              "name": "Trace Beacon",
+              "available": 7,
+              "reorder_point": 10
+            }
+          }
+        }
+      ],
+      "reference_trace": [
+        {
+          "tool": "inventory_lookup",
+          "arguments": {
+            "sku": "BCL-204"
+          }
+        }
+      ],
+      "expected_output": {
+        "sku": "BCL-204",
+        "name": "Trace Beacon",
+        "available": 7,
+        "reorder_required": true
+      }
+    },
+    {
+      "id": "dependent-shipping-quote",
+      "stratum": [
+        "stateful multi-step execution",
+        "constrained planning under a tool-call budget"
+      ],
+      "prompt": "Quote shipping for a 3.5 kg parcel from NBO to FRA. First call lookup_shipping_route to obtain a route token, then call quote_shipping_route with that exact token and weight_kg 3.5. Return ONLY a JSON object with exactly these keys: `origin` (string), `destination` (string), `weight_kg` (number), `amount` (number), `currency` (string), `eta_days` (integer). Include no other keys or text.",
+      "limits": {
+        "model_requests": 3,
+        "tool_calls": 2,
+        "input_tokens": 8000,
+        "output_tokens": 768,
+        "total_tokens": 8768
+      },
+      "tools": [
+        {
+          "name": "lookup_shipping_route",
+          "description": "Return a synthetic route token for an exact origin and destination.",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "origin": {
+                "type": "string"
+              },
+              "destination": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "origin",
+              "destination"
+            ],
+            "additionalProperties": false
+          },
+          "fixture": {
+            "origin": "NBO",
+            "destination": "FRA",
+            "zone": "Z4",
+            "route_token": "route:NBO:FRA:Z4"
+          }
+        },
+        {
+          "name": "quote_shipping_route",
+          "description": "Return a quote only for a route token issued earlier in the same run.",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "route_token": {
+                "type": "string"
+              },
+              "weight_kg": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "route_token",
+              "weight_kg"
+            ],
+            "additionalProperties": false
+          },
+          "fixture": {
+            "route_token": "route:NBO:FRA:Z4",
+            "weight_kg": 3.5,
+            "amount": 18.75,
+            "currency": "USD",
+            "eta_days": 4
+          }
+        }
+      ],
+      "reference_trace": [
+        {
+          "tool": "lookup_shipping_route",
+          "arguments": {
+            "origin": "NBO",
+            "destination": "FRA"
+          }
+        },
+        {
+          "tool": "quote_shipping_route",
+          "arguments": {
+            "route_token": "route:NBO:FRA:Z4",
+            "weight_kg": 3.5
+          }
+        }
+      ],
+      "expected_output": {
+        "origin": "NBO",
+        "destination": "FRA",
+        "weight_kg": 3.5,
+        "amount": 18.75,
+        "currency": "USD",
+        "eta_days": 4
+      }
+    },
+    {
+      "id": "recover-stale-revision",
+      "stratum": [
+        "recovery from a tool error explicitly introduced by the task",
+        "stateful multi-step execution"
+      ],
+      "prompt": "Count active items in bucket C. Call count_active_items with bucket \"C\" and revision \"r1\". If the response contains error_code \"stale_revision\", call count_active_items again with bucket \"C\" and the required_revision from that error. Return ONLY a JSON object with exactly these keys: `bucket` (string, always \"C\"), `revision` (string, the revision used in the successful call), `active_count` (integer). Include no other keys or text.",
+      "limits": {
+        "model_requests": 3,
+        "tool_calls": 2,
+        "input_tokens": 8000,
+        "output_tokens": 768,
+        "total_tokens": 8768
+      },
+      "tools": [
+        {
+          "name": "count_active_items",
+          "description": "Return an active-item count or a structured stale-revision domain error.",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "bucket": {
+                "type": "string"
+              },
+              "revision": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "bucket",
+              "revision"
+            ],
+            "additionalProperties": false
+          },
+          "fixture": {
+            "bucket": "C",
+            "responses": {
+              "r1": {
+                "ok": false,
+                "error_code": "stale_revision",
+                "required_revision": "r2"
+              },
+              "r2": {
+                "ok": true,
+                "revision": "r2",
+                "active_count": 4
+              }
+            }
+          }
+        }
+      ],
+      "reference_trace": [
+        {
+          "tool": "count_active_items",
+          "arguments": {
+            "bucket": "C",
+            "revision": "r1"
+          }
+        },
+        {
+          "tool": "count_active_items",
+          "arguments": {
+            "bucket": "C",
+            "revision": "r2"
+          }
+        }
+      ],
+      "expected_output": {
+        "bucket": "C",
+        "revision": "r2",
+        "active_count": 4
+      },
+      "methodology_note": "The second call is an explicit model decision after an ordinary domain-error result. It is not a framework, provider, harness, or transport retry."
+    },
+    {
+      "id": "refund-policy-minimal-tools",
+      "stratum": [
+        "constrained planning under a tool-call budget",
+        "structured final-answer generation grounded in tool outputs"
+      ],
+      "prompt": "Determine whether order O-1047 is eligible for a refund as of 2026-07-23. Call order_lookup to get the delivered_date and category. Call refund_policy with that category to get the window_days. Do NOT call customer_profile. Compute: days_since_delivery = calendar days from delivered_date to 2026-07-23 (inclusive of start, exclusive of end); eligible = true if days_since_delivery <= window_days, else false; reason = \"within_window\" if eligible, \"outside_window\" if not. Return ONLY a JSON object with exactly these keys: `order_id` (string), `eligible` (boolean), `days_since_delivery` (integer), `window_days` (integer), `reason` (string). Include no other keys or text.",
+      "limits": {
+        "model_requests": 3,
+        "tool_calls": 2,
+        "input_tokens": 8000,
+        "output_tokens": 768,
+        "total_tokens": 8768
+      },
+      "tools": [
+        {
+          "name": "order_lookup",
+          "description": "Return non-customer synthetic facts for one order.",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "order_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "order_id"
+            ],
+            "additionalProperties": false
+          },
+          "fixture": {
+            "O-1047": {
+              "order_id": "O-1047",
+              "delivered_date": "2026-07-05",
+              "category": "electronics",
+              "final_sale": false
+            }
+          }
+        },
+        {
+          "name": "refund_policy",
+          "description": "Return the synthetic refund window for one category.",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "category"
+            ],
+            "additionalProperties": false
+          },
+          "fixture": {
+            "electronics": {
+              "category": "electronics",
+              "window_days": 30
+            }
+          }
+        },
+        {
+          "name": "customer_profile",
+          "description": "Synthetic customer details that are unnecessary for refund eligibility.",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "order_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "order_id"
+            ],
+            "additionalProperties": false
+          },
+          "fixture": {
+            "behavior": "Return a policy_denied result and mark the run as a forbidden-tool failure."
+          }
+        }
+      ],
+      "reference_trace": [
+        {
+          "tool": "order_lookup",
+          "arguments": {
+            "order_id": "O-1047"
+          }
+        },
+        {
+          "tool": "refund_policy",
+          "arguments": {
+            "category": "electronics"
+          }
+        }
+      ],
+      "forbidden_tools": [
+        "customer_profile"
+      ],
+      "expected_output": {
+        "order_id": "O-1047",
+        "eligible": true,
+        "days_since_delivery": 18,
+        "window_days": 30,
+        "reason": "within_window"
+      }
+    }
+  ],
+  "suite_version_note": "Prompts updated 2026-07-24 to specify exact output key names, derived field computation rules, and explicit exclusion of unneeded keys. Reference traces and expected_output unchanged."
+}

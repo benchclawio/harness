@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-01",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "runs_total": 80,
+  "arms": {
+    "agno_3_1_0_gpt4o_live": {
+      "n": 40,
+      "completed": 40,
+      "wilson95": [
+        0.9124,
+        1.0
+      ],
+      "mean_inner_s": 3.329,
+      "median_inner_s": 3.321,
+      "sd_inner_s": 0.303,
+      "mean_outer_s": 3.673,
+      "mean_startup_overhead_s": 0.344,
+      "tokens_in_total": 26430,
+      "tokens_out_total": 2820,
+      "cost_total": 0.094275
+    },
+    "langchain_1_4_3_gpt4o_live": {
+      "n": 40,
+      "completed": 40,
+      "wilson95": [
+        0.9124,
+        1.0
+      ],
+      "mean_inner_s": 2.884,
+      "median_inner_s": 2.818,
+      "sd_inner_s": 0.478,
+      "mean_outer_s": 4.362,
+      "mean_startup_overhead_s": 1.477,
+      "tokens_in_total": 26430,
+      "tokens_out_total": 2820,
+      "cost_total": 0.094275
+    }
+  },
+  "per_task": {
+    "dependent-shipping-quote": {
+      "agno_3_1_0_gpt4o_live": {
+        "n": 10,
+        "completed": 10,
+        "mean_s": 3.465,
+        "sd_s": 0.245,
+        "tokens": [
+          791,
+          87
+        ],
+        "tool_calls": 2,
+        "tokens_identical_all_runs": true
+      },
+      "langchain_1_4_3_gpt4o_live": {
+        "n": 10,
+        "completed": 10,
+        "mean_s": 2.945,
+        "sd_s": 0.206,
+        "tokens": [
+          791,
+          87
+        ],
+        "tool_calls": 2,
+        "tokens_identical_all_runs": true
+      },
+      "agno_minus_langchain_inner_s": 0.52,
+      "bootstrap95": [
+        0.336,
+        0.715
+      ]
+    },
+    "inventory-reorder": {
+      "agno_3_1_0_gpt4o_live": {
+        "n": 10,
+        "completed": 10,
+        "mean_s": 3.009,
+        "sd_s": 0.338,
+        "tokens": [
+          311,
+          57
+        ],
+        "tool_calls": 1,
+        "tokens_identical_all_runs": true
+      },
+      "langchain_1_4_3_gpt4o_live": {
+        "n": 10,
+        "completed": 10,
+        "mean_s": 2.572,
+        "sd_s": 0.431,
+        "tokens": [
+          311,
+          57
+        ],
+        "tool_calls": 1,
+        "tokens_identical_all_runs": true
+      },
+      "agno_minus_langchain_inner_s": 0.437,
+      "bootstrap95": [
+        0.111,
+        0.745
+      ]
+    },
+    "recover-stale-revision": {
+      "agno_3_1_0_gpt4o_live": {
+        "n": 10,
+        "completed": 10,
+        "mean_s": 3.325,
+        "sd_s": 0.175,
+        "tokens": [
+          615,
+          56
+        ],
+        "tool_calls": 2,
+        "tokens_identical_all_runs": true
+      },
+      "langchain_1_4_3_gpt4o_live": {
+        "n": 10,
+        "completed": 10,
+        "mean_s": 2.997,
+        "sd_s": 0.725,
+        "tokens": [
+          615,
+          56
+        ],
+        "tool_calls": 2,
+        "tokens_identical_all_runs": true
+      },
+      "agno_minus_langchain_inner_s": 0.328,
+      "bootstrap95": [
+        -0.176,
+        0.659
+      ]
+    },
+    "refund-policy-minimal-tools": {
+      "agno_3_1_0_gpt4o_live": {
+        "n": 10,
+        "completed": 10,
+        "mean_s": 3.515,
+        "sd_s": 0.142,
+        "tokens": [
+          926,
+          82
+        ],
+        "tool_calls": 2,
+        "tokens_identical_all_runs": true
+      },
+      "langchain_1_4_3_gpt4o_live": {
+        "n": 10,
+        "completed": 10,
+        "mean_s": 3.022,
+        "sd_s": 0.295,
+        "tokens": [
+          926,
+          82
+        ],
+        "tool_calls": 2,
+        "tokens_identical_all_runs": true
+      },
+      "agno_minus_langchain_inner_s": 0.494,
+      "bootstrap95": [
+        0.292,
+        0.68
+      ]
+    }
+  },
+  "comparison": {
+    "agno_minus_langchain_mean_inner_s": 0.444,
+    "bootstrap95_inner": [
+      0.265,
+      0.61
+    ],
+    "agno_minus_langchain_mean_outer_s": -0.689,
+    "bootstrap95_outer": [
+      -0.881,
+      -0.508
+    ],
+    "ratio_inner_langchain_over_agno": 0.866
+  },
+  "timing_note": "worker_agno.py imports Agno lazily inside the timed window; worker_langchain.py imports at module top, outside it. 'inner' times are therefore NOT comparable. Fair views: outer end-to-end (cold process) and request time with import cost removed.",
+  "import_cost_s": {
+    "agno": {
+      "n": 10,
+      "mean_s": 1.03,
+      "sd_s": 0.022,
+      "min_s": 0.994,
+      "max_s": 1.068
+    },
+    "langchain": {
+      "n": 10,
+      "mean_s": 1.623,
+      "sd_s": 0.107,
+      "min_s": 1.514,
+      "max_s": 1.844
+    }
+  },
+  "warm_request_estimate": {
+    "agno_mean_s": 2.299,
+    "langchain_mean_s": 2.884,
+    "agno_minus_langchain_s": -0.586,
+    "bootstrap95": [
+      -0.773,
+      -0.425
+    ],
+    "method": "agno inner wall minus mean measured import cost (10 cold imports); langchain inner wall as recorded"
+  }
+}
