@@ -1,0 +1,116 @@
+{
+  "sources": [
+    "https://www.langchain.com/pricing",
+    "https://docs.langchain.com/langsmith/usage-and-billing",
+    "https://docs.langchain.com/langsmith/billing",
+    "https://agentsapis.com/langsmith-pricing/"
+  ],
+  "pricing_page": {
+    "developer_price": true,
+    "developer_included_base_traces": 5000,
+    "plus_seat_usd": 39.0,
+    "plus_included_base_traces": 10000,
+    "enterprise_custom_pricing": true,
+    "enterprise_self_hosted_or_hybrid": true,
+    "lsu_usd": 1.0,
+    "lsu_per_base_trace": 0.005,
+    "lsu_per_extended_upgrade": 0.0025,
+    "base_retention_days": 14,
+    "extended_retention_days": 180,
+    "startup_credits_up_to_usd": 10000,
+    "calculator_constants": {
+      "traceLsuPerTrace": 0.005,
+      "seatPrice": 39.0,
+      "tracesFreeIncluded": 10000,
+      "lsuPrice": 1.0
+    }
+  },
+  "docs": {
+    "usage_doc_retention_row": [
+      [
+        "14",
+        "180"
+      ]
+    ],
+    "usage_doc_sep_14_2026_notice": true,
+    "billing_doc_personal_org_cap": 5000,
+    "billing_doc_plus_initial_traces": 10000,
+    "usage_doc_auto_upgrade_default_on": true
+  },
+  "derived": {
+    "usd_per_1000_base_traces": 5.0,
+    "usd_per_1000_extended_upgrades": 2.5,
+    "usd_per_1000_extended_total": 7.5
+  },
+  "example_workloads": [
+    {
+      "plan": "developer",
+      "seats": 1,
+      "traces": 5000,
+      "extended_share": 0.0,
+      "seat_cost_usd": 0,
+      "usage_cost_usd": 0.0,
+      "total_usd": 0.0
+    },
+    {
+      "plan": "developer",
+      "seats": 1,
+      "traces": 50000,
+      "extended_share": 0.0,
+      "seat_cost_usd": 0,
+      "usage_cost_usd": 225.0,
+      "total_usd": 225.0
+    },
+    {
+      "plan": "plus",
+      "seats": 1,
+      "traces": 10000,
+      "extended_share": 0.0,
+      "seat_cost_usd": 39.0,
+      "usage_cost_usd": 0.0,
+      "total_usd": 39.0
+    },
+    {
+      "plan": "plus",
+      "seats": 3,
+      "traces": 50000,
+      "extended_share": 0.0,
+      "seat_cost_usd": 117.0,
+      "usage_cost_usd": 200.0,
+      "total_usd": 317.0
+    },
+    {
+      "plan": "plus",
+      "seats": 5,
+      "traces": 100000,
+      "extended_share": 0.0,
+      "seat_cost_usd": 195.0,
+      "usage_cost_usd": 450.0,
+      "total_usd": 645.0
+    },
+    {
+      "plan": "plus",
+      "seats": 5,
+      "traces": 100000,
+      "extended_share": 1.0,
+      "seat_cost_usd": 195.0,
+      "usage_cost_usd": 675.0,
+      "total_usd": 870.0
+    },
+    {
+      "plan": "plus",
+      "seats": 10,
+      "traces": 500000,
+      "extended_share": 0.0,
+      "seat_cost_usd": 390.0,
+      "usage_cost_usd": 2450.0,
+      "total_usd": 2840.0
+    }
+  ],
+  "third_party_claims": {
+    "agentsapis_base_per_1k": 2.5,
+    "agentsapis_extended_per_1k": 5.0,
+    "agentsapis_upgrade_per_1k": 2.5,
+    "agentsapis_extended_retention_days": 400
+  }
+}
