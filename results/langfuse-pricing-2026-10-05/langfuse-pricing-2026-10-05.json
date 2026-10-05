@@ -1,0 +1,322 @@
+{
+  "sources": [
+    "https://langfuse.com/pricing.md",
+    "https://langfuse.com/docs/administration/billable-units.md",
+    "https://langfuse.com/pricing-self-host.md",
+    "https://langfuse.com/self-hosting/configuration/scaling.md",
+    "https://www.langchain.com/pricing"
+  ],
+  "selfcheck_langfuse_published_examples": {
+    "published_examples_usd": [
+      37.0,
+      101.0,
+      551.0,
+      2176.0,
+      8801.0
+    ],
+    "computed_usd": [
+      37.0,
+      101.0,
+      551.0,
+      2176.0,
+      8801.0
+    ],
+    "match": true
+  },
+  "cloud_plans": {
+    "Hobby": {
+      "heading": "Hobby (Free)",
+      "included_units": "50k units",
+      "data_access": "30 days",
+      "users": "2"
+    },
+    "Core": {
+      "heading": "Core ($29/month)",
+      "included_units": "100k units",
+      "data_access": "90 days",
+      "users": "Unlimited"
+    },
+    "Pro": {
+      "heading": "Pro ($199/month)",
+      "included_units": "100k units",
+      "data_access": "3 years",
+      "users": "Unlimited"
+    },
+    "Enterprise": {
+      "heading": "Enterprise ($2,499/month)",
+      "included_units": "100k units",
+      "data_access": "3 years",
+      "users": "Unlimited"
+    }
+  },
+  "teams_addon_usd": 300,
+  "graduated_tiers_parsed": [
+    [
+      "100k -- 1M units",
+      8.0
+    ],
+    [
+      "1M -- 10M units",
+      7.0
+    ],
+    [
+      "10M -- 50M units",
+      6.5
+    ],
+    [
+      "50M+ units",
+      6.0
+    ]
+  ],
+  "base_fees_usd": {
+    "Core": 29.0,
+    "Pro": 199.0,
+    "Pro+Teams": 499.0,
+    "Enterprise": 2499.0
+  },
+  "included_units": 100000,
+  "billable_units": {
+    "formula_present": true,
+    "doc_example_traces": 20070,
+    "doc_example_observations": 119500,
+    "doc_example_scores": 561,
+    "doc_example_units": 140131,
+    "langfuse_features_create_units": true,
+    "units_per_trace_in_doc_example": 6.98
+  },
+  "self_hosting": {
+    "mit_license_stated": true,
+    "enterprise_bundled_with_clickhouse_plan": true,
+    "oss_missing_but_enterprise_has": [
+      "Protected deployment labels",
+      "In-app support",
+      "Private Slack channel",
+      "Named lead support engineer",
+      "Onboarding & architectural guidance",
+      "Solutions architect support",
+      "Product team feedback channel",
+      "Support SLA",
+      "Hardening for Government (in development)",
+      "Server-side data masking",
+      "Project-level RBAC",
+      "Data retention management",
+      "SCIM API (automated user provisioning)",
+      "Organization creators",
+      "UI customization",
+      "Audit logs",
+      "Admin API (project management, SCIM)",
+      "Instance management API",
+      "SOC2 Type II & ISO27001 reports",
+      "InfoSec/legal reviews"
+    ],
+    "oss_includes": [
+      "Organization-level RBAC",
+      "Enterprise SSO (e.g. Okta, EntraID)",
+      "SSO enforcement"
+    ],
+    "minimum_infra": [
+      {
+        "service": "Langfuse Web Container",
+        "cpu": 2,
+        "memory_gib": 4.0
+      },
+      {
+        "service": "Langfuse Worker Container",
+        "cpu": 2,
+        "memory_gib": 4.0
+      },
+      {
+        "service": "PostgreSQL Database",
+        "cpu": 2,
+        "memory_gib": 4.0
+      },
+      {
+        "service": "Redis/Valkey Instance",
+        "cpu": 1,
+        "memory_gib": 1.5
+      },
+      {
+        "service": "ClickHouse",
+        "cpu": 2,
+        "memory_gib": 8.0
+      }
+    ],
+    "minimum_total_cpu": 9,
+    "minimum_total_memory_gib": 21.5,
+    "compose_is_single_vm_without_ha_or_backups": true
+  },
+  "langsmith_rates_used": {
+    "seat_usd": 39.0,
+    "included_traces": 10000,
+    "lsu_per_extra_trace": 0.005,
+    "usd_per_lsu": 1.0
+  },
+  "cloud_grid": [
+    {
+      "traces": 5000,
+      "units_per_trace": 1,
+      "units": 5000,
+      "core_usd": 29.0,
+      "pro_usd": 199.0
+    },
+    {
+      "traces": 5000,
+      "units_per_trace": 7,
+      "units": 35000,
+      "core_usd": 29.0,
+      "pro_usd": 199.0
+    },
+    {
+      "traces": 5000,
+      "units_per_trace": 20,
+      "units": 100000,
+      "core_usd": 29.0,
+      "pro_usd": 199.0
+    },
+    {
+      "traces": 10000,
+      "units_per_trace": 1,
+      "units": 10000,
+      "core_usd": 29.0,
+      "pro_usd": 199.0
+    },
+    {
+      "traces": 10000,
+      "units_per_trace": 7,
+      "units": 70000,
+      "core_usd": 29.0,
+      "pro_usd": 199.0
+    },
+    {
+      "traces": 10000,
+      "units_per_trace": 20,
+      "units": 200000,
+      "core_usd": 37.0,
+      "pro_usd": 207.0
+    },
+    {
+      "traces": 50000,
+      "units_per_trace": 1,
+      "units": 50000,
+      "core_usd": 29.0,
+      "pro_usd": 199.0
+    },
+    {
+      "traces": 50000,
+      "units_per_trace": 7,
+      "units": 350000,
+      "core_usd": 49.0,
+      "pro_usd": 219.0
+    },
+    {
+      "traces": 50000,
+      "units_per_trace": 20,
+      "units": 1000000,
+      "core_usd": 101.0,
+      "pro_usd": 271.0
+    },
+    {
+      "traces": 100000,
+      "units_per_trace": 1,
+      "units": 100000,
+      "core_usd": 29.0,
+      "pro_usd": 199.0
+    },
+    {
+      "traces": 100000,
+      "units_per_trace": 7,
+      "units": 700000,
+      "core_usd": 77.0,
+      "pro_usd": 247.0
+    },
+    {
+      "traces": 100000,
+      "units_per_trace": 20,
+      "units": 2000000,
+      "core_usd": 171.0,
+      "pro_usd": 341.0
+    },
+    {
+      "traces": 500000,
+      "units_per_trace": 1,
+      "units": 500000,
+      "core_usd": 61.0,
+      "pro_usd": 231.0
+    },
+    {
+      "traces": 500000,
+      "units_per_trace": 7,
+      "units": 3500000,
+      "core_usd": 276.0,
+      "pro_usd": 446.0
+    },
+    {
+      "traces": 500000,
+      "units_per_trace": 20,
+      "units": 10000000,
+      "core_usd": 731.0,
+      "pro_usd": 901.0
+    },
+    {
+      "traces": 1000000,
+      "units_per_trace": 1,
+      "units": 1000000,
+      "core_usd": 101.0,
+      "pro_usd": 271.0
+    },
+    {
+      "traces": 1000000,
+      "units_per_trace": 7,
+      "units": 7000000,
+      "core_usd": 521.0,
+      "pro_usd": 691.0
+    },
+    {
+      "traces": 1000000,
+      "units_per_trace": 20,
+      "units": 20000000,
+      "core_usd": 1381.0,
+      "pro_usd": 1551.0
+    }
+  ],
+  "comparison": [
+    {
+      "seats": 1,
+      "traces": 100000,
+      "units_per_trace": 7,
+      "langsmith_plus_usd": 489.0,
+      "langfuse_core_usd": 77.0
+    },
+    {
+      "seats": 5,
+      "traces": 100000,
+      "units_per_trace": 7,
+      "langsmith_plus_usd": 645.0,
+      "langfuse_core_usd": 77.0
+    },
+    {
+      "seats": 5,
+      "traces": 100000,
+      "units_per_trace": 20,
+      "langsmith_plus_usd": 645.0,
+      "langfuse_core_usd": 171.0
+    },
+    {
+      "seats": 10,
+      "traces": 500000,
+      "units_per_trace": 7,
+      "langsmith_plus_usd": 2840.0,
+      "langfuse_core_usd": 276.0
+    }
+  ],
+  "breakeven": {
+    "1_seat_100000_traces": {
+      "langsmith_plus_usd": 489.0,
+      "first_units_per_trace_where_langfuse_core_costs_at_least_as_much": 66
+    },
+    "5_seat_100000_traces": {
+      "langsmith_plus_usd": 645.0,
+      "first_units_per_trace_where_langfuse_core_costs_at_least_as_much": 88
+    }
+  }
+}

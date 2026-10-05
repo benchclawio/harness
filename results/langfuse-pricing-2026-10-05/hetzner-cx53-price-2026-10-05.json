@@ -1,0 +1,29 @@
+{
+  "source": "Hetzner Cloud API GET /v1/server_types (read-only, no server created)",
+  "read": "2026-10-05",
+  "server_type": {
+    "name": "cx53",
+    "cores": 16,
+    "memory": 32,
+    "disk": 320,
+    "cpu_type": "shared",
+    "architecture": "x86"
+  },
+  "prices": [
+    {
+      "location": "fsn1",
+      "price_monthly_net_eur": "29.4900000000",
+      "price_monthly_gross_eur": "35.6829000000000000"
+    },
+    {
+      "location": "hel1",
+      "price_monthly_net_eur": "29.4900000000",
+      "price_monthly_gross_eur": "35.6829000000000000"
+    },
+    {
+      "location": "nbg1",
+      "price_monthly_net_eur": "29.4900000000",
+      "price_monthly_gross_eur": "35.6829000000000000"
+    }
+  ]
+}
