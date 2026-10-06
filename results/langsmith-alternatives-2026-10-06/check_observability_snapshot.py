@@ -8,6 +8,7 @@ dependency is a proxy for OpenTelemetry-based instrumentation, not proof of it.
 """
 import datetime
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -30,7 +31,11 @@ PROJECTS = [
 
 
 def get(url, text=False):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+    headers = dict(UA)
+    token = os.environ.get("GITHUB_TOKEN")  # optional: only lifts GitHub's 60-requests-an-hour limit
+    if token and url.startswith("https://api.github.com/"):
+        headers["Authorization"] = f"Bearer {token}"
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30) as r:
         body = r.read().decode("utf-8", "replace")
     return body if text else json.loads(body)
 

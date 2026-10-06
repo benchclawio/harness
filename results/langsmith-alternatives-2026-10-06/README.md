@@ -11,7 +11,10 @@ nine alternatives, read on 2026-10-06 from PyPI, GitHub and each README.
 
 - `check_observability_snapshot.py`: standard library only, no API key, nothing installed. One PyPI
   JSON request, one unauthenticated GitHub REST request and one raw README request per project,
-  sequential, no retries. Run twice on 2026-10-06; the two outputs were byte-identical.
+  sequential, no retries. Run twice on 2026-10-06; the two outputs were byte-identical. It makes about ten
+  GitHub API requests; GitHub allows 60 an hour per IP address unauthenticated. An optional `GITHUB_TOKEN`
+  environment variable lifts that limit and is used only for `api.github.com` reads of public data; the
+  outputs here were produced with one set.
 - `observability-snapshot-2026-10-06.json`: the raw, unedited output.
 - Pricing arithmetic for LangSmith and Langfuse is not repeated here; it comes from
   `results/langsmith-pricing-2026-10-04` and `results/langfuse-pricing-2026-10-05`.

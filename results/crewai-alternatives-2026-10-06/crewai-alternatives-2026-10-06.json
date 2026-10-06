@@ -48,6 +48,53 @@
       }
     ]
   },
+  "direct_chromadb_requirement": [
+    {
+      "name": "LangGraph",
+      "package": "langgraph",
+      "declares_chromadb_directly": false
+    },
+    {
+      "name": "Microsoft Agent Framework",
+      "package": "agent-framework",
+      "declares_chromadb_directly": false
+    },
+    {
+      "name": "Google ADK",
+      "package": "google-adk",
+      "declares_chromadb_directly": false
+    },
+    {
+      "name": "OpenAI Agents SDK",
+      "package": "openai-agents",
+      "declares_chromadb_directly": false
+    },
+    {
+      "name": "Pydantic AI",
+      "package": "pydantic-ai-slim",
+      "declares_chromadb_directly": false
+    },
+    {
+      "name": "Agno",
+      "package": "agno",
+      "declares_chromadb_directly": false
+    },
+    {
+      "name": "AutoGen",
+      "package": "autogen-agentchat",
+      "declares_chromadb_directly": false
+    },
+    {
+      "name": "smolagents",
+      "package": "smolagents",
+      "declares_chromadb_directly": false
+    },
+    {
+      "name": "CrewAI",
+      "package": "crewai",
+      "declares_chromadb_directly": true
+    }
+  ],
   "readme_mentions": [
     {
       "name": "LangGraph",

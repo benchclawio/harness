@@ -7,6 +7,7 @@ show what a project says it does, not what it does.
 """
 import datetime
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -15,7 +16,11 @@ UA = {"User-Agent": "Mozilla/5.0 (benchclaw crewai check)", "Accept": "applicati
 
 
 def get(url, text=False):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+    headers = dict(UA)
+    token = os.environ.get("GITHUB_TOKEN")  # optional: only lifts GitHub's 60-requests-an-hour limit
+    if token and url.startswith("https://api.github.com/"):
+        headers["Authorization"] = f"Bearer {token}"
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30) as r:
         body = r.read().decode("utf-8", "replace")
     return body if text else json.loads(body)
 
@@ -58,6 +63,17 @@ for name, repo in [
         row["archived_error"] = str(e)
     readmes.append(row)
 
+# Does any alternative declare chromadb as a direct, non-extra requirement on PyPI? (Not a transitive check.)
+chroma_deps = []
+for name, pkg in [("LangGraph", "langgraph"), ("Microsoft Agent Framework", "agent-framework"), ("Google ADK", "google-adk"),
+                  ("OpenAI Agents SDK", "openai-agents"), ("Pydantic AI", "pydantic-ai-slim"), ("Agno", "agno"),
+                  ("AutoGen", "autogen-agentchat"), ("smolagents", "smolagents"), ("CrewAI", "crewai")]:
+    try:
+        reqs = [r for r in (get(f"https://pypi.org/pypi/{pkg}/json")["info"].get("requires_dist") or []) if "extra ==" not in r]
+        chroma_deps.append({"name": name, "package": pkg, "declares_chromadb_directly": any(r.lower().startswith("chroma") for r in reqs)})
+    except Exception as e:
+        chroma_deps.append({"name": name, "package": pkg, "error": str(e)})
+
 json.dump({
     "read_on": datetime.date.today().isoformat(),
     "crewai": {"latest": crew["version"], "requires_python": crew.get("requires_python"),
@@ -67,6 +83,7 @@ json.dump({
     "advisory": {"id": adv.get("ghsa_id"), "cve": adv.get("cve_id"), "severity": adv.get("severity"), "summary": adv.get("summary"),
                  "vulnerabilities": [{"package": v["package"]["name"], "vulnerable_range": v.get("vulnerable_version_range"),
                                       "first_patched": v.get("first_patched_version")} for v in adv.get("vulnerabilities", [])]},
+    "direct_chromadb_requirement": chroma_deps,
     "readme_mentions": readmes,
 }, sys.stdout, indent=2)
 print()
