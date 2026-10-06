@@ -1,0 +1,154 @@
+{
+  "read_on": "2026-10-06",
+  "crewai": {
+    "latest": "1.15.23",
+    "requires_python": "<3.14,>=3.10",
+    "direct_required_dependencies": 31,
+    "chromadb_core_requirement": [
+      "chromadb~=1.1.0"
+    ],
+    "chromadb_in_extras": []
+  },
+  "chromadb": {
+    "latest": "1.5.9",
+    "latest_released": "2026-05-05",
+    "last_five": [
+      [
+        "2026-03-10",
+        "1.5.5"
+      ],
+      [
+        "2026-04-07",
+        "1.5.6"
+      ],
+      [
+        "2026-04-08",
+        "1.5.7"
+      ],
+      [
+        "2026-04-16",
+        "1.5.8"
+      ],
+      [
+        "2026-05-05",
+        "1.5.9"
+      ]
+    ]
+  },
+  "advisory": {
+    "id": "GHSA-f4j7-r4q5-qw2c",
+    "cve": "CVE-2026-45829",
+    "severity": "critical",
+    "summary": "ChromaDB Python project has a pre-authentication code injection vulnerability",
+    "vulnerabilities": [
+      {
+        "package": "chromadb",
+        "vulnerable_range": ">= 1.0.0, <= 1.5.9",
+        "first_patched": null
+      }
+    ]
+  },
+  "readme_mentions": [
+    {
+      "name": "LangGraph",
+      "repo": "langchain-ai/langgraph",
+      "multi_agent": 0,
+      "handoff": 0,
+      "team": 1,
+      "role": 0,
+      "readme_words": 601,
+      "archived": false
+    },
+    {
+      "name": "Microsoft Agent Framework",
+      "repo": "microsoft/agent-framework",
+      "multi_agent": 3,
+      "handoff": 2,
+      "team": 1,
+      "role": 0,
+      "readme_words": 1361,
+      "archived": false
+    },
+    {
+      "name": "Google ADK",
+      "repo": "google/adk-python",
+      "multi_agent": 2,
+      "handoff": 0,
+      "team": 0,
+      "role": 0,
+      "readme_words": 932,
+      "archived": false
+    },
+    {
+      "name": "OpenAI Agents SDK",
+      "repo": "openai/openai-agents-python",
+      "multi_agent": 1,
+      "handoff": 3,
+      "team": 0,
+      "role": 0,
+      "readme_words": 848,
+      "archived": false
+    },
+    {
+      "name": "Pydantic AI",
+      "repo": "pydantic/pydantic-ai",
+      "multi_agent": 1,
+      "handoff": 0,
+      "team": 2,
+      "role": 0,
+      "readme_words": 2119,
+      "archived": false
+    },
+    {
+      "name": "Agno",
+      "repo": "agno-agi/agno",
+      "multi_agent": 0,
+      "handoff": 0,
+      "team": 0,
+      "role": 0,
+      "readme_words": 515,
+      "archived": false
+    },
+    {
+      "name": "AutoGen",
+      "repo": "microsoft/autogen",
+      "multi_agent": 12,
+      "handoff": 0,
+      "team": 1,
+      "role": 0,
+      "readme_words": 1314,
+      "archived": false
+    },
+    {
+      "name": "smolagents",
+      "repo": "huggingface/smolagents",
+      "multi_agent": 1,
+      "handoff": 0,
+      "team": 1,
+      "role": 0,
+      "readme_words": 1490,
+      "archived": false
+    },
+    {
+      "name": "CrewAI",
+      "repo": "crewAIInc/crewAI",
+      "multi_agent": 4,
+      "handoff": 0,
+      "team": 3,
+      "role": 14,
+      "readme_words": 3793,
+      "archived": false
+    },
+    {
+      "name": "OpenAI Swarm",
+      "repo": "openai/swarm",
+      "multi_agent": 2,
+      "handoff": 7,
+      "team": 1,
+      "role": 5,
+      "readme_words": 1942,
+      "says_replaced_by_agents_sdk": true,
+      "archived": false
+    }
+  ]
+}
