@@ -16,6 +16,7 @@ Microsoft Agent Framework.
   PyPI JSON request, one unauthenticated GitHub REST request and one raw README request per
   project, sequential, no retries. Run twice on 2026-10-06; the two outputs were byte-identical.
 - `framework-snapshot-2026-10-06.json`: the raw, unedited output.
+- `google-ai-overview-langgraph-alternatives-2026-10-06.md`: Google's AI Overview text for the query, captured 2026-10-06 from one live SERP call, because it still lists AutoGen as a top alternative.
 
 ## Limits
 
