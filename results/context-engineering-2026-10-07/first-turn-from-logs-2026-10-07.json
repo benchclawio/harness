@@ -1,0 +1,26 @@
+{
+  "buckets": {
+    "20k_to_40k": 16,
+    "40k_to_60k": 23,
+    "60k_to_100k": 44,
+    "over_100k": 16,
+    "under_20k": 4
+  },
+  "claude_code_versions": {
+    "2.1.261": 41,
+    "2.1.283": 45,
+    "2.1.289": 17
+  },
+  "max": 433855,
+  "median": 64575,
+  "min": 6651,
+  "models": {
+    "claude-opus-5": 6,
+    "claude-opus-5-5": 11,
+    "claude-sonnet-5": 83,
+    "claude-sonnet-5-5": 3
+  },
+  "p25": 42341,
+  "p75": 83914,
+  "sessions": 103
+}

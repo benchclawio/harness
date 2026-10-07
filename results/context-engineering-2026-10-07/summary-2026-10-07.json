@@ -1,0 +1,63 @@
+{
+  "added_tokens_per_extra_tool_C_to_D": 11.0,
+  "claude_code_version": "2.1.289 (Claude Code)",
+  "claude_md_words": 2012,
+  "configs": {
+    "A": {
+      "mean": 15824.3,
+      "runs": 3,
+      "spread": 3,
+      "tools_listed_at_start": 27,
+      "totals": [
+        15826,
+        15824,
+        15823
+      ]
+    },
+    "B": {
+      "added_over_A": 2982.4,
+      "mean": 18806.7,
+      "runs": 3,
+      "spread": 1,
+      "tools_listed_at_start": 27,
+      "totals": [
+        18806,
+        18807,
+        18807
+      ]
+    },
+    "C": {
+      "added_over_A": 111.7,
+      "added_tokens_per_tool": 11.2,
+      "full_definition_json_bytes": 4481,
+      "mcp_tools": 10,
+      "mean": 15936,
+      "runs": 3,
+      "spread": 4,
+      "tools_listed_at_start": 37,
+      "totals": [
+        15938,
+        15934,
+        15936
+      ]
+    },
+    "D": {
+      "added_over_A": 441.7,
+      "added_tokens_per_tool": 11.0,
+      "full_definition_json_bytes": 17921,
+      "mcp_tools": 40,
+      "mean": 16266,
+      "runs": 3,
+      "spread": 4,
+      "tools_listed_at_start": 67,
+      "totals": [
+        16266,
+        16264,
+        16268
+      ]
+    }
+  },
+  "date_utc": "2026-10-07",
+  "model": "claude-haiku-4-5-20251001",
+  "tokens_per_claude_md_word": 1.482
+}
