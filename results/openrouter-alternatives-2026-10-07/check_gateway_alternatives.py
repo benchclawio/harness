@@ -27,8 +27,8 @@ def get(url, text=False):
     return body if text else json.loads(body)
 
 
-def plain(html):
-    t = re.sub(r"<(script|style).*?</\1>", " ", html, flags=re.S)
+def plain(page):
+    t = re.sub(r"<(script|style).*?</\1>", " ", page, flags=re.S)
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", t)))
 
 

@@ -1,0 +1,117 @@
+{
+  "read_on": "2026-10-07",
+  "openrouter": {
+    "standard_platform_fee_pct": 5.5,
+    "business_platform_fee_pct": 8.0,
+    "byok_free_list_price_usd_per_month": 25000,
+    "byok_fee_pct_after": 5,
+    "inference_billed_at_provider_list_price": true,
+    "credit_fee_stripe": true,
+    "free_plan_requests_per_day": 50,
+    "joining_stripe_post_date": "8/19/2026",
+    "post_says_expected_close": true,
+    "post_says_transaction_subject_to_closing_conditions": true,
+    "stripe_post_published": "2026-08-19",
+    "stripe_post_url": "https://stripe.com/newsroom/news/stripe-agrees-to-acquire-openrouter"
+  },
+  "alternatives": {
+    "cloudflare_ai_gateway": {
+      "core_features_free": true,
+      "credit_example_usd": [
+        100,
+        105
+      ],
+      "inference_passthrough_no_markup": true,
+      "free_plan_log_limit": 100000
+    },
+    "vercel_ai_gateway": {
+      "no_markup_no_platform_fee_on_tokens": true,
+      "customer_pays_payment_processing_fees": true,
+      "byok_no_markup_on_paid_tier": true
+    },
+    "portkey": {
+      "free_recorded_logs_per_month": 10000,
+      "production_usd_per_month": 49,
+      "overage_usd_per_extra_100k_requests": 9,
+      "free_tier_not_for_production_per_its_page": true
+    },
+    "helicone": {
+      "hobby_free_requests": 10000,
+      "pro_usd_per_month": 79,
+      "team_usd_per_month": 799
+    },
+    "requesty": {
+      "markup_pct_on_spend": 5,
+      "example": true
+    }
+  },
+  "repositories": [
+    {
+      "name": "LiteLLM",
+      "repo": "BerriAI/litellm",
+      "license": "NOASSERTION",
+      "archived": false,
+      "pushed_at": "2026-10-07",
+      "latest_release": "2026-10-03",
+      "days_since_latest_release": 4,
+      "releases_last_90_days": 50
+    },
+    {
+      "name": "Portkey gateway",
+      "repo": "Portkey-AI/gateway",
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-05-25",
+      "latest_release": "2026-01-12",
+      "days_since_latest_release": 268,
+      "releases_last_90_days": 0
+    },
+    {
+      "name": "Helicone",
+      "repo": "Helicone/helicone",
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushed_at": "2026-09-16",
+      "latest_release": "2025-08-21",
+      "days_since_latest_release": 412,
+      "releases_last_90_days": 0
+    },
+    {
+      "name": "TensorZero",
+      "repo": "tensorzero/tensorzero",
+      "license": "Apache-2.0",
+      "archived": true,
+      "pushed_at": "2026-06-11",
+      "latest_release": "2026-06-04",
+      "days_since_latest_release": 125,
+      "releases_last_90_days": 0
+    }
+  ],
+  "monthly_model_spend_usd_to_fee_usd": {
+    "1000": {
+      "openrouter_standard_credits": 55.0,
+      "openrouter_business_credits": 80.0,
+      "openrouter_byok": 0.0,
+      "cloudflare_unified_billing_5pct": 50.0,
+      "requesty": 50.0,
+      "vercel_platform_fee": 0.0
+    },
+    "10000": {
+      "openrouter_standard_credits": 550.0,
+      "openrouter_business_credits": 800.0,
+      "openrouter_byok": 0.0,
+      "cloudflare_unified_billing_5pct": 500.0,
+      "requesty": 500.0,
+      "vercel_platform_fee": 0.0
+    },
+    "50000": {
+      "openrouter_standard_credits": 2750.0,
+      "openrouter_business_credits": 4000.0,
+      "openrouter_byok": 1250.0,
+      "cloudflare_unified_billing_5pct": 2500.0,
+      "requesty": 2500.0,
+      "vercel_platform_fee": 0.0
+    }
+  },
+  "fee_arithmetic_assumptions": "All spend bought as the gateway's credits; fee shown is the platform or credit fee only, excluding payment processing and any minimum charge; Portkey and Helicone price by logs or requests, not by spend, so they are not in this table"
+}
