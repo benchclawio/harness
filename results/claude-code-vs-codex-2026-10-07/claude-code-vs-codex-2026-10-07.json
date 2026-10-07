@@ -1,0 +1,88 @@
+{
+  "read_on": "2026-10-07",
+  "claude_code": {
+    "package": "@anthropic-ai/claude-code",
+    "latest": "2.1.292",
+    "latest_published": "2026-10-06",
+    "days_since_latest": 1,
+    "releases_last_90_days": 77,
+    "first_release": "2025-02-24",
+    "npm_license_field": "SEE LICENSE IN README.md",
+    "runtime_dependencies": 0,
+    "repo": "anthropics/claude-code",
+    "github_license": null,
+    "github_archived": false,
+    "github_pushed_at": "2026-10-07",
+    "github_language": "TypeScript",
+    "license_file_first_line": "\u00a9 Anthropic PBC. All rights reserved. Use is subject to Anthropic's [Commercial Terms of Service](https://www.anthropic.com/legal/commercial"
+  },
+  "codex": {
+    "package": "@openai/codex",
+    "latest": "0.160.1",
+    "latest_published": "2026-10-05",
+    "days_since_latest": 2,
+    "releases_last_90_days": 38,
+    "first_release": "2025-04-16",
+    "npm_license_field": "Apache-2.0",
+    "runtime_dependencies": 0,
+    "repo": "openai/codex",
+    "github_license": "Apache-2.0",
+    "github_archived": false,
+    "github_pushed_at": "2026-10-07",
+    "github_language": "Rust",
+    "license_file_first_line": "Apache License"
+  },
+  "pricing_pages_read": [
+    "https://claude.com/pricing",
+    "https://developers.openai.com/codex/pricing"
+  ],
+  "pricing": {
+    "claude": {
+      "pro_usd_monthly_billing": 20,
+      "pro_usd_per_month_annual_billing": 17,
+      "pro_includes_claude_code": true,
+      "max_from_usd_per_month": 100,
+      "max_usage_wording": "Choose 5x or 20x more usage than Pro*",
+      "publishes_absolute_usage_numbers": false
+    },
+    "codex": {
+      "free_usd": 0,
+      "go_usd": 8,
+      "plus_usd": 20,
+      "pro_from_usd": 100,
+      "pro_plans_usd": [
+        [
+          "100",
+          "200",
+          "500"
+        ]
+      ],
+      "included_in_chatgpt_plans": true,
+      "plus_includes_cli": true,
+      "api_key_option_pay_per_api_pricing": true,
+      "local_messages_per_5_hours": {
+        "GPT-6 Astra": {
+          "plus": "5-45",
+          "standard_business": "5-45"
+        },
+        "GPT-6.1 Sol": {
+          "plus": "15-160",
+          "standard_business": "15-160"
+        },
+        "GPT-6 Sol": {
+          "plus": "15-150",
+          "standard_business": "15-150"
+        },
+        "GPT-6 Luna": {
+          "plus": "350-3,000",
+          "standard_business": "350-3,000"
+        }
+      },
+      "gpt_5_5_retirement": "October 14, 2026",
+      "models_named_on_plus": [
+        "GPT-6.1 Sol",
+        "GPT-6 Luna"
+      ]
+    }
+  }
+}
