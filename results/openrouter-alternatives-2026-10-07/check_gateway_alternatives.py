@@ -6,6 +6,7 @@ OpenRouter and Stripe announcement pages, and GitHub repository and release data
 three monthly spend levels. This is published pricing and metadata, not a measurement of routing quality or latency.
 """
 import datetime
+import html
 import json
 import os
 import re
@@ -28,7 +29,7 @@ def get(url, text=False):
 
 def plain(html):
     t = re.sub(r"<(script|style).*?</\1>", " ", html, flags=re.S)
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", t))
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", t)))
 
 
 def num(p, s, cast=float, g=1):
