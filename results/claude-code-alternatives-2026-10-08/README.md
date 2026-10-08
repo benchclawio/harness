@@ -4,7 +4,7 @@ Evidence for the BenchClaw article on `claude code alternatives`. **No tool was 
 
 `check_coding_agents.py` (Python standard library, no key; optional `GITHUB_TOKEN` lifts GitHub's 60-requests-an-hour limit) reads, for Claude Code and eight alternatives: the licence (GitHub's SPDX id and the first line of the licence file), the archived flag, the latest stable release, the last commit, README lines that mention a free tier or a subscription, and how many times one provider documentation page names Anthropic.
 
-Release and commit dates use a fixed cut-off, `--as-of 2026-10-08T18:00:00Z`, so two runs minutes apart agree. Licence, archived flag, README and documentation text are the state when you run it. Output is `coding-agents-2026-10-08.json`; two runs were byte-identical (the script was changed twice after the first two runs, as the article notes: first to count stable releases, then to follow each repository's main release series).
+Release and commit dates use a fixed cut-off, `--as-of 2026-10-08T18:00:00Z`, so two runs minutes apart agree. Licence, archived flag, README and documentation text are the state when you run it. Output is `coding-agents-2026-10-08.json`; two runs of the final script were byte-identical.
 
 A release counts as stable when GitHub does not flag it a pre-release, its tag has none of nightly, alpha, beta, rc, preview, canary or dev, and its tag matches the main product series (`v1.2.3`; `rust-v0.161.0` for Codex CLI). Cline also tags `cli-`, `desktop-` and `sdk/` releases in the same repository; those are ignored. If five pages of releases hold no stable one, GitHub's latest-release endpoint is used.
 
