@@ -1,0 +1,213 @@
+{
+  "as_of": "2026-10-08T18:00:00Z",
+  "tools": [
+    {
+      "archived": false,
+      "canonical_repo": "anthropics/claude-code",
+      "last_commit_before_cutoff": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 0
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 0,
+        "tag": "v2.1.294"
+      },
+      "licence_file_first_line": "\u00a9 Anthropic PBC. All rights reserved. Use is subject to Anthropic's [Commercial Terms of Service](https://www.anthropic.",
+      "licence_spdx": null,
+      "name": "Claude Code",
+      "readme_anthropic_mentions": 8,
+      "readme_pricing_or_key_lines": [],
+      "repo": "anthropics/claude-code"
+    },
+    {
+      "archived": false,
+      "canonical_repo": "anomalyco/opencode",
+      "last_commit_before_cutoff": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 0
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-06",
+        "days_before_cutoff": 1,
+        "tag": "v1.18.35"
+      },
+      "licence_file_first_line": "MIT License",
+      "licence_spdx": "MIT",
+      "name": "OpenCode",
+      "provider_page": {
+        "anthropic_mentions": 32,
+        "http": 200,
+        "url": "https://opencode.ai/docs/providers/"
+      },
+      "readme_anthropic_mentions": 0,
+      "readme_pricing_or_key_lines": [],
+      "repo": "anomalyco/opencode"
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Aider-AI/aider",
+      "last_commit_before_cutoff": {
+        "date": "2026-05-22",
+        "days_before_cutoff": 139
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2025-08-09",
+        "days_before_cutoff": 425,
+        "tag": "v0.86.0"
+      },
+      "licence_file_first_line": "Apache License",
+      "licence_spdx": "Apache-2.0",
+      "name": "Aider",
+      "provider_page": {
+        "anthropic_mentions": 31,
+        "http": 200,
+        "url": "https://aider.chat/docs/llms/anthropic.html"
+      },
+      "readme_anthropic_mentions": 1,
+      "readme_pricing_or_key_lines": [],
+      "repo": "Aider-AI/aider"
+    },
+    {
+      "archived": false,
+      "canonical_repo": "cline/cline",
+      "last_commit_before_cutoff": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 0
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 1,
+        "tag": "v4.1.23"
+      },
+      "licence_file_first_line": "Apache License",
+      "licence_spdx": "Apache-2.0",
+      "name": "Cline",
+      "provider_page": {
+        "anthropic_mentions": 140,
+        "http": 200,
+        "url": "https://docs.cline.bot/provider-config/anthropic"
+      },
+      "readme_anthropic_mentions": 1,
+      "readme_pricing_or_key_lines": [],
+      "repo": "cline/cline"
+    },
+    {
+      "archived": false,
+      "canonical_repo": "openai/codex",
+      "last_commit_before_cutoff": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 0
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 1,
+        "tag": "rust-v0.161.0"
+      },
+      "licence_file_first_line": "Apache License",
+      "licence_spdx": "Apache-2.0",
+      "name": "Codex CLI",
+      "provider_page": {
+        "anthropic_mentions": 0,
+        "http": 200,
+        "url": "https://developers.openai.com/codex/config-advanced"
+      },
+      "readme_anthropic_mentions": 0,
+      "readme_pricing_or_key_lines": [],
+      "repo": "openai/codex"
+    },
+    {
+      "archived": false,
+      "canonical_repo": "google-gemini/gemini-cli",
+      "last_commit_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 0
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-06",
+        "days_before_cutoff": 1,
+        "tag": "v0.63.0"
+      },
+      "licence_file_first_line": "Apache License",
+      "licence_spdx": "Apache-2.0",
+      "name": "Gemini CLI",
+      "readme_anthropic_mentions": 0,
+      "readme_pricing_or_key_lines": [
+        "\ud83c\udfaf Free tier**: 60 requests/min and 1,000 requests/day with personal Google",
+        "Free tier**: 60 requests/min and 1,000 requests/day"
+      ],
+      "repo": "google-gemini/gemini-cli"
+    },
+    {
+      "archived": false,
+      "canonical_repo": "aaif-goose/goose",
+      "last_commit_before_cutoff": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 0
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-02",
+        "days_before_cutoff": 5,
+        "tag": "v1.53.0"
+      },
+      "licence_file_first_line": "Apache License",
+      "licence_spdx": "Apache-2.0",
+      "name": "Goose",
+      "provider_page": {
+        "anthropic_mentions": 37,
+        "http": 200,
+        "url": "https://goose-docs.ai/docs/getting-started/providers"
+      },
+      "readme_anthropic_mentions": 1,
+      "readme_pricing_or_key_lines": [],
+      "repo": "block/goose"
+    },
+    {
+      "archived": false,
+      "canonical_repo": "github/copilot-cli",
+      "last_commit_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 1
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 1,
+        "tag": "v1.0.93"
+      },
+      "licence_file_first_line": "GitHub Copilot CLI License",
+      "licence_spdx": "NOASSERTION",
+      "name": "GitHub Copilot CLI",
+      "provider_page": {
+        "anthropic_mentions": 10,
+        "http": 200,
+        "url": "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli"
+      },
+      "readme_anthropic_mentions": 0,
+      "readme_pricing_or_key_lines": [
+        "An **active Copilot subscription**. See [Copilot plans](https://github.com/features/copilot/plans?ref_cta=Copilot+plans+signup&ref_loc=install-copilot-cli&ref_page=docs)."
+      ],
+      "repo": "github/copilot-cli"
+    },
+    {
+      "archived": false,
+      "canonical_repo": "charmbracelet/crush",
+      "last_commit_before_cutoff": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 0
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-09-29",
+        "days_before_cutoff": 9,
+        "tag": "v0.97.1"
+      },
+      "licence_file_first_line": "# Functional Source License, Version 1.1, MIT Future License",
+      "licence_spdx": "NOASSERTION",
+      "name": "Crush",
+      "readme_anthropic_mentions": 17,
+      "readme_pricing_or_key_lines": [
+        "with a free tier, and optimized for Crush. It\u2019s privacy focused, with zero data"
+      ],
+      "repo": "charmbracelet/crush"
+    }
+  ]
+}
