@@ -1,0 +1,369 @@
+{
+  "ai_overview_vs_live_page": {
+    "live_assistant_storage_lines_starter_builder_standard_enterprise": [
+      "1GB Storage included",
+      "3GB Storage included",
+      "Unlimited",
+      "$3/GB/mo",
+      "Unlimited",
+      "$3/GB/mo"
+    ],
+    "live_builder_database_storage": "Up to 10 GB",
+    "live_standard_database_storage": "Unlimited $0.33/GB/mo",
+    "live_starter_database_storage": "Up to 2 GB",
+    "says_builder_free_storage_3gb": true,
+    "says_standard_storage_3_per_gb_or_0_33": true,
+    "says_starter_2gb_storage_1gb_per_org": true
+  },
+  "assistant_dimensions": {
+    "input_tokens": [
+      "500k/mo included",
+      "2M/mo included",
+      "Unlimited",
+      "$8 per million",
+      "Unlimited",
+      "$8 per million"
+    ],
+    "output_tokens": [
+      "300k/mo included",
+      "1M/mo included",
+      "Unlimited",
+      "$15 per million",
+      "Unlimited",
+      "$15 per million"
+    ],
+    "storage": [
+      "1GB Storage included",
+      "3GB Storage included",
+      "Unlimited",
+      "$3/GB/mo",
+      "Unlimited",
+      "$3/GB/mo"
+    ]
+  },
+  "changelog_pricing_changes_2026": [
+    {
+      "date": "2026-09-13",
+      "heading": "Higher namespace limit on the Enterprise plan",
+      "tags": "Database"
+    },
+    {
+      "date": "2026-09-01",
+      "heading": "Bulk import credit is no longer offered",
+      "tags": "Billing"
+    },
+    {
+      "date": "2026-09-01",
+      "heading": "Egress metering and monthly egress allowances",
+      "tags": "Database, Billing"
+    },
+    {
+      "date": "2026-06-03",
+      "heading": "Multi-region and multi-cloud support on the Builder plan",
+      "tags": "Database, Billing"
+    },
+    {
+      "date": "2026-06-01",
+      "heading": "Cheaper bulk imports and free import credit",
+      "tags": "Billing"
+    },
+    {
+      "date": "2026-05-04",
+      "heading": "New Builder plan",
+      "tags": "Billing"
+    },
+    {
+      "date": "2026-04-01",
+      "heading": "Pinecone Assistant usage-based pricing and monthly Starter limits",
+      "tags": "Assistant, Billing"
+    },
+    {
+      "date": "2026-02-01",
+      "heading": "HIPAA compliance add-on for Standard plan",
+      "tags": "Compliance"
+    },
+    {
+      "date": "2026-01-16",
+      "heading": "Request-per-second limits for data plane operations",
+      "tags": "API"
+    }
+  ],
+  "database_dimensions": {
+    "backups": [
+      "$0.10/GB/mo",
+      "$0.10/GB/mo"
+    ],
+    "egress": {
+      "Builder": "Up to 10GB/mo",
+      "Enterprise": "Unlimited $0.10/GB 100GB/mo included",
+      "Standard": "Unlimited $0.10/GB 100GB/mo included",
+      "Starter": "Up to 1GB/mo"
+    },
+    "import_from_object_storage": [
+      "$0.25 per GB",
+      "$0.25 per GB"
+    ],
+    "read_units": {
+      "Builder": "Up to 2M/mo",
+      "Enterprise": "Unlimited $24-$27 per million (varies by cloud and region)",
+      "Standard": "Unlimited $16-$18 per million (varies by cloud and region)",
+      "Starter": "Up to 1M/mo"
+    },
+    "restore_from_backup": [
+      "$0.15 per GB",
+      "$0.15 per GB"
+    ],
+    "storage": {
+      "Builder": "Up to 10 GB",
+      "Enterprise": "Unlimited $0.33/GB/mo",
+      "Standard": "Unlimited $0.33/GB/mo",
+      "Starter": "Up to 2 GB"
+    },
+    "write_units": {
+      "Builder": "Up to 5M/mo",
+      "Enterprise": "Unlimited $6-$6.75 per million (varies by cloud and region)",
+      "Standard": "Unlimited $4-$4.50 per million (varies by cloud and region)",
+      "Starter": "Up to 2M/mo"
+    }
+  },
+  "embedding_dimensions": {
+    "llama-text-embed-v2": [
+      "5M tokens/mo included",
+      "10M tokens/mo included",
+      "Unlimited",
+      "$0.16/M tokens",
+      "Unlimited",
+      "$0.16/M tokens"
+    ],
+    "multilingual-e5-large": [
+      "5M tokens/mo included",
+      "10M tokens/mo included",
+      "Unlimited",
+      "$0.08/M tokens",
+      "Unlimited",
+      "$0.08/M tokens"
+    ]
+  },
+  "one_off": {
+    "initial_load_by_import_usd": 1.79,
+    "initial_load_by_upsert_usd_low_high": [
+      28.56,
+      32.13
+    ],
+    "initial_load_by_upsert_write_units": 7140000.0
+  },
+  "plan_prices": {
+    "Builder": "$20/month flat",
+    "Enterprise": "$500/month min. usage",
+    "HIPAA_add_on_standard": "$190/mo",
+    "Standard": "$50/month min. usage",
+    "Standard_trial": "3 week trial includes $300 credits"
+  },
+  "rates_enterprise_usd": {
+    "read_per_million_low_high": [
+      24.0,
+      27.0
+    ],
+    "write_per_million_low_high": [
+      6.0,
+      6.75
+    ]
+  },
+  "rates_standard_usd": {
+    "egress_per_gb": 0.1,
+    "import_per_gb": 0.25,
+    "read_per_million_low_high": [
+      16.0,
+      18.0
+    ],
+    "storage_per_gb_month": 0.33,
+    "write_per_million_low_high": [
+      4.0,
+      4.5
+    ]
+  },
+  "read_unit_breakeven_against_50_usd_minimum": [
+    {
+      "namespace_gb": 0.25,
+      "queries_to_reach_50_usd_high_rate": 11111111,
+      "queries_to_reach_50_usd_low_rate": 12500000,
+      "ru_per_query": 0.25
+    },
+    {
+      "namespace_gb": 1.0,
+      "queries_to_reach_50_usd_high_rate": 2777777,
+      "queries_to_reach_50_usd_low_rate": 3125000,
+      "ru_per_query": 1.0
+    },
+    {
+      "namespace_gb": 7.152,
+      "queries_to_reach_50_usd_high_rate": 388391,
+      "queries_to_reach_50_usd_low_rate": 436940,
+      "ru_per_query": 7.152
+    }
+  ],
+  "selfcheck": {
+    "delete_wu": {
+      "mismatches": [],
+      "rows": 5
+    },
+    "fetch_ru": {
+      "mismatches": [],
+      "rows": 3
+    },
+    "query_ru": {
+      "mismatches": [],
+      "rows": 5
+    },
+    "storage_dense": {
+      "mismatches": [],
+      "rows": 4
+    },
+    "storage_hybrid": {
+      "mismatches": [
+        {
+          "computed_gb": 7.55,
+          "dims": 1536,
+          "metadata_bytes": 1000,
+          "published_gb": 7.54,
+          "records": 1000000,
+          "sparse_values": 50
+        },
+        {
+          "computed_gb": 75.5,
+          "dims": 1536,
+          "metadata_bytes": 1000,
+          "published_gb": 75.4,
+          "records": 10000000,
+          "sparse_values": 50
+        }
+      ],
+      "rows": 4
+    },
+    "storage_sparse": {
+      "mismatches": [],
+      "rows": 4
+    },
+    "strict_ok": true,
+    "update_wu": {
+      "mismatches": [
+        {
+          "computed_wu": 35,
+          "new_kb": 19.1,
+          "previous_kb": 15.0,
+          "published_wu": 25
+        }
+      ],
+      "rows": 5
+    },
+    "upsert_wu": {
+      "mismatches": [],
+      "rows": 5
+    }
+  },
+  "small_index_caps": {
+    "index_gb": 0.6652,
+    "plans": {
+      "Builder": {
+        "max_new_records_by_write_units": 751879,
+        "max_queries_by_read_units": 3006614,
+        "max_records_by_storage": 1503307
+      },
+      "Starter": {
+        "max_new_records_by_write_units": 300751,
+        "max_queries_by_read_units": 1503307,
+        "max_records_by_storage": 300661
+      }
+    },
+    "record_bytes": 6652
+  },
+  "sources": [
+    "https://www.pinecone.io/pricing/",
+    "https://docs.pinecone.io/guides/manage-cost/understanding-cost.md",
+    "https://docs.pinecone.io/release-notes/2026.md",
+    "https://www.withorb.com/blog/pinecone-pricing"
+  ],
+  "third_party_orb": {
+    "live_llama_text_embed_v2_lines_starter_builder_standard_enterprise": [
+      "5M tokens/mo included",
+      "10M tokens/mo included",
+      "Unlimited",
+      "$0.16/M tokens",
+      "Unlimited",
+      "$0.16/M tokens"
+    ],
+    "live_multilingual_e5_large_lines_starter_builder_standard_enterprise": [
+      "5M tokens/mo included",
+      "10M tokens/mo included",
+      "Unlimited",
+      "$0.08/M tokens",
+      "Unlimited",
+      "$0.08/M tokens"
+    ],
+    "live_read_units_standard": "Unlimited $16-$18 per million (varies by cloud and region)",
+    "live_write_units_standard": "Unlimited $4-$4.50 per million (varies by cloud and region)",
+    "mentions_builder_plan": false,
+    "says_pro_support_499_a_month": true,
+    "says_standard_embedding_0_08_per_million_tokens": true,
+    "says_standard_reads_16_per_million": true,
+    "says_standard_writes_4_per_million": true
+  },
+  "workloads": [
+    {
+      "dims": 1536,
+      "high": {
+        "reads_usd": 128.74,
+        "standard_bill_usd": 134.31,
+        "storage_usd": 2.36,
+        "usage_usd": 134.31,
+        "writes_usd": 3.21
+      },
+      "index_gb": 7.152,
+      "low": {
+        "reads_usd": 114.43,
+        "standard_bill_usd": 119.65,
+        "storage_usd": 2.36,
+        "usage_usd": 119.65,
+        "writes_usd": 2.86
+      },
+      "metadata_bytes": 1000,
+      "name": "one 7.15 GB namespace",
+      "namespace_gb": 7.152,
+      "queries_per_month": 1000000,
+      "read_units_per_month": 7152000.0,
+      "records": 1000000,
+      "ru_per_query": 7.152,
+      "upserted_records_per_month": 100000,
+      "write_units_per_month": 714000.0,
+      "wu_per_upsert_batch": 714
+    },
+    {
+      "dims": 1536,
+      "high": {
+        "reads_usd": 4.5,
+        "standard_bill_usd": 50.0,
+        "storage_usd": 2.36,
+        "usage_usd": 10.07,
+        "writes_usd": 3.21
+      },
+      "index_gb": 7.152,
+      "low": {
+        "reads_usd": 4.0,
+        "standard_bill_usd": 50.0,
+        "storage_usd": 2.36,
+        "usage_usd": 9.22,
+        "writes_usd": 2.86
+      },
+      "metadata_bytes": 1000,
+      "name": "same data, 1,000 tenant namespaces",
+      "namespace_gb": 0.007152,
+      "queries_per_month": 1000000,
+      "read_units_per_month": 250000.0,
+      "records": 1000000,
+      "ru_per_query": 0.25,
+      "upserted_records_per_month": 100000,
+      "write_units_per_month": 714000.0,
+      "wu_per_upsert_batch": 714
+    }
+  ]
+}

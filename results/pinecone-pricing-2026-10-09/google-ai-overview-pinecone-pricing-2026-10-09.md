@@ -1,0 +1,12 @@
+# Google AI Overview for `pinecone pricing`
+
+One live DataForSEO SERP call, 2026-10-09 08:10 UTC, desktop, United States. Text as returned, unedited.
+
+Pinecone (the vector database and AI search platform) offers four main pricing plans:[[1]](https://www.withorb.com/blog/pinecone-pricing)
+
+- **Starter (Free):** $0/month. Includes up to 5 indexes, 100 namespaces per index, 2 GB storage (1 GB max per organization), 2 million write units per month, and 1 million read units per month.[[1]](https://www.pinecone.io/pricing/)[[2]](https://docs.pinecone.io/guides/assistant/pricing-and-limits)
+- **Builder:** $20/month (flat) with free storage up to 3 GB per organization.[[1]](https://www.pinecone.io/pricing/)[[2]](https://docs.pinecone.io/guides/assistant/pricing-and-limits)
+- **Standard:** $50/month minimum usage commitment (pay-as-you-go). Storage costs $3/GB per month (or ~$0.33/GB per month depending on tier/module), with metered rates for read and write operations.[[1]](https://www.pinecone.io/pricing/)[[2]](https://docs.pinecone.io/guides/assistant/pricing-and-limits)[[3]](https://www.withorb.com/blog/pinecone-pricing)[[4]](https://aws.amazon.com/marketplace/pp/prodview-xhgyscinlz4jk)
+- **Enterprise:** $500/month minimum usage commitment with custom scalability, private networking, and a 99.95% Uptime SLA.[[1]](https://www.pinecone.io/pricing/)[[2]](https://docs.pinecone.io/guides/assistant/pricing-and-limits)[[3]](https://www.withorb.com/blog/pinecone-pricing)
+
+Full details can be found directly on the [Pinecone Pricing Page](https://www.pinecone.io/pricing/) and the [Pinecone Cost Documentation](https://docs.pinecone.io/guides/manage-cost/understanding-cost).[[1]](https://www.pinecone.io/pricing/)[[2]](https://docs.pinecone.io/guides/manage-cost/understanding-cost)*(Note: If you were actually searching for botanical pine cones for crafts or holiday decor, prices typically range from $15 to $63 per box or pack depending on size and quantity.)* [[1]](https://www.google.com/search?q=product&prds=pvt:hg,productid:7970690282567493295,catalogid:6963589650697116216&ibp=oshop)[[2]](https://www.google.com/search?q=product&prds=pvt:hg,productid:15218417877337441975,catalogid:11385986255796770832,gpcid:6010674222090520801,mid:576462669605661552&ibp=oshop)Are you looking for estimates for a **specific vector database workload** (such as number of vectors and queries per month), or did you mean physical **botanical pine cones**?
