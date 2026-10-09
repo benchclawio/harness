@@ -152,6 +152,44 @@
     ],
     "initial_load_by_upsert_write_units": 7140000.0
   },
+  "plan_limits": {
+    "cloud_availability": {
+      "Builder": "AWS, Azure, GCP",
+      "Enterprise": "AWS, Azure, GCP",
+      "Standard": "AWS, Azure, GCP",
+      "Starter": "AWS"
+    },
+    "indexes": {
+      "Builder": "10 per project",
+      "Enterprise": "200 per project",
+      "Standard": "20 per project",
+      "Starter": "Up to 5"
+    },
+    "namespaces_per_index": {
+      "Builder": "1,000",
+      "Enterprise": "1,000,000",
+      "Standard": "100,000",
+      "Starter": "100"
+    },
+    "projects": {
+      "Builder": "5",
+      "Enterprise": "100",
+      "Standard": "20",
+      "Starter": "1"
+    },
+    "region_availability": {
+      "Builder": "All available regions",
+      "Enterprise": "All available regions",
+      "Standard": "All available regions",
+      "Starter": "us-east-1"
+    },
+    "users": {
+      "Builder": "Up to 5",
+      "Enterprise": "Unlimited",
+      "Standard": "Unlimited",
+      "Starter": "Up to 2"
+    }
+  },
   "plan_prices": {
     "Builder": "$20/month flat",
     "Enterprise": "$500/month min. usage",

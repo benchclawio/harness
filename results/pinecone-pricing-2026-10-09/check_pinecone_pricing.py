@@ -127,6 +127,19 @@ embedding = {
     "multilingual-e5-large": block[block.index("multilingual-e5-large") + 1:block.index("pinecone-sparse-english-v0")],
 }
 
+# Plan limits from the feature table (four values per row: Starter, Builder, Standard, Enterprise).
+feat_start = lines.index("Database Features")
+
+
+def feat(label):
+    i = lines.index(label, feat_start)
+    return dict(zip(PLANS, lines[i + 1:i + 5]))
+
+
+limits = {"indexes": feat("Indexes"), "namespaces_per_index": feat("Namespaces per Index"),
+          "cloud_availability": feat("Cloud Availability"), "region_availability": feat("Region Availability"),
+          "projects": feat("Projects"), "users": feat("Users")}
+
 page_text = "\n".join(lines)
 
 
@@ -363,6 +376,7 @@ result = {
     "sources": ["https://www.pinecone.io/pricing/", "https://docs.pinecone.io/guides/manage-cost/understanding-cost.md",
                 "https://docs.pinecone.io/release-notes/2026.md", "https://www.withorb.com/blog/pinecone-pricing"],
     "plan_prices": plan_prices,
+    "plan_limits": limits,
     "database_dimensions": database,
     "assistant_dimensions": {k: v for k, v in assistant.items()},
     "embedding_dimensions": embedding,
