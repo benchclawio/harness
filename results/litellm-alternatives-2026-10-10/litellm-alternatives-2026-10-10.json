@@ -1,0 +1,318 @@
+{
+  "as_of": "2026-10-10T16:00:00Z",
+  "claims_checked": {
+    "ai_overview": {
+      "bifrost_page_it_cites_contains_50x": false,
+      "github_language_for_bifrost": "Go",
+      "github_licence_for_kong": "Apache-2.0",
+      "github_resolves_envoyproxy_ai_gateway_to": "theagentrouter/agent-router",
+      "palo_alto_release_date": "May 29, 2026",
+      "palo_alto_release_says_closed_acquisition": true,
+      "says_agent_router_formerly_envoy_ai_gateway": true,
+      "says_bifrost_50x_lower_p99": true,
+      "says_bifrost_written_in_go": true,
+      "says_kong_apache_2_core": true,
+      "says_openrouter_5_5_pct_fee": true,
+      "says_portkey_now_part_of_palo_alto": true
+    },
+    "bifrost_page": {
+      "gateway_overhead_claim": "11\u00b5s Gateway Overhead At 5,000 RPS sustained",
+      "provider_claim": "1000+ Models 20+ providers supported"
+    },
+    "mlflow_page": {
+      "mentions_march_2026_incident": true,
+      "p50_row": "P50 78.6 ms 28.6 ms 106.7 ms 56.7 ms -50%",
+      "p99_row": "P99 184.2 ms 134.2 ms 388.8 ms 338.8 ms -60%",
+      "says_linux_foundation_governed": true,
+      "says_litellm_is_mit": true,
+      "table_header": "Metric MLflow LiteLLM Overhead Diff Latency Overhead Latency Overhead",
+      "throughput_claim": "delivers 67% higher throughput compared to LiteLLM"
+    }
+  },
+  "incident": {
+    "latest_stable_before_cutoff": {
+      "uploaded": "2026-10-08",
+      "version": "1.104.2"
+    },
+    "litellm_licence_file": {
+      "enterprise_directory_carve_out": true,
+      "first_line": "Portions of this software are licensed as follows:",
+      "rest_is_mit": true
+    },
+    "litellm_notice": {
+      "clean_release_after_incident": "v1.83.0",
+      "compromised_versions_named": [
+        "1.82.7",
+        "1.82.8"
+      ],
+      "docker_proxy_image_not_impacted": true,
+      "live_window_says": "live on March 24, 2026 from 10:39 UTC for about 40 minutes before being quarantined by PyPI",
+      "published": "Mar 24, 2026",
+      "says_forensics_by": "Mandiant",
+      "url": "https://docs.litellm.ai/blog/security-update-march-2026"
+    },
+    "osv_PYSEC-2026-2": {
+      "affected_versions": [
+        "1.82.7",
+        "1.82.8"
+      ],
+      "aliases": [
+        "MAL-2026-2144"
+      ],
+      "published": "2026-03-24",
+      "summary": "Two litellm versions published containing credential harvesting malware"
+    },
+    "pypi_json": {
+      "1.82.6": {
+        "present_on_pypi": true,
+        "uploaded": "2026-03-22T06:35:56Z",
+        "yanked": false
+      },
+      "1.82.7": {
+        "present_on_pypi": false,
+        "uploaded": null,
+        "yanked": null
+      },
+      "1.82.8": {
+        "present_on_pypi": false,
+        "uploaded": null,
+        "yanked": null
+      },
+      "1.83.0": {
+        "present_on_pypi": true,
+        "uploaded": "2026-03-31T05:08:21Z",
+        "yanked": false
+      }
+    },
+    "pypi_json_status_for_removed_versions": {
+      "1.82.7": 404,
+      "1.82.8": 404
+    },
+    "pypi_report": {
+      "advisory_ids_named": [
+        "PYSEC-2026-2",
+        "PYSEC-2026-3"
+      ],
+      "downloads_during_window": "119k",
+      "first_report_to_quarantine": "1h 12m",
+      "inbound_malware_reports": "13",
+      "timelines_printed": 2,
+      "total_exposure_upload_to_quarantine": "2h 32m",
+      "unpinned_installs_share_says": "~40-50% of all installs",
+      "upload_to_first_report": "1h 19m",
+      "url": "https://blog.pypi.org/posts/2026-04-02-incident-report-litellm-telnyx-supply-chain-attack/"
+    },
+    "stable_releases_in_90_days_before_cutoff": 53
+  },
+  "litellm_critical_advisories": [
+    {
+      "id": "GHSA-jjhc-v7c2-5hh6",
+      "published": "2026-04-03",
+      "summary": "Authentication bypass via OIDC userinfo cache key collision"
+    },
+    {
+      "id": "GHSA-r75f-5x8p-qvmc",
+      "published": "2026-04-20",
+      "summary": "SQL injection in Proxy API key verification"
+    },
+    {
+      "id": "GHSA-4xpc-pv4p-pm3w",
+      "published": "2026-05-28",
+      "summary": "Authentication Bypass via Host Header Injection"
+    },
+    {
+      "id": "GHSA-7hp6-4w63-5g45",
+      "published": "2026-09-30",
+      "summary": "Privilege Escalation to Proxy Admin via Cross-Domain Reuse of the Salt Key"
+    }
+  ],
+  "repositories": [
+    {
+      "archived": false,
+      "canonical_repo": "BerriAI/litellm",
+      "language": "Python",
+      "last_commit_before_cutoff": "2026-10-10",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 2,
+        "tag": "v1.104.2"
+      },
+      "licence_spdx": "NOASSERTION",
+      "name": "LiteLLM",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 4,
+          "high": 6,
+          "low": 2,
+          "medium": 5
+        },
+        "last_12_months": 17,
+        "latest": "2026-10-01",
+        "total": 17
+      },
+      "repo": "BerriAI/litellm",
+      "stable_releases_in_90_days": 56
+    },
+    {
+      "archived": false,
+      "canonical_repo": "maximhq/bifrost",
+      "language": "Go",
+      "last_commit_before_cutoff": "2026-10-10",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-06",
+        "days_before_cutoff": 4,
+        "tag": "transports/v2.2.6"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Bifrost",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 1,
+          "high": 2
+        },
+        "last_12_months": 3,
+        "latest": "2026-09-23",
+        "total": 3
+      },
+      "repo": "maximhq/bifrost",
+      "stable_releases_in_90_days": 18
+    },
+    {
+      "archived": false,
+      "canonical_repo": "mlflow/mlflow",
+      "language": "Python",
+      "last_commit_before_cutoff": "2026-10-10",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 3,
+        "tag": "v3.17.0"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "MLflow (AI Gateway)",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 3,
+          "high": 2,
+          "medium": 3
+        },
+        "last_12_months": 5,
+        "latest": "2026-10-09",
+        "total": 8
+      },
+      "repo": "mlflow/mlflow",
+      "stable_releases_in_90_days": 7
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Kong/kong",
+      "language": "Lua",
+      "last_commit_before_cutoff": "2026-10-08",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-06-17",
+        "days_before_cutoff": 115,
+        "tag": "3.9.3"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Kong Gateway",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "repo": "Kong/kong",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "theagentrouter/agent-router",
+      "language": "Go",
+      "last_commit_before_cutoff": "2026-10-09",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 3,
+        "tag": "v1.2.0"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Envoy AI Gateway",
+      "published_advisories": {
+        "by_severity": {
+          "high": 4,
+          "medium": 14
+        },
+        "last_12_months": 18,
+        "latest": "2026-10-07",
+        "total": 18
+      },
+      "repo": "envoyproxy/ai-gateway",
+      "stable_releases_in_90_days": 2
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Portkey-AI/gateway",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-05-25",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-01-12",
+        "days_before_cutoff": 271,
+        "tag": "v1.15.2"
+      },
+      "licence_spdx": "MIT",
+      "name": "Portkey gateway",
+      "published_advisories": {
+        "by_severity": {
+          "medium": 1
+        },
+        "last_12_months": 1,
+        "latest": "2025-12-01",
+        "total": 1
+      },
+      "repo": "Portkey-AI/gateway",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Helicone/helicone",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-09-16",
+      "latest_stable_release_before_cutoff": {
+        "date": "2025-08-21",
+        "days_before_cutoff": 414,
+        "tag": "v2025.08.21-1"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Helicone",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "repo": "Helicone/helicone",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": true,
+      "canonical_repo": "tensorzero/tensorzero",
+      "language": "Rust",
+      "last_commit_before_cutoff": "2026-06-04",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-06-04",
+        "days_before_cutoff": 128,
+        "tag": "2026.6.0"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "TensorZero",
+      "published_advisories": {
+        "by_severity": {
+          "high": 1
+        },
+        "last_12_months": 1,
+        "latest": "2026-06-04",
+        "total": 1
+      },
+      "repo": "tensorzero/tensorzero",
+      "stable_releases_in_90_days": 0
+    }
+  ]
+}
