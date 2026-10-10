@@ -26,7 +26,9 @@
       "says_linux_foundation_governed": true,
       "says_litellm_is_mit": true,
       "table_header": "Metric MLflow LiteLLM Overhead Diff Latency Overhead Latency Overhead",
-      "throughput_claim": "delivers 67% higher throughput compared to LiteLLM"
+      "test_conditions": "We benchmarked both gateways with a 50 ms simulated provider delay (4 workers, 50 concurrent users)",
+      "throughput_claim": "delivers 67% higher throughput compared to LiteLLM",
+      "throughput_row": "Throughput 598 req/s 358 req/s +67%"
     }
   },
   "incident": {

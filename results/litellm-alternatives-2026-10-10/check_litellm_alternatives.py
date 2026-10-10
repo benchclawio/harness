@@ -209,6 +209,8 @@ claims = {
                      "provider_claim": find(r"(\d+\+? Models \d+\+? providers supported)", bif, 1)},
     "mlflow_page": {"p50_row": find(r"(P50 [\d.]+ ms [\d.]+ ms [\d.]+ ms [\d.]+ ms -?\d+%)", mlf, 1),
                     "p99_row": find(r"(P99 [\d.]+ ms [\d.]+ ms [\d.]+ ms [\d.]+ ms -?\d+%)", mlf, 1),
+                    "test_conditions": find(r"(We benchmarked both gateways with a [^.]*?\))", mlf, 1),
+                    "throughput_row": find(r"(Throughput [\d.]+ req/s [\d.]+ req/s \+?-?\d+%)", mlf, 1),
                     "table_header": find(r"(Metric MLflow LiteLLM[^%]{0,80}?Latency Overhead Latency Overhead)", mlf, 1),
                     "throughput_claim": find(r"(delivers \d+% higher throughput compared to LiteLLM)", mlf, 1),
                     "says_linux_foundation_governed": "Linux Foundation" in mlf,
