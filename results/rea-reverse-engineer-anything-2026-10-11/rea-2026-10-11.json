@@ -1,0 +1,196 @@
+{
+  "as_of": "2026-10-11T18:00:00Z",
+  "install_sh": {
+    "hosts_contacted": [
+      "api.github.com"
+    ],
+    "installs_with": "install --global",
+    "linux_prefix_is_home_local": true,
+    "mentions_sudo": 0,
+    "pipes_download_to_shell": false,
+    "runs_setup_when_terminal_available": true,
+    "says_it_installs_only_the_cli": true,
+    "strict_mode": true
+  },
+  "law": {
+    "f1_first_words": "Notwithstanding the provisions of subsection (a)(1)(A), a person who has lawfully obtained the right to use a copy of a computer program may",
+    "f1_mentions_interoperability": true,
+    "section_1201_f_1_found": true,
+    "url": "https://www.law.cornell.edu/uscode/text/17/1201"
+  },
+  "npm": {
+    "bin_names": [
+      "rea",
+      "rea-agents"
+    ],
+    "dependencies_exact_pinned": true,
+    "dependency_count": 35,
+    "file_count": 1161,
+    "has_install_script": false,
+    "install_hooks_in_manifest": [],
+    "latest": "6.4.0",
+    "licence": "MIT",
+    "maintainers": 1,
+    "package_created": "2026-07-12",
+    "provenance_predicate": "https://slsa.dev/provenance/v1",
+    "publish_dates_last_8": [
+      [
+        "4.0.1",
+        "2026-10-05 18:58"
+      ],
+      [
+        "4.1.0",
+        "2026-10-06 18:06"
+      ],
+      [
+        "5.0.0",
+        "2026-10-07 17:35"
+      ],
+      [
+        "6.0.0",
+        "2026-10-08 09:46"
+      ],
+      [
+        "6.1.0",
+        "2026-10-09 01:16"
+      ],
+      [
+        "6.2.0",
+        "2026-10-09 16:58"
+      ],
+      [
+        "6.3.0",
+        "2026-10-10 00:02"
+      ],
+      [
+        "6.4.0",
+        "2026-10-11 04:02"
+      ]
+    ],
+    "repository_matches": true,
+    "unpacked_size_mb": 7.8,
+    "versions_by_cutoff": 31,
+    "versions_published_last_7_days": 9
+  },
+  "package_json_at_tag": {
+    "bin": [
+      "rea",
+      "rea-agents"
+    ],
+    "dependency_count": 35,
+    "install_hooks": [],
+    "prepare_script_present": true,
+    "version": "6.4.0"
+  },
+  "readme_claims": {
+    "disclaimer_says_responsible_for_authorization_and_applicable_laws": true,
+    "disclaimer_warns_of_unaffiliated_tokens_using_the_name": true,
+    "readme_disclaimer": "REA provides tools for lawful reverse-engineering research, analysis, and reconstruction. You are responsible for obtaining any required authorization and complying with applicable laws. The project does not endorse illegal or unauthorized use. REA is an open-source software project. We have not issued or endorsed any cryptocurrency or token. Tokens using the REA name are not affiliated with the project.",
+    "readme_example_prompt": "Understand how search works in the Notes app, show me the evidence, and build a\nsimilar feature for my project.",
+    "readme_names_agents": [
+      "Claude Code",
+      "Codex",
+      "Cursor",
+      "Gemini CLI",
+      "Grok Build"
+    ],
+    "readme_or_install_doc_mentions_eula_or_licence_terms_of_target_apps": false,
+    "readme_says_analysis_runs_locally": true,
+    "readme_says_hopper_licence_prompt": true,
+    "readme_upload_answer": "REA analyzes targets locally. Your agent receives the tool results, and its model provider has its own data policy."
+  },
+  "repository": {
+    "archived": false,
+    "created": "2026-04-14",
+    "full_name": "morluto/rea",
+    "language": "TypeScript",
+    "latest_release": {
+      "date": "2026-10-11",
+      "tag": "rea-agents-6.4.0"
+    },
+    "licence_spdx": "MIT",
+    "owner_type": "User",
+    "release_tags_last_8": [
+      [
+        "4.0.1",
+        "2026-10-05"
+      ],
+      [
+        "4.1.0",
+        "2026-10-06"
+      ],
+      [
+        "5.0.0",
+        "2026-10-07"
+      ],
+      [
+        "6.0.0",
+        "2026-10-08"
+      ],
+      [
+        "6.1.0",
+        "2026-10-09"
+      ],
+      [
+        "6.2.0",
+        "2026-10-09"
+      ],
+      [
+        "6.3.0",
+        "2026-10-09"
+      ],
+      [
+        "6.4.0",
+        "2026-10-11"
+      ]
+    ],
+    "releases_last_7_days": 9
+  },
+  "security_md": {
+    "hopper_checksum_is_sha1_corruption_check": true,
+    "linux_hopper_install_uses_root_or_pkexec": true,
+    "private_reporting_channel": true,
+    "says_does_not_download_ghidra_or_java": true,
+    "says_never_invokes_sudo": true,
+    "says_not_a_sandbox": true,
+    "says_untrusted_binary_runs_with_user_permissions": true
+  },
+  "setup_behaviour_per_docs": {
+    "creates_backups_and_atomic_writes": true,
+    "edits_grok_toml": true,
+    "installs_shared_skill_under_agents_dir": true,
+    "installs_skill_under_claude_dir": true,
+    "shows_plan_and_needs_approval_before_writing": true
+  },
+  "third_party": {
+    "ghidra_licence_spdx": "Apache-2.0",
+    "submodules": [
+      {
+        "archived": false,
+        "licence_file_first_line": "Apache License",
+        "licence_spdx": "NOASSERTION",
+        "repo": "1013503897/jadx-headless-mcp"
+      },
+      {
+        "archived": false,
+        "licence_spdx": "MIT",
+        "repo": "ReFirmLabs/binwalk"
+      },
+      {
+        "archived": false,
+        "licence_spdx": "MIT",
+        "repo": "onekey-sec/unblob"
+      },
+      {
+        "archived": false,
+        "licence_spdx": "MIT",
+        "repo": "Washi1337/ghidra-nativeaot"
+      },
+      {
+        "archived": false,
+        "licence_spdx": "Apache-2.0",
+        "repo": "pionxzh/wakaru"
+      }
+    ]
+  }
+}
