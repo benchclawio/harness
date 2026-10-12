@@ -1,0 +1,306 @@
+{
+  "as_of": "2026-10-12T19:00:00Z",
+  "claims_checked": {
+    "mem0_licence_spdx": "Apache-2.0",
+    "mem0_stable_releases_in_90_days": 11,
+    "overview_calls_mem0_drop_in_production_layer": true,
+    "overview_cites_vendor_domains": [
+      "ibm.com",
+      "mem0.ai",
+      "redis.io"
+    ],
+    "overview_names_no_zep_letta_langmem_or_cognee": true
+  },
+  "projects": [
+    {
+      "archived": false,
+      "canonical_repo": "mem0ai/mem0",
+      "created": "2023-06-20",
+      "language": "Python",
+      "last_commit_before_cutoff": "2026-10-12",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-09-25",
+        "days_before_cutoff": 17,
+        "tag": "v2.2.1"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Mem0",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "pypi": {
+        "days_before_cutoff": 17,
+        "dependencies_without_extras": 8,
+        "downloads_last_month": 2020516,
+        "latest_stable": "2.2.1",
+        "optional_extras": 6,
+        "package": "mem0ai",
+        "required_python": "<4.0,>=3.10",
+        "source_url": null,
+        "summary": "Long-term memory for AI Agents",
+        "uploaded": "2026-09-25",
+        "versions_in_90_days": 11,
+        "wheel_or_sdist": "bdist_wheel"
+      },
+      "readme_mentions_deprecated_or_sunset": false,
+      "readme_status_sentences": [],
+      "repo": "mem0ai/mem0",
+      "stable_releases_in_90_days": 11
+    },
+    {
+      "archived": false,
+      "canonical_repo": "getzep/graphiti",
+      "created": "2024-08-08",
+      "language": "Python",
+      "last_commit_before_cutoff": "2026-10-11",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-09-08",
+        "days_before_cutoff": 33,
+        "tag": "v0.30.2"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Graphiti (Zep's open-source engine)",
+      "published_advisories": {
+        "by_severity": {
+          "high": 1
+        },
+        "latest": "2026-03-11",
+        "list": [
+          {
+            "cve": "CVE-2026-32247",
+            "id": "GHSA-gg5m-55jj-8m5g",
+            "patched": [
+              "0.28.2"
+            ],
+            "published": "2026-03-11",
+            "severity": "high",
+            "summary": "Cypher Injection via unsanitized node_labels in search filters"
+          }
+        ],
+        "total": 1
+      },
+      "pypi": {
+        "days_before_cutoff": 33,
+        "dependencies_without_extras": 7,
+        "downloads_last_month": 619128,
+        "latest_stable": "0.30.2",
+        "optional_extras": 13,
+        "package": "graphiti-core",
+        "required_python": "<4,>=3.10",
+        "source_url": null,
+        "summary": "A temporal graph building library",
+        "uploaded": "2026-09-08",
+        "versions_in_90_days": 3,
+        "wheel_or_sdist": "bdist_wheel"
+      },
+      "readme_mentions_deprecated_or_sunset": true,
+      "readme_status_sentences": [
+        "Kuzu is **deprecated** (upstream project unmaintained) and will be removed in a future release."
+      ],
+      "repo": "getzep/graphiti",
+      "stable_releases_in_90_days": 3
+    },
+    {
+      "archived": false,
+      "canonical_repo": "getzep/zep",
+      "created": "2023-04-29",
+      "language": "Python",
+      "last_commit_before_cutoff": "2026-10-08",
+      "latest_stable_release_before_cutoff": {
+        "date": "2024-11-28",
+        "days_before_cutoff": 683,
+        "tag": "v1.0.2"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Zep (repository)",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "readme_mentions_deprecated_or_sunset": true,
+      "readme_status_sentences": [
+        "## About This Repository This repository is **not** Zep's product or service.",
+        "## Community Edition (Deprecated) Zep Community Edition is no longer supported."
+      ],
+      "repo": "getzep/zep",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "letta-ai/letta",
+      "created": "2023-10-11",
+      "language": null,
+      "last_commit_before_cutoff": "2026-09-10",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-05-14",
+        "days_before_cutoff": 151,
+        "tag": "0.16.8"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Letta (formerly MemGPT)",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "pypi": {
+        "days_before_cutoff": 0,
+        "dependencies_without_extras": 0,
+        "downloads_last_month": 15031,
+        "latest_stable": "0.34.11",
+        "optional_extras": 0,
+        "package": "letta",
+        "required_python": ">=3.9",
+        "source_url": "https://github.com/letta-ai/letta-code",
+        "summary": "Letta Code: stateful agents in your terminal",
+        "uploaded": "2026-10-12",
+        "versions_in_90_days": 27,
+        "wheel_or_sdist": "bdist_wheel"
+      },
+      "readme_mentions_deprecated_or_sunset": false,
+      "readme_status_sentences": [
+        "The current source code lives in [`letta-ai/letta-code`](https://github.",
+        "com/letta-ai/letta/tree/archive) branch contains the retired Letta V1 API server."
+      ],
+      "repo": "letta-ai/letta",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "letta-ai/letta-code",
+      "created": "2025-10-25",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-10-12",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-12",
+        "days_before_cutoff": 0,
+        "tag": "v0.34.11"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Letta Code (current Letta source)",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "readme_mentions_deprecated_or_sunset": true,
+      "readme_status_sentences": [
+        "The `/export` and `/download` slash commands and the `--import` and `--from-af` CLI flags are no longer supported, including imports from the agent registry."
+      ],
+      "repo": "letta-ai/letta-code",
+      "stable_releases_in_90_days": 113
+    },
+    {
+      "archived": false,
+      "canonical_repo": "langchain-ai/langmem",
+      "created": "2025-01-21",
+      "language": "Python",
+      "last_commit_before_cutoff": "2026-10-02",
+      "latest_stable_release_before_cutoff": null,
+      "licence_spdx": "MIT",
+      "name": "LangMem",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "pypi": {
+        "days_before_cutoff": 349,
+        "dependencies_without_extras": 8,
+        "downloads_last_month": 773504,
+        "latest_stable": "0.0.30",
+        "optional_extras": 0,
+        "package": "langmem",
+        "required_python": ">=3.10",
+        "source_url": null,
+        "summary": "Prebuilt utilities for memory management and retrieval.",
+        "uploaded": "2025-10-27",
+        "versions_in_90_days": 0,
+        "wheel_or_sdist": "bdist_wheel"
+      },
+      "readme_mentions_deprecated_or_sunset": false,
+      "readme_status_sentences": [],
+      "repo": "langchain-ai/langmem",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "topoteretes/cognee",
+      "created": "2023-08-16",
+      "language": "Python",
+      "last_commit_before_cutoff": "2026-10-08",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 5,
+        "tag": "v1.6.3"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Cognee",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 1
+        },
+        "latest": "2026-09-15",
+        "list": [
+          {
+            "cve": "CVE-2026-31231",
+            "id": "GHSA-8pr4-p4c8-8gr9",
+            "patched": [
+              "1.2.0"
+            ],
+            "published": "2026-09-15",
+            "severity": "critical",
+            "summary": "Cognee notebook cell execution endpoint passes request bodies to exec(), allowing remote code execution"
+          }
+        ],
+        "total": 1
+      },
+      "pypi": {
+        "days_before_cutoff": 5,
+        "dependencies_without_extras": 55,
+        "downloads_last_month": 86048,
+        "latest_stable": "1.6.3",
+        "optional_extras": 32,
+        "package": "cognee",
+        "required_python": "<3.15,>=3.10",
+        "source_url": null,
+        "summary": "Cognee - is a library for enriching LLM context with a semantic layer for better understanding and reasoning.",
+        "uploaded": "2026-10-07",
+        "versions_in_90_days": 12,
+        "wheel_or_sdist": "bdist_wheel"
+      },
+      "readme_mentions_deprecated_or_sunset": false,
+      "readme_status_sentences": [],
+      "repo": "topoteretes/cognee",
+      "stable_releases_in_90_days": 12
+    },
+    {
+      "archived": false,
+      "canonical_repo": "supermemoryai/supermemory",
+      "created": "2024-02-27",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-10-12",
+      "latest_stable_release_before_cutoff": null,
+      "licence_spdx": "MIT",
+      "name": "Supermemory",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "readme_mentions_deprecated_or_sunset": false,
+      "readme_status_sentences": [],
+      "repo": "supermemoryai/supermemory",
+      "stable_releases_in_90_days": 0
+    }
+  ]
+}
