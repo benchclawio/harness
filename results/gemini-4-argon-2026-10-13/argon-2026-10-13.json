@@ -1,0 +1,372 @@
+{
+  "artificial_analysis": {
+    "cost_per_index_task_usd": "1.99",
+    "index_version": "v4.3.2",
+    "intelligence_index": "53",
+    "median_of_comparable_models": "27",
+    "of_models": "216",
+    "output_tokens_used_for_index": "110M",
+    "rank": "8",
+    "speed": "N/A"
+  },
+  "blog": {
+    "adk_claims": "cut in-memory session prep time by 40% in long sessions and sped up cold imports by 21%",
+    "announcement_access": "rolling out to trusted cyber defenders through the Fairwind Program.",
+    "announcement_date": "Sep 30, 2026",
+    "announcement_price": "$2 per million input tokens and $10 per million output tokens",
+    "announcement_says_phased_release": true,
+    "availability_access": "Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform , for Google AI Ultra subscribers in Google Antigravity , and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search .",
+    "availability_date": "Oct 13, 2026",
+    "cached_input_discount": "95% off",
+    "chrome_refactor_claim": "~6 million line legacy folder",
+    "external_third_party_view_footnote": true,
+    "fairwind_expansion_sentence": "Starting today, we\u2019re beginning expansion to hundreds of additional Fairwind Program partners",
+    "post_introductory_price": "After the introductory period expires on November 30, 2026, the price of $4 per 1M input tokens and $20 per 1M output tokens will apply",
+    "prompt_injection_claim": "cutting attack success across 15 adaptive attempts to 0.7%",
+    "shortcut_attempt_claim": "shortcut attempts dropped to just 2%",
+    "unified_input_output_limit": "1M",
+    "vals_index_claim": "ranking #1 on the Vals Index"
+  },
+  "model_card": {
+    "architecture": "sparse mixture-of-experts",
+    "argon_highest_on": 12,
+    "argon_not_highest_on": 5,
+    "benchmark_rows": 17,
+    "cbrn_ccl_sentence": "CBRN CCL: We cannot rule out that Gemini 4 Argon has reached this CCL for biological information risk, and we therefore developed a safety case for its biorisk capabilities that we assess lower risk to below the biological CCL level.",
+    "channels_listed": [
+      "Gemini App",
+      "Gemini API",
+      "Google AI Studio",
+      "Gemini for business",
+      "Google Antigravity",
+      "Google AI Mode"
+    ],
+    "context_window": "context window of up to 1M",
+    "cyber_ccl_sentence": "Cybersecurity CCL: We cannot rule out that Gemini 4 Argon has reached this CCL, and we therefore developed a safety case for its cyberoffensive capabilities that we assess lower risk to below the cybersecurity CCL level.",
+    "evals_footer_says_scores_are_vendor_reported": true,
+    "knowledge_cutoff": "March 2026",
+    "losses": [
+      {
+        "argon": 55.0,
+        "benchmark": "FrontierSWE v2",
+        "best": 65.5,
+        "highest": [
+          "GPT-6 Astra"
+        ]
+      },
+      {
+        "argon": 57.4,
+        "benchmark": "Terminal-bench 4.0",
+        "best": 66.4,
+        "highest": [
+          "Claude Opus 5.5"
+        ]
+      },
+      {
+        "argon": 45.3,
+        "benchmark": "PostTrainBench",
+        "best": 49.3,
+        "highest": [
+          "Claude Opus 5.5"
+        ]
+      },
+      {
+        "argon": 57.6,
+        "benchmark": "Terminal-Bench Science 0.1",
+        "best": 68.1,
+        "highest": [
+          "GPT-6 Astra"
+        ]
+      },
+      {
+        "argon": 69.2,
+        "benchmark": "OSWorld-2.0",
+        "best": 72.6,
+        "highest": [
+          "GPT-6 Astra"
+        ]
+      }
+    ],
+    "models_in_table": [
+      "Gemini 4 Argon",
+      "GPT-6 Astra",
+      "Claude Fable 5.1",
+      "Claude Opus 5.5"
+    ],
+    "published_line": "13 October 2026",
+    "rows_with_a_missing_value": [
+      "Agent's Last Exam",
+      "OSWorld-2.0"
+    ],
+    "safety_report_stated_as_coming_soon": true,
+    "says_not_modification_of_prior_model": true
+  },
+  "model_card_rows": [
+    {
+      "argon_is_highest": true,
+      "benchmark": "Vals Index",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 65.8,
+        "Claude Opus 5.5": 67.0,
+        "GPT-6 Astra": 63.1,
+        "Gemini 4 Argon": 68.9
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "AutomationBench",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": "Score",
+      "values": {
+        "Claude Fable 5.1": 31.4,
+        "Claude Opus 5.5": 42.5,
+        "GPT-6 Astra": 41.4,
+        "Gemini 4 Argon": 51.3
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "Vals Finance Agent v2",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 58.9,
+        "Claude Opus 5.5": 58.6,
+        "GPT-6 Astra": 53.5,
+        "Gemini 4 Argon": 65.4
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "Harvey's Legal Agent Benchmark",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 6.7,
+        "Claude Opus 5.5": 3.8,
+        "GPT-6 Astra": 5.4,
+        "Gemini 4 Argon": 19.6
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "DeepSWE v1.1",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 67.4,
+        "Claude Opus 5.5": 74.2,
+        "GPT-6 Astra": 74.1,
+        "Gemini 4 Argon": 77.9
+      }
+    },
+    {
+      "argon_is_highest": false,
+      "benchmark": "FrontierSWE v2",
+      "highest": [
+        "GPT-6 Astra"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 56.3,
+        "Claude Opus 5.5": 62.3,
+        "GPT-6 Astra": 65.5,
+        "Gemini 4 Argon": 55.0
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "Vibe Code Bench",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 90.3,
+        "Claude Opus 5.5": 90.3,
+        "GPT-6 Astra": 89.6,
+        "Gemini 4 Argon": 91.9
+      }
+    },
+    {
+      "argon_is_highest": false,
+      "benchmark": "Terminal-bench 4.0",
+      "highest": [
+        "Claude Opus 5.5"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 57.9,
+        "Claude Opus 5.5": 66.4,
+        "GPT-6 Astra": 58.2,
+        "Gemini 4 Argon": 57.4
+      }
+    },
+    {
+      "argon_is_highest": false,
+      "benchmark": "PostTrainBench",
+      "highest": [
+        "Claude Opus 5.5"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 40.2,
+        "Claude Opus 5.5": 49.3,
+        "GPT-6 Astra": 44.3,
+        "Gemini 4 Argon": 45.3
+      }
+    },
+    {
+      "argon_is_highest": false,
+      "benchmark": "Terminal-Bench Science 0.1",
+      "highest": [
+        "GPT-6 Astra"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 52.6,
+        "Claude Opus 5.5": 63.3,
+        "GPT-6 Astra": 68.1,
+        "Gemini 4 Argon": 57.6
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "LABBench 2",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 68.6,
+        "Claude Opus 5.5": 73.1,
+        "GPT-6 Astra": 85.4,
+        "Gemini 4 Argon": 88.8
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "RiemannBench",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 65.6,
+        "Claude Opus 5.5": 69.6,
+        "GPT-6 Astra": 72.0,
+        "Gemini 4 Argon": 76.0
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "Agent's Last Exam",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": "Pass rate",
+      "values": {
+        "Claude Fable 5.1": null,
+        "Claude Opus 5.5": 38.2,
+        "GPT-6 Astra": 34.2,
+        "Gemini 4 Argon": 39.5
+      }
+    },
+    {
+      "argon_is_highest": false,
+      "benchmark": "OSWorld-2.0",
+      "highest": [
+        "GPT-6 Astra"
+      ],
+      "note": "Offline subset Partial score",
+      "values": {
+        "Claude Fable 5.1": null,
+        "Claude Opus 5.5": null,
+        "GPT-6 Astra": 72.6,
+        "Gemini 4 Argon": 69.2
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "Chartography",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 46.2,
+        "Claude Opus 5.5": 66.3,
+        "GPT-6 Astra": 71.0,
+        "Gemini 4 Argon": 71.6
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "LVBench",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 79.7,
+        "Claude Opus 5.5": 83.7,
+        "GPT-6 Astra": 87.5,
+        "Gemini 4 Argon": 91.7
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "CWE-bench v1",
+      "highest": [
+        "GPT-6 Astra",
+        "Gemini 4 Argon"
+      ],
+      "note": null,
+      "values": {
+        "Claude Fable 5.1": 58.0,
+        "Claude Opus 5.5": 67.0,
+        "GPT-6 Astra": 68.0,
+        "Gemini 4 Argon": 68.0
+      }
+    }
+  ],
+  "pricing": {
+    "caching": true,
+    "endpoint_on_models_page": "gemini-4-argon",
+    "not_available_on_free_tier_or_ai_pro_plan": true,
+    "tiers": {
+      "Batch": {
+        "cached_input": "$0.05 through November 30, 2026. $0.10 starting December 1, 2026",
+        "input": "$1.00 through November 30, 2026. $2.00 starting December 1, 2026",
+        "output": "$5.00 through November 30, 2026. $10.00 starting December 1, 2026"
+      },
+      "Flex": {
+        "cached_input": "$0.05 through November 30, 2026. $0.10 starting December 1, 2026",
+        "input": "$1.00 through November 30, 2026. $2.00 starting December 1, 2026",
+        "output": "$5.00 through November 30, 2026. $10.00 starting December 1, 2026"
+      },
+      "Priority": {
+        "cached_input": "$0.18 through November 30, 2026. $0.36 starting December 1, 2026",
+        "input": "$3.60 through November 30, 2026. $7.20 starting December 1, 2026",
+        "output": "$18.00 through November 30, 2026. $36.00 starting December 1, 2026"
+      },
+      "Standard": {
+        "cached_input": "$0.10 through November 30, 2026. $0.20 starting December 1, 2026",
+        "input": "$2.00 through November 30, 2026. $4.00 starting December 1, 2026",
+        "output": "$10.00 through November 30, 2026. $20.00 starting December 1, 2026"
+      }
+    }
+  }
+}
