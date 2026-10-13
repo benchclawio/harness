@@ -29,9 +29,9 @@
   },
   "model_card": {
     "architecture": "sparse mixture-of-experts",
-    "argon_highest_on": 12,
+    "argon_highest_on": 14,
     "argon_not_highest_on": 5,
-    "benchmark_rows": 17,
+    "benchmark_rows": 19,
     "cbrn_ccl_sentence": "CBRN CCL: We cannot rule out that Gemini 4 Argon has reached this CCL for biological information risk, and we therefore developed a safety case for its biorisk capabilities that we assess lower risk to below the biological CCL level.",
     "channels_listed": [
       "Gemini App",
@@ -268,6 +268,34 @@
         "Claude Opus 5.5": 69.6,
         "GPT-6 Astra": 72.0,
         "Gemini 4 Argon": 76.0
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "GraphWalks",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": "Up to 128k, BFS (F1)",
+      "values": {
+        "Claude Fable 5.1": 91.4,
+        "Claude Opus 5.5": 90.6,
+        "GPT-6 Astra": 98.7,
+        "Gemini 4 Argon": 99.7
+      }
+    },
+    {
+      "argon_is_highest": true,
+      "benchmark": "GraphWalks",
+      "highest": [
+        "Gemini 4 Argon"
+      ],
+      "note": "256k to 1M, BFS (F1)",
+      "values": {
+        "Claude Fable 5.1": 65.0,
+        "Claude Opus 5.5": 66.8,
+        "GPT-6 Astra": 71.8,
+        "Gemini 4 Argon": 84.2
       }
     },
     {

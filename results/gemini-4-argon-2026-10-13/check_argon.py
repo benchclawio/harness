@@ -39,17 +39,22 @@ card = text_of(card_html)
 table = card_html[card_html.find("<table"):card_html.find("</table>")]
 models = [text_of(h) for h in re.findall(r"<th[^>]*scope=col[^>]*>(.*?)</th>", table.split("</thead>")[0])][3:]
 rows = []
+name = None
 for tr in re.findall(r"<tr>(.*?)</tr>", table.split("</thead>")[1], re.S):
-    name = find(r'<td class=table--benchmark>(.*?)</td>', tr, 1)
-    if not name:
-        continue
-    note = text_of(find(r'<td class=table--notes>(.*?)</td>', tr, 1) or "")
-    cells = [text_of(c) for c in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)][2:]
+    # A benchmark cell can span two rows (GraphWalks), so a row without one inherits the previous name.
+    m = re.search(r"<td class=table--benchmark[^>]*>(.*?)</td>", tr, re.S)
+    if m:
+        name = text_of(m.group(1))
+    note = text_of(find(r"<td class=table--notes[^>]*>(.*?)</td>", tr, 1) or "")
+    value_cells = [text_of(c) for attrs, c in re.findall(r"<td([^>]*)>(.*?)</td>", tr, re.S)
+                   if "table--benchmark" not in attrs and "table--notes" not in attrs]
     vals = []
-    for c in cells[:4]:
+    for c in value_cells:
         v = find(r"([\d.]+)%", c, 1)
         vals.append(float(v) if v else None)
-    rows.append({"benchmark": text_of(name), "note": note or None, "values": dict(zip(models, vals))})
+    if len(vals) != 4:
+        raise SystemExit("unexpected table row shape: %r" % tr[:200])
+    rows.append({"benchmark": name, "note": note or None, "values": dict(zip(models, vals))})
 argon = models[0]
 for r in rows:
     nums = {k: v for k, v in r["values"].items() if v is not None}
