@@ -149,6 +149,12 @@ def repo_row(name, repo, tag_re):
     out["latest_release_of_any_kind"] = ({"tag": newest["tag_name"], "date": newest["published_at"][:10], "prerelease": bool(newest.get("prerelease"))}
                                          if newest else None)
     out["all_releases_are_prereleases"] = bool(rels) and all(r.get("prerelease") for r in rels)
+    advs = gh_pages(f"/repos/{repo}/security-advisories")
+    advs = [a for a in advs if isinstance(a, dict) and a.get("published_at") and parse(a["published_at"]) <= CUT]
+    out["published_advisories"] = {"total": len(advs), "last_12_months": sum(1 for a in advs if (CUT - parse(a["published_at"])).days < 365),
+                                   "by_severity": {s: sum(1 for a in advs if (a.get("severity") or "unknown") == s)
+                                                   for s in sorted({a.get("severity") or "unknown" for a in advs})},
+                                   "latest": max((a["published_at"][:10] for a in advs), default=None)}
     readme = re.sub(r"\s+", " ", gh(f"/repos/{repo}/readme", raw=True))
     out["readme_status_sentences"] = [s.strip()[:220] for s in STATUS.findall(readme)][:3]
     return out

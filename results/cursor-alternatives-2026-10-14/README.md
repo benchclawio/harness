@@ -10,7 +10,8 @@ how well any of these editors or agents works.
 - Windsurf's pricing page (windsurf.com now serves the "Devin Desktop" site), Zed's pricing page, roocode.com's homepage
 - GitHub API for eight repositories (Cline, Kilo Code, Zed, VS Code, VS Code Copilot Chat, Continue, Roo Code, Void):
   licence, archived flag, last commit before the cut-off, latest stable release, stable releases in 90 days, latest
-  release of any kind, and README sentences saying whether the project is maintained, deprecated, read-only or moved
+  release of any kind, published security advisories, and README sentences saying whether the project is maintained,
+  deprecated, read-only or moved. An advisory count measures disclosure, not safety.
 - The licence files at the root of the Zed repository
 - Google's AI Overview for "cursor alternatives" (saved text), to check its licence and price claims
 
@@ -24,7 +25,7 @@ export GITHUB_TOKEN=...   # optional; about 40 GitHub requests, the anonymous li
 python3 check_cursor_alternatives.py --as-of 2026-10-14T17:30:00Z > out.json
 ```
 
-Two runs on 2026-10-14 produced byte-identical output (sha256 `72222e3e...d9073b`). Release and commit dates are
+Two runs on 2026-10-14 produced byte-identical output (sha256 `42c45620...c2bf24`). Release and commit dates are
 fixed by `--as-of`; pages, READMEs and licence files are read live.
 
 ## Files
