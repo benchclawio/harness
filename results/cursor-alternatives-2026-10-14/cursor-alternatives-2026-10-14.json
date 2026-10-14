@@ -1,0 +1,257 @@
+{
+  "as_of": "2026-10-14T17:30:00Z",
+  "claims_checked": {
+    "github_licence_for_cline": "Apache-2.0",
+    "github_licence_for_kilo": "MIT",
+    "overview_names_roo_void_or_continue": [],
+    "overview_names_spacex_or_ownership": false,
+    "overview_says_cline_apache_2_0": true,
+    "overview_says_kilo_mit": true,
+    "overview_windsurf_20_dollars": true,
+    "overview_zed_pro_10_dollars": true,
+    "windsurf_pricing_page_pro": "20",
+    "zed_pricing_page_pro": "10"
+  },
+  "cursor": {
+    "acquisition_post": "https://cursor.com/blog/joining-spacex",
+    "blog_lists_grok_models": true,
+    "individual_plans": [
+      [
+        "Free",
+        0
+      ],
+      [
+        "Plus",
+        8
+      ],
+      [
+        "Premium",
+        30
+      ],
+      [
+        "Super",
+        100
+      ],
+      [
+        "Ultra",
+        200
+      ]
+    ],
+    "plus_plan_note": "*Only Grok models are available on this plan",
+    "post_date": "Aug 14, 2026",
+    "pricing_page_lists_non_coding_features": [
+      "Post, reply, and follow",
+      "Premium checkmark",
+      "Less timeline ads"
+    ],
+    "says_acquired_by_spacex": true,
+    "says_process_started": "This completes the acquisition process that started in April, when we announced our partnership with SpaceXAI to accelerate our model training efforts.",
+    "teams_price": "30",
+    "third_party_models_note": "Third Party model usage in Cursor is not included in the monthly prices shown and must be purchased separately"
+  },
+  "repositories": [
+    {
+      "all_releases_are_prereleases": false,
+      "archived": false,
+      "canonical_repo": "cline/cline",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-10-14",
+      "latest_release_of_any_kind": {
+        "date": "2026-10-13",
+        "prerelease": false,
+        "tag": "desktop-v0.0.46"
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-13",
+        "days_before_cutoff": 1,
+        "tag": "v4.1.24"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Cline",
+      "readme_status_sentences": [],
+      "repo": "cline/cline",
+      "stable_releases_in_90_days": 28
+    },
+    {
+      "all_releases_are_prereleases": false,
+      "archived": false,
+      "canonical_repo": "Kilo-Org/kilocode",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-10-13",
+      "latest_release_of_any_kind": {
+        "date": "2026-10-13",
+        "prerelease": true,
+        "tag": "jetbrains/v7.1.10-rc.3"
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 7,
+        "tag": "v7.8.8"
+      },
+      "licence_spdx": "MIT",
+      "name": "Kilo Code",
+      "readme_status_sentences": [],
+      "repo": "Kilo-Org/kilocode",
+      "stable_releases_in_90_days": 34
+    },
+    {
+      "all_releases_are_prereleases": false,
+      "archived": false,
+      "canonical_repo": "zed-industries/zed",
+      "language": "Rust",
+      "last_commit_before_cutoff": "2026-10-14",
+      "latest_release_of_any_kind": {
+        "date": "2026-10-14",
+        "prerelease": true,
+        "tag": "v1.25.0-pre"
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-14",
+        "days_before_cutoff": 0,
+        "tag": "v1.24.2"
+      },
+      "licence_spdx": "NOASSERTION",
+      "name": "Zed",
+      "readme_status_sentences": [],
+      "repo": "zed-industries/zed",
+      "stable_releases_in_90_days": 21
+    },
+    {
+      "all_releases_are_prereleases": false,
+      "archived": false,
+      "canonical_repo": "microsoft/vscode",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-10-14",
+      "latest_release_of_any_kind": {
+        "date": "2026-10-14",
+        "prerelease": false,
+        "tag": "1.141.2"
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-14",
+        "days_before_cutoff": 0,
+        "tag": "1.141.2"
+      },
+      "licence_spdx": "MIT",
+      "name": "VS Code",
+      "readme_status_sentences": [],
+      "repo": "microsoft/vscode",
+      "stable_releases_in_90_days": 19
+    },
+    {
+      "all_releases_are_prereleases": false,
+      "archived": true,
+      "canonical_repo": "microsoft/vscode-copilot-chat",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-05-20",
+      "latest_release_of_any_kind": {
+        "date": "2026-04-07",
+        "prerelease": false,
+        "tag": "v0.43.0"
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-04-07",
+        "days_before_cutoff": 190,
+        "tag": "v0.43.0"
+      },
+      "licence_spdx": "MIT",
+      "name": "VS Code Copilot Chat",
+      "readme_status_sentences": [
+        "This project has been moved into the main VS Code repository and this repository is now archived."
+      ],
+      "repo": "microsoft/vscode-copilot-chat",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "all_releases_are_prereleases": false,
+      "archived": false,
+      "canonical_repo": "continuedev/continue",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-07-21",
+      "latest_release_of_any_kind": {
+        "date": "2026-06-19",
+        "prerelease": false,
+        "tag": "v2.0.0-vscode"
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-06-19",
+        "days_before_cutoff": 117,
+        "tag": "v2.0.0-vscode"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Continue",
+      "readme_status_sentences": [
+        "_Note: The `continuedev/continue` repository is no longer actively maintained and is read-only for all users.",
+        "## Final 2.0.0 Release We polished Continue and did a final 2."
+      ],
+      "repo": "continuedev/continue",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "all_releases_are_prereleases": false,
+      "archived": true,
+      "canonical_repo": "RooCodeInc/Roo-Code",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-05-15",
+      "latest_release_of_any_kind": {
+        "date": "2026-05-15",
+        "prerelease": false,
+        "tag": "v3.54.0"
+      },
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-05-15",
+        "days_before_cutoff": 151,
+        "tag": "v3.54.0"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Roo Code",
+      "readme_status_sentences": [],
+      "repo": "RooCodeInc/Roo-Code",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "all_releases_are_prereleases": true,
+      "archived": true,
+      "canonical_repo": "voideditor/void",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-06-02",
+      "latest_release_of_any_kind": {
+        "date": "2025-04-15",
+        "prerelease": true,
+        "tag": "v1.3.4"
+      },
+      "latest_stable_release_before_cutoff": null,
+      "licence_spdx": "Apache-2.0",
+      "name": "Void",
+      "readme_status_sentences": [
+        "## Void is now deprecated.",
+        "Void is deprecated and no longer accepting contributions."
+      ],
+      "repo": "voideditor/void",
+      "stable_releases_in_90_days": 0
+    }
+  ],
+  "roo_code_site": {
+    "homepage_headline": "Roomote: your own cloud coding agent",
+    "homepage_mentions_roo_code_extension": true,
+    "homepage_says_by_the_creators_of": null
+  },
+  "windsurf": {
+    "free": "0",
+    "max_per_month": "200",
+    "models_sentence": "access to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading open source models",
+    "pro_per_month": "20",
+    "site_title": "Devin Desktop ",
+    "teams": "Teams $80 /month for team plan + $40/mo per full dev seat"
+  },
+  "zed_licence_files": {
+    "LICENSE-APACHE": "Copyright 2022 - 2025 Zed Industries, Inc.",
+    "LICENSE-GPL": "GNU GENERAL PUBLIC LICENSE"
+  },
+  "zed_pricing": {
+    "business_per_seat": "30",
+    "free_with_own_keys": true,
+    "pro_per_month": "10",
+    "pro_tokens_included": "5"
+  }
+}
