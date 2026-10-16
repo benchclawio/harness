@@ -1,0 +1,329 @@
+{
+  "announcements": {
+    "helicone_mintlify": {
+      "date": "Mar 3, 2026",
+      "keeps_shipping_sentence": "This means security updates, new models, bug & performance fixes all keep shipping.",
+      "maintenance_mode_sentence": "Helicone's services will remain live for the foreseeable future in maintenance mode.",
+      "says_acquired": "Helicone has been acquired by Mintlify"
+    },
+    "langfuse_clickhouse": {
+      "clickhouse_post_date": "Jan 16, 2026",
+      "clickhouse_says": "ClickHouse has acquired Langfuse",
+      "langfuse_says_cloud_unchanged": true,
+      "langfuse_says_no_planned_licence_change": true,
+      "langfuse_says_open_source_and_self_hostable": true
+    },
+    "traceloop_servicenow": {
+      "date": "March 2026",
+      "says_becomes_part_of": "our technology will become part of ServiceNow's AI Control Tower",
+      "says_joining": "Traceloop is joining ServiceNow"
+    }
+  },
+  "as_of": "2026-10-16T18:30:00Z",
+  "claims_checked": {
+    "github_licence_for_opik": "Apache-2.0",
+    "opik_pricing_page_free_spans": "25k",
+    "overview_mentions_clickhouse": false,
+    "overview_mentions_mintlify_or_maintenance_mode": false,
+    "overview_mentions_phoenix_licence": false,
+    "overview_names_helicone": true,
+    "overview_names_traceloop_or_openllmetry": false,
+    "overview_says_opik_apache_2_0": true,
+    "overview_says_opik_free_25000_spans": true
+  },
+  "licence_files": {
+    "Langfuse": {
+      "copyright_line": "Copyright (c) 2023-2026 ClickHouse, Inc.",
+      "first_line": "Copyright (c) 2023-2026 ClickHouse, Inc.",
+      "has_ee_carve_out": true
+    },
+    "MLflow": {
+      "copyright_line": null,
+      "first_line": null,
+      "has_ee_carve_out": false
+    },
+    "Opik": {
+      "copyright_line": "Copyright (c) Comet ML, Inc",
+      "first_line": "Copyright (c) Comet ML, Inc",
+      "has_ee_carve_out": false
+    },
+    "Phoenix": {
+      "copyright_line": null,
+      "first_line": "Elastic License 2.0 (ELv2)",
+      "has_ee_carve_out": false
+    }
+  },
+  "opik_pricing": {
+    "free_cloud": "0",
+    "free_spans_per_month": "25k",
+    "open_source_same_codebase_claim": true,
+    "pro_per_month": "19",
+    "pro_spans_per_month": "100k"
+  },
+  "repositories": [
+    {
+      "archived": false,
+      "canonical_repo": "langfuse/langfuse",
+      "last_commit_before_cutoff": "2026-10-16",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-16",
+        "days_before_cutoff": 0,
+        "tag": "v4.63.0"
+      },
+      "licence_spdx": "NOASSERTION",
+      "name": "Langfuse",
+      "published_advisories": {
+        "by_severity": {
+          "low": 1,
+          "medium": 3
+        },
+        "last_12_months": 4,
+        "latest": "2026-04-17",
+        "total": 4
+      },
+      "pypi": {
+        "days_before_cutoff": 0,
+        "latest_stable": "5.0.2",
+        "package": "langfuse",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 18
+      },
+      "readme_status_sentences": [
+        "Langfuse is growing fast (we doubled the team in the last 6 months) - since January 2026 we're part of ClickHouse, we're hiring engineering hybrid across the EU."
+      ],
+      "repo": "langfuse/langfuse",
+      "stable_releases_in_90_days": 91
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Arize-ai/phoenix",
+      "last_commit_before_cutoff": "2026-10-16",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-16",
+        "days_before_cutoff": 0,
+        "tag": "arize-phoenix-v20.23.0"
+      },
+      "licence_spdx": "NOASSERTION",
+      "name": "Arize Phoenix",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "pypi": {
+        "days_before_cutoff": 0,
+        "latest_stable": "20.23.0",
+        "package": "arize-phoenix",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 51
+      },
+      "readme_status_sentences": [
+        "Standalone stdio MCP server for older Phoenix versions (maintenance mode \u2014 superseded by the [remote MCP server](https://arize."
+      ],
+      "repo": "Arize-ai/phoenix",
+      "stable_releases_in_90_days": 52
+    },
+    {
+      "archived": false,
+      "canonical_repo": "comet-ml/opik",
+      "last_commit_before_cutoff": "2026-10-16",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-16",
+        "days_before_cutoff": 0,
+        "tag": "2.2.103"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Opik",
+      "published_advisories": {
+        "by_severity": {
+          "medium": 1
+        },
+        "last_12_months": 1,
+        "latest": "2026-09-18",
+        "total": 1
+      },
+      "pypi": {
+        "days_before_cutoff": 0,
+        "latest_stable": "2.2.103",
+        "package": "opik",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 104
+      },
+      "readme_status_sentences": [
+        "You can also run evaluations as part of your CI/CD pipeline using our [PyTest integration](https://www."
+      ],
+      "repo": "comet-ml/opik",
+      "stable_releases_in_90_days": 93
+    },
+    {
+      "archived": false,
+      "canonical_repo": "mlflow/mlflow",
+      "last_commit_before_cutoff": "2026-10-16",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-13",
+        "days_before_cutoff": 3,
+        "tag": "v3.17.1"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "MLflow",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 3,
+          "high": 3,
+          "medium": 4
+        },
+        "last_12_months": 7,
+        "latest": "2026-10-13",
+        "total": 10
+      },
+      "pypi": {
+        "days_before_cutoff": 3,
+        "latest_stable": "3.17.1",
+        "package": "mlflow",
+        "uploaded": "2026-10-13",
+        "versions_in_90_days": 9
+      },
+      "readme_status_sentences": [],
+      "repo": "mlflow/mlflow",
+      "stable_releases_in_90_days": 8
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Helicone/helicone",
+      "last_commit_before_cutoff": "2026-09-16",
+      "latest_stable_release_before_cutoff": {
+        "date": "2025-08-21",
+        "days_before_cutoff": 420,
+        "tag": "v2025.08.21-1"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Helicone",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_status_sentences": [],
+      "repo": "Helicone/helicone",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "lmnr-ai/lmnr",
+      "last_commit_before_cutoff": "2026-10-16",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-16",
+        "days_before_cutoff": 0,
+        "tag": "v0.3.2"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Laminar",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "pypi": {
+        "days_before_cutoff": 0,
+        "latest_stable": "0.8.0",
+        "package": "lmnr",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 12
+      },
+      "readme_status_sentences": [],
+      "repo": "lmnr-ai/lmnr",
+      "stable_releases_in_90_days": 7
+    },
+    {
+      "archived": false,
+      "canonical_repo": "traceloop/openllmetry",
+      "last_commit_before_cutoff": "2026-10-13",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-09-29",
+        "days_before_cutoff": 17,
+        "tag": "0.62.4"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "OpenLLMetry",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "pypi": {
+        "days_before_cutoff": 17,
+        "latest_stable": "0.62.4",
+        "package": "traceloop-sdk",
+        "uploaded": "2026-09-29",
+        "versions_in_90_days": 2
+      },
+      "readme_status_sentences": [
+        "**\ud83c\udf89 New**: Our semantic conventions are now part of OpenTelemetry! Join the [discussion](https://github."
+      ],
+      "repo": "traceloop/openllmetry",
+      "stable_releases_in_90_days": 3
+    },
+    {
+      "archived": false,
+      "canonical_repo": "openlit/openlit",
+      "last_commit_before_cutoff": "2026-10-15",
+      "latest_stable_release_before_cutoff": {
+        "date": "2024-03-23",
+        "days_before_cutoff": 937,
+        "tag": "0.1.3"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "OpenLIT",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 1
+        },
+        "last_12_months": 1,
+        "latest": "2026-02-25",
+        "total": 1
+      },
+      "pypi": {
+        "days_before_cutoff": 74,
+        "latest_stable": "1.45.0",
+        "package": "openlit",
+        "uploaded": "2026-08-03",
+        "versions_in_90_days": 1
+      },
+      "readme_status_sentences": [],
+      "repo": "openlit/openlit",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "wandb/weave",
+      "last_commit_before_cutoff": "2026-10-15",
+      "latest_stable_release_before_cutoff": {
+        "date": "2026-10-13",
+        "days_before_cutoff": 3,
+        "tag": "v0.52.27"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "W&B Weave",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "pypi": {
+        "days_before_cutoff": 6,
+        "latest_stable": "0.53.12",
+        "package": "weave",
+        "uploaded": "2026-10-09",
+        "versions_in_90_days": 9
+      },
+      "readme_status_sentences": [],
+      "repo": "wandb/weave",
+      "stable_releases_in_90_days": 10
+    }
+  ]
+}
