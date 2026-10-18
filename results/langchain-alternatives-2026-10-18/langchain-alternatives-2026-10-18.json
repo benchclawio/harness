@@ -1,0 +1,743 @@
+{
+  "as_of": "2026-10-18T18:30:00Z",
+  "claims_checked": {
+    "autogen_readme_status_sentences": [
+      "# AutoGen [![Archived](https://img.",
+      "io/badge/status-archived-red)](https://github.",
+      "**\u26a0\ufe0f Project archived and no longer maintained** > > This project has been archived and is no longer actively maintained by Microsoft."
+    ],
+    "overview_mentions_langgraph": false,
+    "overview_mentions_maintenance_mode": false,
+    "overview_recommends_autogen": true,
+    "overview_recommends_semantic_kernel": true,
+    "overview_says_langchain_depends_on_anything": false,
+    "semantic_kernel_readme_status_sentences": [
+      "com/microsoft/agent-framework)! Microsoft Agent Framework (MAF) is the enterprise\u2011ready successor to Semantic Kernel."
+    ]
+  },
+  "langchain_packaging": {
+    "langchain_community_requires_langchain_classic": true,
+    "langchain_core_requires_langsmith_client": true,
+    "langchain_requires_langgraph": true,
+    "langgraph_requires_langchain_core": true,
+    "packages": {
+      "langchain": {
+        "base_dependencies": [
+          "langchain-core",
+          "langgraph",
+          "pydantic"
+        ],
+        "latest_stable": "1.4.6",
+        "uploaded": "2026-10-14"
+      },
+      "langchain-classic": {
+        "base_dependencies": [
+          "async-timeout",
+          "langchain-core",
+          "langchain-text-splitters",
+          "langsmith",
+          "pydantic",
+          "pyyaml",
+          "requests",
+          "sqlalchemy"
+        ],
+        "latest_stable": "1.0.8",
+        "uploaded": "2026-06-10"
+      },
+      "langchain-community": {
+        "base_dependencies": [
+          "aiohttp",
+          "httpx-sse",
+          "langchain-classic",
+          "langchain-core",
+          "langsmith",
+          "numpy",
+          "pydantic-settings",
+          "pyyaml",
+          "requests",
+          "sqlalchemy",
+          "tenacity"
+        ],
+        "latest_stable": "0.4.2",
+        "uploaded": "2026-05-22"
+      },
+      "langchain-core": {
+        "base_dependencies": [
+          "httpx",
+          "jsonpatch",
+          "langchain-protocol",
+          "langsmith",
+          "packaging",
+          "pydantic",
+          "pyyaml",
+          "tenacity",
+          "typing-extensions",
+          "uuid-utils"
+        ],
+        "latest_stable": "1.6.12",
+        "uploaded": "2026-10-16"
+      },
+      "langgraph": {
+        "base_dependencies": [
+          "langchain-core",
+          "langgraph-checkpoint",
+          "langgraph-prebuilt",
+          "langgraph-sdk",
+          "pydantic",
+          "xxhash"
+        ],
+        "latest_stable": "1.2.16",
+        "uploaded": "2026-10-16"
+      }
+    }
+  },
+  "projects": [
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "advisory_list": [
+          {
+            "cve": "CVE-2026-55443",
+            "id": "GHSA-gr75-jv2w-4656",
+            "published": "2026-06-12",
+            "severity": "medium",
+            "summary": "Path traversal and sandbox escape in LangChain file-search middleware and loaders"
+          },
+          {
+            "cve": "CVE-2026-44843",
+            "id": "GHSA-pjwx-r37v-7724",
+            "published": "2026-05-05",
+            "severity": "high",
+            "summary": "Unsafe deserialization of attacker-controlled LangChain objects through overly broad `load()` allowlists"
+          },
+          {
+            "cve": "CVE-2026-41488",
+            "id": "GHSA-r7w7-9xr2-qq2r",
+            "published": "2026-04-16",
+            "severity": "low",
+            "summary": "Image token counting SSRF protection can be bypassed via DNS rebinding"
+          },
+          {
+            "cve": "CVE-2026-41481",
+            "id": "GHSA-fv5p-p927-qmxr",
+            "published": "2026-04-16",
+            "severity": "medium",
+            "summary": "HTMLHeaderTextSplitter.split_text_from_url SSRF Redirect Bypass"
+          },
+          {
+            "cve": "CVE-2026-40087",
+            "id": "GHSA-926x-3r5x-gfhw",
+            "published": "2026-04-08",
+            "severity": "medium",
+            "summary": "Incomplete f-string validation in prompt templates"
+          },
+          {
+            "cve": "CVE-2026-34070",
+            "id": "GHSA-qh6h-p6c9-ff54",
+            "published": "2026-03-26",
+            "severity": "high",
+            "summary": "Path traversal in legacy `load_prompt` functions in `langchain-core` (CWE-22)"
+          },
+          {
+            "cve": "CVE-2026-26013",
+            "id": "GHSA-2g6r-c272-w58r",
+            "published": "2026-02-10",
+            "severity": "low",
+            "summary": "SSRF via image_url token counting in ChatOpenAI.get_num_tokens_from_messages"
+          },
+          {
+            "cve": "CVE-2025-68664",
+            "id": "GHSA-c67j-w6g6-q2cm",
+            "published": "2025-12-23",
+            "severity": "critical",
+            "summary": "LangChain serialization injection vulnerability enables secret extraction in dumps/loads APIs"
+          }
+        ],
+        "archived": false,
+        "canonical_repo": "langchain-ai/langchain",
+        "last_commit_before_cutoff": "2026-10-16",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {
+            "critical": 1,
+            "high": 3,
+            "low": 2,
+            "medium": 3
+          },
+          "last_12_months": 9,
+          "latest": "2026-06-12",
+          "total": 9
+        },
+        "readme_status_sentences": []
+      },
+      "name": "LangChain",
+      "package": "langchain",
+      "registry": {
+        "base_dependencies": [
+          "langchain-core",
+          "langgraph",
+          "pydantic"
+        ],
+        "base_dependency_count": 3,
+        "days_before_cutoff": 4,
+        "downloads_last_month": 170457766,
+        "latest_stable": "1.4.6",
+        "uploaded": "2026-10-14",
+        "versions_in_90_days": 11
+      },
+      "repo": "langchain-ai/langchain"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "run-llama/llama_index",
+        "last_commit_before_cutoff": "2026-10-14",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {},
+          "last_12_months": 0,
+          "latest": null,
+          "total": 0
+        },
+        "readme_status_sentences": []
+      },
+      "name": "LlamaIndex",
+      "package": "llama-index-core",
+      "registry": {
+        "base_dependencies": [
+          "aiohttp",
+          "aiosqlite",
+          "banks",
+          "dataclasses-json",
+          "deprecated",
+          "dirtyjson",
+          "eval-type-backport",
+          "filetype",
+          "fsspec",
+          "httpx",
+          "llama-index-workflows",
+          "nest-asyncio",
+          "networkx",
+          "nltk",
+          "numpy",
+          "pillow",
+          "platformdirs",
+          "pydantic",
+          "pyyaml",
+          "requests",
+          "setuptools",
+          "sqlalchemy",
+          "tenacity",
+          "tiktoken",
+          "tinytag",
+          "tqdm",
+          "typing-extensions",
+          "typing-inspect",
+          "wrapt"
+        ],
+        "base_dependency_count": 29,
+        "days_before_cutoff": 27,
+        "downloads_last_month": 6574473,
+        "latest_stable": "0.14.25",
+        "uploaded": "2026-09-21",
+        "versions_in_90_days": 2
+      },
+      "repo": "run-llama/llama_index"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "deepset-ai/haystack",
+        "last_commit_before_cutoff": "2026-10-16",
+        "licence_spdx": "Apache-2.0",
+        "published_advisories": {
+          "by_severity": {
+            "low": 1
+          },
+          "last_12_months": 0,
+          "latest": "2024-07-31",
+          "total": 1
+        },
+        "readme_status_sentences": []
+      },
+      "name": "Haystack",
+      "package": "haystack-ai",
+      "registry": {
+        "base_dependencies": [
+          "anyio",
+          "docstring-parser",
+          "filetype",
+          "httpx",
+          "jinja2",
+          "jsonschema",
+          "lazy-imports",
+          "markupsafe",
+          "more-itertools",
+          "networkx",
+          "numpy",
+          "openai",
+          "posthog",
+          "pydantic",
+          "python-dateutil",
+          "pyyaml",
+          "tenacity",
+          "tqdm"
+        ],
+        "base_dependency_count": 18,
+        "days_before_cutoff": 3,
+        "downloads_last_month": 566454,
+        "latest_stable": "3.4.0",
+        "uploaded": "2026-10-15",
+        "versions_in_90_days": 5
+      },
+      "repo": "deepset-ai/haystack"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "stanfordnlp/dspy",
+        "last_commit_before_cutoff": "2026-10-18",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {},
+          "last_12_months": 0,
+          "latest": null,
+          "total": 0
+        },
+        "readme_status_sentences": []
+      },
+      "name": "DSPy",
+      "package": "dspy",
+      "registry": {
+        "base_dependencies": [
+          "anyio",
+          "cachetools",
+          "cloudpickle",
+          "diskcache",
+          "gepa",
+          "json-repair",
+          "jsonschema",
+          "litellm",
+          "openai",
+          "orjson",
+          "pydantic",
+          "pyyaml",
+          "regex",
+          "requests",
+          "tenacity",
+          "tqdm"
+        ],
+        "base_dependency_count": 16,
+        "days_before_cutoff": 5,
+        "downloads_last_month": 5312050,
+        "latest_stable": "3.4.1",
+        "uploaded": "2026-10-12",
+        "versions_in_90_days": 4
+      },
+      "repo": "stanfordnlp/dspy"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "pydantic/pydantic-ai",
+        "last_commit_before_cutoff": "2026-10-18",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {
+            "high": 4,
+            "low": 3,
+            "medium": 9
+          },
+          "last_12_months": 16,
+          "latest": "2026-10-02",
+          "total": 16
+        },
+        "readme_status_sentences": []
+      },
+      "name": "Pydantic AI",
+      "package": "pydantic-ai-slim",
+      "registry": {
+        "base_dependencies": [
+          "anyio",
+          "genai-prices",
+          "griffelib",
+          "httpx2",
+          "opentelemetry-api",
+          "pydantic",
+          "pydantic-graph",
+          "typing-inspection"
+        ],
+        "base_dependency_count": 8,
+        "days_before_cutoff": 2,
+        "downloads_last_month": 23908854,
+        "latest_stable": "2.57.0",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 56
+      },
+      "repo": "pydantic/pydantic-ai"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "openai/openai-agents-python",
+        "last_commit_before_cutoff": "2026-10-17",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {},
+          "last_12_months": 0,
+          "latest": null,
+          "total": 0
+        },
+        "readme_status_sentences": []
+      },
+      "name": "OpenAI Agents SDK",
+      "package": "openai-agents",
+      "registry": {
+        "base_dependencies": [
+          "griffelib",
+          "httpx2",
+          "mcp",
+          "openai",
+          "pydantic",
+          "pyjwt",
+          "python-multipart",
+          "requests",
+          "starlette",
+          "typing-extensions",
+          "urllib3",
+          "websockets"
+        ],
+        "base_dependency_count": 12,
+        "days_before_cutoff": 3,
+        "downloads_last_month": 12449784,
+        "latest_stable": "0.24.0",
+        "uploaded": "2026-10-15",
+        "versions_in_90_days": 14
+      },
+      "repo": "openai/openai-agents-python"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "agno-agi/agno",
+        "last_commit_before_cutoff": "2026-10-17",
+        "licence_spdx": "Apache-2.0",
+        "published_advisories": {
+          "by_severity": {
+            "critical": 1,
+            "high": 2
+          },
+          "last_12_months": 3,
+          "latest": "2026-07-27",
+          "total": 3
+        },
+        "readme_status_sentences": []
+      },
+      "name": "Agno",
+      "package": "agno",
+      "registry": {
+        "base_dependencies": [
+          "agnoctl",
+          "docstring-parser",
+          "h11",
+          "httpx",
+          "packaging",
+          "pydantic",
+          "pydantic-settings",
+          "pyyaml",
+          "rich",
+          "typing-extensions"
+        ],
+        "base_dependency_count": 10,
+        "days_before_cutoff": 2,
+        "downloads_last_month": 1779568,
+        "latest_stable": "3.1.4",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 25
+      },
+      "repo": "agno-agi/agno"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "crewAIInc/crewAI",
+        "last_commit_before_cutoff": "2026-10-16",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {},
+          "last_12_months": 0,
+          "latest": null,
+          "total": 0
+        },
+        "readme_status_sentences": []
+      },
+      "name": "CrewAI",
+      "package": "crewai",
+      "registry": {
+        "base_dependencies": [
+          "aiofiles",
+          "aiosqlite",
+          "appdirs",
+          "cel-python",
+          "chromadb",
+          "click",
+          "crewai-cli",
+          "crewai-core",
+          "httpx",
+          "instructor",
+          "json-repair",
+          "json5",
+          "jsonref",
+          "lancedb",
+          "mcp",
+          "oauthlib",
+          "openai",
+          "openpyxl",
+          "opentelemetry-api",
+          "opentelemetry-exporter-otlp-proto-http",
+          "opentelemetry-sdk",
+          "pdfplumber",
+          "portalocker",
+          "pydantic",
+          "pydantic-settings",
+          "pyjwt",
+          "python-dotenv",
+          "pyyaml",
+          "regex",
+          "tokenizers",
+          "tomli",
+          "tomli-w"
+        ],
+        "base_dependency_count": 32,
+        "days_before_cutoff": 4,
+        "downloads_last_month": 2442764,
+        "latest_stable": "1.15.28",
+        "uploaded": "2026-10-14",
+        "versions_in_90_days": 23
+      },
+      "repo": "crewAIInc/crewAI"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "huggingface/smolagents",
+        "last_commit_before_cutoff": "2026-10-06",
+        "licence_spdx": "Apache-2.0",
+        "published_advisories": {
+          "by_severity": {},
+          "last_12_months": 0,
+          "latest": null,
+          "total": 0
+        },
+        "readme_status_sentences": []
+      },
+      "name": "smolagents",
+      "package": "smolagents",
+      "registry": {
+        "base_dependencies": [
+          "huggingface-hub",
+          "jinja2",
+          "pillow",
+          "python-dotenv",
+          "requests",
+          "rich"
+        ],
+        "base_dependency_count": 6,
+        "days_before_cutoff": 142,
+        "downloads_last_month": 425605,
+        "latest_stable": "1.26.0",
+        "uploaded": "2026-05-29",
+        "versions_in_90_days": 0
+      },
+      "repo": "huggingface/smolagents"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "microsoft/autogen",
+        "last_commit_before_cutoff": "2026-10-16",
+        "licence_spdx": "CC-BY-4.0",
+        "published_advisories": {
+          "by_severity": {},
+          "last_12_months": 0,
+          "latest": null,
+          "total": 0
+        },
+        "readme_status_sentences": [
+          "# AutoGen [![Archived](https://img.",
+          "io/badge/status-archived-red)](https://github.",
+          "**\u26a0\ufe0f Project archived and no longer maintained** > > This project has been archived and is no longer actively maintained by Microsoft."
+        ]
+      },
+      "name": "AutoGen",
+      "package": "autogen-agentchat",
+      "registry": {
+        "base_dependencies": [
+          "autogen-core"
+        ],
+        "base_dependency_count": 1,
+        "days_before_cutoff": 383,
+        "downloads_last_month": 379923,
+        "latest_stable": "0.7.5",
+        "uploaded": "2025-09-30",
+        "versions_in_90_days": 0
+      },
+      "repo": "microsoft/autogen"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "microsoft/semantic-kernel",
+        "last_commit_before_cutoff": "2026-10-16",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {
+            "critical": 2
+          },
+          "last_12_months": 2,
+          "latest": "2026-02-19",
+          "total": 2
+        },
+        "readme_status_sentences": [
+          "com/microsoft/agent-framework)! Microsoft Agent Framework (MAF) is the enterprise\u2011ready successor to Semantic Kernel."
+        ]
+      },
+      "name": "Semantic Kernel",
+      "package": "semantic-kernel",
+      "registry": {
+        "base_dependencies": [
+          "aiohttp",
+          "aiortc",
+          "azure-ai-agents",
+          "azure-ai-projects",
+          "azure-identity",
+          "cloudevents",
+          "defusedxml",
+          "jinja2",
+          "mcp",
+          "nest-asyncio",
+          "numpy",
+          "openai",
+          "openapi_core",
+          "opentelemetry-api",
+          "opentelemetry-sdk",
+          "prance",
+          "pybars4",
+          "pydantic",
+          "pydantic-settings",
+          "scipy",
+          "typing-extensions",
+          "websockets"
+        ],
+        "base_dependency_count": 22,
+        "days_before_cutoff": 12,
+        "downloads_last_month": 300767,
+        "latest_stable": "1.45.0",
+        "uploaded": "2026-10-06",
+        "versions_in_90_days": 2
+      },
+      "repo": "microsoft/semantic-kernel"
+    },
+    {
+      "ecosystem": "pypi",
+      "github": {
+        "archived": false,
+        "canonical_repo": "microsoft/agent-framework",
+        "last_commit_before_cutoff": "2026-10-18",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {
+            "high": 1,
+            "medium": 2
+          },
+          "last_12_months": 3,
+          "latest": "2026-10-07",
+          "total": 3
+        },
+        "readme_status_sentences": []
+      },
+      "name": "Microsoft Agent Framework",
+      "package": "agent-framework",
+      "registry": {
+        "base_dependencies": [
+          "agent-framework-core"
+        ],
+        "base_dependency_count": 1,
+        "days_before_cutoff": 3,
+        "downloads_last_month": 189927,
+        "latest_stable": "1.22.0",
+        "uploaded": "2026-10-15",
+        "versions_in_90_days": 12
+      },
+      "repo": "microsoft/agent-framework"
+    },
+    {
+      "ecosystem": "npm",
+      "github": {
+        "archived": false,
+        "canonical_repo": "vercel/ai",
+        "last_commit_before_cutoff": "2026-10-16",
+        "licence_spdx": "NOASSERTION",
+        "published_advisories": {
+          "by_severity": {
+            "high": 2,
+            "medium": 4
+          },
+          "last_12_months": 6,
+          "latest": "2026-10-01",
+          "total": 6
+        },
+        "readme_status_sentences": []
+      },
+      "name": "Vercel AI SDK",
+      "package": "ai",
+      "registry": {
+        "days_before_cutoff": 1,
+        "downloads_last_month": 121188982,
+        "latest_stable": "7.0.143",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 237
+      },
+      "repo": "vercel/ai"
+    },
+    {
+      "ecosystem": "npm",
+      "github": {
+        "archived": false,
+        "canonical_repo": "mastra-ai/mastra",
+        "last_commit_before_cutoff": "2026-10-18",
+        "licence_spdx": "NOASSERTION",
+        "published_advisories": {
+          "by_severity": {
+            "high": 1,
+            "medium": 1
+          },
+          "last_12_months": 1,
+          "latest": "2026-10-12",
+          "total": 2
+        },
+        "readme_status_sentences": []
+      },
+      "name": "Mastra",
+      "package": "@mastra/core",
+      "registry": {
+        "days_before_cutoff": 2,
+        "downloads_last_month": 8214928,
+        "latest_stable": "1.78.0",
+        "uploaded": "2026-10-15",
+        "versions_in_90_days": 30
+      },
+      "repo": "mastra-ai/mastra"
+    }
+  ]
+}

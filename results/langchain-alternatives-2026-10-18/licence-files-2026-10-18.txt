@@ -1,0 +1,27 @@
+== vercel/ai
+  LICENSE: Copyright 2023 Vercel, Inc.
+  LICENSE: 
+  LICENSE: Licensed under the Apache License, Version 2.0 (the "License");
+  LICENSE: you may not use this file except in compliance with the License.
+  LICENSE.md: 404: Not Found
+  LICENSE-CODE: 404: Not Found
+== mastra-ai/mastra
+  LICENSE: 404: Not Found
+  LICENSE.md: Portions of this software are licensed as follows:
+  LICENSE.md: 
+  LICENSE.md: - All content that resides under any directory named `ee/` within this
+  LICENSE.md:   repository, including but not limited to:
+  LICENSE-CODE: 404: Not Found
+== microsoft/autogen
+  LICENSE: Attribution 4.0 International
+  LICENSE: 
+  LICENSE: =======================================================================
+  LICENSE: 
+  LICENSE.md: 404: Not Found
+  LICENSE-CODE:     MIT License
+  LICENSE-CODE: 
+  LICENSE-CODE:     Copyright (c) Microsoft Corporation.
+  LICENSE-CODE: 
+e [top of the page](https://github.com/mastra-ai/mastra)  ## Licensing  This repository uses a dual-license model:  - **Apache License 2.0**: The core framework and the vast majority of this codebase is open source under Apache-2.0. - **Mastra Ent
+erprise License**: Code in any directory named `ee/` (e.g., `packages/core/src/auth/ee/`) is source-available under the Mastra Enterprise License. These fe
+atures require a valid enterprise license for production use but can be freely used for development and testing.  See [LICENSE.md](./LICENSE.md) for the full license mapping and [ee
