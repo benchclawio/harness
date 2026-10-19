@@ -1,0 +1,777 @@
+{
+  "as_of": "2026-10-19T18:30:00Z",
+  "claims_checked": {
+    "langchain_classic_wheel_has_chains_package": true,
+    "langchain_extras_count": 19,
+    "langchain_wheel_has_chains_package": false,
+    "overview_names_pydantic_ai_providers": [
+      "OpenAI",
+      "Anthropic",
+      "Gemini",
+      "Ollama",
+      "Groq",
+      "Mistral"
+    ],
+    "overview_says_600_plus_integrations": true,
+    "overview_says_langchain_uses_lcel_and_custom_chains": true,
+    "overview_says_logfire_builtin": true,
+    "overview_suggests_hybrid_use": true,
+    "pydantic_ai_ships_langchain_tool_adapter": true,
+    "pydantic_ai_slim_extra_logfire": true,
+    "pydantic_ai_slim_extras_count": 39,
+    "pydantic_ai_slim_extras_for_those_providers": [
+      "anthropic",
+      "google",
+      "groq",
+      "mistral",
+      "openai"
+    ]
+  },
+  "first_party_totals": {
+    "LangChain": {
+      "packages": [
+        "langchain",
+        "langchain-core",
+        "langgraph",
+        "langgraph-prebuilt",
+        "langgraph-checkpoint",
+        "langgraph-sdk",
+        "langchain-protocol",
+        "langsmith"
+      ],
+      "packages_measured": [
+        "langchain",
+        "langchain-core",
+        "langgraph",
+        "langgraph-prebuilt",
+        "langgraph-checkpoint",
+        "langgraph-sdk",
+        "langchain-protocol",
+        "langsmith"
+      ],
+      "python_files": 714,
+      "python_lines": 238583,
+      "versions": {
+        "langchain": "1.4.6",
+        "langchain-core": "1.6.12",
+        "langchain-protocol": "0.0.19",
+        "langgraph": "1.2.16",
+        "langgraph-checkpoint": "4.3.0",
+        "langgraph-prebuilt": "1.1.1",
+        "langgraph-sdk": "0.4.8",
+        "langsmith": "0.14.11"
+      },
+      "wheel_bytes": 2145815
+    },
+    "Pydantic AI": {
+      "packages": [
+        "pydantic-ai-slim",
+        "pydantic-graph",
+        "genai-prices",
+        "logfire-api"
+      ],
+      "packages_measured": [
+        "pydantic-ai-slim",
+        "pydantic-graph",
+        "genai-prices",
+        "logfire-api"
+      ],
+      "python_files": 397,
+      "python_lines": 187186,
+      "versions": {
+        "genai-prices": "0.1.13",
+        "logfire-api": "5.2.0",
+        "pydantic-ai-slim": "2.57.0",
+        "pydantic-graph": "2.57.0"
+      },
+      "wheel_bytes": 2576736
+    }
+  },
+  "registry": {
+    "genai-prices": {
+      "base_dependencies": [
+        "httpx2",
+        "pydantic"
+      ],
+      "base_dependency_count": 2,
+      "days_before_cutoff": 4,
+      "downloads_last_month": 24230091,
+      "extras": [
+        "cli"
+      ],
+      "latest_stable": "0.1.13",
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-15",
+      "versions_in_90_days": 16
+    },
+    "langchain": {
+      "base_dependencies": [
+        "langchain-core",
+        "langgraph",
+        "pydantic"
+      ],
+      "base_dependency_count": 3,
+      "days_before_cutoff": 5,
+      "downloads_last_month": 170457766,
+      "extras": [
+        "anthropic",
+        "aws",
+        "azure-ai",
+        "baseten",
+        "community",
+        "deepseek",
+        "fireworks",
+        "google-genai",
+        "google-vertexai",
+        "groq",
+        "huggingface",
+        "mcp",
+        "meta",
+        "mistralai",
+        "ollama",
+        "openai",
+        "perplexity",
+        "together",
+        "xai"
+      ],
+      "latest_stable": "1.4.6",
+      "requires_python": "<4.0.0,>=3.10.0",
+      "uploaded": "2026-10-14",
+      "versions_in_90_days": 11
+    },
+    "langchain-classic": {
+      "base_dependencies": [
+        "async-timeout",
+        "langchain-core",
+        "langchain-text-splitters",
+        "langsmith",
+        "pydantic",
+        "pyyaml",
+        "requests",
+        "sqlalchemy"
+      ],
+      "base_dependency_count": 8,
+      "days_before_cutoff": 130,
+      "downloads_last_month": 14350902,
+      "extras": [
+        "anthropic",
+        "aws",
+        "azure-ai",
+        "cohere",
+        "community",
+        "deepseek",
+        "fireworks",
+        "google-genai",
+        "google-vertexai",
+        "groq",
+        "huggingface",
+        "mistralai",
+        "ollama",
+        "openai",
+        "perplexity",
+        "together",
+        "xai"
+      ],
+      "latest_stable": "1.0.8",
+      "requires_python": "<4.0.0,>=3.10.0",
+      "uploaded": "2026-06-10",
+      "versions_in_90_days": 0
+    },
+    "langchain-core": {
+      "base_dependencies": [
+        "httpx",
+        "jsonpatch",
+        "langchain-protocol",
+        "langsmith",
+        "packaging",
+        "pydantic",
+        "pyyaml",
+        "tenacity",
+        "typing-extensions",
+        "uuid-utils"
+      ],
+      "base_dependency_count": 10,
+      "days_before_cutoff": 2,
+      "downloads_last_month": 144826657,
+      "extras": [],
+      "latest_stable": "1.6.12",
+      "requires_python": "<4.0.0,>=3.10.0",
+      "uploaded": "2026-10-16",
+      "versions_in_90_days": 19
+    },
+    "langchain-protocol": {
+      "base_dependencies": [
+        "typing-extensions"
+      ],
+      "base_dependency_count": 1,
+      "days_before_cutoff": 53,
+      "downloads_last_month": 50850248,
+      "extras": [],
+      "latest_stable": "0.0.19",
+      "requires_python": "<4.0.0,>=3.10.0",
+      "uploaded": "2026-08-26",
+      "versions_in_90_days": 1
+    },
+    "langgraph": {
+      "base_dependencies": [
+        "langchain-core",
+        "langgraph-checkpoint",
+        "langgraph-prebuilt",
+        "langgraph-sdk",
+        "pydantic",
+        "xxhash"
+      ],
+      "base_dependency_count": 6,
+      "days_before_cutoff": 2,
+      "downloads_last_month": 44769952,
+      "extras": [],
+      "latest_stable": "1.2.16",
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-16",
+      "versions_in_90_days": 7
+    },
+    "langgraph-checkpoint": {
+      "base_dependencies": [
+        "langchain-core",
+        "ormsgpack"
+      ],
+      "base_dependency_count": 2,
+      "days_before_cutoff": 6,
+      "downloads_last_month": 41644248,
+      "extras": [],
+      "latest_stable": "4.3.0",
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-12",
+      "versions_in_90_days": 2
+    },
+    "langgraph-prebuilt": {
+      "base_dependencies": [
+        "langchain-core",
+        "langgraph-checkpoint"
+      ],
+      "base_dependency_count": 2,
+      "days_before_cutoff": 4,
+      "downloads_last_month": 40812714,
+      "extras": [],
+      "latest_stable": "1.1.1",
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-15",
+      "versions_in_90_days": 1
+    },
+    "langgraph-sdk": {
+      "base_dependencies": [
+        "httpx",
+        "langchain-core",
+        "langchain-protocol",
+        "orjson",
+        "websockets"
+      ],
+      "base_dependency_count": 5,
+      "days_before_cutoff": 2,
+      "downloads_last_month": 42684692,
+      "extras": [],
+      "latest_stable": "0.4.8",
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-16",
+      "versions_in_90_days": 6
+    },
+    "langsmith": {
+      "base_dependencies": [
+        "anyio",
+        "distro",
+        "httpx2",
+        "orjson",
+        "packaging",
+        "pydantic",
+        "requests",
+        "requests-toolbelt",
+        "sniffio",
+        "typing-extensions",
+        "uuid-utils",
+        "websockets",
+        "xxhash",
+        "zstandard"
+      ],
+      "base_dependency_count": 14,
+      "days_before_cutoff": 3,
+      "downloads_last_month": 77233437,
+      "extras": [
+        "aiohttp",
+        "claude-agent-sdk",
+        "gemini-live",
+        "google-adk",
+        "google-adk-live",
+        "langsmith-pyo3",
+        "livekit",
+        "openai-agents",
+        "openai-realtime",
+        "otel",
+        "pipecat",
+        "pytest",
+        "sandbox",
+        "sandbox-auth",
+        "strands-agents",
+        "vcr"
+      ],
+      "latest_stable": "0.14.11",
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-16",
+      "versions_in_90_days": 32
+    },
+    "logfire-api": {
+      "base_dependencies": [],
+      "base_dependency_count": 0,
+      "days_before_cutoff": 6,
+      "downloads_last_month": 24496602,
+      "extras": [],
+      "latest_stable": "5.2.0",
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-13",
+      "versions_in_90_days": 7
+    },
+    "pydantic-ai": {
+      "base_dependencies": [
+        "pydantic-ai-slim"
+      ],
+      "base_dependency_count": 1,
+      "days_before_cutoff": 3,
+      "downloads_last_month": 5383780,
+      "extras": [
+        "ag-ui",
+        "bedrock",
+        "bedrock-mantle",
+        "cohere",
+        "dbos",
+        "duckduckgo",
+        "exa",
+        "examples",
+        "google-realtime",
+        "groq",
+        "huggingface",
+        "mcp-tasks",
+        "mistral",
+        "openai-realtime",
+        "openrouter",
+        "prefect",
+        "realtime",
+        "retries",
+        "sentence-transformers",
+        "spec",
+        "tavily",
+        "temporal",
+        "typesafe",
+        "ui",
+        "voyageai",
+        "web-fetch",
+        "xai",
+        "xai-realtime"
+      ],
+      "latest_stable": "2.57.0",
+      "requires_python": ">=3.11",
+      "uploaded": "2026-10-16",
+      "versions_in_90_days": 54
+    },
+    "pydantic-ai-slim": {
+      "base_dependencies": [
+        "anyio",
+        "genai-prices",
+        "griffelib",
+        "httpx2",
+        "opentelemetry-api",
+        "pydantic",
+        "pydantic-graph",
+        "typing-inspection"
+      ],
+      "base_dependency_count": 8,
+      "days_before_cutoff": 3,
+      "downloads_last_month": 23908854,
+      "extras": [
+        "ag-ui",
+        "anthropic",
+        "bedrock",
+        "bedrock-mantle",
+        "cerebras",
+        "cli",
+        "cohere",
+        "crusoe",
+        "dbos",
+        "duckduckgo",
+        "evals",
+        "exa",
+        "google",
+        "google-realtime",
+        "groq",
+        "huggingface",
+        "logfire",
+        "mcp",
+        "mcp-tasks",
+        "mistral",
+        "openai",
+        "openai-realtime",
+        "openrouter",
+        "prefect",
+        "realtime",
+        "retries",
+        "sentence-transformers",
+        "snowflake",
+        "spec",
+        "tavily",
+        "temporal",
+        "typesafe",
+        "ui",
+        "voyageai",
+        "web",
+        "web-fetch",
+        "xai",
+        "xai-realtime",
+        "zai"
+      ],
+      "latest_stable": "2.57.0",
+      "requires_python": ">=3.11",
+      "uploaded": "2026-10-16",
+      "versions_in_90_days": 54
+    },
+    "pydantic-graph": {
+      "base_dependencies": [
+        "anyio",
+        "logfire-api",
+        "pydantic",
+        "typing-inspection"
+      ],
+      "base_dependency_count": 4,
+      "days_before_cutoff": 3,
+      "downloads_last_month": 23722083,
+      "extras": [],
+      "latest_stable": "2.57.0",
+      "requires_python": ">=3.11",
+      "uploaded": "2026-10-16",
+      "versions_in_90_days": 54
+    }
+  },
+  "repositories": [
+    {
+      "github": {
+        "advisory_list": [
+          {
+            "cve": "CVE-2026-55443",
+            "id": "GHSA-gr75-jv2w-4656",
+            "published": "2026-06-12",
+            "severity": "medium",
+            "summary": "Path traversal and sandbox escape in LangChain file-search middleware and loaders"
+          },
+          {
+            "cve": "CVE-2026-44843",
+            "id": "GHSA-pjwx-r37v-7724",
+            "published": "2026-05-05",
+            "severity": "high",
+            "summary": "Unsafe deserialization of attacker-controlled LangChain objects through overly broad `load()` allowlists"
+          },
+          {
+            "cve": "CVE-2026-41488",
+            "id": "GHSA-r7w7-9xr2-qq2r",
+            "published": "2026-04-16",
+            "severity": "low",
+            "summary": "Image token counting SSRF protection can be bypassed via DNS rebinding"
+          },
+          {
+            "cve": "CVE-2026-41481",
+            "id": "GHSA-fv5p-p927-qmxr",
+            "published": "2026-04-16",
+            "severity": "medium",
+            "summary": "HTMLHeaderTextSplitter.split_text_from_url SSRF Redirect Bypass"
+          },
+          {
+            "cve": "CVE-2026-40087",
+            "id": "GHSA-926x-3r5x-gfhw",
+            "published": "2026-04-08",
+            "severity": "medium",
+            "summary": "Incomplete f-string validation in prompt templates"
+          },
+          {
+            "cve": "CVE-2026-34070",
+            "id": "GHSA-qh6h-p6c9-ff54",
+            "published": "2026-03-26",
+            "severity": "high",
+            "summary": "Path traversal in legacy `load_prompt` functions in `langchain-core` (CWE-22)"
+          }
+        ],
+        "archived": false,
+        "canonical_repo": "langchain-ai/langchain",
+        "last_commit_before_cutoff": "2026-10-19",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {
+            "critical": 1,
+            "high": 3,
+            "low": 2,
+            "medium": 3
+          },
+          "last_12_months": 9,
+          "latest": "2026-06-12",
+          "total": 9
+        },
+        "readme_status_sentences": []
+      },
+      "name": "LangChain",
+      "package": "langchain",
+      "repo": "langchain-ai/langchain"
+    },
+    {
+      "github": {
+        "advisory_list": [
+          {
+            "cve": "CVE-2026-107286",
+            "id": "GHSA-6fqq-452j-qhrp",
+            "published": "2026-10-02",
+            "severity": "high",
+            "summary": "Concurrency-limited model streams can retain slots after completion or interruption"
+          },
+          {
+            "cve": "CVE-2026-107287",
+            "id": "GHSA-v36g-jcw9-x7cw",
+            "published": "2026-09-30",
+            "severity": "medium",
+            "summary": "Excessive resource use when local web fetching converts nested HTML"
+          },
+          {
+            "cve": "CVE-2026-107291",
+            "id": "GHSA-4x9p-g9wm-8q7f",
+            "published": "2026-09-17",
+            "severity": "low",
+            "summary": "OpenTelemetry instrumentation: `include_content=False` does not redact exceptions, error statuses, instructions or the output template"
+          },
+          {
+            "cve": "CVE-2026-107290",
+            "id": "GHSA-fpf4-vwcp-v4hp",
+            "published": "2026-09-17",
+            "severity": "medium",
+            "summary": "Event loop blocked by quadratic response processing in `web_fetch`"
+          },
+          {
+            "cve": "CVE-2026-107288",
+            "id": "GHSA-22h6-qm39-v87j",
+            "published": "2026-09-17",
+            "severity": "low",
+            "summary": "web_fetch_tool blocked_domains bypass via a hostname the resolver normalizes differently"
+          },
+          {
+            "cve": "CVE-2026-107289",
+            "id": "GHSA-vmxc-h2x2-jmf3",
+            "published": "2026-09-17",
+            "severity": "medium",
+            "summary": "SSRF cloud-metadata blocklist bypass via IPv6 zone identifiers"
+          }
+        ],
+        "archived": false,
+        "canonical_repo": "pydantic/pydantic-ai",
+        "last_commit_before_cutoff": "2026-10-19",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {
+            "high": 4,
+            "low": 3,
+            "medium": 9
+          },
+          "last_12_months": 16,
+          "latest": "2026-10-02",
+          "total": 16
+        },
+        "readme_status_sentences": []
+      },
+      "name": "Pydantic AI",
+      "package": "pydantic-ai-slim",
+      "repo": "pydantic/pydantic-ai"
+    },
+    {
+      "github": {
+        "advisory_list": [
+          {
+            "cve": null,
+            "id": "GHSA-8prr-f582-jqq3",
+            "published": "2026-10-19",
+            "severity": "medium",
+            "summary": "LangGraph CLI prints the registry push token in `langgraph deploy --verbose` output"
+          },
+          {
+            "cve": null,
+            "id": "GHSA-3fx2-cqw9-xr3c",
+            "published": "2026-10-07",
+            "severity": "medium",
+            "summary": "Unencoded identifiers in LangGraph SDK v3 streaming can redirect authenticated GET requests"
+          },
+          {
+            "cve": null,
+            "id": "GHSA-4hm6-w6qq-w73v",
+            "published": "2026-09-28",
+            "severity": "high",
+            "summary": "LangGraph JavaScript custom authentication may permit cross-user Store access"
+          },
+          {
+            "cve": "CVE-2026-104873",
+            "id": "GHSA-fvww-7h3r-vfhp",
+            "published": "2026-08-28",
+            "severity": "high",
+            "summary": "LangGraph SDK custom auth silently ignores actions= on resource decorators"
+          },
+          {
+            "cve": "CVE-2026-71433",
+            "id": "GHSA-47pj-3jcm-6whg",
+            "published": "2026-07-30",
+            "severity": "medium",
+            "summary": "Namespace prefix matching crosses segment boundaries in Postgres and SQLite stores"
+          },
+          {
+            "cve": "CVE-2026-48775",
+            "id": "GHSA-fjqc-hq36-qh5p",
+            "published": "2026-05-22",
+            "severity": "medium",
+            "summary": "Unsafe JSON deserialization in LangGraph checkpoint loading"
+          }
+        ],
+        "archived": false,
+        "canonical_repo": "langchain-ai/langgraph",
+        "last_commit_before_cutoff": "2026-10-19",
+        "licence_spdx": "MIT",
+        "published_advisories": {
+          "by_severity": {
+            "high": 5,
+            "medium": 7
+          },
+          "last_12_months": 12,
+          "latest": "2026-10-19",
+          "total": 12
+        },
+        "readme_status_sentences": []
+      },
+      "name": "LangGraph",
+      "package": "langgraph",
+      "repo": "langchain-ai/langgraph"
+    }
+  ],
+  "wheel_contents": {
+    "genai-prices": {
+      "python_files": 12,
+      "python_lines": 25412,
+      "top_level_packages": [
+        "genai_prices"
+      ],
+      "wheel_bytes": 142541,
+      "wheel_file": "genai_prices-0.1.13-py3-none-any.whl"
+    },
+    "langchain": {
+      "has_agents_package": true,
+      "has_chains_package": false,
+      "python_files": 40,
+      "python_lines": 17165,
+      "top_level_packages": [
+        "langchain"
+      ],
+      "wheel_bytes": 170398,
+      "wheel_file": "langchain-1.4.6-py3-none-any.whl"
+    },
+    "langchain-classic": {
+      "has_chains_package": true,
+      "python_files": 1321,
+      "python_lines": 70523,
+      "top_level_packages": [
+        "langchain_classic"
+      ],
+      "wheel_bytes": 1041536,
+      "wheel_file": "langchain_classic-1.0.8-py3-none-any.whl"
+    },
+    "langchain-core": {
+      "has_runnables_package": true,
+      "python_files": 182,
+      "python_lines": 70415,
+      "top_level_packages": [
+        "langchain_core"
+      ],
+      "wheel_bytes": 573838,
+      "wheel_file": "langchain_core-1.6.12-py3-none-any.whl"
+    },
+    "langchain-protocol": {
+      "python_files": 2,
+      "python_lines": 621,
+      "top_level_packages": [
+        "langchain_protocol"
+      ],
+      "wheel_bytes": 7327,
+      "wheel_file": "langchain_protocol-0.0.19-py3-none-any.whl"
+    },
+    "langgraph": {
+      "python_files": 79,
+      "python_lines": 28825,
+      "top_level_packages": [
+        "langgraph"
+      ],
+      "wheel_bytes": 260357,
+      "wheel_file": "langgraph-1.2.16-py3-none-any.whl"
+    },
+    "langgraph-checkpoint": {
+      "python_files": 17,
+      "python_lines": 6045,
+      "top_level_packages": [
+        "langgraph"
+      ],
+      "wheel_bytes": 58063,
+      "wheel_file": "langgraph_checkpoint-4.3.0-py3-none-any.whl"
+    },
+    "langgraph-prebuilt": {
+      "python_files": 7,
+      "python_lines": 3710,
+      "top_level_packages": [
+        "langgraph"
+      ],
+      "wheel_bytes": 42254,
+      "wheel_file": "langgraph_prebuilt-1.1.1-py3-none-any.whl"
+    },
+    "langgraph-sdk": {
+      "python_files": 46,
+      "python_lines": 18988,
+      "top_level_packages": [
+        "langgraph_sdk"
+      ],
+      "wheel_bytes": 164560,
+      "wheel_file": "langgraph_sdk-0.4.8-py3-none-any.whl"
+    },
+    "langsmith": {
+      "python_files": 341,
+      "python_lines": 92814,
+      "top_level_packages": [
+        "langsmith"
+      ],
+      "wheel_bytes": 869018,
+      "wheel_file": "langsmith-0.14.11-py3-none-any.whl"
+    },
+    "logfire-api": {
+      "python_files": 1,
+      "python_lines": 345,
+      "top_level_packages": [
+        "logfire_api"
+      ],
+      "wheel_bytes": 151057,
+      "wheel_file": "logfire_api-5.2.0-py3-none-any.whl"
+    },
+    "pydantic-ai-slim": {
+      "has_graph_dependency_declared": true,
+      "has_langchain_tool_adapter": true,
+      "has_logfire_instrumentation": true,
+      "python_files": 370,
+      "python_lines": 156831,
+      "top_level_packages": [
+        "pydantic_ai"
+      ],
+      "wheel_bytes": 2229864,
+      "wheel_file": "pydantic_ai_slim-2.57.0-py3-none-any.whl"
+    },
+    "pydantic-graph": {
+      "python_files": 14,
+      "python_lines": 4598,
+      "top_level_packages": [
+        "pydantic_graph"
+      ],
+      "wheel_bytes": 53274,
+      "wheel_file": "pydantic_graph-2.57.0-py3-none-any.whl"
+    }
+  }
+}
