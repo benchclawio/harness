@@ -1,0 +1,448 @@
+{
+  "as_of": "2026-10-21T19:00:00Z",
+  "claims_checked": {
+    "github_description_for_litellm": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, l",
+    "github_language_for_litellm": "Python",
+    "llmgateway_io_home_says_250_models": true,
+    "llmgateway_io_home_says_40_providers": true,
+    "llmgateway_io_licence_file_first_lines": "Copyright (c) 2025-present LLMGateway, Inc.  Portions of this software are licensed as follows:",
+    "llmgateway_io_licence_spdx": "NOASSERTION",
+    "overview_calls_kong_portkey_enterprise_grade": true,
+    "overview_calls_litellm_lightweight_python": true,
+    "overview_defines_gateway_as_unified_middleware_layer": true,
+    "overview_lists_functions": [
+      "Unified API",
+      "Smart Routing",
+      "Failover",
+      "Cost",
+      "Caching",
+      "Security",
+      "Guardrails"
+    ],
+    "overview_mentions_any_archived_or_renamed_project": [],
+    "overview_mentions_litellm_march_2026_incident": false,
+    "overview_mentions_openrouter_or_stripe": [],
+    "overview_mentions_portkey_acquisition": false,
+    "overview_names_platforms": [
+      "LLM Gateway",
+      "LiteLLM",
+      "Bifrost",
+      "Kong",
+      "Portkey"
+    ],
+    "overview_says_250_models_40_providers": true,
+    "overview_says_openai_compatible_api": true
+  },
+  "ownership_and_incidents": {
+    "agent_router_rename": {
+      "envoyproxy_ai_gateway_resolves_to": "theagentrouter/agent-router"
+    },
+    "litellm_incident": {
+      "compromised_versions_named": [
+        "1.82.7",
+        "1.82.8"
+      ],
+      "docker_proxy_image_not_impacted": true,
+      "published": "Mar 24, 2026",
+      "url": "https://docs.litellm.ai/blog/security-update-march-2026"
+    },
+    "openrouter_stripe": {
+      "headline_says_agrees_to_acquire": true,
+      "release_date": "19 August 2026",
+      "says_400_models_80_providers": true,
+      "says_a_leading_ai_model_gateway_and_routing_platform": true,
+      "url": "https://stripe.com/newsroom/news/stripe-agrees-to-acquire-openrouter"
+    },
+    "portkey_palo_alto": {
+      "release_date": "May 29, 2026",
+      "says_completed_acquisition_of_portkey": true,
+      "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents"
+    },
+    "tensorzero_archived": true
+  },
+  "repositories": [
+    {
+      "archived": false,
+      "canonical_repo": "BerriAI/litellm",
+      "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, l",
+      "language": "Python",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-21",
+        "days_before_cutoff": 0,
+        "tag": "v1.106.2"
+      },
+      "licence_file_first_lines": "Portions of this software are licensed as follows:  * All content that resides under the \"enterprise/\" directory of this repository, if that directory exists, is licensed under the license defined in ",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": true,
+      "licence_file_says_agplv3_outside_carve_out": false,
+      "licence_file_says_mit_outside_carve_out": true,
+      "licence_spdx": "NOASSERTION",
+      "name": "LiteLLM",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 4,
+          "high": 6,
+          "low": 2,
+          "medium": 5
+        },
+        "last_12_months": 17,
+        "latest": "2026-10-01",
+        "total": 17
+      },
+      "readme_chars": 36272,
+      "readme_mentions": {
+        "budgets_or_spend": 2,
+        "caching": 1,
+        "fallbacks": 1,
+        "guardrails": 2,
+        "load_balancing": 2,
+        "mcp": 19,
+        "observability": 2,
+        "openai_compatible": 4,
+        "rate_limits": 0,
+        "semantic_caching": 0,
+        "virtual_keys": 4
+      },
+      "repo": "BerriAI/litellm",
+      "stable_releases_in_90_days": 63
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Portkey-AI/gateway",
+      "description": "A blazing fast AI Gateway with integrated guardrails. Route to 1,600+ LLMs, 50+ AI Guardrails with 1 fast & friendly API.",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-05-25",
+      "latest_stable_release": {
+        "date": "2026-01-12",
+        "days_before_cutoff": 282,
+        "tag": "v1.15.2"
+      },
+      "licence_file_first_lines": "MIT License  Copyright (c) 2024 Portkey, Inc",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": false,
+      "licence_file_says_agplv3_outside_carve_out": false,
+      "licence_file_says_mit_outside_carve_out": false,
+      "licence_spdx": "MIT",
+      "name": "Portkey gateway",
+      "published_advisories": {
+        "by_severity": {
+          "medium": 1
+        },
+        "last_12_months": 1,
+        "latest": "2025-12-01",
+        "total": 1
+      },
+      "readme_chars": 19276,
+      "readme_mentions": {
+        "budgets_or_spend": 0,
+        "caching": 5,
+        "fallbacks": 4,
+        "guardrails": 10,
+        "load_balancing": 2,
+        "mcp": 11,
+        "observability": 5,
+        "openai_compatible": 1,
+        "rate_limits": 0,
+        "semantic_caching": 1,
+        "virtual_keys": 1
+      },
+      "repo": "Portkey-AI/gateway",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "maximhq/bifrost",
+      "description": "Open-source, high-performance AI gateway that works as your LLM gateway, MCP gateway and agent gateway. One OpenAI-compatible API for 10,000",
+      "language": "Go",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-20",
+        "days_before_cutoff": 0,
+        "tag": "transports/v2.3.2"
+      },
+      "licence_file_first_lines": "Apache License                            Version 2.0, January 2004                         http://www.apache.org/licenses/",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": false,
+      "licence_file_says_agplv3_outside_carve_out": false,
+      "licence_file_says_mit_outside_carve_out": false,
+      "licence_spdx": "Apache-2.0",
+      "name": "Bifrost",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 1,
+          "high": 2
+        },
+        "last_12_months": 3,
+        "latest": "2026-09-23",
+        "total": 3
+      },
+      "readme_chars": 13085,
+      "readme_mentions": {
+        "budgets_or_spend": 6,
+        "caching": 8,
+        "fallbacks": 7,
+        "guardrails": 1,
+        "load_balancing": 4,
+        "mcp": 5,
+        "observability": 9,
+        "openai_compatible": 2,
+        "rate_limits": 1,
+        "semantic_caching": 3,
+        "virtual_keys": 2
+      },
+      "repo": "maximhq/bifrost",
+      "stable_releases_in_90_days": 19
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Kong/kong",
+      "description": "\ud83e\udd8d The API and AI Gateway",
+      "language": "Lua",
+      "last_commit_before_cutoff": "2026-10-19",
+      "latest_stable_release": {
+        "date": "2026-10-12",
+        "days_before_cutoff": 9,
+        "tag": "3.9.4"
+      },
+      "licence_file_first_lines": "                                  Apache License                            Version 2.0, January 2004",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": false,
+      "licence_file_says_agplv3_outside_carve_out": false,
+      "licence_file_says_mit_outside_carve_out": false,
+      "licence_spdx": "Apache-2.0",
+      "name": "Kong Gateway",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_chars": 9257,
+      "readme_mentions": {
+        "budgets_or_spend": 0,
+        "caching": 1,
+        "fallbacks": 0,
+        "guardrails": 0,
+        "load_balancing": 2,
+        "mcp": 10,
+        "observability": 3,
+        "openai_compatible": 0,
+        "rate_limits": 1,
+        "semantic_caching": 0,
+        "virtual_keys": 0
+      },
+      "repo": "Kong/kong",
+      "stable_releases_in_90_days": 1
+    },
+    {
+      "archived": false,
+      "canonical_repo": "theagentrouter/agent-router",
+      "description": "Manages Unified Access to Generative AI Services built on Envoy Gateway",
+      "language": "Go",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-07",
+        "days_before_cutoff": 14,
+        "tag": "v1.2.0"
+      },
+      "licence_file_first_lines": "                                 Apache License                            Version 2.0, January 2004                         http://www.apache.org/licenses/",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": false,
+      "licence_file_says_agplv3_outside_carve_out": false,
+      "licence_file_says_mit_outside_carve_out": false,
+      "licence_spdx": "Apache-2.0",
+      "name": "Envoy AI Gateway",
+      "published_advisories": {
+        "by_severity": {
+          "high": 4,
+          "medium": 14
+        },
+        "last_12_months": 18,
+        "latest": "2026-10-07",
+        "total": 18
+      },
+      "readme_chars": 8705,
+      "readme_mentions": {
+        "budgets_or_spend": 0,
+        "caching": 0,
+        "fallbacks": 1,
+        "guardrails": 0,
+        "load_balancing": 0,
+        "mcp": 1,
+        "observability": 0,
+        "openai_compatible": 3,
+        "rate_limits": 1,
+        "semantic_caching": 0,
+        "virtual_keys": 0
+      },
+      "repo": "envoyproxy/ai-gateway",
+      "stable_releases_in_90_days": 2
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Helicone/helicone",
+      "description": "\ud83e\uddca Open source LLM observability platform. One line of code to monitor, evaluate, and experiment. YC W23 \ud83c\udf53",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-10-20",
+      "latest_stable_release": {
+        "date": "2025-08-21",
+        "days_before_cutoff": 426,
+        "tag": "v2025.08.21-1"
+      },
+      "licence_file_first_lines": "                                 Apache License                            Version 2.0, January 2004                         http://www.apache.org/licenses/",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": false,
+      "licence_file_says_agplv3_outside_carve_out": false,
+      "licence_file_says_mit_outside_carve_out": false,
+      "licence_spdx": "Apache-2.0",
+      "name": "Helicone",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_chars": 11500,
+      "readme_mentions": {
+        "budgets_or_spend": 0,
+        "caching": 0,
+        "fallbacks": 3,
+        "guardrails": 0,
+        "load_balancing": 0,
+        "mcp": 2,
+        "observability": 10,
+        "openai_compatible": 1,
+        "rate_limits": 0,
+        "semantic_caching": 0,
+        "virtual_keys": 0
+      },
+      "repo": "Helicone/helicone",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": true,
+      "canonical_repo": "tensorzero/tensorzero",
+      "description": "TensorZero is an open-source LLMOps platform that unifies an LLM gateway, observability, evaluation, optimization, and experimentation.",
+      "language": "Rust",
+      "last_commit_before_cutoff": "2026-06-04",
+      "latest_stable_release": {
+        "date": "2026-06-04",
+        "days_before_cutoff": 139,
+        "tag": "2026.6.0"
+      },
+      "licence_file_first_lines": "                                 Apache License                            Version 2.0, January 2004                         http://www.apache.org/licenses/",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": false,
+      "licence_file_says_agplv3_outside_carve_out": false,
+      "licence_file_says_mit_outside_carve_out": false,
+      "licence_spdx": "Apache-2.0",
+      "name": "TensorZero",
+      "published_advisories": {
+        "by_severity": {
+          "high": 1
+        },
+        "last_12_months": 1,
+        "latest": "2026-06-04",
+        "total": 1
+      },
+      "readme_chars": 17648,
+      "readme_mentions": {
+        "budgets_or_spend": 2,
+        "caching": 2,
+        "fallbacks": 4,
+        "guardrails": 0,
+        "load_balancing": 1,
+        "mcp": 0,
+        "observability": 6,
+        "openai_compatible": 4,
+        "rate_limits": 2,
+        "semantic_caching": 0,
+        "virtual_keys": 0
+      },
+      "repo": "tensorzero/tensorzero",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "theopenco/llmgateway",
+      "description": "Route, manage, and analyze your LLM requests across multiple providers with a unified API interface.",
+      "language": "TypeScript",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-19",
+        "days_before_cutoff": 2,
+        "tag": "v1.22.0"
+      },
+      "licence_file_first_lines": "Copyright (c) 2025-present LLMGateway, Inc.  Portions of this software are licensed as follows:",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": true,
+      "licence_file_says_agplv3_outside_carve_out": true,
+      "licence_file_says_mit_outside_carve_out": false,
+      "licence_spdx": "NOASSERTION",
+      "name": "LLM Gateway (llmgateway.io)",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 1,
+          "high": 8,
+          "low": 6,
+          "medium": 1
+        },
+        "last_12_months": 16,
+        "latest": "2026-09-12",
+        "total": 16
+      },
+      "readme_chars": 4439,
+      "readme_mentions": {
+        "budgets_or_spend": 0,
+        "caching": 0,
+        "fallbacks": 0,
+        "guardrails": 0,
+        "load_balancing": 0,
+        "mcp": 0,
+        "observability": 0,
+        "openai_compatible": 1,
+        "rate_limits": 0,
+        "semantic_caching": 0,
+        "virtual_keys": 0
+      },
+      "repo": "theopenco/llmgateway",
+      "stable_releases_in_90_days": 13
+    },
+    {
+      "archived": false,
+      "canonical_repo": "agentgateway/agentgateway",
+      "description": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+      "language": "Rust",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-02",
+        "days_before_cutoff": 19,
+        "tag": "v1.6.0"
+      },
+      "licence_file_first_lines": "Apache License                            Version 2.0, January 2004                         http://www.apache.org/licenses/",
+      "licence_file_mentions_enterprise_or_commercial_carve_out": false,
+      "licence_file_says_agplv3_outside_carve_out": false,
+      "licence_file_says_mit_outside_carve_out": false,
+      "licence_spdx": "Apache-2.0",
+      "name": "agentgateway",
+      "published_advisories": {
+        "by_severity": {
+          "high": 1,
+          "medium": 4
+        },
+        "last_12_months": 5,
+        "latest": "2026-10-02",
+        "total": 5
+      },
+      "readme_chars": 6209,
+      "readme_mentions": {
+        "budgets_or_spend": 2,
+        "caching": 1,
+        "fallbacks": 1,
+        "guardrails": 2,
+        "load_balancing": 1,
+        "mcp": 3,
+        "observability": 3,
+        "openai_compatible": 1,
+        "rate_limits": 1,
+        "semantic_caching": 0,
+        "virtual_keys": 0
+      },
+      "repo": "agentgateway/agentgateway",
+      "stable_releases_in_90_days": 4
+    }
+  ]
+}
