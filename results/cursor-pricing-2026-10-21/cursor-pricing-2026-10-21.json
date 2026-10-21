@@ -1,0 +1,627 @@
+{
+  "acquisition_notice": {
+    "dated_aug_14_2026": true,
+    "says_officially_acquired_by_spacex": true,
+    "says_started_in_april_with_spacexai_partnership": true,
+    "url": "https://cursor.com/blog/joining-spacex"
+  },
+  "ai_overview_vs_live_pages": {
+    "legacy_page_lists_pro_20_pro_plus_60_ultra_200_teams_40": [
+      "$20/mo",
+      "$60/mo",
+      "$200/mo",
+      "$40/user/mo"
+    ],
+    "live_pricing_page_lists_pro_or_pro_plus": false,
+    "overview_lists_hobby_free": true,
+    "overview_lists_pro_20": true,
+    "overview_lists_pro_plus_60": true,
+    "overview_lists_teams_40_per_user": true,
+    "overview_lists_ultra_200": true,
+    "overview_mentions_grok": false,
+    "overview_mentions_plus_premium_or_super": [],
+    "overview_mentions_spacex": false,
+    "overview_mentions_x_subscription": false,
+    "overview_says_pro_16_annual": true,
+    "overview_says_pro_includes_unlimited_auto_mode": true,
+    "overview_says_third_party_credits_included": true
+  },
+  "annual_saving": {
+    "Plus": {
+      "annual_billing_usd": 80,
+      "monthly_billing_12_months_usd": 96,
+      "saving_percent": 16.7
+    },
+    "Premium": {
+      "annual_billing_usd": 300,
+      "monthly_billing_12_months_usd": 360,
+      "saving_percent": 16.7
+    },
+    "Super": {
+      "annual_billing_usd": 1000,
+      "monthly_billing_12_months_usd": 1200,
+      "saving_percent": 16.7
+    },
+    "Ultra": {
+      "annual_billing_usd": 2000,
+      "monthly_billing_12_months_usd": 2400,
+      "saving_percent": 16.7
+    }
+  },
+  "as_of": "2026-10-21",
+  "cursor_list_price_summary": {
+    "claude_rows_compared": 15,
+    "different": [],
+    "identical": 15,
+    "not_compared": [
+      {
+        "cursor_name": "Claude 4 Sonnet 1M",
+        "reason": "variant with its own multiplier, not compared"
+      },
+      {
+        "cursor_name": "Claude Opus 4.7 (fast mode)",
+        "reason": "variant with its own multiplier, not compared"
+      }
+    ]
+  },
+  "cursor_list_price_vs_anthropic": [
+    {
+      "anthropic": {
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "input": 3.0,
+        "output": 15.0
+      },
+      "anthropic_name": "Claude Sonnet 4",
+      "cursor": {
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "input": 3.0,
+        "output": 15.0
+      },
+      "cursor_name": "Claude 4 Sonnet",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.1,
+        "cache_write": 1.25,
+        "input": 1.0,
+        "output": 5.0
+      },
+      "anthropic_name": "Claude Haiku 4.5",
+      "cursor": {
+        "cache_read": 0.1,
+        "cache_write": 1.25,
+        "input": 1.0,
+        "output": 5.0
+      },
+      "cursor_name": "Claude 4.5 Haiku",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "anthropic_name": "Claude Opus 4.5",
+      "cursor": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "cursor_name": "Claude 4.5 Opus",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "input": 3.0,
+        "output": 15.0
+      },
+      "anthropic_name": "Claude Sonnet 4.5",
+      "cursor": {
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "input": 3.0,
+        "output": 15.0
+      },
+      "cursor_name": "Claude 4.5 Sonnet",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "anthropic_name": "Claude Opus 4.6",
+      "cursor": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "cursor_name": "Claude 4.6 Opus",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "input": 3.0,
+        "output": 15.0
+      },
+      "anthropic_name": "Claude Sonnet 4.6",
+      "cursor": {
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "input": 3.0,
+        "output": 15.0
+      },
+      "cursor_name": "Claude 4.6 Sonnet",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "anthropic_name": "Claude Opus 4.7",
+      "cursor": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "cursor_name": "Claude 4.7 Opus",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 1.0,
+        "cache_write": 12.5,
+        "input": 10.0,
+        "output": 50.0
+      },
+      "anthropic_name": "Claude Fable 5",
+      "cursor": {
+        "cache_read": 1.0,
+        "cache_write": 12.5,
+        "input": 10.0,
+        "output": 50.0
+      },
+      "cursor_name": "Claude Fable 5",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.25,
+        "cache_write": 12.5,
+        "input": 10.0,
+        "output": 50.0
+      },
+      "anthropic_name": "Claude Fable 5.1",
+      "cursor": {
+        "cache_read": 0.25,
+        "cache_write": 12.5,
+        "input": 10.0,
+        "output": 50.0
+      },
+      "cursor_name": "Claude Fable 5.1",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "input": 0.1,
+        "output": 0.5
+      },
+      "anthropic_name": "Claude Haiku 5.5",
+      "cursor": {
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "input": 0.1,
+        "output": 0.5
+      },
+      "cursor_name": "Claude Haiku 5.5",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "anthropic_name": "Claude Opus 4.8",
+      "cursor": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "cursor_name": "Claude Opus 4.8",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "anthropic_name": "Claude Opus 5",
+      "cursor": {
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "input": 5.0,
+        "output": 25.0
+      },
+      "cursor_name": "Claude Opus 5",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.2,
+        "cache_write": 5.0,
+        "input": 4.0,
+        "output": 20.0
+      },
+      "anthropic_name": "Claude Opus 5.5",
+      "cursor": {
+        "cache_read": 0.2,
+        "cache_write": 5.0,
+        "input": 4.0,
+        "output": 20.0
+      },
+      "cursor_name": "Claude Opus 5.5",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.2,
+        "cache_write": 2.5,
+        "input": 2.0,
+        "output": 10.0
+      },
+      "anthropic_name": "Claude Sonnet 5",
+      "cursor": {
+        "cache_read": 0.2,
+        "cache_write": 2.5,
+        "input": 2.0,
+        "output": 10.0
+      },
+      "cursor_name": "Claude Sonnet 5",
+      "identical": true
+    },
+    {
+      "anthropic": {
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "input": 2.0,
+        "output": 10.0
+      },
+      "anthropic_name": "Claude Sonnet 5.5",
+      "cursor": {
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "input": 2.0,
+        "output": 10.0
+      },
+      "cursor_name": "Claude Sonnet 5.5",
+      "identical": true
+    }
+  ],
+  "docs_annual_prices_usd": {
+    "Plus": 80,
+    "Premium": 300,
+    "Super": 1000,
+    "Ultra": 2000
+  },
+  "docs_plan_table": {
+    "Enterprise": {
+      "included_usage": "Pooled",
+      "price": "Custom",
+      "third_party": "API list price plus the Cursor Token Rate on eligible models"
+    },
+    "Free": {
+      "included_usage": "Limited",
+      "price": "$0",
+      "third_party": "Not available"
+    },
+    "Plus": {
+      "included_usage": "Base",
+      "price": "$8/mo",
+      "third_party": "Not available"
+    },
+    "Premium": {
+      "included_usage": "4x Plus",
+      "price": "$30/mo",
+      "third_party": "API list price, from prepaid credit"
+    },
+    "Super": {
+      "included_usage": "15x Plus",
+      "price": "$100/mo",
+      "third_party": "API list price, from prepaid credit"
+    },
+    "Teams": {
+      "included_usage": "Matches the seat's tier",
+      "price": "$30, $100, or $200 per seat/mo",
+      "third_party": "API list price plus the [Cursor Token Rate](https://cursor.com/docs/models-and-pricing.md#cursor-token-rate) on eligible models"
+    },
+    "Ultra": {
+      "included_usage": "50x Plus",
+      "price": "$200/mo",
+      "third_party": "API list price, from prepaid credit"
+    }
+  },
+  "docs_statements_found": {
+    "cost_mode_draws_from_weekly_pool": true,
+    "cursor_sold_as_part_of_the_x_subscription": true,
+    "cursor_token_rate_per_million": true,
+    "each_paid_plan_includes_at_least_twice_legacy_cursor_model_usage": true,
+    "free_plan_agent_and_chat_limited_usage": true,
+    "individual_plans_have_cost_mode_only": true,
+    "legacy_comparison_advice": true,
+    "legacy_plans_keep_working": true,
+    "legacy_plans_named": true,
+    "monthly_additional_usage_limit_exists": true,
+    "new_customers_start_on_x_subscription": true,
+    "plus_has_no_auto_cloud_agents_or_third_party_models": true,
+    "teams_seat_tiers": true,
+    "third_party_not_included_billed_at_api_list_price_from_prepaid_credit": true,
+    "token_rate_applies_to_input_output_cached": true,
+    "token_rate_excludes_claude_haiku_5_5": true,
+    "token_rate_not_for_individual_plans": true,
+    "unify_switch_permanent": true,
+    "weekly_pool_shared_across_grok_and_cursor": true,
+    "x_sub_switch_cannot_be_undone": true
+  },
+  "legacy_plans": {
+    "Hobby": {
+      "comparable_plan": "Free",
+      "price": "Free"
+    },
+    "Pro": {
+      "comparable_plan": "Premium ($30/mo)",
+      "price": "$20/mo"
+    },
+    "Pro+": {
+      "comparable_plan": "Super ($100/mo)",
+      "price": "$60/mo"
+    },
+    "Teams Premium": {
+      "comparable_plan": "Teams, Super seat ($100/user/mo)",
+      "price": "$120/user/mo"
+    },
+    "Teams Standard": {
+      "comparable_plan": "Teams, Premium seat ($30/user/mo)",
+      "price": "$40/user/mo"
+    },
+    "Ultra": {
+      "comparable_plan": "Ultra ($200/mo)",
+      "price": "$200/mo"
+    }
+  },
+  "legacy_to_current_price_change": [
+    {
+      "change_percent": 50.0,
+      "comparable_current": "Premium",
+      "current_usd": 30,
+      "legacy": "Pro",
+      "legacy_usd": 20
+    },
+    {
+      "change_percent": 66.7,
+      "comparable_current": "Super",
+      "current_usd": 100,
+      "legacy": "Pro+",
+      "legacy_usd": 60
+    },
+    {
+      "change_percent": 0.0,
+      "comparable_current": "Ultra",
+      "current_usd": 200,
+      "legacy": "Ultra",
+      "legacy_usd": 200
+    },
+    {
+      "change_percent": -25.0,
+      "comparable_current": "Teams Premium seat",
+      "current_usd": 30,
+      "legacy": "Teams Standard",
+      "legacy_usd": 40
+    },
+    {
+      "change_percent": -16.7,
+      "comparable_current": "Teams Super seat",
+      "current_usd": 100,
+      "legacy": "Teams Premium",
+      "legacy_usd": 120
+    }
+  ],
+  "live_multipliers_of_plus": {
+    "Premium": "4x",
+    "Super": "15x",
+    "Ultra": "50x"
+  },
+  "live_plans": {
+    "Free": "$0",
+    "Plus": "$8",
+    "Premium": "$30",
+    "Super": "$100",
+    "Ultra": "$200"
+  },
+  "other_pages": [
+    {
+      "chars": 9373,
+      "mentions": {
+        "$60": false,
+        "Grok": false,
+        "Premium $30": false,
+        "Pro+": false,
+        "SpaceX": false,
+        "Super $100": false,
+        "X Subscription": false
+      },
+      "status": 200,
+      "url": "https://fadamakis.com/understanding-cursor-pricing-2ce7a6fd7930"
+    },
+    {
+      "chars": 22506,
+      "mentions": {
+        "$60": false,
+        "Grok": true,
+        "Premium $30": false,
+        "Pro+": true,
+        "SpaceX": false,
+        "Super $100": false,
+        "X Subscription": false
+      },
+      "status": 200,
+      "url": "https://www.nxcode.io/resources/news/cursor-ai-pricing-plans-guide-2026"
+    },
+    {
+      "chars": 14016,
+      "mentions": {
+        "$60": false,
+        "Grok": false,
+        "Premium $30": false,
+        "Pro+": false,
+        "SpaceX": false,
+        "Super $100": false,
+        "X Subscription": false
+      },
+      "status": 200,
+      "url": "https://skywork.ai/blog/vibecoding/cursor-2-0-pricing"
+    },
+    {
+      "chars": 0,
+      "mentions": {
+        "$60": false,
+        "Grok": false,
+        "Premium $30": false,
+        "Pro+": false,
+        "SpaceX": false,
+        "Super $100": false,
+        "X Subscription": false
+      },
+      "status": 403,
+      "url": "https://medium.com/@laurentkubaski/cursor-ai-pricing-explained-bf7444746ffe"
+    },
+    {
+      "chars": 23430,
+      "mentions": {
+        "$60": true,
+        "Grok": true,
+        "Premium $30": false,
+        "Pro+": true,
+        "SpaceX": false,
+        "Super $100": false,
+        "X Subscription": false
+      },
+      "status": 200,
+      "url": "https://www.jetadmin.io/blog/cursor-pricing-explained-plans-credit-system-and-real-costs-in-2026/"
+    },
+    {
+      "chars": 11899,
+      "mentions": {
+        "$60": true,
+        "Grok": false,
+        "Premium $30": false,
+        "Pro+": true,
+        "SpaceX": false,
+        "Super $100": false,
+        "X Subscription": false
+      },
+      "status": 200,
+      "url": "https://amnic.com/blogs/cursor-pricing"
+    },
+    {
+      "chars": 13280,
+      "mentions": {
+        "$60": true,
+        "Grok": false,
+        "Premium $30": false,
+        "Pro+": true,
+        "SpaceX": false,
+        "Super $100": false,
+        "X Subscription": false
+      },
+      "status": 200,
+      "url": "https://www.superblocks.com/blog/cursor-enterprise"
+    }
+  ],
+  "pricing_page_phrases": {
+    "allowance_refreshes_weekly": true,
+    "mentions_pro_plus_or_teams_standard": false,
+    "only_grok_models_on_plus": true,
+    "premium_includes_third_party_models_allowance": true,
+    "sold_through_x_subscription_corp": true,
+    "third_party_at_api_list_price": true,
+    "third_party_billed_separately": true
+  },
+  "sources": [
+    "https://cursor.com/pricing",
+    "https://cursor.com/docs/models-and-pricing.md",
+    "https://cursor.com/docs/account/pricing/legacy-cursor-plans.md",
+    "https://cursor.com/help/the-x-subscription/overview.md",
+    "https://cursor.com/blog/joining-spacex",
+    "https://platform.claude.com/docs/en/about-claude/pricing.md",
+    "https://code.claude.com/docs/en/costs.md"
+  ],
+  "weekly_pool_price_per_plus_sized_pool": {
+    "Plus": {
+      "multiple_of_plus_pool": 1,
+      "price_usd": 8,
+      "usd_per_plus_sized_pool": 8.0
+    },
+    "Premium": {
+      "multiple_of_plus_pool": 4,
+      "price_usd": 30,
+      "usd_per_plus_sized_pool": 7.5
+    },
+    "Super": {
+      "multiple_of_plus_pool": 15,
+      "price_usd": 100,
+      "usd_per_plus_sized_pool": 6.67
+    },
+    "Ultra": {
+      "multiple_of_plus_pool": 50,
+      "price_usd": 200,
+      "usd_per_plus_sized_pool": 4.0
+    }
+  },
+  "worked_session_through_cursor_usd": {
+    "Claude Opus 5.5": {
+      "individual_plan_usd": 0.5488,
+      "teams_all_four_token_types_counted_usd": 0.7979,
+      "teams_cache_write_not_counted_usd": 0.7854,
+      "teams_extra_percent_all_four": 45.4,
+      "teams_extra_percent_without_cache_write": 43.1
+    },
+    "Claude Sonnet 5.5": {
+      "individual_plan_usd": 0.2744,
+      "teams_all_four_token_types_counted_usd": 0.5235,
+      "teams_cache_write_not_counted_usd": 0.511,
+      "teams_extra_percent_all_four": 90.8,
+      "teams_extra_percent_without_cache_write": 86.2
+    }
+  },
+  "worked_session_tokens": {
+    "cache_read": 940000,
+    "cache_read_share_percent": 94.3,
+    "cache_write": 50000,
+    "input": 1200,
+    "output": 5300
+  }
+}
