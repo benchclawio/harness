@@ -1,0 +1,385 @@
+{
+  "ai_overview_vs_live_page": {
+    "overview_enterprise_20_per_seat_plus_usage": true,
+    "overview_mentions_20_seat_minimum": false,
+    "overview_mentions_any_current_model_name": [],
+    "overview_mentions_five_hour_window": false,
+    "overview_mentions_max_api_credits": false,
+    "overview_mentions_team_pooled_credits": false,
+    "overview_mentions_weekly_limits": false,
+    "overview_says_team_premium_is_6_25x_pro": true,
+    "overview_says_team_standard_is_1_25x_pro": true,
+    "overview_states_max_5x_100_and_20x_200": true,
+    "page_html_has_a_max_20x_price_attribute": false,
+    "page_html_has_a_max_5x_price_attribute": true,
+    "page_html_mentions_200_per_month_as_api_credits_only": true,
+    "page_says_1_25x_anywhere": false,
+    "page_says_6_25x_anywhere": false,
+    "pro_17_annual_20_monthly": true,
+    "team_premium_100_annual_125_monthly": true,
+    "team_standard_20_annual_25_monthly": true
+  },
+  "api_rates_usd_per_million_tokens": {
+    "Claude Fable 5.1": {
+      "docs": {
+        "cache_read": "0.25",
+        "cache_write_1h": "20",
+        "cache_write_5m": "12.50",
+        "input": "10",
+        "output": "50"
+      },
+      "page_matches_docs": true,
+      "pricing_page": {
+        "cache_read": "0.25",
+        "cache_write_5m": "12.50",
+        "input": "10",
+        "output": "50"
+      }
+    },
+    "Claude Haiku 5.5 (for prompts up to 100,000 tokens)": {
+      "docs": {
+        "cache_read": "0.01",
+        "cache_write_1h": "0.20",
+        "cache_write_5m": "0.125",
+        "input": "0.10",
+        "output": "0.50"
+      }
+    },
+    "Claude Opus 5.5": {
+      "docs": {
+        "cache_read": "0.20",
+        "cache_write_1h": "8",
+        "cache_write_5m": "5",
+        "input": "4",
+        "output": "20"
+      },
+      "page_matches_docs": true,
+      "pricing_page": {
+        "cache_read": "0.20",
+        "cache_write_5m": "5",
+        "input": "4",
+        "output": "20"
+      }
+    },
+    "Claude Sonnet 4.6": {
+      "docs": {
+        "cache_read": "0.30",
+        "cache_write_1h": "6",
+        "cache_write_5m": "3.75",
+        "input": "3",
+        "output": "15"
+      }
+    },
+    "Claude Sonnet 5.5": {
+      "docs": {
+        "cache_read": "0.10",
+        "cache_write_1h": "4",
+        "cache_write_5m": "2.50",
+        "input": "2",
+        "output": "10"
+      },
+      "page_matches_docs": true,
+      "pricing_page": {
+        "cache_read": "0.10",
+        "cache_write_5m": "2.50",
+        "input": "2",
+        "output": "10"
+      }
+    }
+  },
+  "arithmetic": {
+    "active_days_per_month_implied_by_the_two_docs_figures": [
+      11.5,
+      19.2
+    ],
+    "docs_average_per_active_day_times_20_days_usd": 260,
+    "docs_range_per_month_usd": [
+      150,
+      250
+    ],
+    "enterprise_minimum_seat_cost_per_year_usd": 4800,
+    "max_5x_monthly_usd": 100,
+    "plans": {
+      "Pro": {
+        "annual_per_month": 17,
+        "annual_saving_percent": 16.7,
+        "annual_up_front": 200,
+        "monthly": 20,
+        "twelve_months_annual_billing": 200,
+        "twelve_months_monthly_billing": 240
+      },
+      "Team Premium seat": {
+        "annual_per_month": 100,
+        "annual_saving_percent": 20.0,
+        "monthly": 125,
+        "twelve_months_annual_billing": 1200,
+        "twelve_months_monthly_billing": 1500
+      },
+      "Team Standard seat": {
+        "annual_per_month": 20,
+        "annual_saving_percent": 20.0,
+        "monthly": 25,
+        "twelve_months_annual_billing": 240,
+        "twelve_months_monthly_billing": 300
+      }
+    },
+    "premium_seat_vs_standard_seat_price_ratio": 5.0,
+    "pro_monthly_price_times_5_equals_max_5x_entry_price": true,
+    "team_two_seat_minimum_per_month_standard_annual_usd": 40
+  },
+  "as_of": "2026-10-21",
+  "docs_spend_statement": {
+    "charges_by_token": true,
+    "data_residency_multiplier_1_1": true,
+    "p90_per_active_day_usd_below": 30,
+    "per_active_day_avg_usd": 13,
+    "per_month_range_usd": [
+      150,
+      250
+    ],
+    "sentence_found": true,
+    "subscribers_session_figure_not_billing": true
+  },
+  "page_phrases_found": {
+    "claude_code_included_in_all_paid_plans": true,
+    "enterprise_20_seat_minimum": true,
+    "enterprise_annual_only": true,
+    "max_5x_or_20x_per_5_hour_session": true,
+    "max_api_credits_100_to_200": true,
+    "paid_plans_add_weekly_limits": true,
+    "pay_as_you_go_via_console": true,
+    "rolling_five_hour_window": true,
+    "shares_limits_with_chat": true,
+    "team_pooled_api_credits_500": true,
+    "team_standard_more_than_pro": true,
+    "usage_credits_at_standard_api_rates": true
+  },
+  "plan_prices_on_page": {
+    "data_plan_attributes": [
+      [
+        "free",
+        "",
+        "$0"
+      ],
+      [
+        "max_5x_monthly",
+        "",
+        "From $100"
+      ],
+      [
+        "pro_annual",
+        "amount_per_month",
+        "$17"
+      ],
+      [
+        "pro_annual",
+        "amount_total",
+        "$200"
+      ],
+      [
+        "pro_monthly",
+        "",
+        "$20"
+      ],
+      [
+        "team_annual_per_seat",
+        "amount_per_month",
+        "$20"
+      ],
+      [
+        "team_monthly_per_seat",
+        "",
+        "$25"
+      ],
+      [
+        "team_premium_annual_per_seat",
+        "amount_per_month",
+        "$100"
+      ],
+      [
+        "team_premium_monthly_per_seat",
+        "",
+        "$125"
+      ]
+    ],
+    "enterprise": [
+      "US$20/seat/month, billed annually, 20 seat minimum. Usage cost scales with model and task.",
+      "All Team plan features, plus:"
+    ],
+    "individual": {
+      "max": [
+        "From $100",
+        "Per month",
+        "Try Claude",
+        "Everything in Pro, plus:"
+      ],
+      "pro": [
+        "$17",
+        "Per month with annual subscription discount (",
+        "$200",
+        "billed up front).",
+        "$20"
+      ]
+    },
+    "team": {
+      "audience": "For teams of 2 to 150",
+      "premium_seat": [
+        "5x more usage than standard seats*",
+        "$100",
+        "Per seat / month if billed annually.",
+        "$125",
+        "if billed monthly.",
+        "Claude Code and Claude Cowork"
+      ],
+      "standard_seat": [
+        "All Claude features, plus more usage than Pro*",
+        "$20",
+        "Per seat / month if billed annually.",
+        "$25",
+        "if billed monthly.",
+        "Premium seat"
+      ]
+    }
+  },
+  "ranking_pages": [
+    {
+      "chars": 18772,
+      "mentions": {
+        "$17": false,
+        "Fable": false,
+        "Haiku 5.5": false,
+        "Opus 4.": true,
+        "Opus 5.5": false,
+        "Sonnet 4.": true,
+        "Sonnet 5.5": false,
+        "weekly limit": false
+      },
+      "status": 200,
+      "url": "https://www.finout.io/blog/claude-pricing-in-2026-for-individuals-organizations-and-developers"
+    },
+    {
+      "chars": 14340,
+      "mentions": {
+        "$17": false,
+        "Fable": true,
+        "Haiku 5.5": false,
+        "Opus 4.": true,
+        "Opus 5.5": false,
+        "Sonnet 4.": false,
+        "Sonnet 5.5": false,
+        "weekly limit": false
+      },
+      "status": 200,
+      "url": "https://www.productcompass.pm/p/claude-code-pricing"
+    },
+    {
+      "chars": 23395,
+      "mentions": {
+        "$17": false,
+        "Fable": false,
+        "Haiku 5.5": false,
+        "Opus 4.": false,
+        "Opus 5.5": false,
+        "Sonnet 4.": false,
+        "Sonnet 5.5": false,
+        "weekly limit": false
+      },
+      "status": 200,
+      "url": "https://www.gosearch.ai/faqs/what-is-claude-enterprise-pricing-in-2026/"
+    },
+    {
+      "chars": 8761,
+      "mentions": {
+        "$17": true,
+        "Fable": false,
+        "Haiku 5.5": false,
+        "Opus 4.": true,
+        "Opus 5.5": false,
+        "Sonnet 4.": false,
+        "Sonnet 5.5": false,
+        "weekly limit": false
+      },
+      "status": 200,
+      "url": "https://blog.promptlayer.com/claude-ai-pricing-choosing-the-right-model/"
+    },
+    {
+      "chars": 19245,
+      "mentions": {
+        "$17": false,
+        "Fable": true,
+        "Haiku 5.5": true,
+        "Opus 4.": true,
+        "Opus 5.5": true,
+        "Sonnet 4.": true,
+        "Sonnet 5.5": true,
+        "weekly limit": false
+      },
+      "status": 200,
+      "url": "https://benchlm.ai/anthropic/api-pricing"
+    },
+    {
+      "chars": 21323,
+      "mentions": {
+        "$17": true,
+        "Fable": true,
+        "Haiku 5.5": false,
+        "Opus 4.": false,
+        "Opus 5.5": true,
+        "Sonnet 4.": false,
+        "Sonnet 5.5": false,
+        "weekly limit": false
+      },
+      "status": 200,
+      "url": "https://magai.co/claude-pricing/"
+    }
+  ],
+  "same_session_at_current_rates": {
+    "Claude Fable 5.1": {
+      "rates": {
+        "cache_read": "0.25",
+        "cache_write_1h": "20",
+        "cache_write_5m": "12.50",
+        "input": "10",
+        "output": "50"
+      },
+      "usd": 1.14
+    },
+    "Claude Opus 5.5": {
+      "rates": {
+        "cache_read": "0.20",
+        "cache_write_1h": "8",
+        "cache_write_5m": "5",
+        "input": "4",
+        "output": "20"
+      },
+      "usd": 0.55
+    },
+    "Claude Sonnet 5.5": {
+      "rates": {
+        "cache_read": "0.10",
+        "cache_write_1h": "4",
+        "cache_write_5m": "2.50",
+        "input": "2",
+        "output": "10"
+      },
+      "usd": 0.27
+    }
+  },
+  "selfcheck_docs_example": {
+    "matches": true,
+    "published_total_usd": 0.55,
+    "recomputed_usd": 0.55,
+    "tokens": {
+      "cache_read": 940000,
+      "cache_write_5m": 50000,
+      "input": 1200,
+      "output": 5300
+    }
+  },
+  "session_cache_read_share_percent": 94.3,
+  "sources": [
+    "https://claude.com/pricing",
+    "https://platform.claude.com/docs/en/about-claude/pricing.md",
+    "https://code.claude.com/docs/en/costs.md"
+  ]
+}
