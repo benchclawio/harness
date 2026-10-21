@@ -1,0 +1,1133 @@
+{
+  "a2a_and_mcp_page": {
+    "http_text_chars": 8383,
+    "says_complementary": true,
+    "url": "https://a2a-protocol.org/latest/topics/a2a-and-mcp/"
+  },
+  "a2a_sdk_pins_by_framework": {
+    "ag2": {
+      "all_specifiers_cap_below_1_0": false,
+      "specifiers": [
+        "<2,>=1.1.0"
+      ]
+    },
+    "agno": {
+      "all_specifiers_cap_below_1_0": true,
+      "specifiers": [
+        "<1.0,>=0.3.0"
+      ]
+    },
+    "beeai-framework": {
+      "all_specifiers_cap_below_1_0": true,
+      "specifiers": [
+        "<0.4.0,>=0.3.9"
+      ]
+    },
+    "crewai": {
+      "all_specifiers_cap_below_1_0": true,
+      "specifiers": [
+        "~=0.3.10"
+      ]
+    },
+    "google-adk": {
+      "all_specifiers_cap_below_1_0": false,
+      "specifiers": [
+        "<2,>=0.3.4",
+        "<2,>=0.3.4"
+      ]
+    },
+    "strands-agents": {
+      "all_specifiers_cap_below_1_0": true,
+      "specifiers": [
+        "<0.4.0,>=0.3.0",
+        "<0.4.0,>=0.3.0"
+      ]
+    }
+  },
+  "announcement_vs_metadata": {
+    "AG2": {
+      "a2a_entries": [
+        "a2a-sdk<2,>=1.1.0"
+      ],
+      "declares_a2a_in_metadata": true,
+      "package": "ag2"
+    },
+    "CrewAI": {
+      "a2a_entries": [
+        "a2a-sdk~=0.3.10",
+        "aiocache[memcached,redis]~=0.12.3",
+        "httpx-auth~=0.23.1",
+        "httpx-sse~=0.4.0"
+      ],
+      "declares_a2a_in_metadata": true,
+      "package": "crewai"
+    },
+    "IBM BeeAI": {
+      "a2a_entries": [
+        "a2a-sdk[grpc,http-server,telemetry]<0.4.0,>=0.3.9",
+        "cryptography>=50.0.0",
+        "grpcio-health-checking",
+        "starlette>=1.3.1",
+        "types-grpcio",
+        "types-grpcio-health-checking",
+        "types-grpcio-reflection",
+        "uvicorn<0.38.0,>=0.37.0"
+      ],
+      "declares_a2a_in_metadata": true,
+      "package": "beeai-framework"
+    },
+    "LangGraph": {
+      "a2a_entries": [],
+      "declares_a2a_in_metadata": false,
+      "package": "langgraph"
+    },
+    "Pydantic AI": {
+      "a2a_entries": [],
+      "declares_a2a_in_metadata": false,
+      "package": "pydantic-ai-slim"
+    }
+  },
+  "as_of": "2026-10-21T19:00:00Z",
+  "claims_checked": {
+    "old_repo_name_resolves_to": "a2aproject/A2A",
+    "overview_lists_transports": [
+      "HTTP(S)",
+      "JSON-RPC 2.0",
+      "Server-Sent Events",
+      "JSON"
+    ],
+    "overview_mentions_any_framework_by_name": [],
+    "overview_mentions_breaking_changes": false,
+    "overview_mentions_grpc": false,
+    "overview_mentions_v1_or_version": false,
+    "overview_names_agentic_ai_foundation": false,
+    "overview_says_a2a_and_mcp_complementary": true,
+    "overview_says_governed_by_linux_foundation": true,
+    "overview_says_introduced_by_google_april_2025": true,
+    "overview_says_security_uses_tls_jwt_oidc": true,
+    "spec_mentions_grpc_count": 47,
+    "spec_repo_created": "2025-03-25"
+  },
+  "fasta2a_package": {
+    "depends_on_a2a_sdk": false,
+    "pydantic_ai_extra_requires": [
+      "pydantic-ai-slim>=2.40.0; python_version >= \"3.10\" and extra == \"pydantic-ai\""
+    ],
+    "requires_dist": [
+      "eval-type-backport>=0.2.2; python_version <= \"3.9\"",
+      "opentelemetry-api>=1.28.0",
+      "pydantic>=2.10",
+      "starlette>0.29.0",
+      "logfire>=2.3; extra == \"logfire\"",
+      "pydantic-ai-slim>=2.40.0; python_version >= \"3.10\" and extra == \"pydantic-ai\""
+    ],
+    "summary": "Convert an AI Agent into a A2A server! \u2728"
+  },
+  "frameworks_declaring_a2a": [
+    "ag2",
+    "agno",
+    "beeai-framework",
+    "crewai",
+    "google-adk",
+    "strands-agents"
+  ],
+  "frameworks_metadata": {
+    "ag2": {
+      "days_before_cutoff": 18,
+      "extras": [
+        "a2a",
+        "a2ui",
+        "acp",
+        "ag-ui",
+        "anthropic",
+        "bedrock",
+        "dashscope",
+        "ddgs",
+        "elevenlabs",
+        "gemini",
+        "mcp",
+        "mcp-ui",
+        "metrics",
+        "mistral",
+        "ollama",
+        "openai",
+        "perplexity",
+        "redis",
+        "tavily",
+        "tracing",
+        "typesafe",
+        "xai",
+        "zai"
+      ],
+      "extras_mentioning_a2a": [
+        "a2a"
+      ],
+      "latest_stable": "1.1.2",
+      "mentions_a2a": [
+        "a2a-sdk<2,>=1.1.0"
+      ],
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-03",
+      "versions_in_90_days": 10
+    },
+    "agent-framework": {
+      "days_before_cutoff": 6,
+      "extras": [],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "1.22.0",
+      "mentions_a2a": [],
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-15",
+      "versions_in_90_days": 10
+    },
+    "agno": {
+      "days_before_cutoff": 0,
+      "extras": [
+        "a2a",
+        "agentcore-sandbox",
+        "agentql",
+        "agui",
+        "anakin",
+        "anthropic",
+        "apify",
+        "arize",
+        "arxiv",
+        "async-mongo",
+        "async-postgres",
+        "aws",
+        "aws-bedrock",
+        "azure",
+        "brave",
+        "browserbase",
+        "cartesia",
+        "cassandra",
+        "cel",
+        "cerebras",
+        "chonkie",
+        "chromadb",
+        "claude",
+        "clickhouse",
+        "code",
+        "codex",
+        "cohere",
+        "confluence",
+        "cookbooks",
+        "couchbase",
+        "crawl4ai",
+        "csv",
+        "daytona",
+        "ddg",
+        "demo",
+        "dev",
+        "docker",
+        "docling",
+        "docx",
+        "duckdb",
+        "elasticsearch",
+        "elevenlabs",
+        "embedders",
+        "evm",
+        "exa",
+        "excel",
+        "fal",
+        "fga",
+        "finance",
+        "firecrawl",
+        "firestore",
+        "gcs",
+        "github",
+        "gitlab",
+        "gmail",
+        "google",
+        "google-bigquery",
+        "google-slides",
+        "googlemaps",
+        "groq",
+        "huggingface",
+        "ibm",
+        "infinity",
+        "infra",
+        "integration-tests",
+        "knowledge",
+        "knowledge-full",
+        "lancedb",
+        "langfuse",
+        "litellm",
+        "lmstudio",
+        "markdown",
+        "markdown-chunking",
+        "matplotlib",
+        "mcp",
+        "mem0",
+        "memori",
+        "meta",
+        "milvusdb",
+        "mistral",
+        "models",
+        "mongodb",
+        "mysql",
+        "neo4j",
+        "newspaper",
+        "notion",
+        "ollama",
+        "openai",
+        "opencv",
+        "openlit",
+        "opensearch",
+        "opentelemetry",
+        "os",
+        "oxylabs",
+        "pages",
+        "parallel",
+        "pdf",
+        "pdf-ocr",
+        "performance",
+        "pgvector",
+        "pinecone",
+        "plivo",
+        "portkey",
+        "postgres",
+        "pptx",
+        "psycopg",
+        "pylance",
+        "qdrant",
+        "redis",
+        "redmine",
+        "redshift",
+        "reportlab",
+        "s3",
+        "salesforce",
+        "scavio",
+        "scheduler",
+        "scrapegraph",
+        "seltz",
+        "singlestore",
+        "slack",
+        "sql",
+        "sqlite",
+        "storage",
+        "superserve",
+        "surrealdb",
+        "tavily",
+        "telegram",
+        "tests",
+        "text",
+        "todoist",
+        "tokenizers",
+        "tools",
+        "trafilatura",
+        "twelvelabs",
+        "upstash",
+        "valkey",
+        "valyu",
+        "vectordbs",
+        "vllm",
+        "wavespeed",
+        "weave",
+        "weaviate",
+        "webex",
+        "website",
+        "whatsapp-crypto",
+        "yfinance",
+        "you-com",
+        "youtube",
+        "zep"
+      ],
+      "extras_mentioning_a2a": [
+        "a2a"
+      ],
+      "latest_stable": "3.1.8",
+      "mentions_a2a": [
+        "a2a-sdk<1.0,>=0.3.0",
+        "agno[a2a]"
+      ],
+      "requires_python": "<4,>=3.9",
+      "uploaded": "2026-10-21",
+      "versions_in_90_days": 29
+    },
+    "autogen-agentchat": {
+      "days_before_cutoff": 386,
+      "extras": [],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "0.7.5",
+      "mentions_a2a": [],
+      "requires_python": ">=3.10",
+      "uploaded": "2025-09-30",
+      "versions_in_90_days": 0
+    },
+    "beeai-framework": {
+      "days_before_cutoff": 23,
+      "extras": [],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "0.1.85",
+      "mentions_a2a": [
+        "a2a-sdk[grpc,http-server,telemetry]<0.4.0,>=0.3.9",
+        "cryptography>=50.0.0",
+        "grpcio-health-checking",
+        "starlette>=1.3.1",
+        "types-grpcio",
+        "types-grpcio-health-checking",
+        "types-grpcio-reflection",
+        "uvicorn<0.38.0,>=0.37.0"
+      ],
+      "requires_python": "<3.14,>=3.11",
+      "uploaded": "2026-09-28",
+      "versions_in_90_days": 4
+    },
+    "crewai": {
+      "days_before_cutoff": 7,
+      "extras": [
+        "a2a",
+        "anthropic",
+        "aws",
+        "azure-ai-inference",
+        "bedrock",
+        "docling",
+        "embeddings",
+        "file-processing",
+        "google-genai",
+        "litellm",
+        "mem0",
+        "openpyxl",
+        "pandas",
+        "qdrant",
+        "qdrant-edge",
+        "tools",
+        "voyageai",
+        "watson"
+      ],
+      "extras_mentioning_a2a": [
+        "a2a"
+      ],
+      "latest_stable": "1.15.28",
+      "mentions_a2a": [
+        "a2a-sdk~=0.3.10",
+        "aiocache[memcached,redis]~=0.12.3",
+        "httpx-auth~=0.23.1",
+        "httpx-sse~=0.4.0"
+      ],
+      "requires_python": "<3.14,>=3.10",
+      "uploaded": "2026-10-14",
+      "versions_in_90_days": 23
+    },
+    "fasta2a": {
+      "days_before_cutoff": 16,
+      "extras": [
+        "logfire",
+        "pydantic-ai"
+      ],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "2.1.1",
+      "mentions_a2a": [],
+      "requires_python": ">=3.9",
+      "uploaded": "2026-10-05",
+      "versions_in_90_days": 5
+    },
+    "google-adk": {
+      "days_before_cutoff": 8,
+      "extras": [
+        "a2a",
+        "agent-identity",
+        "all",
+        "antigravity",
+        "benchmark",
+        "bigquery-analytics",
+        "community",
+        "daytona",
+        "db",
+        "dev",
+        "docs",
+        "e2b",
+        "elevenlabs",
+        "eval",
+        "extensions",
+        "gcp",
+        "livekit",
+        "mcp",
+        "mongodb",
+        "oci",
+        "openai",
+        "opensandbox",
+        "otel-gcp",
+        "redis",
+        "slack",
+        "test",
+        "toolbox",
+        "tools"
+      ],
+      "extras_mentioning_a2a": [
+        "a2a"
+      ],
+      "latest_stable": "2.12.0",
+      "mentions_a2a": [
+        "a2a-sdk<2,>=0.3.4",
+        "a2a-sdk[http-server]<2,>=0.3.4"
+      ],
+      "requires_python": ">=3.11",
+      "uploaded": "2026-10-13",
+      "versions_in_90_days": 17
+    },
+    "langchain": {
+      "days_before_cutoff": 7,
+      "extras": [
+        "anthropic",
+        "aws",
+        "azure-ai",
+        "baseten",
+        "community",
+        "deepseek",
+        "fireworks",
+        "google-genai",
+        "google-vertexai",
+        "groq",
+        "huggingface",
+        "mcp",
+        "meta",
+        "mistralai",
+        "ollama",
+        "openai",
+        "perplexity",
+        "together",
+        "xai"
+      ],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "1.4.6",
+      "mentions_a2a": [],
+      "requires_python": "<4.0.0,>=3.10.0",
+      "uploaded": "2026-10-14",
+      "versions_in_90_days": 11
+    },
+    "langgraph": {
+      "days_before_cutoff": 4,
+      "extras": [],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "1.2.16",
+      "mentions_a2a": [],
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-16",
+      "versions_in_90_days": 7
+    },
+    "langgraph-api": {
+      "days_before_cutoff": 1,
+      "extras": [],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "0.15.6",
+      "mentions_a2a": [],
+      "requires_python": ">=3.11",
+      "uploaded": "2026-10-20",
+      "versions_in_90_days": 42
+    },
+    "llama-index-core": {
+      "days_before_cutoff": 30,
+      "extras": [],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "0.14.25",
+      "mentions_a2a": [],
+      "requires_python": "<4.0,>=3.10",
+      "uploaded": "2026-09-21",
+      "versions_in_90_days": 2
+    },
+    "openai-agents": {
+      "days_before_cutoff": 6,
+      "extras": [
+        "any-llm",
+        "blaxel",
+        "cloudflare",
+        "dapr",
+        "daytona",
+        "docker",
+        "e2b",
+        "encrypt",
+        "litellm",
+        "modal",
+        "mongodb",
+        "realtime",
+        "redis",
+        "runloop",
+        "s3",
+        "sqlalchemy",
+        "temporal",
+        "vercel",
+        "viz",
+        "voice"
+      ],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "0.24.0",
+      "mentions_a2a": [],
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-15",
+      "versions_in_90_days": 14
+    },
+    "pydantic-ai-slim": {
+      "days_before_cutoff": 0,
+      "extras": [
+        "ag-ui",
+        "anthropic",
+        "bedrock",
+        "bedrock-mantle",
+        "cerebras",
+        "cli",
+        "cohere",
+        "crusoe",
+        "dbos",
+        "duckduckgo",
+        "elevenlabs-agents-realtime",
+        "elevenlabs-realtime",
+        "evals",
+        "exa",
+        "google",
+        "google-realtime",
+        "groq",
+        "huggingface",
+        "logfire",
+        "mcp",
+        "mcp-tasks",
+        "mistral",
+        "openai",
+        "openai-realtime",
+        "openrouter",
+        "prefect",
+        "realtime",
+        "retries",
+        "sentence-transformers",
+        "snowflake",
+        "spec",
+        "tavily",
+        "temporal",
+        "typesafe",
+        "ui",
+        "voyageai",
+        "web",
+        "web-fetch",
+        "xai",
+        "xai-realtime",
+        "zai"
+      ],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "2.59.0",
+      "mentions_a2a": [],
+      "requires_python": ">=3.11",
+      "uploaded": "2026-10-21",
+      "versions_in_90_days": 56
+    },
+    "semantic-kernel": {
+      "days_before_cutoff": 15,
+      "extras": [],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "1.45.0",
+      "mentions_a2a": [],
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-06",
+      "versions_in_90_days": 2
+    },
+    "smolagents": {
+      "days_before_cutoff": 145,
+      "extras": [
+        "all",
+        "audio",
+        "bedrock",
+        "blaxel",
+        "dev",
+        "docker",
+        "e2b",
+        "gradio",
+        "litellm",
+        "mcp",
+        "mlx-lm",
+        "modal",
+        "openai",
+        "quality",
+        "telemetry",
+        "test",
+        "toolkit",
+        "torch",
+        "transformers",
+        "vision",
+        "vllm"
+      ],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "1.26.0",
+      "mentions_a2a": [],
+      "requires_python": ">=3.10",
+      "uploaded": "2026-05-29",
+      "versions_in_90_days": 0
+    },
+    "strands-agents": {
+      "days_before_cutoff": 5,
+      "extras": [
+        "a2a",
+        "all",
+        "anthropic",
+        "bidi",
+        "bidi-aec",
+        "bidi-all",
+        "bidi-google",
+        "bidi-io",
+        "bidi-openai",
+        "bidi-pyaudio",
+        "cedar",
+        "dev",
+        "docs",
+        "gemini",
+        "litellm",
+        "llamaapi",
+        "mistral",
+        "ollama",
+        "openai",
+        "otel",
+        "sagemaker",
+        "web-fetch",
+        "writer"
+      ],
+      "extras_mentioning_a2a": [
+        "a2a"
+      ],
+      "latest_stable": "1.61.1",
+      "mentions_a2a": [
+        "a2a-sdk<0.4.0,>=0.3.0",
+        "a2a-sdk[sql]<0.4.0,>=0.3.0",
+        "fastapi<1.0.0,>=0.133.0",
+        "httpx<1.0.0,>=0.28.1",
+        "starlette<2.0.0,>=1.0.0",
+        "uvicorn<1.0.0,>=0.34.2"
+      ],
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-15",
+      "versions_in_90_days": 19
+    }
+  },
+  "governance_announcement": {
+    "accepted_as_growth_stage_project_at_aaif": true,
+    "announcement_date": "August 27, 2026",
+    "calls_mcp_vertical_and_a2a_horizontal": true,
+    "cloud_providers_named": [
+      "Google Cloud",
+      "AWS Bedrock AgentCore Runtime",
+      "Microsoft Azure AI Foundry"
+    ],
+    "frameworks_named_as_supporting": [
+      "LangGraph",
+      "CrewAI",
+      "Pydantic AI",
+      "AG2",
+      "IBM BeeAI"
+    ],
+    "says_backed_by_over_150_organizations": true,
+    "says_linux_foundation_directed_aaif": true,
+    "sibling_projects_named": [
+      "MCP",
+      "goose",
+      "AGENTS.md"
+    ]
+  },
+  "repositories": [
+    {
+      "archived": false,
+      "canonical_repo": "a2aproject/A2A",
+      "created": "2025-03-25",
+      "last_commit_before_cutoff": "2026-10-20",
+      "latest_prerelease": null,
+      "latest_stable_release": {
+        "date": "2026-05-28",
+        "days_before_cutoff": 146,
+        "tag": "v1.0.1"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "A2A specification",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "recent_stable_releases": [
+        {
+          "date": "2026-05-28",
+          "tag": "v1.0.1"
+        },
+        {
+          "date": "2026-03-12",
+          "tag": "v1.0.0"
+        },
+        {
+          "date": "2025-07-30",
+          "tag": "v0.3.0"
+        },
+        {
+          "date": "2025-07-17",
+          "tag": "v0.2.6"
+        }
+      ],
+      "repo": "a2aproject/A2A",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "a2aproject/a2a-python",
+      "created": "2025-05-09",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_prerelease": {
+        "date": "2026-04-17",
+        "tag": "v1.0.0-alpha.3"
+      },
+      "latest_stable_release": {
+        "date": "2026-10-19",
+        "days_before_cutoff": 2,
+        "tag": "v1.2.3"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Python SDK",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "recent_stable_releases": [
+        {
+          "date": "2026-10-19",
+          "tag": "v1.2.3"
+        },
+        {
+          "date": "2026-10-05",
+          "tag": "v1.2.2"
+        },
+        {
+          "date": "2026-09-30",
+          "tag": "v1.2.1"
+        },
+        {
+          "date": "2026-09-29",
+          "tag": "v1.2.0"
+        }
+      ],
+      "repo": "a2aproject/a2a-python",
+      "stable_releases_in_90_days": 7
+    },
+    {
+      "archived": false,
+      "canonical_repo": "a2aproject/a2a-js",
+      "created": "2025-05-27",
+      "last_commit_before_cutoff": "2026-10-19",
+      "latest_prerelease": {
+        "date": "2026-07-01",
+        "tag": "v1.0.0-beta.0"
+      },
+      "latest_stable_release": {
+        "date": "2026-09-29",
+        "days_before_cutoff": 22,
+        "tag": "v1.3.0"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "JavaScript SDK",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "recent_stable_releases": [
+        {
+          "date": "2026-09-29",
+          "tag": "v1.3.0"
+        },
+        {
+          "date": "2026-09-24",
+          "tag": "v1.2.1"
+        },
+        {
+          "date": "2026-09-18",
+          "tag": "v1.2.0"
+        },
+        {
+          "date": "2026-08-26",
+          "tag": "v1.1.0"
+        }
+      ],
+      "repo": "a2aproject/a2a-js",
+      "stable_releases_in_90_days": 5
+    },
+    {
+      "archived": false,
+      "canonical_repo": "a2aproject/a2a-java",
+      "created": "2025-05-02",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_prerelease": {
+        "date": "2026-04-17",
+        "tag": "1.0.0.Beta1"
+      },
+      "latest_stable_release": {
+        "date": "2026-09-28",
+        "days_before_cutoff": 23,
+        "tag": "v1.4.0.Final"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Java SDK",
+      "published_advisories": {
+        "by_severity": {
+          "high": 2,
+          "medium": 3
+        },
+        "latest": "2026-09-09",
+        "list": [
+          {
+            "published": "2026-09-09",
+            "severity": "high",
+            "summary": "Android synchronous POST overrides the GHSA-9rhm redirect fix and forwards credentials across authorities"
+          },
+          {
+            "published": "2026-08-28",
+            "severity": "medium",
+            "summary": "Server-Side Request Forgery(SSRF) in a2a-java push-notification delivery"
+          },
+          {
+            "published": "2026-08-28",
+            "severity": "high",
+            "summary": "Fail-open default task authorization in a2a-java"
+          },
+          {
+            "published": "2026-08-28",
+            "severity": "medium",
+            "summary": "Client credentials sent under server-controlled HTTP header name, enabling leakage via redirect"
+          },
+          {
+            "published": "2026-08-28",
+            "severity": "medium",
+            "summary": "Push notification credentials logged in cleartext on protobuf parse failure"
+          }
+        ],
+        "total": 5
+      },
+      "recent_stable_releases": [
+        {
+          "date": "2026-09-28",
+          "tag": "v1.4.0.Final"
+        },
+        {
+          "date": "2026-09-08",
+          "tag": "v1.3.2.Final"
+        },
+        {
+          "date": "2026-09-03",
+          "tag": "v1.3.1.Final"
+        },
+        {
+          "date": "2026-08-27",
+          "tag": "v1.3.0.Final"
+        }
+      ],
+      "repo": "a2aproject/a2a-java",
+      "stable_releases_in_90_days": 5
+    },
+    {
+      "archived": false,
+      "canonical_repo": "a2aproject/a2a-go",
+      "created": "2025-05-30",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_prerelease": null,
+      "latest_stable_release": {
+        "date": "2026-10-21",
+        "days_before_cutoff": 0,
+        "tag": "v2.7.0"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Go SDK",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "recent_stable_releases": [
+        {
+          "date": "2026-10-21",
+          "tag": "v2.7.0"
+        },
+        {
+          "date": "2026-09-25",
+          "tag": "v2.6.0"
+        },
+        {
+          "date": "2026-08-18",
+          "tag": "v2.5.0"
+        },
+        {
+          "date": "2026-07-28",
+          "tag": "v2.4.0"
+        }
+      ],
+      "repo": "a2aproject/a2a-go",
+      "stable_releases_in_90_days": 4
+    },
+    {
+      "archived": false,
+      "canonical_repo": "a2aproject/a2a-dotnet",
+      "created": "2025-05-29",
+      "last_commit_before_cutoff": "2026-10-20",
+      "latest_prerelease": {
+        "date": "2026-10-14",
+        "tag": "v1.0.0-preview3"
+      },
+      "latest_stable_release": null,
+      "licence_spdx": "Apache-2.0",
+      "name": ".NET SDK",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "recent_stable_releases": [],
+      "repo": "a2aproject/a2a-dotnet",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": true,
+      "canonical_repo": "i-am-bee/acp",
+      "created": "2025-04-03",
+      "last_commit_before_cutoff": "2025-08-25",
+      "latest_prerelease": null,
+      "latest_stable_release": {
+        "date": "2025-08-21",
+        "days_before_cutoff": 426,
+        "tag": "v1.0.3"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "IBM ACP (Agent Communication Protocol)",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "readme_status_sentences": [
+        "social) [![Join our Discord](https://img.",
+        "--------------------------- ## \ud83d\ude80 IMPORTANT UPDATE **ACP is now part of A2A under the Linux Foundation!** <br> \ud83d\udc49 [Learn more](https://github.",
+        "com/i-am-bee/beeai-platform/blob/main/docs/community-and-support/acp-a2a-migration-guide.",
+        "As we continue to grow and evolve, we invite others to join our vibrant community and contribute to our project's ongoing development."
+      ],
+      "recent_stable_releases": [
+        {
+          "date": "2025-08-21",
+          "tag": "v1.0.3"
+        },
+        {
+          "date": "2025-08-15",
+          "tag": "v1.0.2"
+        },
+        {
+          "date": "2025-07-24",
+          "tag": "v1.0.1"
+        },
+        {
+          "date": "2025-07-01",
+          "tag": "v1.0.0"
+        }
+      ],
+      "repo": "i-am-bee/acp",
+      "stable_releases_in_90_days": 0
+    },
+    {
+      "archived": false,
+      "canonical_repo": "a2aproject/A2A",
+      "created": "2025-03-25",
+      "last_commit_before_cutoff": "2026-10-20",
+      "latest_prerelease": null,
+      "latest_stable_release": {
+        "date": "2026-05-28",
+        "days_before_cutoff": 146,
+        "tag": "v1.0.1"
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "google/A2A (old name)",
+      "published_advisories": {
+        "by_severity": {},
+        "latest": null,
+        "list": [],
+        "total": 0
+      },
+      "recent_stable_releases": [
+        {
+          "date": "2026-05-28",
+          "tag": "v1.0.1"
+        },
+        {
+          "date": "2026-03-12",
+          "tag": "v1.0.0"
+        },
+        {
+          "date": "2025-07-30",
+          "tag": "v0.3.0"
+        },
+        {
+          "date": "2025-07-17",
+          "tag": "v0.2.6"
+        }
+      ],
+      "repo": "google/A2A",
+      "stable_releases_in_90_days": 0
+    }
+  ],
+  "sdk_registries": {
+    "@a2a-js/sdk (npm)": {
+      "days_before_cutoff": 22,
+      "downloads_last_month": 14610548,
+      "latest_stable": "1.3.0",
+      "uploaded": "2026-09-29",
+      "versions_in_90_days": 5
+    },
+    "a2a-sdk (PyPI)": {
+      "days_before_cutoff": 2,
+      "downloads_last_month": 11359775,
+      "extras": [
+        "all",
+        "db-cli",
+        "encryption",
+        "fastapi",
+        "grpc",
+        "http-server",
+        "mysql",
+        "postgresql",
+        "signing",
+        "sql",
+        "sqlite",
+        "telemetry"
+      ],
+      "extras_mentioning_a2a": [],
+      "latest_stable": "1.2.3",
+      "mentions_a2a": [],
+      "requires_python": ">=3.10",
+      "uploaded": "2026-10-19",
+      "versions_in_90_days": 7
+    }
+  },
+  "specification": {
+    "latest_released_version": "1.0.0",
+    "mentions": {
+      "HTTP+JSON": 10,
+      "JSON Web Signature": 5,
+      "JSON-RPC": 32,
+      "OAuth": 44,
+      "OpenID": 3,
+      "Server-Sent Events": 6,
+      "gRPC": 47,
+      "mTLS": 1
+    },
+    "page_footer_copyright": "Copyright 2026 The Linux Foundation.",
+    "previous_versions": [
+      "0.3.0",
+      "0.2.6",
+      "0.1.0"
+    ],
+    "protocol_binding_sections": [
+      "10. gRPC Protocol Binding",
+      "11. HTTP+JSON/REST Protocol Binding",
+      "9. JSON-RPC Protocol Binding"
+    ],
+    "says_v1_introduces_breaking_change": true,
+    "supports_multiple_bindings_sentence": true,
+    "version_negotiation_header": true,
+    "whats_new_lists_breaking_changes_section": true,
+    "whats_new_says_part_type_unification_critical": true
+  }
+}
