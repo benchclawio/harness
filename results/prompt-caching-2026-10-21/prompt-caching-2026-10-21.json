@@ -1,0 +1,896 @@
+{
+  "ai_overview_vs_vendor_pages": {
+    "overview_defines_prefix_kv_state_caching": true,
+    "overview_mentions_cache_write_charge": false,
+    "overview_mentions_gemini_or_google": false,
+    "overview_mentions_retention_or_ttl_for_openai": false,
+    "overview_points_to_openai_dashboard": true,
+    "overview_says_anthropic_cache_control_5m_or_1h": true,
+    "overview_says_bedrock_implicit_and_explicit": true,
+    "overview_says_discount_50_to_90_percent": true,
+    "overview_says_no_quality_loss": true,
+    "overview_says_openai_automatic_from_1024_tokens": true
+  },
+  "anthropic_rows": [
+    {
+      "cache_hit": 0.25,
+      "hit_x_input": 0.025,
+      "input": 10.0,
+      "model": "Claude Fable 5.1",
+      "output": 50.0,
+      "retired": false,
+      "write_1h": 20.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 12.5,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.25,
+      "hit_x_input": 0.025,
+      "input": 10.0,
+      "model": "Claude Mythos 5.1",
+      "output": 50.0,
+      "retired": false,
+      "write_1h": 20.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 12.5,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 1.0,
+      "hit_x_input": 0.1,
+      "input": 10.0,
+      "model": "Claude Fable 5",
+      "output": 50.0,
+      "retired": false,
+      "write_1h": 20.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 12.5,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 1.0,
+      "hit_x_input": 0.1,
+      "input": 10.0,
+      "model": "Claude Mythos 5",
+      "output": 50.0,
+      "retired": false,
+      "write_1h": 20.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 12.5,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.2,
+      "hit_x_input": 0.05,
+      "input": 4.0,
+      "model": "Claude Opus 5.5",
+      "output": 20.0,
+      "retired": false,
+      "write_1h": 8.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 5.0,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.5,
+      "hit_x_input": 0.1,
+      "input": 5.0,
+      "model": "Claude Opus 5",
+      "output": 25.0,
+      "retired": false,
+      "write_1h": 10.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 6.25,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.5,
+      "hit_x_input": 0.1,
+      "input": 5.0,
+      "model": "Claude Opus 4.8",
+      "output": 25.0,
+      "retired": false,
+      "write_1h": 10.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 6.25,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.5,
+      "hit_x_input": 0.1,
+      "input": 5.0,
+      "model": "Claude Opus 4.7",
+      "output": 25.0,
+      "retired": false,
+      "write_1h": 10.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 6.25,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.5,
+      "hit_x_input": 0.1,
+      "input": 5.0,
+      "model": "Claude Opus 4.6",
+      "output": 25.0,
+      "retired": false,
+      "write_1h": 10.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 6.25,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.5,
+      "hit_x_input": 0.1,
+      "input": 5.0,
+      "model": "Claude Opus 4.5",
+      "output": 25.0,
+      "retired": false,
+      "write_1h": 10.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 6.25,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 1.5,
+      "hit_x_input": 0.1,
+      "input": 15.0,
+      "model": "Claude Opus 4.1",
+      "output": 75.0,
+      "retired": true,
+      "write_1h": 30.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 18.75,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 1.5,
+      "hit_x_input": 0.1,
+      "input": 15.0,
+      "model": "Claude Opus 4",
+      "output": 75.0,
+      "retired": true,
+      "write_1h": 30.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 18.75,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.1,
+      "hit_x_input": 0.05,
+      "input": 2.0,
+      "model": "Claude Sonnet 5.5",
+      "output": 10.0,
+      "retired": false,
+      "write_1h": 4.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 2.5,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.2,
+      "hit_x_input": 0.1,
+      "input": 2.0,
+      "model": "Claude Sonnet 5",
+      "output": 10.0,
+      "retired": false,
+      "write_1h": 4.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 2.5,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.3,
+      "hit_x_input": 0.1,
+      "input": 3.0,
+      "model": "Claude Sonnet 4.6",
+      "output": 15.0,
+      "retired": false,
+      "write_1h": 6.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 3.75,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.3,
+      "hit_x_input": 0.1,
+      "input": 3.0,
+      "model": "Claude Sonnet 4.5",
+      "output": 15.0,
+      "retired": false,
+      "write_1h": 6.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 3.75,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.3,
+      "hit_x_input": 0.1,
+      "input": 3.0,
+      "model": "Claude Sonnet 4",
+      "output": 15.0,
+      "retired": true,
+      "write_1h": 6.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 3.75,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.01,
+      "hit_x_input": 0.1,
+      "input": 0.1,
+      "model": "Claude Haiku 5.5",
+      "output": 0.5,
+      "retired": false,
+      "write_1h": 0.2,
+      "write_1h_x_input": 2.0,
+      "write_5m": 0.125,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.05,
+      "hit_x_input": 0.1,
+      "input": 0.5,
+      "model": "Claude Haiku 5.5 (over 100K)",
+      "output": 2.5,
+      "retired": false,
+      "write_1h": 1.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 0.625,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.1,
+      "hit_x_input": 0.1,
+      "input": 1.0,
+      "model": "Claude Haiku 4.5",
+      "output": 5.0,
+      "retired": false,
+      "write_1h": 2.0,
+      "write_1h_x_input": 2.0,
+      "write_5m": 1.25,
+      "write_5m_x_input": 1.25
+    },
+    {
+      "cache_hit": 0.08,
+      "hit_x_input": 0.1,
+      "input": 0.8,
+      "model": "Claude Haiku 3.5",
+      "output": 4.0,
+      "retired": true,
+      "write_1h": 1.6,
+      "write_1h_x_input": 2.0,
+      "write_5m": 1.0,
+      "write_5m_x_input": 1.25
+    }
+  ],
+  "anthropic_rules": {
+    "automatic_caching_exists": true,
+    "default_ttl_5_minutes": true,
+    "explicit_breakpoints_5m_or_1h": true,
+    "one_hour_at_additional_cost": true,
+    "supported_on_all_active_models": true
+  },
+  "anthropic_summary": {
+    "active_rows": 17,
+    "hit_multiples": [
+      0.025,
+      0.05,
+      0.1
+    ],
+    "lowest_hit_multiple": "Claude Fable 5.1 0.025",
+    "rows": 21,
+    "write_1h_multiples": [
+      2.0
+    ],
+    "write_5m_multiples": [
+      1.25
+    ]
+  },
+  "arithmetic": {
+    "assumes": "every repeat request hits the cache; input side only; one prefix; no output tokens",
+    "prefix_tokens": 50000,
+    "scenarios": [
+      {
+        "base_input": 2.0,
+        "break_even_repeats": 1,
+        "cache_hit": 0.1,
+        "first_request": 2.5,
+        "model": "Claude Sonnet 5.5, 5-minute write",
+        "rows": [
+          {
+            "cached_usd": 0.13,
+            "repeat_requests": 1,
+            "saving_percent": 35.0,
+            "uncached_usd": 0.2
+          },
+          {
+            "cached_usd": 0.135,
+            "repeat_requests": 2,
+            "saving_percent": 55.0,
+            "uncached_usd": 0.3
+          },
+          {
+            "cached_usd": 0.15,
+            "repeat_requests": 5,
+            "saving_percent": 75.0,
+            "uncached_usd": 0.6
+          },
+          {
+            "cached_usd": 0.175,
+            "repeat_requests": 10,
+            "saving_percent": 84.09,
+            "uncached_usd": 1.1
+          },
+          {
+            "cached_usd": 0.375,
+            "repeat_requests": 50,
+            "saving_percent": 92.65,
+            "uncached_usd": 5.1
+          }
+        ]
+      },
+      {
+        "base_input": 2.0,
+        "break_even_repeats": 2,
+        "cache_hit": 0.1,
+        "first_request": 4.0,
+        "model": "Claude Sonnet 5.5, 1-hour write",
+        "rows": [
+          {
+            "cached_usd": 0.205,
+            "repeat_requests": 1,
+            "saving_percent": -2.5,
+            "uncached_usd": 0.2
+          },
+          {
+            "cached_usd": 0.21,
+            "repeat_requests": 2,
+            "saving_percent": 30.0,
+            "uncached_usd": 0.3
+          },
+          {
+            "cached_usd": 0.225,
+            "repeat_requests": 5,
+            "saving_percent": 62.5,
+            "uncached_usd": 0.6
+          },
+          {
+            "cached_usd": 0.25,
+            "repeat_requests": 10,
+            "saving_percent": 77.27,
+            "uncached_usd": 1.1
+          },
+          {
+            "cached_usd": 0.45,
+            "repeat_requests": 50,
+            "saving_percent": 91.18,
+            "uncached_usd": 5.1
+          }
+        ]
+      },
+      {
+        "base_input": 2.0,
+        "break_even_repeats": 1,
+        "cache_hit": 0.2,
+        "first_request": 2.5,
+        "model": "gpt-6-sol, 30m write",
+        "rows": [
+          {
+            "cached_usd": 0.135,
+            "repeat_requests": 1,
+            "saving_percent": 32.5,
+            "uncached_usd": 0.2
+          },
+          {
+            "cached_usd": 0.145,
+            "repeat_requests": 2,
+            "saving_percent": 51.67,
+            "uncached_usd": 0.3
+          },
+          {
+            "cached_usd": 0.175,
+            "repeat_requests": 5,
+            "saving_percent": 70.83,
+            "uncached_usd": 0.6
+          },
+          {
+            "cached_usd": 0.225,
+            "repeat_requests": 10,
+            "saving_percent": 79.55,
+            "uncached_usd": 1.1
+          },
+          {
+            "cached_usd": 0.625,
+            "repeat_requests": 50,
+            "saving_percent": 87.75,
+            "uncached_usd": 5.1
+          }
+        ]
+      },
+      {
+        "base_input": 2.0,
+        "break_even_repeats": 2,
+        "cache_hit": 0.2,
+        "first_request": 5.0,
+        "model": "gpt-6-sol, 12h write",
+        "rows": [
+          {
+            "cached_usd": 0.26,
+            "repeat_requests": 1,
+            "saving_percent": -30.0,
+            "uncached_usd": 0.2
+          },
+          {
+            "cached_usd": 0.27,
+            "repeat_requests": 2,
+            "saving_percent": 10.0,
+            "uncached_usd": 0.3
+          },
+          {
+            "cached_usd": 0.3,
+            "repeat_requests": 5,
+            "saving_percent": 50.0,
+            "uncached_usd": 0.6
+          },
+          {
+            "cached_usd": 0.35,
+            "repeat_requests": 10,
+            "saving_percent": 68.18,
+            "uncached_usd": 1.1
+          },
+          {
+            "cached_usd": 0.75,
+            "repeat_requests": 50,
+            "saving_percent": 85.29,
+            "uncached_usd": 5.1
+          }
+        ]
+      },
+      {
+        "base_input": 5.0,
+        "break_even_repeats": 1,
+        "cache_hit": 0.5,
+        "first_request": 5.0,
+        "model": "gpt-5.5, no write fee",
+        "rows": [
+          {
+            "cached_usd": 0.275,
+            "repeat_requests": 1,
+            "saving_percent": 45.0,
+            "uncached_usd": 0.5
+          },
+          {
+            "cached_usd": 0.3,
+            "repeat_requests": 2,
+            "saving_percent": 60.0,
+            "uncached_usd": 0.75
+          },
+          {
+            "cached_usd": 0.375,
+            "repeat_requests": 5,
+            "saving_percent": 75.0,
+            "uncached_usd": 1.5
+          },
+          {
+            "cached_usd": 0.5,
+            "repeat_requests": 10,
+            "saving_percent": 81.82,
+            "uncached_usd": 2.75
+          },
+          {
+            "cached_usd": 1.5,
+            "repeat_requests": 50,
+            "saving_percent": 88.24,
+            "uncached_usd": 12.75
+          }
+        ]
+      },
+      {
+        "base_input": 2.0,
+        "break_even_repeats": 1,
+        "cache_hit": 0.1,
+        "first_request": 2.0,
+        "model": "Gemini 4 Argon until 2026-11-30, implicit",
+        "rows": [
+          {
+            "cached_usd": 0.105,
+            "repeat_requests": 1,
+            "saving_percent": 47.5,
+            "uncached_usd": 0.2
+          },
+          {
+            "cached_usd": 0.11,
+            "repeat_requests": 2,
+            "saving_percent": 63.33,
+            "uncached_usd": 0.3
+          },
+          {
+            "cached_usd": 0.125,
+            "repeat_requests": 5,
+            "saving_percent": 79.17,
+            "uncached_usd": 0.6
+          },
+          {
+            "cached_usd": 0.15,
+            "repeat_requests": 10,
+            "saving_percent": 86.36,
+            "uncached_usd": 1.1
+          },
+          {
+            "cached_usd": 0.35,
+            "repeat_requests": 50,
+            "saving_percent": 93.14,
+            "uncached_usd": 5.1
+          }
+        ]
+      },
+      {
+        "base_input": 4.0,
+        "break_even_repeats": 1,
+        "cache_hit": 0.2,
+        "first_request": 4.0,
+        "model": "Gemini 4 Argon from 2026-12-01, implicit",
+        "rows": [
+          {
+            "cached_usd": 0.21,
+            "repeat_requests": 1,
+            "saving_percent": 47.5,
+            "uncached_usd": 0.4
+          },
+          {
+            "cached_usd": 0.22,
+            "repeat_requests": 2,
+            "saving_percent": 63.33,
+            "uncached_usd": 0.6
+          },
+          {
+            "cached_usd": 0.25,
+            "repeat_requests": 5,
+            "saving_percent": 79.17,
+            "uncached_usd": 1.2
+          },
+          {
+            "cached_usd": 0.3,
+            "repeat_requests": 10,
+            "saving_percent": 86.36,
+            "uncached_usd": 2.2
+          },
+          {
+            "cached_usd": 0.7,
+            "repeat_requests": 50,
+            "saving_percent": 93.14,
+            "uncached_usd": 10.2
+          }
+        ]
+      }
+    ]
+  },
+  "as_of": "2026-10-21",
+  "bedrock_rules": {
+    "explicit_caching_with_cache_checkpoints": true,
+    "mentions_implicit_or_simplified_caching": true,
+    "minimums_512_to_4096_per_checkpoint": true,
+    "prefix_below_minimum_succeeds_but_is_not_cached": true
+  },
+  "gemini_rules": {
+    "implicit_and_explicit_both_named": true,
+    "minimum_tokens_table_text": "Gemini 4 Argon 4,096 Gemini 3.8 Flash 4,096 Gemini 3.6 Flash 4,096 Gemini 3.1 Pro Preview 4,096 Gemini 2.5 Flash 2,048 Gemini 2.5 Pro 2,048",
+    "offers_implicit_caching": true
+  },
+  "gemini_summary": {
+    "gemini_4_argon_cached_x_input_now_and_later": [
+      0.05,
+      0.05
+    ],
+    "gemini_4_argon_standard": {
+      "context_caching_text": "$0.10 through November 30, 2026. $0.20 starting December 1, 2026. Implicit caching only (explicit caching is not supported).",
+      "has_storage_price": false,
+      "implicit_only": true,
+      "input_text": "$2.00 through November 30, 2026. $4.00 starting December 1, 2026.",
+      "mentions_price_change_date": true
+    },
+    "implicit_only_models": [
+      "Gemini 4 Argon"
+    ],
+    "models_read": 11,
+    "models_whose_caching_price_changes_on_a_listed_date": [
+      "Gemini 3.6 Flash",
+      "Gemini 3.8 Flash",
+      "Gemini 4 Argon",
+      "Gemini Robotics ER 2 Preview"
+    ],
+    "models_with_a_storage_price": [
+      "Gemini 2.5 Flash",
+      "Gemini 2.5 Flash-Lite",
+      "Gemini 2.5 Pro",
+      "Gemini 3 Flash Preview",
+      "Gemini 3.1 Flash-Lite",
+      "Gemini 3.1 Pro Preview",
+      "Gemini 3.5 Flash-Lite",
+      "Gemini 3.6 Flash",
+      "Gemini 3.8 Flash",
+      "Gemini Robotics ER 2 Preview"
+    ]
+  },
+  "openai_rows_cached_input_only": [
+    {
+      "cached_input": 0.075,
+      "cached_x_input": 0.1,
+      "input": 0.75,
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "cached_input": 0.02,
+      "cached_x_input": 0.1,
+      "input": 0.2,
+      "model": "gpt-5.4-nano"
+    },
+    {
+      "cached_input": 0.175,
+      "cached_x_input": 0.1,
+      "input": 1.75,
+      "model": "gpt-5.2"
+    },
+    {
+      "cached_input": null,
+      "input": 21.0,
+      "model": "gpt-5.2-pro"
+    },
+    {
+      "cached_input": 0.125,
+      "cached_x_input": 0.1,
+      "input": 1.25,
+      "model": "gpt-5.1"
+    },
+    {
+      "cached_input": 0.125,
+      "cached_x_input": 0.1,
+      "input": 1.25,
+      "model": "gpt-5"
+    },
+    {
+      "cached_input": 0.025,
+      "cached_x_input": 0.1,
+      "input": 0.25,
+      "model": "gpt-5-mini"
+    },
+    {
+      "cached_input": 0.005,
+      "cached_x_input": 0.1,
+      "input": 0.05,
+      "model": "gpt-5-nano"
+    },
+    {
+      "cached_input": null,
+      "input": 15.0,
+      "model": "gpt-5-pro"
+    },
+    {
+      "cached_input": 0.5,
+      "cached_x_input": 0.25,
+      "input": 2.0,
+      "model": "gpt-4.1"
+    },
+    {
+      "cached_input": 0.1,
+      "cached_x_input": 0.25,
+      "input": 0.4,
+      "model": "gpt-4.1-mini"
+    },
+    {
+      "cached_input": 0.025,
+      "cached_x_input": 0.25,
+      "input": 0.1,
+      "model": "gpt-4.1-nano"
+    },
+    {
+      "cached_input": 1.25,
+      "cached_x_input": 0.5,
+      "input": 2.5,
+      "model": "gpt-4o"
+    },
+    {
+      "cached_input": null,
+      "input": 5.0,
+      "model": "gpt-4o-2024-05-13"
+    },
+    {
+      "cached_input": 0.075,
+      "cached_x_input": 0.5,
+      "input": 0.15,
+      "model": "gpt-4o-mini"
+    },
+    {
+      "cached_input": 7.5,
+      "cached_x_input": 0.5,
+      "input": 15.0,
+      "model": "o1"
+    },
+    {
+      "cached_input": null,
+      "input": 150.0,
+      "model": "o1-pro"
+    },
+    {
+      "cached_input": null,
+      "input": 20.0,
+      "model": "o3-pro"
+    },
+    {
+      "cached_input": 0.5,
+      "cached_x_input": 0.25,
+      "input": 2.0,
+      "model": "o3"
+    },
+    {
+      "cached_input": 0.275,
+      "cached_x_input": 0.25,
+      "input": 1.1,
+      "model": "o4-mini"
+    },
+    {
+      "cached_input": 0.55,
+      "cached_x_input": 0.5,
+      "input": 1.1,
+      "model": "o3-mini"
+    },
+    {
+      "cached_input": null,
+      "input": 10.0,
+      "model": "gpt-4-turbo-2024-04-09"
+    },
+    {
+      "cached_input": null,
+      "input": 30.0,
+      "model": "gpt-4-0613"
+    },
+    {
+      "cached_input": null,
+      "input": 0.5,
+      "model": "gpt-3.5-turbo"
+    },
+    {
+      "cached_input": null,
+      "input": 0.5,
+      "model": "gpt-3.5-turbo-0125"
+    }
+  ],
+  "openai_rows_with_write_prices": [
+    {
+      "cached_input": 1.0,
+      "cached_x_input": 0.1,
+      "input": 10.0,
+      "model": "gpt-6-astra",
+      "write_12h": 25.0,
+      "write_12h_x_input": 2.5,
+      "write_30m": 12.5,
+      "write_30m_x_input": 1.25
+    },
+    {
+      "cached_input": 0.1,
+      "cached_x_input": 0.05,
+      "input": 2.0,
+      "model": "gpt-6.1-sol",
+      "write_12h": 5.0,
+      "write_12h_x_input": 2.5,
+      "write_30m": 2.5,
+      "write_30m_x_input": 1.25
+    },
+    {
+      "cached_input": 0.01,
+      "cached_x_input": 0.1,
+      "input": 0.1,
+      "model": "gpt-6-luna",
+      "write_12h": 0.25,
+      "write_12h_x_input": 2.5,
+      "write_30m": 0.125,
+      "write_30m_x_input": 1.25
+    },
+    {
+      "cached_input": 0.2,
+      "cached_x_input": 0.1,
+      "input": 2.0,
+      "model": "gpt-6-sol",
+      "write_12h": 5.0,
+      "write_12h_x_input": 2.5,
+      "write_30m": 2.5,
+      "write_30m_x_input": 1.25
+    },
+    {
+      "cached_input": 0.4,
+      "cached_x_input": 0.1,
+      "input": 4.0,
+      "model": "gpt-5.6-sol",
+      "write_12h": 10.0,
+      "write_12h_x_input": 2.5,
+      "write_30m": 5.0,
+      "write_30m_x_input": 1.25
+    },
+    {
+      "cached_input": 0.2,
+      "cached_x_input": 0.1,
+      "input": 2.0,
+      "model": "gpt-5.6-terra",
+      "write_12h": 5.0,
+      "write_12h_x_input": 2.5,
+      "write_30m": 2.5,
+      "write_30m_x_input": 1.25
+    },
+    {
+      "cached_input": 0.02,
+      "cached_x_input": 0.1,
+      "input": 0.2,
+      "model": "gpt-5.6-luna",
+      "write_12h": 0.5,
+      "write_12h_x_input": 2.5,
+      "write_30m": 0.25,
+      "write_30m_x_input": 1.25
+    },
+    {
+      "cached_input": 0.5,
+      "cached_x_input": 0.1,
+      "input": 5.0,
+      "model": "gpt-5.5 (<272K context length)",
+      "write_12h": null,
+      "write_30m": null
+    },
+    {
+      "cached_input": null,
+      "input": 30.0,
+      "model": "gpt-5.5-pro (<272K context length)",
+      "write_12h": null,
+      "write_30m": null
+    },
+    {
+      "cached_input": 0.25,
+      "cached_x_input": 0.1,
+      "input": 2.5,
+      "model": "gpt-5.4 (<272K context length)",
+      "write_12h": null,
+      "write_30m": null
+    },
+    {
+      "cached_input": null,
+      "input": 30.0,
+      "model": "gpt-5.4-pro (<272K context length)",
+      "write_12h": null,
+      "write_30m": null
+    }
+  ],
+  "openai_rules": {
+    "discounted_up_to_95_percent": true,
+    "earlier_models_in_memory_5_to_10_minutes": true,
+    "earlier_models_minimum_varies_by_request_settings": true,
+    "enabled_by_default_for_supported_models": true,
+    "explicit_breakpoints_gpt_5_6_and_later_only": true,
+    "gpt_5_5_and_earlier_no_additional_write_charge": true,
+    "gpt_5_6_and_later_min_prefix_1024": true,
+    "gpt_5_6_default_30m_or_12h_retention": true,
+    "gpt_5_6_read_0_1x_and_0_05x_for_gpt_6_1_sol": true,
+    "gpt_5_6_write_1_25x_30m_2_5x_12h": true,
+    "mentions_cache_diagnostics_tool": true,
+    "mentions_prompt_caching_dashboard": true
+  },
+  "openai_summary": {
+    "highest_cached_multiple": "gpt-4o 0.5",
+    "lowest_cached_multiple": "gpt-6.1-sol 0.05",
+    "models_with_a_cache_write_price": [
+      "gpt-6-astra",
+      "gpt-6.1-sol",
+      "gpt-6-luna",
+      "gpt-6-sol",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-5.6-luna"
+    ],
+    "models_with_cached_input_price": 25,
+    "write_12h_multiples": [
+      2.5
+    ],
+    "write_30m_multiples": [
+      1.25
+    ]
+  }
+}
