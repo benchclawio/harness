@@ -1,0 +1,533 @@
+{
+  "as_of": "2026-10-21T19:30:00Z",
+  "braintrust": {
+    "github_org_repositories": {
+      "autoevals": {
+        "archived": false,
+        "last_push": "2026-10-21",
+        "licence_spdx": "MIT"
+      },
+      "braintrust-proxy": {
+        "archived": false,
+        "last_push": "2026-10-22",
+        "licence_spdx": "MIT"
+      },
+      "braintrust-sdk-go": {
+        "archived": false,
+        "last_push": "2026-10-22",
+        "licence_spdx": "Apache-2.0"
+      },
+      "braintrust-sdk-javascript": {
+        "archived": false,
+        "last_push": "2026-10-21",
+        "licence_spdx": "Apache-2.0"
+      },
+      "braintrust-sdk-python": {
+        "archived": false,
+        "last_push": "2026-10-21",
+        "licence_spdx": "Apache-2.0"
+      },
+      "helm": {
+        "archived": false,
+        "last_push": "2026-10-21",
+        "licence_spdx": "Apache-2.0"
+      },
+      "terraform-aws-braintrust-data-plane": {
+        "archived": false,
+        "last_push": "2026-10-21",
+        "licence_spdx": "Apache-2.0"
+      }
+    },
+    "own_alternatives_article": {
+      "says_langfuse_is_mit_licensed": true,
+      "says_langfuse_you_build_the_ci_cd_layer": true,
+      "times_it_says_Braintrust": 67,
+      "title": "Braintrust alternatives: What to consider (and why there's no true substitute)"
+    },
+    "pricing_page": {
+      "enterprise": "Enterprise For teams at scale Custom pricing Custom data retention and export, RBAC, and premium support with on-prem or hosted deployment for high volume or privacy-sensitive data",
+      "no_credit_card_for_starter": true,
+      "pro": "Pro For AI native teams $249 / month $100 credits + tok rates 5 GB processed data + $3/GB 50k scores + $1.50/1k 30-day retention + $0.50/GB/mo",
+      "starter": "Starter For everyone $0 / month $10 credits + tok rates 1 GB processed data + $4/GB 10k scores + $2.50/1k 14-day retention"
+    },
+    "self_hosting_docs": {
+      "control_plane_hosted_by_braintrust": true,
+      "data_plane_stores_sensitive_data": true,
+      "mentions_byoc": true,
+      "offers_self_hosted_deployment_separating_data_from_platform": true
+    }
+  },
+  "claims_checked": {
+    "braintrust_dev_links_in_overview": 5,
+    "langfuse_licence_file_has_ee_carve_out": true,
+    "opik_github_licence_spdx": "Apache-2.0",
+    "overview_first_citation_is_braintrust_dev_alternatives_article": true,
+    "overview_mentions_clickhouse_as_ownership": false,
+    "overview_mentions_openai_or_promptfoo_acquisition": false,
+    "overview_names_any_of_promptfoo_deepeval_weave_langwatch_ragas_mlflow_laminar": [],
+    "overview_names_closed_products": [
+      "LangSmith",
+      "Galileo",
+      "Datadog"
+    ],
+    "overview_says_langfuse_mit_licensed": true,
+    "overview_says_opik_apache_2_0": true,
+    "overview_says_phoenix_apache_2_0": true,
+    "phoenix_github_licence_spdx": "NOASSERTION",
+    "phoenix_licence_file_first_line": "Elastic License 2.0 (ELv2)",
+    "phoenix_licence_file_names_elastic": true,
+    "promptfoo_readme_says_now_part_of_openai": true,
+    "ragas_repo_resolves_to": "vibrantlabsai/ragas"
+  },
+  "langfuse_acquisition": {
+    "clickhouse_post_date": "Jan 16, 2026",
+    "clickhouse_says": "ClickHouse has acquired Langfuse",
+    "langfuse_says_no_planned_licence_change": true,
+    "langfuse_says_open_source_and_self_hostable": true
+  },
+  "promptfoo_announcement": {
+    "date": "March 9, 2026",
+    "says_agreed_to_be_acquired_by_openai": true,
+    "says_closing_subject_to_customary_conditions": true,
+    "says_will_maintain_open_source_suite": true,
+    "says_will_remain_open_source": true,
+    "url": "https://www.promptfoo.dev/blog/promptfoo-joining-openai/"
+  },
+  "repositories": [
+    {
+      "archived": false,
+      "canonical_repo": "langfuse/langfuse",
+      "github_description": "\ud83e\udea2 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-21",
+        "days_before_cutoff": 0,
+        "tag": "v4.67.0"
+      },
+      "licence_file": {
+        "carve_out_line": "- All content that resides under the \"ee/\", \"web/src/ee/\", and/or \"worker/src/ee/\" directories of this repository, if these directories exist, is licensed under the license defined in \"ee/LICENSE\".",
+        "copyright_line": "Copyright (c) 2023-2026 ClickHouse, Inc.",
+        "file_says_apache_license": false,
+        "file_says_mit_license": false,
+        "first_line": "Copyright (c) 2023-2026 ClickHouse, Inc.",
+        "found_at_repository_root": true,
+        "has_ee_carve_out": true,
+        "names_apache_or_mit_first": false,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": true
+      },
+      "licence_spdx": "NOASSERTION",
+      "name": "Langfuse",
+      "published_advisories": {
+        "by_severity": {
+          "low": 1,
+          "medium": 3
+        },
+        "last_12_months": 4,
+        "latest": "2026-04-17",
+        "total": 4
+      },
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 0,
+        "latest_stable": "5.0.4",
+        "package": "langfuse",
+        "registry": "pypi",
+        "uploaded": "2026-10-21",
+        "versions_in_90_days": 19
+      },
+      "repo": "langfuse/langfuse",
+      "stable_releases_in_90_days": 91
+    },
+    {
+      "archived": false,
+      "canonical_repo": "Arize-ai/phoenix",
+      "github_description": "AI Observability & Evaluation",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-21",
+        "days_before_cutoff": 0,
+        "tag": "arize-phoenix-v20.24.0"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": null,
+        "file_says_apache_license": false,
+        "file_says_mit_license": false,
+        "first_line": "Elastic License 2.0 (ELv2)",
+        "found_at_repository_root": true,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": false,
+        "names_elastic_licence": true,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "NOASSERTION",
+      "name": "Arize Phoenix",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_status_sentences": [
+        "Standalone stdio MCP server for older Phoenix versions (maintenance mode \u2014 superseded by the [remote MCP server](https://arize."
+      ],
+      "registry": {
+        "days_before_cutoff": 0,
+        "latest_stable": "20.24.0",
+        "package": "arize-phoenix",
+        "registry": "pypi",
+        "uploaded": "2026-10-21",
+        "versions_in_90_days": 48
+      },
+      "repo": "Arize-ai/phoenix",
+      "stable_releases_in_90_days": 49
+    },
+    {
+      "archived": false,
+      "canonical_repo": "comet-ml/opik",
+      "github_description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready d",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-21",
+        "days_before_cutoff": 0,
+        "tag": "2.2.113"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": "Copyright (c) Comet ML, Inc",
+        "file_says_apache_license": true,
+        "file_says_mit_license": false,
+        "first_line": "Copyright (c) Comet ML, Inc",
+        "found_at_repository_root": true,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": false,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Opik",
+      "published_advisories": {
+        "by_severity": {
+          "medium": 1
+        },
+        "last_12_months": 1,
+        "latest": "2026-09-18",
+        "total": 1
+      },
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 0,
+        "latest_stable": "2.2.113",
+        "package": "opik",
+        "registry": "pypi",
+        "uploaded": "2026-10-21",
+        "versions_in_90_days": 109
+      },
+      "repo": "comet-ml/opik",
+      "stable_releases_in_90_days": 102
+    },
+    {
+      "archived": false,
+      "canonical_repo": "mlflow/mlflow",
+      "github_description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-21",
+        "days_before_cutoff": 0,
+        "tag": "v3.17.2"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": null,
+        "file_says_apache_license": false,
+        "file_says_mit_license": false,
+        "first_line": null,
+        "found_at_repository_root": false,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": false,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "MLflow",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 3,
+          "high": 3,
+          "medium": 4
+        },
+        "last_12_months": 7,
+        "latest": "2026-10-13",
+        "total": 10
+      },
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 0,
+        "latest_stable": "3.17.2",
+        "package": "mlflow",
+        "registry": "pypi",
+        "uploaded": "2026-10-21",
+        "versions_in_90_days": 10
+      },
+      "repo": "mlflow/mlflow",
+      "stable_releases_in_90_days": 9
+    },
+    {
+      "archived": false,
+      "canonical_repo": "wandb/weave",
+      "github_description": "Weave is a toolkit for developing AI-powered applications, built by Weights & Biases.",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-13",
+        "days_before_cutoff": 8,
+        "tag": "v0.52.27"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": "copyright notice that is included in or attached to the work",
+        "file_says_apache_license": true,
+        "file_says_mit_license": false,
+        "first_line": "Apache License",
+        "found_at_repository_root": true,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": true,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "W&B Weave",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 11,
+        "latest_stable": "0.53.12",
+        "package": "weave",
+        "registry": "pypi",
+        "uploaded": "2026-10-09",
+        "versions_in_90_days": 9
+      },
+      "repo": "wandb/weave",
+      "stable_releases_in_90_days": 10
+    },
+    {
+      "archived": false,
+      "canonical_repo": "langwatch/langwatch",
+      "github_description": "Open-Source Agent Observability & Evals for AI Platform teams. Trace, test, route and govern every agent & coding assistant in the company.",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-02",
+        "days_before_cutoff": 19,
+        "tag": "langwatch-3.20.1"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": null,
+        "file_says_apache_license": false,
+        "file_says_mit_license": false,
+        "first_line": null,
+        "found_at_repository_root": false,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": false,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "LangWatch",
+      "published_advisories": {
+        "by_severity": {
+          "medium": 1
+        },
+        "last_12_months": 1,
+        "latest": "2026-08-19",
+        "total": 1
+      },
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 45,
+        "latest_stable": "1.4.0",
+        "package": "langwatch",
+        "registry": "pypi",
+        "uploaded": "2026-09-06",
+        "versions_in_90_days": 7
+      },
+      "repo": "langwatch/langwatch",
+      "stable_releases_in_90_days": 42
+    },
+    {
+      "archived": false,
+      "canonical_repo": "lmnr-ai/lmnr",
+      "github_description": "Laminar - open-source observability platform purpose-built for AI agents. YC S24.",
+      "last_commit_before_cutoff": "2026-10-16",
+      "latest_stable_release": {
+        "date": "2026-10-16",
+        "days_before_cutoff": 5,
+        "tag": "v0.3.2"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": null,
+        "file_says_apache_license": false,
+        "file_says_mit_license": false,
+        "first_line": null,
+        "found_at_repository_root": false,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": false,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Laminar",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 5,
+        "latest_stable": "0.8.0",
+        "package": "lmnr",
+        "registry": "pypi",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 12
+      },
+      "repo": "lmnr-ai/lmnr",
+      "stable_releases_in_90_days": 7
+    },
+    {
+      "archived": false,
+      "canonical_repo": "confident-ai/deepeval",
+      "github_description": "The LLM Evaluation Framework",
+      "last_commit_before_cutoff": "2026-10-19",
+      "latest_stable_release": {
+        "date": "2026-07-29",
+        "days_before_cutoff": 84,
+        "tag": "v4.1.7"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": null,
+        "file_says_apache_license": false,
+        "file_says_mit_license": false,
+        "first_line": null,
+        "found_at_repository_root": false,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": false,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "DeepEval",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 4,
+        "latest_stable": "4.3.1",
+        "package": "deepeval",
+        "registry": "pypi",
+        "uploaded": "2026-10-16",
+        "versions_in_90_days": 19
+      },
+      "repo": "confident-ai/deepeval",
+      "stable_releases_in_90_days": 1
+    },
+    {
+      "archived": false,
+      "canonical_repo": "promptfoo/promptfoo",
+      "github_description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simpl",
+      "last_commit_before_cutoff": "2026-10-21",
+      "latest_stable_release": {
+        "date": "2026-10-08",
+        "days_before_cutoff": 13,
+        "tag": "0.124.1"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": "Copyright (c) Promptfoo 2025",
+        "file_says_apache_license": false,
+        "file_says_mit_license": false,
+        "first_line": "Copyright (c) Promptfoo 2025",
+        "found_at_repository_root": true,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": false,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "MIT",
+      "name": "Promptfoo",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_status_sentences": [
+        "Promptfoo is now part of OpenAI."
+      ],
+      "registry": {
+        "days_before_cutoff": 13,
+        "latest_stable": "0.124.1",
+        "package": "promptfoo",
+        "registry": "npm",
+        "uploaded": "2026-10-08",
+        "versions_in_90_days": 8
+      },
+      "repo": "promptfoo/promptfoo",
+      "stable_releases_in_90_days": 8
+    },
+    {
+      "archived": false,
+      "canonical_repo": "vibrantlabsai/ragas",
+      "github_description": "Supercharge Your LLM Application Evaluations \ud83d\ude80",
+      "last_commit_before_cutoff": "2026-02-24",
+      "latest_stable_release": {
+        "date": "2026-01-13",
+        "days_before_cutoff": 281,
+        "tag": "v0.4.3"
+      },
+      "licence_file": {
+        "carve_out_line": null,
+        "copyright_line": "copyright notice that is included in or attached to the work",
+        "file_says_apache_license": true,
+        "file_says_mit_license": false,
+        "first_line": "Apache License",
+        "found_at_repository_root": true,
+        "has_ee_carve_out": false,
+        "names_apache_or_mit_first": true,
+        "names_elastic_licence": false,
+        "says_mit_expat_outside_carve_out": false
+      },
+      "licence_spdx": "Apache-2.0",
+      "name": "Ragas",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 281,
+        "latest_stable": "0.4.3",
+        "package": "ragas",
+        "registry": "pypi",
+        "uploaded": "2026-01-13",
+        "versions_in_90_days": 0
+      },
+      "repo": "explodinggradients/ragas",
+      "stable_releases_in_90_days": 0
+    }
+  ]
+}
