@@ -1,0 +1,143 @@
+{
+  "apps_named_in_announcement": [
+    "Gmail",
+    "Slack",
+    "Intuit QuickBooks",
+    "Stripe",
+    "Gusto",
+    "LinkedIn",
+    "Docusign",
+    "HubSpot",
+    "Canva",
+    "Shopify",
+    "Link",
+    "Shop Pay",
+    "1Password"
+  ],
+  "as_of": "2026-10-22",
+  "connectors_named_on_help_page": [
+    "Gmail",
+    "Google Calendar",
+    "Google Drive",
+    "Slack",
+    "QuickBooks",
+    "HubSpot",
+    "Docusign",
+    "Calendly"
+  ],
+  "plans_duet_is_included_in": {
+    "max_5x_monthly": "From $100",
+    "pricing_page_mentions_claude_duet": true,
+    "pro_annual_per_month": "$17",
+    "pro_monthly": "$20"
+  },
+  "press_vs_anthropic": {
+    "anthropic_pages_say_pro_and_max_both_eligible_for_the_waitlist_now": true,
+    "engadget_says_pro_gets_access_only_once_general_availability": true
+  },
+  "press_wording": {
+    "engadget_pro_sentence": "Notably, Anthropic says subscribers of its $20 per month Pro plan will get access once the agent rolls out in general availability.",
+    "engadget_says_dots_only_on_openai_pro_tier_starting_at_100_a_month": true,
+    "macrumors_says_like_muse_and_dots_duet_has_a_virtual_machine_with_its_own_browser": true,
+    "macrumors_says_limited_to_pro_and_max_in_the_us": true,
+    "unite_says_runs_on_opus_5_5_and_checks_every_few_hours": true
+  },
+  "sources": {
+    "announcement": "https://claude.com/resources/articles/claude-duet",
+    "engadget": "https://www.engadget.com/2293646/claude-duet-is-anthropics-answer-to-meta-muse-and-openai-dots/",
+    "help": "https://support.claude.com/en/articles/17631495-get-started-with-claude-duet",
+    "macrumors": "https://www.macrumors.com/2026/10/21/anthropic-claude-duet/",
+    "openai_dots": "https://learn.chatgpt.com/docs/dots",
+    "pricing": "https://claude.com/pricing",
+    "unite": "https://www.unite.ai/anthropic-opens-claude-duet-research-preview-to-us-pro-and-max-users/"
+  },
+  "statement_counts": {
+    "announcement": {
+      "checked": 28,
+      "found": 28
+    },
+    "help_article": {
+      "checked": 25,
+      "found": 25
+    },
+    "openai_dots_docs": {
+      "checked": 9,
+      "found": 9
+    }
+  },
+  "statements": {
+    "announcement": {
+      "A few things are off-limits even with your approval, like trading securities or moving money between accounts": true,
+      "A research preview is available by waitlist today, starting with US Pro and Max subscribers.": true,
+      "Actions are approved by our auto mode classifier": true,
+      "Claude Duet checks your connected accounts every few hours, because checking nonstop would use up your plan's limits much faster": true,
+      "Claude Duet has a virtual machine with its own browser": true,
+      "Claude Duet is included in Pro and Max plans and uses the same usage limits as the rest of Claude": true,
+      "Claude Duet lives in its own app, separate from the main Claude app": true,
+      "Coming soon, with your permission, it will be able to sign in to sites with logins you've saved in 1Password": true,
+      "Date October 21, 2026": true,
+      "Each morning, it sends you a short brief on the most important items across your connected apps": true,
+      "Link, Stripe's digital wallet": true,
+      "Other sensitive information, such as health or personal finances, are let through only when you've explicitly instructed Claude Duet to send it": true,
+      "Red teams and an external firm penetration tested Claude Duet, and it's covered by our public bug bounty program": true,
+      "Shop Pay from Shopify": true,
+      "We designed it around Claude Opus 5.5": true,
+      "a new app where Claude works as a proactive agent": true,
+      "a new dedicated classifier and safety system prompt that checks each message": true,
+      "available as a standalone app on iOS and Android, and on claude.ai": true,
+      "built Claude Duet for professionals and small business owners": true,
+      "it can't yet show you its browser": true,
+      "it never directly sees your passwords or sign-in tokens": true,
+      "it shows you exactly what it's about to do and waits for your approval": true,
+      "it still might misread a thread or miscalibrate what's urgent": true,
+      "keeps working even when you step away, and checks with you before it acts on your behalf": true,
+      "over 6,000 connectors and plugins in the Claude Marketplace": true,
+      "personal errands, such as booking tickets, aren't quite as strong": true,
+      "reject requests to share the strictest tier of information, including credit card numbers and government identification": true,
+      "will share more details about how Claude Duet is designed for safety in the coming days": true
+    },
+    "help_article": {
+      "Access opens in waves": true,
+      "An invitation from the waitlist": true,
+      "Claude Duet is available as a research preview to users on the Pro and Max plans in the US, through a waitlist": true,
+      "Disconnecting an app stops Claude Duet from accessing it from that point on, but memory of past information from earlier conversations is kept": true,
+      "During the research preview, Claude Duet is included with the Pro and Max plans at no extra cost": true,
+      "If you can't approve right away, Claude Duet finishes the rest of the task and brings the approval back to you later": true,
+      "It checks your accounts at set intervals, so something urgent can arrive between checks": true,
+      "It doesn't make phone calls or send text messages to other people": true,
+      "It isn't available on Team or Enterprise plans yet": true,
+      "It searches your Claude Duet chats and your chats in Claude outside of projects": true,
+      "Link and Shop Pay are available only in Claude Duet for now": true,
+      "Microsoft 365 isn't available yet": true,
+      "This limit reset is available until November 30, 2026": true,
+      "With your approval, it can send emails from the accounts you've connected": true,
+      "Work it does in the background, like the morning brief and check-ins, also counts, so you may reach your limits sooner than with chat alone": true,
+      "You can't choose a model. Claude Duet runs on Claude Opus 5.5": true,
+      "You can't watch Claude Duet work in its browser or take over the browser": true,
+      "each purchase uses a one-time card that only works for that purchase": true,
+      "including the five-hour session and weekly limits": true,
+      "it can read your work in Claude but can't change it": true,
+      "no defense is perfect, which is one reason consequential actions need your approval": true,
+      "only you can mark a task as completed": true,
+      "that content can contain instructions meant to mislead it. This is called prompt injection": true,
+      "you get one full limit reset, which resets both your five-hour session and weekly limits": true,
+      "you type it into a separate form on your device": true
+    },
+    "openai_dots_docs": {
+      "Business Premium: Rolling out worldwide": true,
+      "Dots are rolling out gradually to eligible accounts": true,
+      "Enterprise: Rolling out worldwide. Dots are off by default and must be enabled by a workspace administrator": true,
+      "Powered by GPT-6 Astra, your dot lives in the cloud and has its own computer and browser": true,
+      "Pro 100, Pro 200, and Pro 500: For users over 18 outside the European Economic Area, United Kingdom, and Switzerland": true,
+      "Return control": true,
+      "You reach the same dot in ChatGPT, Slack, Teams, or a call": true,
+      "even when your computer is off": true,
+      "open its computer and select Take over": true
+    }
+  },
+  "statements_not_found": {
+    "announcement": [],
+    "help_article": [],
+    "openai_dots_docs": []
+  }
+}
