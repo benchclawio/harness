@@ -1,0 +1,562 @@
+{
+  "as_of": "2026-10-23T14:30:00Z",
+  "atomic_chat_article": {
+    "author": "Andrew Dyuzhov",
+    "lists_itself_first_in_deep_dive": true,
+    "ranks_itself_best_overall": true,
+    "says_atomic_chat_apache_2_0": true,
+    "says_ollama_defaults_num_ctx_to_2048": true,
+    "says_ollama_moved_off_llama_cpp_to_own_go_engine": true,
+    "times_it_says_Atomic_Chat": 42,
+    "title": "10 Best Ollama Alternatives in 2026"
+  },
+  "claims_checked": {
+    "atomic_article_mentions_jan_derivation": false,
+    "atomic_chat_is_github_fork": false,
+    "atomic_chat_licence_file_copyright_lines": [
+      "Copyright 2026 Atomic Chat (https://atomic.chat)",
+      "Copyright 2025 Menlo Research (https://menlo.ai)"
+    ],
+    "atomic_chat_readme_mentions_jan_or_menlo": true,
+    "jan_github_licence_spdx": "NOASSERTION",
+    "jan_licence_file_first_line": "Jan",
+    "jan_licence_file_names_apache": true,
+    "ollama_has_pro_and_team_plans_for_cloud_models": true,
+    "overview_cites_atomic_chat_vendor_article": true,
+    "overview_mentions_a_dollar_price": false,
+    "overview_mentions_ollama_pro_or_team_plan": false,
+    "overview_mentions_pricing_or_licence_of_lm_studio": false,
+    "overview_names": [
+      "LM Studio",
+      "Jan",
+      "Atomic Chat",
+      "GPT4All",
+      "Msty AI",
+      "llama.cpp",
+      "LocalAI",
+      "Text-generation-webui",
+      "vLLM"
+    ],
+    "overview_says_jan_apache_2_0": true,
+    "overview_says_llama_cpp_runs_underneath_many_local_tools": true,
+    "overview_says_lm_studio_has_openai_compatible_api": true,
+    "overview_says_lm_studio_is_open_source": false
+  },
+  "lm_studio": {
+    "app_terms": {
+      "company": "Element Labs, Inc.",
+      "forbids_reverse_engineering": true,
+      "licence_grant": "non-exclusive, non-transferable license to use the Software solely for Your personal and / or internal business purposes",
+      "says_source_code_is_trade_secret": true,
+      "version_line": "Version: August 23, 2026"
+    },
+    "github_org_repositories": {
+      "lms": {
+        "archived": false,
+        "last_push": "2026-10-14",
+        "licence_spdx": "MIT"
+      },
+      "lmstudio-bug-tracker": {
+        "archived": false,
+        "last_push": "2025-01-16",
+        "licence_spdx": null
+      },
+      "lmstudio-js": {
+        "archived": false,
+        "last_push": "2026-10-21",
+        "licence_spdx": "MIT"
+      },
+      "lmstudio-python": {
+        "archived": false,
+        "last_push": "2025-10-27",
+        "licence_spdx": "MIT"
+      },
+      "mlx-engine": {
+        "archived": false,
+        "last_push": "2026-10-21",
+        "licence_spdx": "MIT"
+      }
+    }
+  },
+  "msty": {
+    "aurum": "Aurum $149 USD per user / year",
+    "aurum_lifetime": "Aurum Lifetime $349 USD per user",
+    "company": "Msty is a product of CloudStack, LLC",
+    "free": "Free $0 Forever",
+    "lists_local_engines": "Local Inference Engines - Ollama, Llama.cpp, MLX"
+  },
+  "ollama": {
+    "context_length_docs": {
+      "mentions_2048": false,
+      "says_256k_over_48_gib": true,
+      "says_32k_24_to_48_gib": true,
+      "says_4k_under_24_gib": true,
+      "says_agent_tasks_need_at_least_64000": true
+    },
+    "pricing_page": {
+      "free": "Free $0",
+      "free_plan_includes_run_models_locally": true,
+      "pro": "$20 / mo.",
+      "team": "$500 / mo."
+    }
+  },
+  "ollama_repository_layout": {
+    "llama_directory_entries": [
+      ".gitignore",
+      "README.md",
+      "compat",
+      "server"
+    ],
+    "llama_readme_mentions_llama_server": true,
+    "llama_readme_says_LLAMA_CPP_VERSION_pins_llama_cpp_source": true,
+    "root_directories_of_interest": [
+      "llama",
+      "llm",
+      "ml",
+      "mlx",
+      "model"
+    ]
+  },
+  "repositories": [
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "ollama/ollama",
+      "github_description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "github_latest_release_marker": {
+        "date": "2026-10-22",
+        "tag": "v0.40.9"
+      },
+      "is_github_fork": false,
+      "last_commit_before_cutoff": "2026-10-23",
+      "latest_stable_release": {
+        "date": "2026-10-22",
+        "days_before_cutoff": 1,
+        "tag": "v0.40.9"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (c) Ollama"
+        ],
+        "first_line": "MIT License",
+        "found_at_repository_root": "LICENSE",
+        "names_agpl": false,
+        "names_apache": false,
+        "names_gpl_not_affero": false,
+        "names_mit": true
+      },
+      "licence_spdx": "MIT",
+      "matching_releases_marked_prerelease_by_github": 3,
+      "name": "Ollama",
+      "newest_matching_release": {
+        "date": "2026-10-22",
+        "tag": "v0.40.9"
+      },
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_first_sentence_naming_jan_or_menlo": null,
+      "readme_mentions_jan_or_menlo": false,
+      "readme_status_sentences": [],
+      "registry": null,
+      "release_window_fully_listed": true,
+      "repo": "ollama/ollama",
+      "stable_releases_in_90_days": 31,
+      "tagged_releases_matching_pattern_in_90_days_including_prereleases": 32
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "janhq/jan",
+      "github_description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+      "github_latest_release_marker": {
+        "date": "2026-10-20",
+        "tag": "v0.8.7"
+      },
+      "is_github_fork": false,
+      "last_commit_before_cutoff": "2026-10-23",
+      "latest_stable_release": {
+        "date": "2026-10-20",
+        "days_before_cutoff": 3,
+        "tag": "v0.8.7"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright 2025 Menlo Research"
+        ],
+        "first_line": "Jan",
+        "found_at_repository_root": "LICENSE",
+        "names_agpl": false,
+        "names_apache": true,
+        "names_gpl_not_affero": false,
+        "names_mit": false
+      },
+      "licence_spdx": "NOASSERTION",
+      "matching_releases_marked_prerelease_by_github": 0,
+      "name": "Jan",
+      "newest_matching_release": {
+        "date": "2026-10-20",
+        "tag": "v0.8.7"
+      },
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_first_sentence_naming_jan_or_menlo": "# Jan - Open-source ChatGPT replacement <img width=\"2048\" height=\"280\" alt=\"github jan banner\" src=\"https://github.com/user-attachments/assets/f3f87889-c133-433b-b250-236218150d3f\" /> <p align=\"center",
+      "readme_mentions_jan_or_menlo": true,
+      "readme_status_sentences": [
+        "What has to be installed (and on `PATH` for `ninja`/`clang-cl`/`cmake`): - Visual Studio 2022 Build Tools (MSVC x64 workload + Windows SDK) - LLVM (provides `clang-cl`) - Ninja - CMake - CUDA Toolkit "
+      ],
+      "registry": null,
+      "release_window_fully_listed": true,
+      "repo": "janhq/jan",
+      "stable_releases_in_90_days": 3,
+      "tagged_releases_matching_pattern_in_90_days_including_prereleases": 3
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "ggml-org/llama.cpp",
+      "github_description": "LLM inference in C/C++",
+      "github_latest_release_marker": {
+        "date": "2026-10-15",
+        "tag": "v0.7.0"
+      },
+      "is_github_fork": false,
+      "last_commit_before_cutoff": "2026-10-23",
+      "latest_stable_release": {
+        "date": "2026-08-21",
+        "days_before_cutoff": 63,
+        "tag": "b10549"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (c) 2023-2026 The ggml authors"
+        ],
+        "first_line": "MIT License",
+        "found_at_repository_root": "LICENSE",
+        "names_agpl": false,
+        "names_apache": false,
+        "names_gpl_not_affero": false,
+        "names_mit": true
+      },
+      "licence_spdx": "MIT",
+      "matching_releases_marked_prerelease_by_github": 890,
+      "name": "llama.cpp",
+      "newest_matching_release": {
+        "date": "2026-10-23",
+        "tag": "b11838"
+      },
+      "published_advisories": {
+        "by_severity": {
+          "critical": 2,
+          "high": 6,
+          "low": 1,
+          "medium": 4
+        },
+        "last_12_months": 4,
+        "latest": "2026-03-26",
+        "total": 13
+      },
+      "readme_first_sentence_naming_jan_or_menlo": null,
+      "readme_mentions_jan_or_menlo": false,
+      "readme_status_sentences": [],
+      "registry": null,
+      "release_window_fully_listed": true,
+      "repo": "ggml-org/llama.cpp",
+      "stable_releases_in_90_days": 230,
+      "tagged_releases_matching_pattern_in_90_days_including_prereleases": 1120
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "vllm-project/vllm",
+      "github_description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "github_latest_release_marker": {
+        "date": "2026-10-18",
+        "tag": "v0.32.0"
+      },
+      "is_github_fork": false,
+      "last_commit_before_cutoff": "2026-10-23",
+      "latest_stable_release": {
+        "date": "2026-10-18",
+        "days_before_cutoff": 5,
+        "tag": "v0.32.0"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "copyright notice that is included in or attached to the work",
+          "copyright license to reproduce, prepare Derivative Works of,",
+          "Copyright [yyyy] [name of copyright owner]"
+        ],
+        "first_line": "Apache License",
+        "found_at_repository_root": "LICENSE",
+        "names_agpl": false,
+        "names_apache": true,
+        "names_gpl_not_affero": false,
+        "names_mit": false
+      },
+      "licence_spdx": "Apache-2.0",
+      "matching_releases_marked_prerelease_by_github": 0,
+      "name": "vLLM",
+      "newest_matching_release": {
+        "date": "2026-10-18",
+        "tag": "v0.32.0"
+      },
+      "published_advisories": {
+        "by_severity": {
+          "critical": 5,
+          "high": 29,
+          "low": 7,
+          "medium": 72
+        },
+        "last_12_months": 90,
+        "latest": "2026-10-20",
+        "total": 113
+      },
+      "readme_first_sentence_naming_jan_or_menlo": null,
+      "readme_mentions_jan_or_menlo": false,
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 5,
+        "latest_stable": "0.32.0",
+        "package": "vllm",
+        "registry": "pypi",
+        "uploaded": "2026-10-18",
+        "versions_in_90_days": 7
+      },
+      "release_window_fully_listed": true,
+      "repo": "vllm-project/vllm",
+      "stable_releases_in_90_days": 8,
+      "tagged_releases_matching_pattern_in_90_days_including_prereleases": 8
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "mudler/LocalAI",
+      "github_description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+      "github_latest_release_marker": {
+        "date": "2026-10-23",
+        "tag": "v4.12.1"
+      },
+      "is_github_fork": false,
+      "last_commit_before_cutoff": "2026-10-23",
+      "latest_stable_release": {
+        "date": "2026-10-23",
+        "days_before_cutoff": 0,
+        "tag": "v4.12.1"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (c) 2023-2025 Ettore Di Giacinto (mudler@localai.io)"
+        ],
+        "first_line": "MIT License",
+        "found_at_repository_root": "LICENSE",
+        "names_agpl": false,
+        "names_apache": false,
+        "names_gpl_not_affero": false,
+        "names_mit": true
+      },
+      "licence_spdx": "MIT",
+      "matching_releases_marked_prerelease_by_github": 0,
+      "name": "LocalAI",
+      "newest_matching_release": {
+        "date": "2026-10-23",
+        "tag": "v4.12.1"
+      },
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_first_sentence_naming_jan_or_menlo": null,
+      "readme_mentions_jan_or_menlo": false,
+      "readme_status_sentences": [],
+      "registry": null,
+      "release_window_fully_listed": true,
+      "repo": "mudler/LocalAI",
+      "stable_releases_in_90_days": 8,
+      "tagged_releases_matching_pattern_in_90_days_including_prereleases": 8
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "nomic-ai/gpt4all",
+      "github_description": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.",
+      "github_latest_release_marker": {
+        "date": "2025-02-25",
+        "tag": "v3.10.0"
+      },
+      "is_github_fork": false,
+      "last_commit_before_cutoff": "2025-05-27",
+      "latest_stable_release": {
+        "date": "2025-02-25",
+        "days_before_cutoff": 605,
+        "tag": "v3.10.0"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (c) 2023 Nomic, Inc."
+        ],
+        "first_line": "Copyright (c) 2023 Nomic, Inc.",
+        "found_at_repository_root": "LICENSE.txt",
+        "names_agpl": false,
+        "names_apache": false,
+        "names_gpl_not_affero": false,
+        "names_mit": false
+      },
+      "licence_spdx": "MIT",
+      "matching_releases_marked_prerelease_by_github": 0,
+      "name": "GPT4All",
+      "newest_matching_release": {
+        "date": "2025-02-25",
+        "tag": "v3.10.0"
+      },
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_first_sentence_naming_jan_or_menlo": null,
+      "readme_mentions_jan_or_menlo": false,
+      "readme_status_sentences": [],
+      "registry": {
+        "days_before_cutoff": 799,
+        "latest_stable": "2.8.2",
+        "package": "gpt4all",
+        "registry": "pypi",
+        "uploaded": "2024-08-14",
+        "versions_in_90_days": 0
+      },
+      "release_window_fully_listed": true,
+      "repo": "nomic-ai/gpt4all",
+      "stable_releases_in_90_days": 0,
+      "tagged_releases_matching_pattern_in_90_days_including_prereleases": 0
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "oobabooga/textgen",
+      "github_description": "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private.",
+      "github_latest_release_marker": {
+        "date": "2026-05-20",
+        "tag": "v4.9"
+      },
+      "is_github_fork": false,
+      "last_commit_before_cutoff": "2026-08-17",
+      "latest_stable_release": {
+        "date": "2026-05-20",
+        "days_before_cutoff": 155,
+        "tag": "v4.9"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>",
+          "copyright on the Program, and are irrevocable provided the stated",
+          "copyright holder, and you cure the violation prior to 30 days after"
+        ],
+        "first_line": "GNU AFFERO GENERAL PUBLIC LICENSE",
+        "found_at_repository_root": "LICENSE",
+        "names_agpl": true,
+        "names_apache": false,
+        "names_gpl_not_affero": true,
+        "names_mit": false
+      },
+      "licence_spdx": "AGPL-3.0",
+      "matching_releases_marked_prerelease_by_github": 0,
+      "name": "text-generation-webui",
+      "newest_matching_release": {
+        "date": "2026-05-20",
+        "tag": "v4.9"
+      },
+      "published_advisories": {
+        "by_severity": {
+          "critical": 4,
+          "high": 5,
+          "medium": 3
+        },
+        "last_12_months": 11,
+        "latest": "2026-04-03",
+        "total": 12
+      },
+      "readme_first_sentence_naming_jan_or_menlo": null,
+      "readme_mentions_jan_or_menlo": false,
+      "readme_status_sentences": [],
+      "registry": null,
+      "release_window_fully_listed": true,
+      "repo": "oobabooga/text-generation-webui",
+      "stable_releases_in_90_days": 0,
+      "tagged_releases_matching_pattern_in_90_days_including_prereleases": 0
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "AtomicBot-ai/Atomic-Chat",
+      "github_description": "Local AI app and inference engine for agents. Run open-weight LLMs locally \u2014 private, 100% offline on your computer. Join our Discord: https://discord.com/invit",
+      "github_latest_release_marker": {
+        "date": "2026-10-21",
+        "tag": "v2.2.23"
+      },
+      "is_github_fork": false,
+      "last_commit_before_cutoff": "2026-10-22",
+      "latest_stable_release": {
+        "date": "2026-10-21",
+        "days_before_cutoff": 1,
+        "tag": "v2.2.23"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright 2026 Atomic Chat (https://atomic.chat)",
+          "Copyright 2025 Menlo Research (https://menlo.ai)"
+        ],
+        "first_line": "Atomic Chat",
+        "found_at_repository_root": "LICENSE",
+        "names_agpl": false,
+        "names_apache": true,
+        "names_gpl_not_affero": false,
+        "names_mit": false
+      },
+      "licence_spdx": "NOASSERTION",
+      "matching_releases_marked_prerelease_by_github": 0,
+      "name": "Atomic Chat",
+      "newest_matching_release": {
+        "date": "2026-10-21",
+        "tag": "v2.2.23"
+      },
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "readme_first_sentence_naming_jan_or_menlo": "### \ud83d\ude4f Acknowledgements Built on the shoulders of giants: - [llama.cpp](https://github.com/ggml-org/llama.cpp) - [MLX-VLM](https://github.com/Blaizzy/mlx-vlm) - [Tauri](https://tauri.app/) - [Scalar](h",
+      "readme_mentions_jan_or_menlo": true,
+      "readme_status_sentences": [],
+      "registry": null,
+      "release_window_fully_listed": true,
+      "repo": "AtomicBot-ai/Atomic-Chat",
+      "stable_releases_in_90_days": 18,
+      "tagged_releases_matching_pattern_in_90_days_including_prereleases": 18
+    }
+  ],
+  "xda_article": {
+    "names_found": [
+      "LM Studio",
+      "llama.cpp",
+      "KoboldCpp",
+      "Jan",
+      "vLLM",
+      "Msty"
+    ],
+    "published": "Published Jul 6, 2026",
+    "says_llama_cpp_is_engine_ollama_runs_on": true,
+    "title": "Ollama is the easiest way to start local LLMs, but these 6 alternatives are also worth trying"
+  }
+}
