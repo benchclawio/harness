@@ -1,0 +1,10 @@
+#!/bin/bash
+# The commands in the article's "check it yourself" section, run in order. Output is pasted into the article.
+echo '### 1'
+python3 -c 'import re,html,sys,urllib.request as r; t=html.unescape(re.sub(r"<[^>]+>"," ",r.urlopen(r.Request(sys.argv[1],headers={"User-Agent":"Mozilla/5.0"})).read().decode())); t=re.sub(r"\s+"," ",t).replace(" (opens in new tab)","").replace("’","\x27"); print(*dict.fromkeys(m.group(0).strip() for p in sys.argv[2:] for m in re.finditer(p,t)),sep="\n")' https://claude.com/resources/articles/claude-duet-safety-privacy-and-security "built on the auto mode classifier from Claude Code[^.]*\." "An external penetration-testing firm[^.]*\." "Your own request counts as consent[^.]*\."
+echo '### 2'
+python3 -c 'import re,html,sys,urllib.request as r; t=html.unescape(re.sub(r"<[^>]+>"," ",r.urlopen(r.Request(sys.argv[1],headers={"User-Agent":"Mozilla/5.0"})).read().decode())); t=re.sub(r"\s+"," ",t).replace(" (opens in new tab)","").replace("’","\x27"); print(*dict.fromkeys(m.group(0).strip() for p in sys.argv[2:] for m in re.finditer(p,t)),sep="\n")' https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/ "[0-9]/5 \([0-9]+%\)" "These are small samples[^.]*\."
+echo '### 3'
+python3 -c 'import re,html,sys,urllib.request as r; t=html.unescape(re.sub(r"<[^>]+>"," ",r.urlopen(r.Request(sys.argv[1],headers={"User-Agent":"Mozilla/5.0"})).read().decode())); t=re.sub(r"\s+"," ",t).replace(" (opens in new tab)","").replace("’","\x27"); print(*dict.fromkeys(m.group(0).strip() for p in sys.argv[2:] for m in re.finditer(p,t)),sep="\n")' https://claude.com/resources/articles/claude-duet "will share more details about how Claude Duet is designed for safety in the coming days"
+echo '### 4'
+python3 -c 'import re,html,sys,urllib.request as r; t=html.unescape(re.sub(r"<script[\s\S]*?</script>|<style[\s\S]*?</style>|<[^>]+>"," ",r.urlopen(r.Request(sys.argv[1],headers={"User-Agent":"Mozilla/5.0"})).read().decode())); print(t.count("%"),"percent signs;",len(re.findall("success rate",t,re.I)),"mentions of success rate")' https://claude.com/resources/articles/claude-duet-safety-privacy-and-security

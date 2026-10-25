@@ -1,0 +1,164 @@
+{
+  "ai_overview_checks": {
+    "any_inline_citation_url_contains_duet": false,
+    "any_organic_result_is_the_oct_23_duet_safety_post": false,
+    "cited_domains_in_reference_list": [
+      "support.claude.com",
+      "www.instagram.com",
+      "www.youtube.com"
+    ],
+    "cites_cowork_safety_article": true,
+    "cites_the_oct_23_duet_safety_post": false,
+    "cowork_article_mentions_duet": false,
+    "cowork_article_title_is_use_claude_cowork_safely": true,
+    "inline_citation_url_count": 6,
+    "inline_citation_urls": [
+      "https://coursiv.io/blog/is-claude-ai-safe",
+      "https://cybernews.com/security/claude-desktop-tricked-by-malicious-websites-into-running-malware/",
+      "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely",
+      "https://www.instagram.com/reel/Dey5VMhkxAf/",
+      "https://www.youtube.com/watch?v=XMg5kmHkGxc",
+      "https://www.youtube.com/watch?v=gtt89WjpfRM"
+    ],
+    "organic_result_count": 7,
+    "overview_mentions_classifier": false,
+    "overview_mentions_constitutional_ai": true,
+    "overview_mentions_credentials_never_seen": false,
+    "overview_mentions_penetration_test": false,
+    "overview_says_isolated_cloud_environments": true,
+    "overview_says_research_preview_for_pro_and_max": true
+  },
+  "as_of": "2026-10-25",
+  "embrace_the_red": {
+    "mentions_claude_duet": false,
+    "product_tested": "Claude Code",
+    "table_rows": [
+      {
+        "asr": "3/5 (60%)",
+        "effects": "remote stager, native payload, C2 callback, Calculator",
+        "variant": "python3 -I -c (C2 chain)"
+      },
+      {
+        "asr": "3/5 (60%)",
+        "effects": "recon (whoami, uname, id), Calculator",
+        "variant": "claude -p subprocess"
+      },
+      {
+        "asr": "4/5 (80%)",
+        "effects": "Calculator + writes to file outside workspace",
+        "variant": "claude -p subprocess"
+      }
+    ]
+  },
+  "safety_post_absences": {
+    "mentions_any_independent_test_of_duet": false,
+    "mentions_constitutional_ai": false,
+    "mentions_false_positive_or_false_negative": false,
+    "mentions_penetration_test_findings_or_results": false,
+    "mentions_success_rate": false,
+    "names_the_penetration_testing_firm": false,
+    "percent_signs_in_safety_post": 0,
+    "the_word_Trajectory_appears": false
+  },
+  "sources": {
+    "announcement": "https://claude.com/resources/articles/claude-duet",
+    "cowork_safely": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely",
+    "embrace": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+    "help": "https://support.claude.com/en/articles/17631495-get-started-with-claude-duet",
+    "safety_post": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security"
+  },
+  "statement_counts": {
+    "announcement": {
+      "checked": 4,
+      "found": 4
+    },
+    "embrace_the_red": {
+      "checked": 9,
+      "found": 9
+    },
+    "help_article": {
+      "checked": 2,
+      "found": 2
+    },
+    "safety_post": {
+      "checked": 45,
+      "found": 45
+    }
+  },
+  "statements": {
+    "announcement": {
+      "Actions are approved by our auto mode classifier, the same safeguard that protects Claude and Claude Code from taking steps you didn't ask for": true,
+      "Red teams and an external firm penetration tested Claude Duet, and it's covered by our public bug bounty program": true,
+      "reject requests to share the strictest tier of information, including credit card numbers and government identification": true,
+      "will share more details about how Claude Duet is designed for safety in the coming days": true
+    },
+    "embrace_the_red": {
+      "Auto Mode IS NOT a substitute for running your agent in an isolated environment and monitoring what it is up to": true,
+      "Auto Mode only sees Claude's short Python catalogue decoder. The actual exploit was several hops away": true,
+      "Auto Mode replaces human approval prompts with a safety classifier": true,
+      "Posted on Aug 26, 2026": true,
+      "Since mid-August it is the default starting mode for Claude Code": true,
+      "The classifier allowed the creation of the malware process, but then it blocked the command intended to stop it": true,
+      "These are small samples, not a universal ASR measurement": true,
+      "They hired a vendor (Trajectory Labs) to test 72 indirect prompt injection scenarios ten times each": true,
+      "a third-party evaluation commissioned by Anthropic showed a 0.00% prompt injection attack success rate for Opus 5 in Auto Mode": true
+    },
+    "help_article": {
+      "Disconnecting an app stops Claude Duet from accessing it from that point on, but memory of past information from earlier conversations is kept": true,
+      "no defense is perfect, which is one reason consequential actions need your approval": true
+    },
+    "safety_post": {
+      "A placeholder for the credential sits there instead and a proxy outside that machine puts in the real value only as a request is made": true,
+      "An external penetration-testing firm tested Claude Duet with access to our source code, and a follow-on engagement covering the cloud browser and the sign-in form is running now": true,
+      "Approval fatigue is a serious issue": true,
+      "Claude Duet also uses the memory from your Claude account, so details Claude remembered from your earlier chats are visible": true,
+      "Claude Duet is also in scope of Anthropic's public bug bounty program": true,
+      "Claude Duet is an agent, currently in research preview, that uses a cloud-based computer to do work for you": true,
+      "Claude Duet is instructed never to share these with anyone, even if you ask": true,
+      "Claude Duet keeps your conversation history and its memory so it can carry context between tasks, until you delete your history or reset it": true,
+      "Claude Duet never sees your passwords, browser cookies, sign-in tokens, or other credentials": true,
+      "Claude Duet will share other private information, such as health or finances, only if you've explicitly approved it": true,
+      "Date October 23, 2026": true,
+      "Deleting your account wipes everything Claude Duet has stored": true,
+      "Each new credential feature is red-teamed on an isolated rig before it ships to anyone": true,
+      "Files it uploads through the browser get the same sensitive-information check as its messages": true,
+      "It never arrives as a link, a text message, an email, or a website other than claude.ai": true,
+      "Our Safeguards team built evaluations from routine-shaped tasks, each in three variants: an innocent version, one with injected instructions, and one that tempts the agent to do more than it was asked": true,
+      "Some actions stay off-limits even with your approval, like trading securities, banking actions such as moving money between accounts, and accessing someone else's account": true,
+      "Some of what's described here is still changing: how often it asks for approval, how you sign in, and how well the sensitive-information checks tell what's private from what's harmless": true,
+      "Soon you will also be able to sign in with 1Password": true,
+      "The agent drives the browser only through a fixed set of commands": true,
+      "The check runs outside the model doing the work so instructions hidden in a page cannot affect the outcome": true,
+      "The form encrypts it with a single-use key that exists only on our secure cloud browser machine": true,
+      "The model doesn't see the password and can't save or repeat it": true,
+      "The routines that run while you are away have the same safeguards": true,
+      "We categorize this information into two tiers": true,
+      "We give the most sensitive protection to information like sign-in credentials, full card and bank account numbers, and government ID numbers": true,
+      "We will continue to adjust this calibration over time": true,
+      "What does come back is the page's text and downloads": true,
+      "You can see what Claude Duet has done and is doing in its task list": true,
+      "Your browser in Claude Duet runs in its own dedicated virtual machine in the cloud": true,
+      "Your own request counts as consent": true,
+      "a new classifier that checks messages Claude Duet drafts before they go out": true,
+      "a new safety classifier that runs separately from the main model": true,
+      "a one-time card from a wallet like Link from Stripe, limited to that merchant and amount": true,
+      "built on the auto mode classifier from Claude Code and extended for Claude Duet": true,
+      "it can decide to rewrite the message without the sensitive information and share with you for approval": true,
+      "it runs continuously even after you close the app": true,
+      "it shows you the action, the destination, and the content, including every recipient": true,
+      "like paying or sending money, deleting an order, or creating an account": true,
+      "requests that its web browser sends include a distinct User-Agent header, and we publish the public IP addresses it browses from": true,
+      "switching an app off in one place switches it off in both": true,
+      "the sign-in form is itself a target": true,
+      "these safeguards will occasionally miss something or flag a harmless message": true,
+      "we also contacted several large websites and gave them the option to prevent Claude Duet from visiting their sites, and some chose to": true,
+      "what Claude Duet already learned from it stays until you reset its memory, which you can do anytime from the app's settings": true
+    }
+  },
+  "statements_not_found": {
+    "announcement": [],
+    "embrace_the_red": [],
+    "help_article": [],
+    "safety_post": []
+  }
+}
