@@ -1,0 +1,349 @@
+{
+  "anythingllm_page": {
+    "says_anythingllm_can_use_lm_studio_as_engine": true,
+    "says_anythingllm_mit": true,
+    "says_lm_studio_closed_source": true,
+    "says_lm_studio_free_for_work": true,
+    "star_claim": "more than 66,000 star",
+    "times_it_says_AnythingLLM": 41,
+    "title": "AnythingLLM vs LM Studio: the open-source LM Studio alternative",
+    "updated": "Updated October 2026"
+  },
+  "as_of": "2026-11-13T19:30:00Z",
+  "claims_checked": {
+    "anythingllm_github_licence_spdx": "MIT",
+    "jan_github_licence_spdx": "NOASSERTION",
+    "open_webui_github_licence_spdx": "NOASSERTION",
+    "overview_cites_a_reddit_thread": true,
+    "overview_cites_anythingllm_page": true,
+    "overview_cites_modelpiper_article": true,
+    "overview_has_msty_licence_or_price": false,
+    "overview_mentions_a_dollar_price": false,
+    "overview_mentions_lm_studio_licence_or_price": true,
+    "overview_mentions_security_advisories": false,
+    "overview_names": [
+      "Jan",
+      "Ollama",
+      "AnythingLLM",
+      "Msty",
+      "ToolPiper"
+    ],
+    "overview_says_jan_open_source": true
+  },
+  "lm_studio": {
+    "app_terms": {
+      "company": "Element Labs, Inc.",
+      "forbids_reverse_engineering": true,
+      "licence_grant": "non-exclusive, non-transferable license to use the Software solely for Your personal and / or internal business purposes",
+      "says_source_code_is_trade_secret": true,
+      "version_line": "Version: August 23, 2026"
+    },
+    "free_for_work_post": {
+      "date": "Jul 8, 2025",
+      "says_free_at_home_and_at_work": true,
+      "says_no_commercial_licence_needed": true,
+      "title": "LM Studio is free for use at work"
+    },
+    "github_org_repositories": {
+      "lms": {
+        "archived": false,
+        "last_push": "2026-11-10",
+        "licence_spdx": "MIT"
+      },
+      "lmstudio-bug-tracker": {
+        "archived": false,
+        "last_push": "2025-01-16",
+        "licence_spdx": null
+      },
+      "lmstudio-js": {
+        "archived": false,
+        "last_push": "2026-11-13",
+        "licence_spdx": "MIT"
+      },
+      "lmstudio-python": {
+        "archived": false,
+        "last_push": "2025-10-27",
+        "licence_spdx": "MIT"
+      },
+      "mlx-engine": {
+        "archived": false,
+        "last_push": "2026-11-03",
+        "licence_spdx": "MIT"
+      }
+    },
+    "pricing_page": {
+      "bionic_plus": "Bionic+ $ 20 USD / month",
+      "free": "Free $ 0",
+      "free_includes_local_llms": true,
+      "pro": "Pro $ 100 USD / month",
+      "title_names_bionic": true
+    }
+  },
+  "modelpiper_article": {
+    "author_role": "Founder & Lead Engineer, ModelPiper",
+    "published": "August 10, 2026",
+    "recommends_toolpiper_for_mac": true,
+    "says_bionic_plus_20_and_pro_100": true,
+    "says_lm_studio_free_for_work_since_july_2025": true,
+    "times_it_says_ModelPiper": 6,
+    "times_it_says_ToolPiper": 26,
+    "title": "LM Studio Alternative: The Honest List (2026)",
+    "updated": "Updated October 3, 2026"
+  },
+  "msty": {
+    "aurum": "Aurum $149 USD per user / year",
+    "aurum_lifetime": "Aurum Lifetime $349 USD per user",
+    "company": "Msty is a product of CloudStack, LLC",
+    "free": "Free $0 Forever"
+  },
+  "repositories": [
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "janhq/jan",
+      "github_description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+      "last_commit_before_cutoff": "2026-11-12",
+      "latest_stable_release": {
+        "date": "2026-10-28",
+        "days_before_cutoff": 16,
+        "tag": "v0.8.8"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright 2025 Menlo Research"
+        ],
+        "first_line": "Jan",
+        "found_at_repository_root": "LICENSE",
+        "length_chars": 728,
+        "mentions_branding": false,
+        "names_agpl": false,
+        "names_apache": true,
+        "names_bsd": false,
+        "names_fifty_user_branding_exception": false,
+        "names_mit": false
+      },
+      "licence_spdx": "NOASSERTION",
+      "name": "Jan",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 2,
+          "high": 5,
+          "low": 1,
+          "medium": 3
+        },
+        "last_12_months": 11,
+        "latest": "2026-10-29",
+        "total": 11
+      },
+      "release_window_fully_listed": true,
+      "repo": "janhq/jan",
+      "stable_releases_in_90_days": 4,
+      "stars": 45710
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "ollama/ollama",
+      "github_description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "last_commit_before_cutoff": "2026-11-12",
+      "latest_stable_release": {
+        "date": "2026-11-09",
+        "days_before_cutoff": 4,
+        "tag": "v0.40.16"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (c) Ollama"
+        ],
+        "first_line": "MIT License",
+        "found_at_repository_root": "LICENSE",
+        "length_chars": 1058,
+        "mentions_branding": false,
+        "names_agpl": false,
+        "names_apache": false,
+        "names_bsd": false,
+        "names_fifty_user_branding_exception": false,
+        "names_mit": true
+      },
+      "licence_spdx": "MIT",
+      "name": "Ollama",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "release_window_fully_listed": true,
+      "repo": "ollama/ollama",
+      "stable_releases_in_90_days": 30,
+      "stars": 186880
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "Mintplex-Labs/anything-llm",
+      "github_description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience ",
+      "last_commit_before_cutoff": "2026-11-13",
+      "latest_stable_release": {
+        "date": "2026-10-26",
+        "days_before_cutoff": 18,
+        "tag": "v1.19.0"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (c) Mintplex Labs Inc."
+        ],
+        "first_line": "The MIT License",
+        "found_at_repository_root": "LICENSE",
+        "length_chars": 1073,
+        "mentions_branding": false,
+        "names_agpl": false,
+        "names_apache": false,
+        "names_bsd": false,
+        "names_fifty_user_branding_exception": false,
+        "names_mit": true
+      },
+      "licence_spdx": "MIT",
+      "name": "AnythingLLM",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 1,
+          "high": 7,
+          "low": 6,
+          "medium": 11
+        },
+        "last_12_months": 23,
+        "latest": "2026-09-21",
+        "total": 25
+      },
+      "release_window_fully_listed": true,
+      "repo": "Mintplex-Labs/anything-llm",
+      "stable_releases_in_90_days": 5,
+      "stars": 68245
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "open-webui/open-webui",
+      "github_description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "last_commit_before_cutoff": "2026-11-08",
+      "latest_stable_release": {
+        "date": "2026-11-08",
+        "days_before_cutoff": 4,
+        "tag": "v0.13.3"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (c) 2023- Open WebUI Inc. [Created by Timothy Jaeryang Baek]"
+        ],
+        "first_line": "Open WebUI License",
+        "found_at_repository_root": "LICENSE",
+        "length_chars": 2819,
+        "mentions_branding": true,
+        "names_agpl": false,
+        "names_apache": false,
+        "names_bsd": false,
+        "names_fifty_user_branding_exception": true,
+        "names_mit": false
+      },
+      "licence_spdx": "NOASSERTION",
+      "name": "Open WebUI",
+      "published_advisories": {
+        "by_severity": {
+          "critical": 1,
+          "high": 71,
+          "low": 7,
+          "medium": 87
+        },
+        "last_12_months": 161,
+        "latest": "2026-10-18",
+        "total": 166
+      },
+      "release_window_fully_listed": true,
+      "repo": "open-webui/open-webui",
+      "stable_releases_in_90_days": 14,
+      "stars": 158564
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "LostRuins/koboldcpp",
+      "github_description": "KoboldCpp - Run GGUF AI models locally with a KoboldAI UI. One File. Zero Install.",
+      "last_commit_before_cutoff": "2026-11-02",
+      "latest_stable_release": {
+        "date": "2026-10-31",
+        "days_before_cutoff": 13,
+        "tag": "v1.124.2"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>",
+          "copyright on the Program, and are irrevocable provided the stated",
+          "copyright holder, and you cure the violation prior to 30 days after"
+        ],
+        "first_line": "GNU AFFERO GENERAL PUBLIC LICENSE",
+        "found_at_repository_root": "LICENSE.md",
+        "length_chars": 34523,
+        "mentions_branding": false,
+        "names_agpl": true,
+        "names_apache": false,
+        "names_bsd": false,
+        "names_fifty_user_branding_exception": false,
+        "names_mit": false
+      },
+      "licence_spdx": "AGPL-3.0",
+      "name": "KoboldCpp",
+      "published_advisories": {
+        "by_severity": {
+          "high": 3,
+          "low": 1
+        },
+        "last_12_months": 4,
+        "latest": "2026-10-31",
+        "total": 4
+      },
+      "release_window_fully_listed": true,
+      "repo": "LostRuins/koboldcpp",
+      "stable_releases_in_90_days": 6,
+      "stars": 12307
+    },
+    {
+      "advisory_listing_complete": true,
+      "archived": false,
+      "canonical_repo": "nomic-ai/gpt4all",
+      "github_description": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.",
+      "last_commit_before_cutoff": "2025-05-27",
+      "latest_stable_release": {
+        "date": "2025-02-25",
+        "days_before_cutoff": 626,
+        "tag": "v3.10.0"
+      },
+      "licence_file": {
+        "copyright_lines": [
+          "Copyright (c) 2023 Nomic, Inc."
+        ],
+        "first_line": "Copyright (c) 2023 Nomic, Inc.",
+        "found_at_repository_root": "LICENSE.txt",
+        "length_chars": 1055,
+        "mentions_branding": false,
+        "names_agpl": false,
+        "names_apache": false,
+        "names_bsd": false,
+        "names_fifty_user_branding_exception": false,
+        "names_mit": false
+      },
+      "licence_spdx": "MIT",
+      "name": "GPT4All",
+      "published_advisories": {
+        "by_severity": {},
+        "last_12_months": 0,
+        "latest": null,
+        "total": 0
+      },
+      "release_window_fully_listed": true,
+      "repo": "nomic-ai/gpt4all",
+      "stable_releases_in_90_days": 0,
+      "stars": 77345
+    }
+  ]
+}
