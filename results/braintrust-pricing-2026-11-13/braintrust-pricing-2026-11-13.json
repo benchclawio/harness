@@ -1,0 +1,208 @@
+{
+  "breakevens": {
+    "processed_gb_with_scores_held_at_10k": 238.0,
+    "scores_with_data_held_at_1gb": 199000.0
+  },
+  "calculator_example": {
+    "estimated_pro_total": 249.0,
+    "estimated_starter_total": 0.0,
+    "scores": 3656,
+    "scoring_percentage": 15,
+    "storage_gb": 0.73,
+    "tokens_per_month": 65000000
+  },
+  "claims_checked": {
+    "overview_gives_a_worked_workload": false,
+    "overview_gives_gb_overage_rates": true,
+    "overview_gives_retention_extension_rate": true,
+    "overview_gives_score_overage_rates": true,
+    "overview_has_token_rates": false,
+    "overview_mentions_billing_in_arrears_or_proration": false,
+    "overview_mentions_on_demand_needed_for_starter": false,
+    "overview_mentions_startup_program": false,
+    "overview_pro_matches_page": true,
+    "overview_says_deleting_does_not_reduce_usage": false,
+    "overview_says_processed_data_means_ingested": false,
+    "overview_starter_matches_page": true
+  },
+  "faq_facts": {
+    "deleting_does_not_lower_processed_data": true,
+    "each_recorded_score_counts_one": true,
+    "monthly_total_is_calendar_month": true,
+    "pro_charged_prorated_on_signup": true,
+    "pro_described_as_up_to_5_people": true,
+    "processed_data_is_ingested_not_stored": true,
+    "starter_needs_on_demand_to_exceed": true,
+    "startup_condition": "$100K",
+    "startup_must_be_new_customer": true,
+    "usage_charges_billed_after_month": true
+  },
+  "faq_questions_found": [
+    "Do you offer discounts for startups?",
+    "How do I track my usage?",
+    "How does billing work?",
+    "What are scores?",
+    "What does processed data mean?",
+    "Which plan is right for me?"
+  ],
+  "page_facts": {
+    "enterprise_custom_pricing": true,
+    "model_token_rates_on_this_page": false,
+    "no_credit_card_for_starter": true,
+    "pro": {
+      "credits": 100.0,
+      "extra_retention_per_gb_month": 0.5,
+      "gb_rate": 3.0,
+      "included_gb": 5.0,
+      "included_scores": 50000.0,
+      "platform_fee": 249.0,
+      "retention_days": 30,
+      "scores_rate_per_1k": 1.5
+    },
+    "pro_extended_retention_line": {
+      "after_included_days": 30,
+      "per_gb_month": 0.5,
+      "up_to_days": 180
+    },
+    "starter": {
+      "credits": 10.0,
+      "gb_rate": 4.0,
+      "included_gb": 1.0,
+      "included_scores": 10000.0,
+      "platform_fee": 0.0,
+      "retention_days": 14,
+      "scores_rate_per_1k": 2.5
+    },
+    "startup_line": "6\u201312 months free for qualifying startups",
+    "unlimited_users_all_plans": true
+  },
+  "source_url": "https://www.braintrust.dev/pricing",
+  "workloads": [
+    {
+      "cheaper": "Starter",
+      "name": "Solo prototype",
+      "pro": {
+        "data_overage": 0.0,
+        "platform": 249.0,
+        "scores_overage": 0.0,
+        "total": 249.0
+      },
+      "processed_gb": 0.5,
+      "scores": 5000,
+      "starter": {
+        "data_overage": 0.0,
+        "platform": 0.0,
+        "scores_overage": 0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "cheaper": "Starter",
+      "name": "Small app",
+      "pro": {
+        "data_overage": 0.0,
+        "platform": 249.0,
+        "scores_overage": 0.0,
+        "total": 249.0
+      },
+      "processed_gb": 2,
+      "scores": 20000,
+      "starter": {
+        "data_overage": 4.0,
+        "platform": 0.0,
+        "scores_overage": 25.0,
+        "total": 29.0
+      }
+    },
+    {
+      "cheaper": "Starter",
+      "name": "The page's own calculator example",
+      "pro": {
+        "data_overage": 0.0,
+        "platform": 249.0,
+        "scores_overage": 0.0,
+        "total": 249.0
+      },
+      "processed_gb": 0.73,
+      "scores": 3656,
+      "starter": {
+        "data_overage": 0.0,
+        "platform": 0.0,
+        "scores_overage": 0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "cheaper": "Starter",
+      "name": "Pro's included allowance",
+      "pro": {
+        "data_overage": 0.0,
+        "platform": 249.0,
+        "scores_overage": 0.0,
+        "total": 249.0
+      },
+      "processed_gb": 5,
+      "scores": 50000,
+      "starter": {
+        "data_overage": 16.0,
+        "platform": 0.0,
+        "scores_overage": 100.0,
+        "total": 116.0
+      }
+    },
+    {
+      "cheaper": "Starter",
+      "name": "Heavy evals",
+      "pro": {
+        "data_overage": 15.0,
+        "platform": 249.0,
+        "scores_overage": 75.0,
+        "total": 339.0
+      },
+      "processed_gb": 10,
+      "scores": 100000,
+      "starter": {
+        "data_overage": 36.0,
+        "platform": 0.0,
+        "scores_overage": 225.0,
+        "total": 261.0
+      }
+    },
+    {
+      "cheaper": "Pro",
+      "name": "Production agent",
+      "pro": {
+        "data_overage": 135.0,
+        "platform": 249.0,
+        "scores_overage": 675.0,
+        "total": 1059.0
+      },
+      "processed_gb": 50,
+      "scores": 500000,
+      "starter": {
+        "data_overage": 196.0,
+        "platform": 0.0,
+        "scores_overage": 1225.0,
+        "total": 1421.0
+      }
+    },
+    {
+      "cheaper": "Pro",
+      "name": "Large",
+      "pro": {
+        "data_overage": 585.0,
+        "platform": 249.0,
+        "scores_overage": 2925.0,
+        "total": 3759.0
+      },
+      "processed_gb": 200,
+      "scores": 2000000,
+      "starter": {
+        "data_overage": 796.0,
+        "platform": 0.0,
+        "scores_overage": 4975.0,
+        "total": 5771.0
+      }
+    }
+  ]
+}
