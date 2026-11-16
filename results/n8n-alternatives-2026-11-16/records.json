@@ -1,0 +1,1657 @@
+{
+  "checked_at": "2026-11-16T19:00:20.181Z",
+  "kind": "public-records audit; no products installed or agents run",
+  "sources": [
+    {
+      "url": "https://api.github.com/repos/n8n-io/n8n",
+      "final_url": "https://api.github.com/repos/n8n-io/n8n",
+      "status": 200,
+      "type": "repo",
+      "repo": "n8n-io/n8n",
+      "sha256": "82b570dd7879e19df2bfb3252b043ef1f7fa408aa4d96b58b20f01421e4728cb",
+      "data": {
+        "full_name": "n8n-io/n8n",
+        "archived": false,
+        "pushed_at": "2026-11-16T18:52:20Z",
+        "default_branch": "master",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+        "homepage": "https://n8n.io"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/n8n-io/n8n/releases/latest",
+      "final_url": "https://api.github.com/repos/n8n-io/n8n/releases/latest",
+      "status": 200,
+      "type": "release",
+      "repo": "n8n-io/n8n",
+      "sha256": "10530f96153f43f0d6366ff789cb18fde8e645b873b119856bf1604599d073ba",
+      "data": {
+        "tag_name": "n8n@2.47.7",
+        "published_at": "2026-11-13T09:44:36Z",
+        "html_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.7",
+        "prerelease": false
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/n8n-io/n8n/license",
+      "final_url": "https://api.github.com/repos/n8n-io/n8n/license",
+      "status": 200,
+      "type": "license",
+      "repo": "n8n-io/n8n",
+      "sha256": "075b3834991cce4d6ac240d6b553261dab26853d082f881628625d66bc3cb9bc",
+      "data": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "text": "# License\n\nPortions of this software are licensed as follows:\n\n- Content of branches other than the main branch (i.e. \"master\") are not licensed.\n- Source code files that contain \".ee.\" in their filename or \".ee\" in their dirname are NOT licensed under\n  the Sustainable Use License.\n  To use source code files that contain \".ee.\" in their filename or \".ee\" in their dirname you must hold a\n\tvalid n8n Enterprise License specifically allowing you access to such source code files and as defined\n\tin \"LICENSE_EE.md\".\n- All third party components incorporated into the n8n Software are licensed under the original license\n  provided by the owner of the applicable component.\n- Content outside of the above mentioned files or restrictions is available under the \"Sustainable Use\n  License\" as defined below.\n\n## Sustainable Use License\n\nVersion 1.0\n\n### Acceptance\n\nBy using the software, you agree to all of the terms and conditions below.\n\n### Copyright License\n\nThe licensor grants you a non-exclusive, royalty-free, worldwide, non-sublicensable, non-transferable license\nto use, copy, distribute, make available, and prepare derivative works of the software, in each case subject\nto the limitations below.\n\n### Limitations\n\nYou may use or modify the software only for your own internal business purposes or for non-commercial or\npersonal use. You may distribute the software or provide it to others only if you do so free of charge for\nnon-commercial purposes. You may not alter, remove, or obscure any licensing, copyright, or other notices of\nthe licensor in the software. Any use of the licensor’s trademarks is subject to applicable law.\n\n### Patents\n\nThe licensor grants you a license, under any patent claims the licensor can license, or becomes able to\nlicense, to make, have made, use, sell, offer for sale, import and have imported the software, in each case\nsubject to the limitations and conditions in this license. This license does not cover any patent claims that\nyou cause to be infringed by modifications or additions to the software. If you or your company make any\nwritten claim that the software infringes or contributes to infringement of any patent, your patent license\nfor the software granted under these terms ends immediately. If your company makes such a claim, your patent\nlicense ends immediately for work on behalf of your company.\n\n### Notices\n\nYou must ensure that anyone who gets a copy of any part of the software from you also gets a copy of these\nterms. If you modify the software, you must include in any modified copies of the software a prominent notice\nstating that you have modified the software.\n\n### No Other Rights\n\nThese terms do not imply any licenses other than those expressly granted in these terms.\n\n### Termination\n\nIf you use the software in violation of these terms, such use is not licensed, and your license will\nautomatically terminate. If the licensor provides you with a notice of your violation, and you cease all\nviolation of this license no later than 30 days after you receive that notice, your license will be reinstated\nretroactively. However, if you violate these terms after such reinstatement, any additional violation of these\nterms will cause your license to terminate automatically and permanently.\n\n### No Liability\n\nAs far as the law allows, the software comes as is, without any warranty or condition, and the licensor will\nnot"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/n8n-io/n8n/security-advisories?per_page=10",
+      "final_url": "https://api.github.com/repos/n8n-io/n8n/security-advisories?per_page=10",
+      "status": 200,
+      "type": "advisories",
+      "repo": "n8n-io/n8n",
+      "sha256": "cbd3520e947731012b0fecceacc20de6b478906f51b7dd91a09e4f9c94266524",
+      "data": [
+        {
+          "ghsa_id": "GHSA-c772-hjfp-gfc2",
+          "summary": "Integration Nodes Send Authenticated Requests to Unintended API Endpoints",
+          "severity": "medium",
+          "published_at": "2026-11-13T10:55:41Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c772-hjfp-gfc2",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 1.123.96",
+              "patched_versions": ">= 1.123.96",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.2.2",
+              "patched_versions": ">= 3.2.2",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.48.3",
+              "patched_versions": ">= 2.48.3",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.47.6",
+              "patched_versions": ">= 2.47.6",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-q8rc-7m84-mfvj",
+          "summary": "Custom Instance Role with User Management Permissions Gives Control of the Owner Account",
+          "severity": "high",
+          "published_at": "2026-11-13T10:55:27Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-q8rc-7m84-mfvj",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.48.3",
+              "patched_versions": ">= 2.48.3",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.47.6",
+              "patched_versions": ">= 2.47.6",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.2.2",
+              "patched_versions": ">= 3.2.2",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-g333-hr44-g82p",
+          "summary": "AWS Bedrock Nodes Skip SSRF Protection for Custom Runtime Endpoints",
+          "severity": "medium",
+          "published_at": "2026-11-13T10:55:56Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-g333-hr44-g82p",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.48.3",
+              "patched_versions": ">= 2.48.3",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.47.6",
+              "patched_versions": ">= 2.47.6",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.2.2",
+              "patched_versions": ">= 3.2.2",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-h59h-rf6m-7jp5",
+          "summary": "Workflow Activation Allows Trigger Nodes to Use Credentials the Publisher Cannot Access",
+          "severity": "medium",
+          "published_at": "2026-11-13T10:56:14Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-h59h-rf6m-7jp5",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 1.123.96",
+              "patched_versions": ">= 1.123.96",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.2.2",
+              "patched_versions": ">= 3.2.2",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.48.3",
+              "patched_versions": ">= 2.48.3",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.47.6",
+              "patched_versions": ">= 2.47.6",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-2x68-96jw-5r6c",
+          "summary": "SQL Injection via Metadata Filter Key in the Vector Store (OracleDB) Node",
+          "severity": "medium",
+          "published_at": "2026-10-28T08:48:57Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-2x68-96jw-5r6c",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.44.1",
+              "patched_versions": ">= 2.44.1",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.43.5",
+              "patched_versions": ">= 2.43.5",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.0.1",
+              "patched_versions": ">= 3.0.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-9p7v-45m2-wxgj",
+          "summary": "Deprecated Code Nodes Allow Code Execution in the n8n Main Process",
+          "severity": "high",
+          "published_at": "2026-10-28T08:47:05Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-9p7v-45m2-wxgj",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.43.3",
+              "patched_versions": ">= 2.43.3",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.42.6",
+              "patched_versions": ">= 2.42.6",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.0.1",
+              "patched_versions": ">= 3.0.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-mx4r-96jx-v278",
+          "summary": "Asana Trigger: Unauthenticated Request Can Reset Webhook Verification Secret",
+          "severity": "medium",
+          "published_at": "2026-10-28T08:48:49Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mx4r-96jx-v278",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.38.0",
+              "patched_versions": ">= 2.38.0",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.0.1",
+              "patched_versions": ">= 3.0.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-4v22-g448-h4rg",
+          "summary": "MongoDB Node Update Operations Can Modify Unintended Documents",
+          "severity": "medium",
+          "published_at": "2026-10-28T08:48:23Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-4v22-g448-h4rg",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 1.123.89",
+              "patched_versions": ">= 1.123.89",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.46.1",
+              "patched_versions": ">= 2.46.1",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.45.5",
+              "patched_versions": ">= 2.45.5",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.0.1",
+              "patched_versions": ">= 3.0.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-f2cw-9483-7vcp",
+          "summary": "Insecure GraphicsMagick Configuration",
+          "severity": "high",
+          "published_at": "2026-10-28T08:47:32Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-f2cw-9483-7vcp",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 1.123.89",
+              "patched_versions": ">= 1.123.89",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.46.1",
+              "patched_versions": ">= 2.46.1",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.45.5",
+              "patched_versions": ">= 2.45.5",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.0.1",
+              "patched_versions": ">= 3.0.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-426f-xmcv-g8pg",
+          "summary": "OAuth Account Hijack in the End-User Credential Connect Flow via Unauthenticated Callback",
+          "severity": "medium",
+          "published_at": "2026-10-28T08:48:31Z",
+          "html_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-426f-xmcv-g8pg",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.46.1",
+              "patched_versions": ">= 2.46.1",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 2.45.5",
+              "patched_versions": ">= 2.45.5",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "n8n"
+              },
+              "vulnerable_version_range": "< 3.0.1",
+              "patched_versions": ">= 3.0.1",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/activepieces/activepieces",
+      "final_url": "https://api.github.com/repos/activepieces/activepieces",
+      "status": 200,
+      "type": "repo",
+      "repo": "activepieces/activepieces",
+      "sha256": "97a45d61fae67f1b2d1790c1c7fa5ba0562d772ef4848bc94804822e9fc3b58f",
+      "data": {
+        "full_name": "activepieces/activepieces",
+        "archived": false,
+        "pushed_at": "2026-11-16T18:44:55Z",
+        "default_branch": "main",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+        "homepage": "https://www.activepieces.com"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/activepieces/activepieces/releases/latest",
+      "final_url": "https://api.github.com/repos/activepieces/activepieces/releases/latest",
+      "status": 200,
+      "type": "release",
+      "repo": "activepieces/activepieces",
+      "sha256": "b0eea68fd5a349548ec047c6920809f4a673e3a3a14e7b2af62e861c82182c36",
+      "data": {
+        "tag_name": "0.93.0",
+        "published_at": "2026-11-08T14:30:22Z",
+        "html_url": "https://github.com/activepieces/activepieces/releases/tag/0.93.0",
+        "prerelease": false
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/activepieces/activepieces/license",
+      "final_url": "https://api.github.com/repos/activepieces/activepieces/license",
+      "status": 200,
+      "type": "license",
+      "repo": "activepieces/activepieces",
+      "sha256": "da2ef507d29ddf25e0d603920b1b301d0be5fd47a84915723fd47da3a0527e6c",
+      "data": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/activepieces/activepieces/blob/main/LICENSE",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "text": "Copyright (c) 2020-2024 Activepieces Inc.\n\nPortions of this software are licensed as follows:\n\n* All content that resides under the \"packages/ee/\" and \"packages/server/api/src/app/ee\" directory of this repository, if that directory exists, is licensed under the license defined in packages/ee/LICENSE\n* All third party components incorporated into the Activepieces Inc Software are licensed under the original license provided by the owner of the applicable component.\n* Content outside of the above mentioned directories or restrictions above is available under the \"MIT Expat\" license as defined below.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/activepieces/activepieces/security-advisories?per_page=10",
+      "final_url": "https://api.github.com/repos/activepieces/activepieces/security-advisories?per_page=10",
+      "status": 200,
+      "type": "advisories",
+      "repo": "activepieces/activepieces",
+      "sha256": "5a6cfb7bab626f1c9f4b1ba16596c1368f869bd9bb28e6d9e702917cd5991f49",
+      "data": [
+        {
+          "ghsa_id": "GHSA-m992-8rcw-vmrx",
+          "summary": "Queue dashboard (Bull-Board) exposed without authentication",
+          "severity": "critical",
+          "published_at": "2026-08-09T16:42:33Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-m992-8rcw-vmrx",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "activepieces"
+              },
+              "vulnerable_version_range": ">= 0.80.0, <= 0.84.0",
+              "patched_versions": "0.84.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-9723-fmff-mc24",
+          "summary": "Cross-tenant file download via missing JWT audience check on step-files signed URL",
+          "severity": "medium",
+          "published_at": "2026-07-13T10:41:50Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-9723-fmff-mc24",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "activepieces"
+              },
+              "vulnerable_version_range": "< 0.83.0",
+              "patched_versions": "0.83.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-qqcr-rg2x-97mm",
+          "summary": "Arbitrary file write in git-sync via path traversal and symlinks",
+          "severity": "medium",
+          "published_at": "2026-07-13T10:41:19Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-qqcr-rg2x-97mm",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "activepieces"
+              },
+              "vulnerable_version_range": "< 0.82.0",
+              "patched_versions": "0.82.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-5h2x-g6m3-grmq",
+          "summary": "Cross-tenant data exposure and code injection via the Code piece sandbox cache",
+          "severity": "high",
+          "published_at": "2026-07-17T15:45:38Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-5h2x-g6m3-grmq",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "activepieces"
+              },
+              "vulnerable_version_range": "<= 0.83",
+              "patched_versions": "< 0.84.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-7qx9-q4xx-rh59",
+          "summary": "Server-side request forgery in MCP tool validation endpoint",
+          "severity": "medium",
+          "published_at": "2026-07-18T16:56:00Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-7qx9-q4xx-rh59",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "activepieces"
+              },
+              "vulnerable_version_range": "< 0.82.0",
+              "patched_versions": "0.82.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-3pfv-m69p-5fv5",
+          "summary": "Remote Code Execution via Command Injection in Code Step Name",
+          "severity": "high",
+          "published_at": "2026-07-17T16:21:46Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-3pfv-m69p-5fv5",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "activepieces"
+              },
+              "vulnerable_version_range": "<= 0.79.4",
+              "patched_versions": "0.80.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-gr3h-c2j7-r52g",
+          "summary": "V8 Isolate Sandbox Bypass via importFresh Module Loading",
+          "severity": "high",
+          "published_at": "2026-07-17T16:24:50Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-gr3h-c2j7-r52g",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "activepieces"
+              },
+              "vulnerable_version_range": "<= 0.79.4",
+              "patched_versions": "0.80.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-hc39-cm5m-q8g7",
+          "summary": "Reflected Cross-Site Scripting in OAuth Redirect Endpoint",
+          "severity": "medium",
+          "published_at": "2026-07-18T16:48:42Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-hc39-cm5m-q8g7",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "activepieces"
+              },
+              "vulnerable_version_range": "< 0.83.0",
+              "patched_versions": "0.83.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-3w4h-jvcx-rw99",
+          "summary": "Security Advisory: Unauthorized Piece Metadata Insertion Event (No Impact)",
+          "severity": "low",
+          "published_at": "2025-11-29T00:04:35Z",
+          "html_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-3w4h-jvcx-rw99",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "activepieces",
+                "name": ""
+              },
+              "vulnerable_version_range": "< 0.72.0",
+              "patched_versions": ">= 0.72.0",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/windmill-labs/windmill",
+      "final_url": "https://api.github.com/repos/windmill-labs/windmill",
+      "status": 200,
+      "type": "repo",
+      "repo": "windmill-labs/windmill",
+      "sha256": "f6e43af2c5cacec334ea2801ac7962a011f228e6c047bb5df6c82dc3886c6be7",
+      "data": {
+        "full_name": "windmill-labs/windmill",
+        "archived": false,
+        "pushed_at": "2026-11-16T18:44:49Z",
+        "default_branch": "main",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "description": "Code-first platform for workflows, apps and AI agents, on the fastest self-hostable orchestrator (benchmarked against Airflow, Prefect and Temporal). Business teams build with AI, engineers control what ships. Open-source alternative to Lovable, Retool and n8n.",
+        "homepage": "https://windmill.dev"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/windmill-labs/windmill/releases/latest",
+      "final_url": "https://api.github.com/repos/windmill-labs/windmill/releases/latest",
+      "status": 200,
+      "type": "release",
+      "repo": "windmill-labs/windmill",
+      "sha256": "a3b09df5cc523cd48423bfa5c6b291025c01f7d58b48a452669c400a33576fd3",
+      "data": {
+        "tag_name": "v1.875.0",
+        "published_at": "2026-11-14T15:22:27Z",
+        "html_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.875.0",
+        "prerelease": false
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/windmill-labs/windmill/license",
+      "final_url": "https://api.github.com/repos/windmill-labs/windmill/license",
+      "status": 200,
+      "type": "license",
+      "repo": "windmill-labs/windmill",
+      "sha256": "090aa1707de97c1a6058cbb99cce1aafb999bd6c18d090992c24e385e72ea9a3",
+      "data": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/windmill-labs/windmill/blob/main/LICENSE",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "text": "Source code in this repository is variously licensed under the Apache License\nVersion 2.0 (see file ./LICENSE-APACHE), or the AGPLv3 License (see file\n./LICENSE-AGPL) and a proprietary license for certain enterprise features.\n\nEvery file is under copyright (c) Windmill Labs, Inc 2022 unless otherwise\nspecified. Every file is under License AGPL unless otherwise specified or\nbelonging to one of the below cases:\n\nThe files under backend/ are AGPLv3 Licensed, except any snippets of code under\nthe compile flag \"enterprise\". Those snippets and files are under a proprietary\nand commercial license. The files under frontend/ are AGPLv3 Licensed, except\nany snippets of code that require a positive license check to be activated.\nThose snippets and files are under a proprietary and commercial license. Private\nand public forks MUST not include any of the above proprietary and commercial\ncode. The files under python-client/ deno-client/ go-client/ powershell-client/\nare Apache 2.0 Licensed. The openapi files, including the OpenFlow spec is\nApache 2.0 Licensed.\n\nThe binary compilable from source code in this repository without the\n\"enterprise\" feature flag is open-source under the AGPLv3 License terms and\nconditions.\n\nThe \"Community Edition\" of Windmill available in the docker images hosted under\nghcr.io/windmill-labs/windmill and the github binary releases contains the files\nunder the AGPLv3 and Apache 2 sources but also includes proprietary and\nnon-public code and features which are not open source and under the following\nterms: Windmill Labs, Inc. grants a right to use all the features of the\n\"Community Edition\" for free without restrictions other than the limits and\nquotas set in the software and a right to distribute the community edition as is\nbut not to sell, resell, serve as a managed service, modify or wrap under any\nform without an explicit agreement.\n\nTo re-expose directly any Windmill parts to your users (see\nhttps://www.windmill.dev/docs/misc/white_labelling) as a feature of your\nproduct, with the exception of iframed public Windmill \"apps\", or to build a\nfeature on top of \"Windmill Community Edition\" that you sell commercially or\nembed in a distributable product or binary, you must get a commercial license.\nContact us at sales@windmill.dev if you have any questions. To do the same from\nthe binary compiled from the source code in this repository without the\n\"enterprise\" feature flag, you must comply with the AGPLv3 license terms and\nconditions or get a commercial license from Windmill Labs, Inc.\n\nTo use Windmill \"Community Edition\" as is internally in your organization, or to\nuse its APIs as is, you do NOT need a commercial license.\n\nAll third party components incorporated into the Windmill Software are licensed\nunder the original license provided by the owner of the applicable component.\n"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/windmill-labs/windmill/security-advisories?per_page=10",
+      "final_url": "https://api.github.com/repos/windmill-labs/windmill/security-advisories?per_page=10",
+      "status": 200,
+      "type": "advisories",
+      "repo": "windmill-labs/windmill",
+      "sha256": "92001ec3dac1b4ecf91810f2b54c50f7051f351bb138ce985d5f24b20a040c7c",
+      "data": [
+        {
+          "ghsa_id": "GHSA-2jfj-x8j7-7mfh",
+          "summary": "Under nsjail security sandboxing, DuckDB scripts can escape the fs sandbox and poison shared worker caches for cross-workspace RCE",
+          "severity": "high",
+          "published_at": "2026-09-10T08:57:31Z",
+          "html_url": "https://github.com/windmill-labs/windmill/security/advisories/GHSA-2jfj-x8j7-7mfh",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "<1.782.0",
+              "patched_versions": "1.782.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-2ppx-66jv-wpw5",
+          "summary": "Resource-scoped API tokens can read script contents outside their allowed path via scripts/list_search",
+          "severity": "low",
+          "published_at": "2026-06-03T08:36:32Z",
+          "html_url": "https://github.com/windmill-labs/windmill/security/advisories/GHSA-2ppx-66jv-wpw5",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "<= 1.714.1",
+              "patched_versions": "1.715.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-8q8j-mm3g-5c2q",
+          "summary": "Rogue Workspace Admins can inject code via unescaped workspace environment variable interpolation in NativeTS executor",
+          "severity": "low",
+          "published_at": "2026-03-25T20:52:43Z",
+          "html_url": "https://github.com/windmill-labs/windmill/security/advisories/GHSA-8q8j-mm3g-5c2q",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "windmill"
+              },
+              "vulnerable_version_range": "< 1.664.0",
+              "patched_versions": "1.664.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-24fr-44f8-fqwg",
+          "summary": "SUPERADMIN_SECRET (rarely used) can be accessed publicly on versions < 1.603.3 using RCE",
+          "severity": "high",
+          "published_at": "2026-03-02T19:25:39Z",
+          "html_url": "https://github.com/windmill-labs/windmill/security/advisories/GHSA-24fr-44f8-fqwg",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "Windmill (CE and EE)"
+              },
+              "vulnerable_version_range": "< 1.603.3",
+              "patched_versions": "1.603.3",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-f27g-j463-q85w",
+          "summary": "Workspace Slack OAuth Client Secret Exposed to Non-Admin Workspace Members",
+          "severity": "low",
+          "published_at": "2026-02-16T09:07:52Z",
+          "html_url": "https://github.com/windmill-labs/windmill/security/advisories/GHSA-f27g-j463-q85w",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "docker",
+                "name": "ghcr.io/windmill-labs/windmill"
+              },
+              "vulnerable_version_range": "<= 1.634.6",
+              "patched_versions": ">= 1.635.0",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/langgenius/dify",
+      "final_url": "https://api.github.com/repos/langgenius/dify",
+      "status": 200,
+      "type": "repo",
+      "repo": "langgenius/dify",
+      "sha256": "668e962802efd71b718d054bfb298dc08485bfab122c2d4c3adc70b8afc96509",
+      "data": {
+        "full_name": "langgenius/dify",
+        "archived": false,
+        "pushed_at": "2026-11-16T17:13:19Z",
+        "default_branch": "main",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+        "homepage": "https://dify.ai"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/langgenius/dify/releases/latest",
+      "final_url": "https://api.github.com/repos/langgenius/dify/releases/latest",
+      "status": 200,
+      "type": "release",
+      "repo": "langgenius/dify",
+      "sha256": "ffc92085067cae06884fcf2489408cf76c9f58ed18f74f51932f2009453daeac",
+      "data": {
+        "tag_name": "1.19.0",
+        "published_at": "2026-11-04T07:36:16Z",
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.19.0",
+        "prerelease": false
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/langgenius/dify/license",
+      "final_url": "https://api.github.com/repos/langgenius/dify/license",
+      "status": 200,
+      "type": "license",
+      "repo": "langgenius/dify",
+      "sha256": "8ef1bfa7bcc3fc4cb2e4843b2b73da3ec2ffeb23fb793bf4858b7bb662b2e87a",
+      "data": {
+        "path": "LICENSE",
+        "html_url": "https://github.com/langgenius/dify/blob/main/LICENSE",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "text": "# Open Source License\n\nDify is licensed under a modified version of the Apache License 2.0, with the following additional conditions:\n\n1. Dify may be utilized commercially, including as a backend service for other applications or as an application development platform for enterprises. Should the conditions below be met, a commercial license must be obtained from the producer:\n\na. Multi-tenant service: Unless explicitly authorized by Dify in writing, you may not use the Dify source code to operate a multi-tenant environment.\n    - Tenant Definition: Within the context of Dify, one tenant corresponds to one workspace. The workspace provides a separated area for each tenant's data and configurations.\n\nb. LOGO and copyright information: In the process of using Dify's frontend, you may not remove or modify the LOGO or copyright information in the Dify console or applications. This restriction is inapplicable to uses of Dify that do not involve its frontend.\n    - Frontend Definition: For the purposes of this license, the \"frontend\" of Dify includes all components located in the `web/` directory when running Dify from the raw source code, or the \"web\" image when running Dify with Docker.\n\n2. As a contributor, you should agree that:\n\na. The producer can adjust the open-source agreement to be more strict or relaxed as deemed necessary.\nb. Your contributed code may be used for commercial purposes, including but not limited to its cloud business operations.\n\nApart from the specific conditions mentioned above, all other rights and restrictions follow the Apache License 2.0. Detailed information about the Apache License 2.0 can be found at http://www.apache.org/licenses/LICENSE-2.0.\n\nThe interactive design of this product is protected by appearance patent.\n\n© 2025 LangGenius, Inc.\n"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/langgenius/dify/security-advisories?per_page=10",
+      "final_url": "https://api.github.com/repos/langgenius/dify/security-advisories?per_page=10",
+      "status": 200,
+      "type": "advisories",
+      "repo": "langgenius/dify",
+      "sha256": "af8b3a0d64b845216824f8ff55c3dec779829756ea075b97212484c74fb9377d",
+      "data": [
+        {
+          "ghsa_id": "GHSA-6j8g-rp8v-55vr",
+          "summary": "Per-IP Rate Limit Bypass via Spoofable X-Forwarded-For and CF-Connecting-IP Headers",
+          "severity": "medium",
+          "published_at": "2026-11-14T18:08:04Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-6j8g-rp8v-55vr",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "pip",
+                "name": "langgenius/dify"
+              },
+              "vulnerable_version_range": "<= 1.17.1",
+              "patched_versions": "1.18.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-ccrj-frp2-c945",
+          "summary": "IDOR in AppMCPServer PUT Endpoint Allows Modification of Other Apps' MCP Servers",
+          "severity": "high",
+          "published_at": "2026-08-19T17:04:48Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-ccrj-frp2-c945",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "langgenius/dify"
+              },
+              "vulnerable_version_range": "1.14.2",
+              "patched_versions": "1.16.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-9c9q-5rj5-mjj2",
+          "summary": "Cross-Tenant File Preview via Unscoped Console `file_id`",
+          "severity": "high",
+          "published_at": "2026-07-15T10:41:53Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-9c9q-5rj5-mjj2",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "<=1.13.3",
+              "patched_versions": "1.14.2",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-fj5w-7rc8-3f3f",
+          "summary": "Cross-Tenant External API Usage Enumeration",
+          "severity": "medium",
+          "published_at": "2026-07-15T10:36:07Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-fj5w-7rc8-3f3f",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "<=1.13.3",
+              "patched_versions": "1.14.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-5vmp-5q9h-hmr7",
+          "summary": "Cross-Tenant External API Detail Disclosure",
+          "severity": "high",
+          "published_at": "2026-07-15T10:25:14Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-5vmp-5q9h-hmr7",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "composer",
+                "name": ""
+              },
+              "vulnerable_version_range": "<=1.13.3",
+              "patched_versions": "1.14.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-qqjx-5h5w-x5vj",
+          "summary": "Client‑side DOM XSS in the web chat app of Dify when using echarts",
+          "severity": "high",
+          "published_at": "2026-02-11T06:23:29Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-qqjx-5h5w-x5vj",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "<= V1.11.4",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-qpv6-75c2-75h4",
+          "summary": "Dify - Stored XSS in chat",
+          "severity": "medium",
+          "published_at": "2026-03-03T07:10:44Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-qpv6-75c2-75h4",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": ""
+              },
+              "vulnerable_version_range": "1.10.1",
+              "patched_versions": "1.11.2",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-phpv-94hg-fv9g",
+          "summary": "Plaintext API Key Exposure via Model Provider Configuration Endpoint",
+          "severity": "high",
+          "published_at": "2026-01-04T14:57:58Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-phpv-94hg-fv9g",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "dify",
+                "name": "api"
+              },
+              "vulnerable_version_range": "<= 1.10.1-fix.1",
+              "patched_versions": "1.11.0",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-cg94-8v83-7hjj",
+          "summary": "Stored XSS via SVG-file upload",
+          "severity": "medium",
+          "published_at": "2026-04-20T07:14:50Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-cg94-8v83-7hjj",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "Dify"
+              },
+              "vulnerable_version_range": "<= 1.9.2",
+              "patched_versions": "1.13.1",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-9qpf-wcv3-w3qx",
+          "summary": "User enumeration",
+          "severity": "low",
+          "published_at": "2026-02-27T06:02:57Z",
+          "html_url": "https://github.com/langgenius/dify/security/advisories/GHSA-9qpf-wcv3-w3qx",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "",
+                "name": "Dify"
+              },
+              "vulnerable_version_range": "<= 1.8.1",
+              "patched_versions": "1.9.0",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/FlowiseAI/Flowise",
+      "final_url": "https://api.github.com/repos/FlowiseAI/Flowise",
+      "status": 200,
+      "type": "repo",
+      "repo": "FlowiseAI/Flowise",
+      "sha256": "d2b9bf0b452d4dcf5cba740c86403b5b0def83f27286e809ca87d06ce1c12d8d",
+      "data": {
+        "full_name": "FlowiseAI/Flowise",
+        "archived": true,
+        "pushed_at": "2026-08-13T12:38:19Z",
+        "default_branch": "main",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "description": "Build AI Agents, Visually",
+        "homepage": "https://flowiseai.com"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/FlowiseAI/Flowise/releases/latest",
+      "final_url": "https://api.github.com/repos/FlowiseAI/Flowise/releases/latest",
+      "status": 200,
+      "type": "release",
+      "repo": "FlowiseAI/Flowise",
+      "sha256": "97c4f21d7ad986ba9fd49b60a6aaa73ffeb4ffcdec081faf4e421c280a91aac1",
+      "data": {
+        "tag_name": "flowise@3.1.4",
+        "published_at": "2026-07-29T15:51:25Z",
+        "html_url": "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%403.1.4",
+        "prerelease": false
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/FlowiseAI/Flowise/license",
+      "final_url": "https://api.github.com/repos/FlowiseAI/Flowise/license",
+      "status": 200,
+      "type": "license",
+      "repo": "FlowiseAI/Flowise",
+      "sha256": "bb322f30827e7a76b94340270826a0f67487d2d5fd80645c7493d80dc0d47d43",
+      "data": {
+        "path": "LICENSE.md",
+        "html_url": "https://github.com/FlowiseAI/Flowise/blob/main/LICENSE.md",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "text": "Copyright (c) 2023-present FlowiseAI, Inc.\n\nPortions of this software are licensed as follows:\n\n-   All content that resides under https://github.com/FlowiseAI/Flowise/tree/main/packages/server/src/enterprise directory and files with explicit copyright notice such as [IdentityManager.ts](https://github.com/FlowiseAI/Flowise/tree/main/packages/server/src/IdentityManager.ts) are licensed under [Commercial License](https://github.com/FlowiseAI/Flowise/tree/main/packages/server/src/enterprise/LICENSE.md).\n-   All third party components incorporated into the FlowiseAI Software are licensed under the original license provided by the owner of the applicable component.\n-   Content outside of the above mentioned directories or restrictions above is available under the \"Apache 2.0\" license as defined below.\n\n                                  Apache License\n                             Version 2.0, January 2004\n                          http://www.apache.org/licenses/\n\nTERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n1. Definitions.\n\n    \"License\" shall mean the terms and conditions for use, reproduction,\n    and distribution as defined by Sections 1 through 9 of this document.\n\n    \"Licensor\" shall mean the copyright owner or entity authorized by\n    the copyright owner that is granting the License.\n\n    \"Legal Entity\" shall mean the union of the acting entity and all\n    other entities that control, are controlled by, or are under common\n    control with that entity. For the purposes of this definition,\n    \"control\" means (i) the power, direct or indirect, to cause the\n    direction or management of such entity, whether by contract or\n    otherwise, or (ii) ownership of fifty percent (50%) or more of the\n    outstanding shares, or (iii) beneficial ownership of such entity.\n\n    \"You\" (or \"Your\") shall mean an individual or Legal Entity\n    exercising permissions granted by this License.\n\n    \"Source\" form shall mean the preferred form for making modifications,\n    including but not limited to software source code, documentation\n    source, and configuration files.\n\n    \"Object\" form shall mean any form resulting from mechanical\n    transformation or translation of a Source form, including but\n    not limited to compiled object code, generated documentation,\n    and conversions to other media types.\n\n    \"Work\" shall mean the work of authorship, whether in Source or\n    Object form, made available under the License, as indicated by a\n    copyright notice that is included in or attached to the work\n    (an example is provided in the Appendix below).\n\n    \"Derivative Works\" shall mean any work, whether in Source or Object\n    form, that is based on (or derived from) the Work and for which the\n    editorial revisions, annotations, elaborations, or other modifications\n    represent, as a whole, an original work of authorship. For the purposes\n    of this License, Derivative Works shall not include works that remain\n    separable from, or merely link (or bind by name) to the interfaces of,\n    the Work and Derivative Works thereof.\n\n    \"Contribution\" shall mean any work of authorship, including\n    the original version of the Work and any modifications or additions\n    to that Work or Derivative Works thereof, that is intentionally\n    submitted to Licensor for inclusion in the Work by the copyright owner\n    or by an individual or Legal "
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/FlowiseAI/Flowise/security-advisories?per_page=10",
+      "final_url": "https://api.github.com/repos/FlowiseAI/Flowise/security-advisories?per_page=10",
+      "status": 200,
+      "type": "advisories",
+      "repo": "FlowiseAI/Flowise",
+      "sha256": "05e0059c9806c9533c9cb8b46c978b8b6e3ea4ccca5e78132267c488f34e5747",
+      "data": [
+        {
+          "ghsa_id": "GHSA-7x8x-vv46-4579",
+          "summary": "Cross-tenant/cross-org authorization gaps in Enterprise role, and SSO-config endpoints",
+          "severity": "high",
+          "published_at": "2026-08-31T14:00:39Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-7x8x-vv46-4579",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.3",
+              "patched_versions": "3.1.4",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-fhxm-xxcx-g6x3",
+          "summary": "Broken access control in GET /api/v1/organizationuser leaks the organization owner's password hash to any member (privilege escalation/account takeover)",
+          "severity": "medium",
+          "published_at": "2026-08-28T14:13:26Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-fhxm-xxcx-g6x3",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.3",
+              "patched_versions": "3.1.4",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-pprx-4prj-35mj",
+          "summary": "Cross-tenant organization admin takeover via unscoped organization/workspace membership APIs",
+          "severity": "high",
+          "published_at": "2026-08-31T14:00:51Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-pprx-4prj-35mj",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.3",
+              "patched_versions": "3.1.4",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-9gvv-qjj3-2p6g",
+          "summary": "Flowise NodeVM sandbox escape via puppeteer allowlist - authenticated RCE and arbitrary file read via Chromium",
+          "severity": "critical",
+          "published_at": "2026-07-29T21:09:27Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-9gvv-qjj3-2p6g",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.2",
+              "patched_versions": "3.1.3",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise-components"
+              },
+              "vulnerable_version_range": "<= 3.1.2",
+              "patched_versions": "3.1.3",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-x58f-9m57-qc4m",
+          "summary": "Authenticated Sandbox Escape and Data Exfiltration via Pandas Methods Bypass in pythonCodeValidator",
+          "severity": "high",
+          "published_at": "2026-07-29T21:08:47Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-x58f-9m57-qc4m",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.2",
+              "patched_versions": "3.1.3",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-vmv7-4m6c-3cg5",
+          "summary": "CSV Agent Remote Code Execution via Pyodide Code Injection — Root Shell Verified",
+          "severity": "critical",
+          "published_at": "2026-07-29T21:08:36Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-vmv7-4m6c-3cg5",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.2",
+              "patched_versions": "3.1.3",
+              "vulnerable_functions": []
+            },
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise-components"
+              },
+              "vulnerable_version_range": "<= 3.1.2",
+              "patched_versions": "3.1.3",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-ppmg-4cx6-95hh",
+          "summary": "Missing authorization on Flowise chat message routes allows low-privileged API keys to read and delete chat history",
+          "severity": "high",
+          "published_at": "2026-09-10T14:18:18Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-ppmg-4cx6-95hh",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.4",
+              "patched_versions": "",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-wxrr-jp8m-qq7f",
+          "summary": "Evaluator create+update mass-assignment allows cross-workspace evaluator takeover",
+          "severity": "high",
+          "published_at": "2026-05-14T14:18:32Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-wxrr-jp8m-qq7f",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.1",
+              "patched_versions": "3.1.2",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-mq53-pc65-wjc4",
+          "summary": "Evaluation create+update mass-assignment allows cross-workspace evaluation takeover",
+          "severity": "high",
+          "published_at": "2026-05-14T14:18:18Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-mq53-pc65-wjc4",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.1",
+              "patched_versions": "3.1.2",
+              "vulnerable_functions": []
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-5h9v-837x-m97r",
+          "summary": "Dataset create+update mass-assignment allows cross-workspace dataset takeover",
+          "severity": "high",
+          "published_at": "2026-05-14T14:18:06Z",
+          "html_url": "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-5h9v-837x-m97r",
+          "vulnerabilities": [
+            {
+              "package": {
+                "ecosystem": "npm",
+                "name": "flowise"
+              },
+              "vulnerable_version_range": "<= 3.1.1",
+              "patched_versions": "3.1.2",
+              "vulnerable_functions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://blog.n8n.io/introducing-n8n-agents/",
+      "final_url": "https://blog.n8n.io/introducing-n8n-agents/",
+      "status": 200,
+      "type": "page",
+      "sha256": "78dd7a248a8f1b314e68d82bd2e682aca7a5e36ae0da49202b19d621b27ce53d",
+      "title": "Introducing n8n Agents – n8n Blog",
+      "excerpts": [
+        "Introducing n8n Agents – n8n Blog Tutorials Guides Tips By partners News Interviews GitHub ★ 207k Sign in Get Started Introducing n8n Agents n8n now has a new type of Agent. Describe what an agent should do, choose a model, the tools and workflows it can use, and it&#x27;s ready to go! O Ophir Prusak September 25, 2026 ∙ 8-minute read n8n now has Agents . You describe what an agent should do, give it a model and the tools and workflows it can use, and it works out the steps itself. You can talk to it in Slack, run it on a schedule, or call it from any workflow",
+        "ents, it's easier to handle open-ended or back-and-forth jobs that could get complicated to build as a fixed workflow. And you can build an agent without first learning how workflows work. Agents sit next to your workflows, and the two are built to work together. Your agent can use your workflows as tools, so you decide exactly what it's allowed to do in your systems. And when a workflow needs an agent for one of its steps, the new Message an Agent node calls it from inside the workflow. If you use the AI Agent node today, nothing about it has changed. Everything you've built keeps working. 👇 Check out the following video which goes into detail with a real world example. 👇 Why ag",
+        "lay out the process in advance. The same goes for a support email, a new GitHub issue, or any request where you know the domain but not the task. For those jobs, you want to describe the goal in plain language, give the agent access to what it needs, and let it work out the steps as it goes. Until now, taking on a job like that in n8n meant fitting an open-ended conversation into a workflow. You could do it, and plenty of people did, but it took some work to build. Agents are built for those jobs. Sometimes you want the workflow in charge, with the agent as a step inside it. Sometimes you want the agent in charge, with workflows as tools. n8n now gives you both. \"But I've been buil",
+        "trigger, a memory node, an AI Agent node with a few tools attached, and a workflow around it to hold it all together. Lots of n8n users run agents built exactly this way, and they work. The difference is how much of it you have to assemble yourself. It's a bit like building your own PC versus buying a pre-built one. Building your own gets you a working machine, but you pick every part and connect every cable. A pre-built PC arrives with everything connected and ready to go, and you can still open it up and add what you need. n8n Agents are the pre-built version. Memory, sessions, channels, versions and approvals come with every agent, so you spend your time on what the agent should",
+        "t with any tool or workflow you like. What goes into an agent You don't need to know how workflows work to build one. You describe what the agent should do in plain language, and when you open it later, its instructions read like a brief you'd write for a colleague. If your first agents were built in a tool where you write instructions and attach tools, this is how you build them in n8n. Each agent has: A model. Any model you have credentials for, or n8n's Gateway credits. Instructions. Its role, its tone, what it should and shouldn't do, and which tools to prefer. Channels & triggers. Slack, Telegram, Linear, Discord, a schedule. Tools. Built-in n8n integrations, MCP servers, any ",
+        "n it needs them, shareable across agents. Sub-agents. One agent can call another. Knowledge. Upload csv, pdf, markdown or txt files for the agent to ground its answers in. Available on n8n Cloud. Vector stores as well. Memory. It holds the session conversation by default and can remember across sessions as well. Sessions. Every conversation is stored, reviewable, and can be picked up again. Once it's running, you can see what it did. Each session shows every step the agent took, which tools it called, and the input and output of each call. → Full details in the docs . Your workflows can be your agent's tools An agent can use three kinds of tools, and you choose per tool: MCP server",
+        "grations you already use, set up for one specific action with the parameters you choose. More setup, and more control over exactly what the agent can do. Workflows. A whole process you've already built, run exactly the way you defined it. Workflows are the part we're most excited about. Every workflow you've built in n8n is something an agent can use, and none of it needs to change. Take a support agent handling the inbound queue. It has three workflows as tools: Get account context. Pulls the account from the CRM, checks contract status, scores health. It works, and it's boring, which is the highest compliment you can pay a workflow. Add a note to the account. Takes an account ID ",
+        " step, the way you built it. That second workflow is the one to notice. Without a workflow in between, logging a note would mean giving the agent write access to your CRM and trusting its instructions to keep it to the notes field. With the workflow, the agent never holds that credential. It holds a workflow that adds a note and does nothing else. Example of an agent calling workflows Around that, the controls you'd expect: Approvals. Mark a tool as sensitive and the agent pauses for Approve or Reject before using it. For the support agent, paging on-call waits for a person. Per-tool credentials. Each tool runs with the credential you attached to it. The agent never holds the keys ",
+        "lows your n8n roles, so who can edit and publish it is up to you. So you choose, per use case, how much is defined process and how much the agent decides. And you can move that line later: pull a task out of the agent into a workflow when you want it fixed, or hand a workflow to an agent when you want it used with discretion. For anything sensitive, start where the blast radius is small: scoped tools, a test channel, and approvals on any action that writes to a system of record. Built for teams that rely on it A support agent is only useful if the team can count on it. Three things help with that: One agent, used everywhere. Connect it to Slack and the whole team talks to it there,",
+        "rkflow. Change the instructions once, publish, and every place it's connected gets the new version. Drafts and published versions. Edit and preview the draft while the team keeps using the published version. Publish when you're ready. Restore, revert, or unpublish when you need to. Sessions and execution logs. Inputs, tool calls, outputs and errors, per session, so you can see what it did last Tuesday. Using agents inside workflows Agents work in the other direction too. When a workflow needs an agent for one of its steps, add the Message an Agent node. It sends the agent a message built from your workflow data and passes the agent's answer to the next node. The agent brings its ow"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://docs.n8n.io/build/build-and-manage-agents/",
+      "final_url": "https://docs.n8n.io/build/build-and-manage-agents",
+      "status": 200,
+      "type": "page",
+      "sha256": "90b603769e70230da1e14b237a87eeffb66e43f506781f6c74089d10d16c201e",
+      "title": "Build and manage agents | Build | n8n Docs",
+      "excerpts": [
+        "Build and manage agents | Build | n8n Docs Skip to content n8n Docs ⌘ Ctrl k Forum Changelog More Get started Deploy Build Nodes Connect Administer Contribute n8n Docs Build Understand workflows Build and manage agents Preview Connect an agent to Microsoft Teams Preview Ways of building workflows Manage workflows Flow logic Work with data Code in n8n Integrate AI Agentic context management Preview Keyboard shortcuts On this page For the complete documentation index, see llms.txt . This page is also available as Markdown . Copy On this page Build Preview Build a",
+        "ent is an autonomous assistant you build in n8n. Each agent has a language model, instructions, and capabilities you configure, like tools, skills, and access to your knowledge base. Agents live alongside your workflows as first-class artifacts in your project. Use an agent when work is too open-ended for a fixed workflow, and you need an assistant that can reason about requests, pick the right tools, and adapt to responses. Feature availability Agents are available on: n8n Cloud: All plans Self-hosted: All plans from n8n 2.32.3. See Self-hosted for setup details. Preview status Agents are in Preview. They can make mistakes, and their behavior may change while the feature is in dev",
+        "y default on all plans, including Enterprise. Instance owners and admins can change this setting for the whole instance: Open Settings &gt; Agents . Turn Enable Agents on or off. n8n saves your choice across restarts and license changes. The setting is separate from the n8n Assistant setting. When you turn agents off: Users can&#x27;t create agents. New runs can&#x27;t start from Preview, chat, schedules, channels, MCP, evaluations, or the Message an Agent node. Active runs can finish, including runs waiting for approval. n8n cancels queued messages for future runs. They don&#x27;t run after you enable agents again. n8n keeps saved agents and session history. You can access them ag",
+        "chedules stay saved. They can trigger new runs again after you enable agents. n8n doesn&#x27;t replay schedule triggers that occurred while agents was off. This setting doesn&#x27;t affect the AI Agent workflow node. Configure the shared sandbox Agents and n8n Assistant share the same sandbox connection. Changes apply to both features. You can configure the connection while either feature is off. On self-hosted instances, an instance owner or admin can configure the connection: Open Settings &gt; Agents . Under Shared sandbox , select Add sandbox . To edit an existing connection, select the Code sandbox row. Choose a sandbox provider and enter its connection details. Select Save . ",
+        "that connection is configured but the sandbox is off, select Enable sandbox . For environment variables and module requirements, see Enable agents on self-hosted n8n . Video: how agents fit with workflows and AI Agents, fixed workflows, and workflows that use AI for specific steps each suit different kinds of work. Watch how the three compare, and how they work together in production-ready systems. What you can build with agents Use agents to answer questions using your uploaded files and connected services, take actions in tools like Slack, Google Sheets, or Linear, and trigger or coordinate workflows to complete larger tasks. Agents can also delegate to other agents and run on a ",
+        " Sub-agents and Schedules below. How agents work An agent runs a reasoning loop. When you send it a message, or a schedule triggers it, the agent reads your instructions, looks at the request, and decides what to do next: call a tool, search your knowledge base, hand off to another agent, or ask a follow-up question. It repeats this loop until it produces a final response. Each conversation with an agent is a session , which n8n stores so you can resume it later and so the agent can recall context through memory. Parts of an agent Configure these parts of an agent in the Agent Builder: Part What it does Model The language model that reasons and generates responses. Choose a provide",
+        "el when you set up the agent. Instructions The system prompt that describes the agent&#x27;s role, tone, and constraints. Tools Actions the agent can take: workflows, custom code, built-in n8n integrations, and MCP servers . Web search Lets the agent search the web for current information, using the model&#x27;s native search tool or a fallback service. Skills Reusable behavior bundles that package instructions with the tools needed for a specific task. Channels Places people can reach the agent, like Slack, Telegram, or Linear. Schedules Tasks the agent runs on a recurring basis once published. Sub-agents Other published agents this agent can delegate work to. Knowledge base Files",
+        "or context (n8n Cloud, or self-hosted in Preview with a configured sandbox). Memory Session memory keeps the current conversation. Episodic memory recalls context from earlier sessions. Model, Instructions, Tools, Skills, Knowledge, Memory, and Sub-agents are configured while building the agent. Channels and Schedules take effect once you publish. Draft and published versions Every agent has a draft version and, once you&#x27;re ready, a published version. The draft is where you make changes; n8n saves them automatically. The published version is what runs when someone chats with the agent, a channel triggers it, or a schedule fires. Publishing takes a snapshot of the draft, so the",
+        "le you edit. Every publish adds a version to the publish history, and you can restore or revert to an earlier version at any time. Build an agent Build agents in the Agent Builder. Start with a name and a model, add instructions, then attach the tools, skills, knowledge, memory, and sub-agents the agent needs. n8n saves your changes to the draft automatically. Create the agent Select your project from the left menu. Then navigate to the Agents tab. Select Create Agent . n8n opens the Agent Builder with a blank draft. In the Agent tab, enter a name for the agent. Use the icon picker to change the icon. Use n8n Assistant Describe what you want the agent to do to the n8n Assistant . I",
+        "der and model. If the provider needs credentials, follow the prompt to add them. Write instructions In the Instructions field, describe the agent&#x27;s role, its tone and response format, what it should and shouldn&#x27;t do, and which tools or skills it should prefer for common tasks. Keep instructions specific; if the agent doesn&#x27;t behave as expected, refine the instructions first before adding more tools. Add tools In the Tools section, select Add tool and pick from built-in tools (n8n integrations like Slack or Google Sheets), workflows in the same project, custom tools defined by a JSON schema, or external tools using MCP servers . The agent decides which tool to use bas"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://docs.n8n.io/sustainable-use-license/",
+      "final_url": "https://docs.n8n.io/n8n-community-license",
+      "status": 200,
+      "type": "page",
+      "sha256": "47d491ff80d770a50f7fc1947994ed434d9dcd808e8b20fd960aacf4d9cdc6df",
+      "title": "Community license | n8n Community license | n8n Docs",
+      "excerpts": [
+        "Community license | n8n Community license | n8n Docs Skip to content n8n Docs ⌘ Ctrl k Forum Changelog More Get started Deploy Build Nodes Connect Administer Contribute n8n Docs Community license License FAQ On this page For the complete documentation index, see llms.txt . This page is also available as Markdown . Copy On this page n8n Community license Community license Proprietary licenses for Enterprise Proprietary licenses are available for enterprise customers. Get in touch for more information. n8n&#x27;s Sustainable Use License and n8n Enterprise ",
+        "se are based on the fair-code model. More guidance is available in our License FAQs . What license do you use? n8n uses the Sustainable Use License and n8n Enterprise License . These licenses are based on the fair-code model. What source code is covered by the Sustainable Use License? The Sustainable Use License applies to all our source code hosted in our main GitHub repository except: Content of branches other than master. Source code files that contain .ee. in their file name. These are licensed under the n8n Enterprise License . What is the Sustainable Use License? The Sustainable Use License is a fair-code software license created by n8n in 2022. You can read more about why we",
+        "internal business purposes or for non-commercial or personal use. You may distribute the software or provide it to others only if you do so free of charge for non-commercial purposes. You may not alter, remove, or obscure any licensing, copyright, or other notices of the licensor in the software. Any use of the licensor&#x27;s trademarks is subject to applicable law. For practical guidance on what you can do with n8n community version, please check our License FAQs . We encourage anyone who wants to use the Sustainable Use License. If you are building something out in the open, it makes sense to think about licensing earlier in order to avoid problems later. Contact us at license@n",
+        "ontact us to learn more. If you are unsure whether the use case you have in mind constitutes an internal business purpose or not, check our License FAQs or email us at license@n8n.io . Why don&#x27;t you use an open source license? n8n&#x27;s mission is to give everyone who uses a computer technical superpowers. We&#x27;ve decided the best way for us to achieve this mission is to make n8n as widely and freely available as possible for users, while ensuring we can build a sustainable, viable business. By making our product free to use, easy to distribute, and source-available we help everyone access the product. By operating as a business, we can continue to release features, fix bu",
+        "d you create a license? Creating a license was our least favorite option. We only went down this path after reviewing the possible existing licenses and deciding nothing fit our specific needs. There are two ways in which we try to mitigate the pain and friction of using a proprietary license: By using plain English, and keeping it as short as possible. By promoting fair-code with the goal of making it a well-known umbrella term to describe software models like ours. Our goals when we created the Sustainable Use License were: To be as permissive as possible. Safeguarding our ability to build a business. Being as clear as possible what use was permitted or not. My company has a poli",
+        "ould be able to use n8n. If you are unsure whether the use case you have in mind constitutes an internal business purpose or not, check our License FAQs or email us at license@n8n.io . What happens to the code I contribute to n8n in light of the Sustainable Use License? Any code you contribute on GitHub is subject to GitHub&#x27;s terms of use . In simple terms, this means you own, and are responsible for, anything you contribute, but that you grant other GitHub users certain rights to use this code. When you contribute code to a repository containing notice of a license, you license the code under the same terms. n8n asks every contributor to sign our Contributor License Agreement",
+        "arted contributing code to n8n here , and we&#x27;ve listed broader ways of participating in our community here . Why did you switch to the Sustainable Use License from your previous license arrangement (Apache 2.0 with Commons Clause)? n8n was licensed under Apache 2.0 with Commons Clause until 17 March 2022. Commons Clause was initiated by various software companies wanting to protect their rights against cloud providers. The concept involved adding a commercial restriction on top of an existing open source license. However, the use of the Commons Clause as an additional condition to an open source license, as well as the use of wording that&#x27;s open to interpretation, created",
+        ": we realized these services are critical in enabling people to get value from n8n, so we wanted to remove this restriction. We created the Sustainable Use License to be more permissive and more clear about what use is allowed, while continuing to ensure n8n gets the funding needed to build and improve our product. What are the main differences between the Sustainable Use License and your previous license arrangement (Apache 2.0 with Commons Clause)? There are two main differences between the Sustainable Use License and our previous license arrangement. The first is that we have tightened the definition of how you can use the software. Previously the Commons Clause restricted users",
+        "t;sell&quot; the software; we have redefined this to restrict use to internal business purposes. The second difference is that our previous license restricted people&#x27;s ability to charge fees for consulting or support services related to the software: we have lifted that restriction altogether. That means you are now free to offer commercial consulting or support services (e.g. building n8n workflows) without the need for a separate license agreement with us. If you are interested in joining our community of n8n experts providing these services, you can learn more here. Is n8n open source? Although n8n&#x27;s source code is available under the Sustainable Use License, according",
+        "e limitations on use, so we do not call ourselves open source. In practice, n8n offers most users many of the same benefits as OSI-approved open source. We coined the term &#x27;fair-code&#x27; as a way of describing our licensing model, and the model of other companies who are source-available, but restrict commercial use of their source code. What is fair-code, and how does the Sustainable Use License relate to it? Fair-code isn&#x27;t a software license. It describes a software model where software: Is generally free to use and can be distributed by anybody. Has its source code openly available. Can be extended by anybody in public and private communities. Is commercially restri"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://n8n.io/pricing/",
+      "final_url": "https://n8n.io/pricing/",
+      "status": 200,
+      "type": "page",
+      "sha256": "0917cfb5c8e7c36337023b78e08e743d8563aff5b710cda886b9d687ffd35cef",
+      "title": "n8n Plans and Pricing - n8n.io",
+      "excerpts": [
+        "chine-readable content. Pricing All plans include unlimited users and workflows and every integration. Pricing is based on monthly workflow executions, regardless of complexity. Monthly Annually (Save 17%) Starter Build and run your first workflows and agents. 20€ /mo, billed annually 2.5K workflow executions with unlimited steps Start free trial No credit card required Hosted by n8n This plan includes: 1 shared project 5 concurrent executions Agents, MCP and AI nodes 1,600 Assistant credits/month AI models without API keys Forum support Pro For solo builders and small teams running automations in production. 50€ /mo, billed annually 10K workflow executions with unlimited steps Sta",
+        "d Hosted by n8n Everything in Starter plan, plus: 3 shared projects Up to 50 concurrent executions 7 days of insights Up to 9,600 Assistant credits/month Admin roles Metric-based evaluations Workflow history Business For companies with &lt; 100 employees needing collaboration and scale. 667€ /mo, billed annually 40K workflow executions with unlimited steps Start free trial Self-hosted only Self-hosted Hosted by n8n? Everything in Pro plan, plus: 6 shared projects SSO and LDAP 30 days of insights Assistant (preview) Multiple environments Queue mode for scaling Version control using Git Forum support Enterprise For organizations with strict compliance and governance needs. Contact Sa",
+        "workflow executions Contact sales Hosted by n8n or Self-hosted Everything in Business plan, plus: Unlimited shared projects 200+ concurrent executions 365 days of insights External secret store integration End-user credentials (preview) Log streaming Extended data retention Dedicated support with SLA Assistant preview on request If it doesn’t run, you don’t pay Unlike other tools that charge per step or user, n8n lets you build freely and only pay when a workflow runs from start to finish. Get Started Talk to sales Need something a bit different? Startup plan Under 20 employees? Check if you qualify for our Startup plan and get 50% off Business. Learn more Community Edition A stand",
+        ", self-hosted version of n8n is available on GitHub. 210,615 Learn more Trusted by teams building smarter workflows. What’s included? Cloud Self-hosted Core features Starter Pro Enterprise Leading editor UI Included Included Included Assistant (preview) Included Included On request Assistant credits (preview) 1,600/month Up to 9,600/month N/A All integrations (nodes) Included Included Included Workflow templates Included Included Included Data tables Included Included Included Workflow history - max days 1 5 365+ Agents Starter Pro Enterprise Agents (preview) Included Included Included AI Agent node and AI steps Included Included Included MCP Server Trigger Included Included Includ",
+        "uded Included Included Human approval for tool calls Included Included Included Hosted and embedded chat Included Included Included Gateway credits Included Included Not included Test and monitor AI Starter Pro Enterprise Light evaluations Included Included Included Metric-based evaluations 1 workflow Unlimited Unlimited LangSmith tracing Available in self-hosted OpenTelemetry tracing (preview) Available in self-hosted Developer tools Starter Pro Enterprise Code steps in workflows (JS/Python) Included Included Included Custom API requests (HTTP, GraphQL, etc.) Included Included Included Import cURL commands Included Included Included Trigger from webhooks, queues Included Included ",
+        "cluded Included Included Control n8n via CLI Included Included Included Run bash scripts Available in self-hosted Custom nodes Available in self-hosted Global Variables Not included Included Included Control n8n via API - additional scope control Not included Not included Included Environments and version control Starter Pro Enterprise Environments Not included Not included Included Version control using Git Not included Not included Included Instances included Not included Not included 2 (dev, prod) Workflow Diff Not included Not included Included Executions and limits Starter Pro Enterprise Max active workflows Unlimited Unlimited Unlimited Automatic retries Included Included Inc",
+        "ax saved executions 2.5k 25k 50k Saved-execution storage 2.5 GB 25 GB 50 GB Max execution log retention 7 days 30 days Unlimited Concurrent executions 5 20 / 50 200+ Max execution duration 5 min 40 min 40 min Overage fees Capped Capped Custom Security and credentials Starter Pro Enterprise AI usage controls Included Included Included Encrypted credential store Included Included Included Credential sharing Included Included Included SSO and LDAP Not included Not included Included End-user credentials (preview) Not included Not included Included External secret store integration Not included Not included Included Execution data redaction Not included Not included Included Enforce 2FA",
+        "e Execution logging Included Included Included Error workflows Included Included Included Debug in editor Included Included Included Search executions by the data they contain Not included Included Included Audit logging Not included Not included Included Stream logs to external services (e.g. Datadog) Not included Not included Included Collaboration Starter Pro Enterprise Users Unlimited Unlimited Unlimited Shared projects 1 3 Unlimited Project admins Included Included Included Project editors Not included Included Included Instance admins Not included Included Included Project viewers Not included Not included Included Custom roles Not included Not included Included Enterprise Sc",
+        "cluded Not included Included Sales assisted procurement Not included Not included Included See your work working What’s included in the n8n free trial? When you start a free trial of n8n Cloud, you get: Pro-level features: Global Variables, Insights (including the dashboard and 14-day history), 5-day workflow history, advanced execution filters, unlimited evaluations, folders and Assistant Trial limits: 1,000 executions, 5 concurrent executions, a 180-second execution timeout, and 1 team project 800 Assistant credits, plus 100 AI credits Not included: Admin Roles, the project Editor role, Named Versions, Workflow Diffs, and the n8n public API When you start a free trial on the Busi",
+        "all Business features for 14 days. No credit card is required for the n8n Cloud trial. A credit card is only required for the Business plan free trial. What are executions (and why are they more powerful than on other products)? Executions are much more powerful than the ‘operations’ or ‘tasks’ that you’re billed on in other products. An execution is a single run of your entire workflow. It doesn’t matter how many steps are in the workflow or how much data it processes. It’s still a single execution. This makes your usage more predictable than other tools where you pay individually for every step or task. Plus n8n workflows you can do things in a single execution that would take 10"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://www.activepieces.com/",
+      "final_url": "https://www.activepieces.com/",
+      "status": 200,
+      "type": "page",
+      "sha256": "e61bc4cf893f5a7cb10d58ad46fb22f77c0d32bcc6da9ac957a85ea1e4819b2b",
+      "title": "Activepieces: unify your team&#x27;s AI",
+      "excerpts": [
+        "Activepieces: unify your team&#x27;s AI Skip to content Product Solutions Enterprise Pricing Docs Open app Talk to sales AI Agents with enterprise control Chat, agents, flows, tables, and 770+ apps in one workspace, so your whole team works with AI in the tools they already use. Use in your AI Talk to sales Free plan, no credit card required Chat Agents Flows Runs Tables Connections Templates MCP server Agents New agent Search agents All teams 23 agents Support triage Ran 4 min ago Answers the questions you get every day and escalates anything that needs a human. +2 Invoice intake Ran 20 min ago Pulls invoices out of the inbox, matches them to the PO, files them for",
+        "Researches every demo request, scores it, and hands it to an owner within the minute. +3 Claude Gemini Audit log MCP servers Cursor ChatGPT Agents Approvals gemini.google.com New chat Gems Recent Settings Gemini Pro Tool Spend Compare plans Summarise Export Ask Gemini calder-prod — postgres calder-prod public customers subscriptions invoices api_keys audit_log Run Query 1 select email, plan, mrr, last_seen from customers where mrr &gt; 0; email plan mrr last_seen team $1,240 free $380 team $2,900 free $120 scale $640 free $95 312 rows 84 ms connected as agent_svc dashboard.stripe.com Test mode Home Payments Customers Billing $4,280.00 Lifetime volume Customer since Payment method M",
+        "ware.ts middleware.ts Apply Ask followup claude.ai New chat Recents Access review Document · 4 min read Reply to Claude… Chat Cowork Opus 5 Preview Code github.com calder / platform Private #482 Open claude[bot] wants to merge 2 commits Conversation Commits Checks Files changed src/auth/middleware.ts +12 −4 src/auth/verify.ts +31 −8 All checks have passed 4 successful checks Merge chatgpt.com New chat Search chats Library Chats ChatGPT Ask anything Your team already works with AI. Nobody&#39;s tracking what they access, cost, or do. The enterprise AI ecosystem “Activepieces was instrumental in helping us become an AI-first organization. It enabled rapid experimentation across teams",
+        "h the one job your team keeps redoing by hand. No card to begin, and it runs on our cloud or your own servers. Start building Talk to sales Agents that get the job done Describe a job in plain words. An agent takes it end to end across your tools, checking in only where it counts. Process the invoice in my inbox. Agent Found the invoice · Maple · $4,200 Matched the PO · #PO-1183 Checked the budget · Under Q3 Payment · Maple Studio Amount $4,200.00 Invoice #INV-2043 Due Jul 30 Pay $4,200 to Maple? Approve payment Edit Scheduled · logged in QuickBooks Give the agent a task… Plain words, no prompt engineering Say what you want done. The agent works out the steps, the order, and what t",
+        "k Notify sales Just browsing HubSpot Add to nurture All the depth you need. Branching, retries, waitpoints, subflows, error handling, human approvals. Code for the hardest step. Write TypeScript inline where your flow needs it. Keep the rest visual. Every app connects once. Connect an app once. Every flow, agent, and teammate can reach it. Everything you need to run this for the whole company. Projects Each team gets its own space, sealed off. Projects 6 projects Growth 14 members 412k Revenue Ops 9 members 268k Support 21 members 191k Data Platform 11 members 154k Access Control Okta or Entra sign-in, roles to the permission. Sarah Chen [email protected] Admin Everything, includin",
+        " Lead, Alan AI-powered health insurance, 700 employees 300+ Workflows deployed, from zero $500k+ Saved annually 6,300+ Hours reclaimed 770+ open-source pieces For the apps you already run, with a clear path for everything else. View all pieces Call any API Hit any REST or GraphQL endpoint using the HTTP piece, with auth and pagination handled. Build it with AI Describe a step in plain English and AI writes it, or drop into code and write TypeScript. All open source Every piece is MIT-licensed, built by hundreds of contributors in the open. One workspace your team and your agents share. Chat Say what you want in plain words and it gets built. When a deal closes in HubSpot, add a row",
+        "Cursor can run what you built. MCP server Live mcp.activepieces.com/v1 create_invoice find_customer post_message Tables Data every flow and agent can read and write. Customers 1,284 rows Verano Coffee Active $6,400 Piera Trial $2,800 Wren Labs Active $5,100 Northaven Active $9,750 Halcyon Press Trial $1,900 Linden Freight Active $8,300 Knowledge Base Your documents, searchable by every agent. refund window for annual plans 3 Refund policy Policies · updated Aug 28 Enterprise order form Legal · updated Jul 14 Support escalation ladder Runbooks · updated Aug 02 Here&#39;s how it&#39;s going for the teams building with us. GitHub stars Contributors 356 “Connect apps, APIs and webhooks",
+        "nced options of Make, and cheaper. That is my dream.” CA CaptainJamie Reddit, r/selfhosted “User-friendly, even for those without technical skills. Highly flexible and powerful, with options to add code when needed.” Giuseppe &quot;Peps&quot; C. G2 “My experience has been nothing but positive. It stands out as not just an alternative, but in many ways a preferred choice.” Dennis Klappe Trustpilot “The easiest and most user friendly automation software I have used. It was extremely easy to set up flows and get automations running.” Patrick F. G2 Questions, answered Can non-developers really build with this? Yes. Someone on your team describes what they need, and it gets built. To ch",
+        "lems instead of running a ticket queue. How does the cost hold up as more teams join? Unlimited flows on every plan. Logic inside a flow is free. You pay for how often flows actually run, and the per-run price drops as your volume grows. What will our security team ask about? The usual: single sign-on, granular role permissions, audit logs, encryption, and control over where the data lives. All of it&#39;s built in. Can we self-host? Yes. Run it with Docker or Kubernetes on your own infrastructure, or use our cloud, which runs in Frankfurt. Is Activepieces really open source? Yes. The core is MIT-licensed. Read the code, fork it, run your own version if you want to. Put your first ",
+        "ion to work. Start with one flow this afternoon, or bring the whole stack across. We&#39;ve got you from here. Start building Talk to sales Free to start No credit card Open source Product Workflow Builder AI Agents Tables Chat Pricing Build Docs Pieces MCP Embed GitHub Business teams Marketing Sales Customer Support Operations Finance Technical teams Engineering IT Internal Tools OSS Developers Company Blog Resources Support forum Talk to sales Security OSS friends Backed company © 2026 Activepieces. All rights reserved. Terms Privacy Cookie settings"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://www.windmill.dev/docs/intro",
+      "final_url": "https://www.windmill.dev/docs/intro",
+      "status": 200,
+      "type": "page",
+      "sha256": "85ec8c82d8699e48dfffcadfc0ae522fdcb8281f4ac662e69e939bc34d8cb246",
+      "title": "What is Windmill? | Windmill",
+      "excerpts": [
+        "Script editor Flow editor App builder Triggers Data tables Deployment & versioning Local dev Workers AI sandboxes Observability RBAC No-ops self-host Pricing Docs Cloud Hub OpenAPI Blog Changelog Roadmap About Windmill What is Windmill? Getting started Quickstart Scripts Flows Pipelines (alpha) Apps (full-code) Apps (low-code, legacy) Guides Triggers Compare Benchmarks Contributor guide Contact / Getting help AI AI sessions AI chat & copilots MCP AI agents AI agent evals AI sandbox Core concepts List of core concepts Auto-generated UIs JSON schema and parsing Instant preview & testing Dependency management & imports Rich display rendering Workflows as code Persistent storage & data",
+        "n Integrations Windmill Editors Suite Script editor Flow editor Full-code app Low-code app editor (legacy) Code editor Hosting and Advanced Self-host Instance settings Setup OAuth and SSO Infrastructure as code Windmill on AWS Windmill on Azure Windmill for Microsoft environments Upgrade PostgreSQL to 18 Deploy to prod Draft and deploy Git sync Versioning with UI Workspace forks Dev workspaces Git Promotion workflow (cross-instance compatible) Deploy to prod using the UI Protection rulesets CI test scripts Collaboration and deployment stages Business teams building with AI Local development Command-line interface (CLI) Preinstall binaries Browser automation Run Docker containers Ru",
+        " Autoscaling Concurrency limits Job debouncing OpenID Connect (OIDC) SAML & SCIM External auth with JWT Dedicated workers / High throughput Agent workers Critical alerts Content search Codebases & bundles CSS editor Multiplayer Windows workers Private Hub White labeling Windmill Full text search on jobs and logs Native SQL ↔ S3 Windmill partners About Windmill What is Windmill? On this page What is Windmill? Windmill is an open-source , self-hostable code-first platform for workflows, apps and AI agents, running on the fastest self-hostable orchestrator . Engineers write code in TypeScript, Python, Go, PHP, Bash, C#, SQL, Rust, Ruby and R, or any Docker image. Business teams build ",
+        "ms build with AI safely . It's an alternative to the likes of Lovable, Retool, n8n, Airflow, Prefect, Kestra and Temporal, and includes: An execution runtime for scalable, low-latency function execution across a worker fleet. An orchestrator for assembling these functions into flows, built in a visual editor, as YAML or as workflows as code . A full-code app builder for custom frontends in React or Svelte connected to Windmill backend runnables. Data tables , DuckDB and DuckLake for storing and transforming data, wired into pipelines (alpha). A low-code app editor (legacy) for creating data-centric dashboards with drag-and-drop components. You can build in the web IDE, with AI in t",
+        "e browser, or locally with the CLI and your coding agent, deploying from a Git repository . Start your project today with our Cloud App (no credit card needed) or opt for self-hosting . Take a tour of Windmill Explore our platform by watching these demos of our main features: Script editor ( 11 min ) 1 Flow editor ( 17 min ) 2 App editor ( 6 min ) 3 Local development ( 3 min ) 4 Develop faster ​ Focus on code that matters: your critical business logic, from data transformation to internal API calls, starts as scripts and SQL files. Windmill transforms these into scalable microservices and tools without the usual heavy lifting. Boilerplate code is eliminated as Windmill takes care o",
+        "nternal tool builders like Retool and AI app builders like Lovable each cover part of what Windmill does. Windmill runs workflows, apps, AI agents and data pipelines on one open-source platform you can self-host, with review and promotion for what business teams build with AI. Learn how Windmill compares to other products like Retool , n8n , Airflow , Prefect , Kestra and Temporal , or browse all comparisons . For performance, see the benchmarks against other orchestrators . Benchmarks Windmill has about the same performance as AWS Lambda for heavier workloads, but it is slower on cold starts for medium compute. Windmill compared to peers See where Windmill sits in the market of wo",
+        "g Roadmap llms.txt Company Jobs Brand Partners Help & Support OpenAPI GitHub Issues Discord Questions Legal Privacy Policy Terms of Service License Terms Made with passion in San Francisco and Paris. Windmill Labs is SOC 2 Type II compliant. © 2026 Windmill Labs, Inc. All rights reserved. 1111B S Governors Ave STE 6013, Dover, DE 19904, USA"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://dify.ai/",
+      "final_url": "https://dify.ai/",
+      "status": 200,
+      "type": "page",
+      "sha256": "e316bde43fcaa031bfd79c1f32a8c9bec1a839c6a23ef159c86588aa1b2cba9e",
+      "title": "Dify - The Platform for Production-Ready Agentic Workflows",
+      "excerpts": [
+        "Dify - The Platform for Production-Ready Agentic Workflows Dify is Recognized in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms as a Niche Player. Learn More Products Solutions Docs Pricing Company Contact Sales Log in Get Started EN Menu Get Back Products Solutions Docs Pricing Company Products Get Back Build Workflow Studio Visual Builder for Agentic Workflows Knowledge Pipeline Prepare searchable knowledge bases Marketplace Explore Dify tools, models, and integrations Deploy Dify Cloud Ready to use. Build AI agents fast Dify Enterprise Enterprise-grade security",
+        " review Manufacturing & Industrial One private platform across every business unit Consumer Goods & FMCG Let business teams build their own Agents Professional Services & Audit Drive audit automation with Agents and RPA Logistics & Supply Chain Grow business volume without proportional cost growth Public Sector Deploy locally and share securely across institutions Banking & Financial Services Unify business teams on one AI platform Pharma & Life Sciences Governed expert-level AI assistants Semiconductor Orchestrate AI on top of proprietary LLMs Education One knowledge base for multi-campus services Internet & Media Move from pilot projects to everyday productivity Company Get Back ",
+        " Language Get Back English 简体中文 日本語 한국어 Deutsch English 简体中文 日本語 한국어 Deutsch AI Agent Management Platform that Puts You in Control Build an agent with one team, and scale across the enterprise. Choose your models and deployment environment, manage access, and monitor agent activity in real time. Trusted by Builders & Enterprises Worldwide MAERSK Adobe Google Panasonic PayPal Lilly Thermo Fisher Scientific MITRE Mercedes-Benz Novartis Deloitte McDonald's AIA Volkswagen CTC KPMG RICOH RICOH What makes Dify stand out is its ability to democratize AI agent development. By combining powerful AI/ML capabilities on a no-code platform, its rapid deployment and intuitive interface make it h",
+        "y accessible even for beginners, significantly accelerating citizen development. What makes Dify stand out is its ability to democratize AI agent development. By combining powerful AI/ML capabilities on a no-code platform, its rapid deployment and intuitive interface make it highly accessible even for beginners, significantly accelerating citizen development. VOLVO VOLVO In this climate of perpetual beta, tools enabling rapid validation aren&#39;t just helpful, they&#39;re existential. For Volvo Cars, strategically navigating this AI frontier, this is where Dify delivers indispensable value. In this climate of perpetual beta, tools enabling rapid validation aren&#39;t just helpful,",
+        "igating this AI frontier, this is where Dify delivers indispensable value. RICOH What makes Dify stand out is its ability to democratize AI agent development. By combining powerful AI/ML capabilities on a no-code platform, its rapid deployment and intuitive interface make it highly accessible even for beginners, significantly accelerating citizen development. ets Dify&#39;s intuitive interface allows our teams to rapidly design and deploy complex natural language processing pipelines, enabling us to improve the quality of our assessment products while reducing cost and time to market. Deploy Dify Your Way. Managed Dify Cloud Hosted by Dify. Build, test, and launch AI apps without m",
+        "ows, agents, and knowledge bases Publish as web app or API Scale plans as your team, storage, logs, and usage grow Learn more → Get Started Self-hosted Dify Enterprise Self-host or run in your VPC. Built for procurement, security, and audit. SSO / SAML, RBAC, audit logs SOC 2 Type II + ISO 27001 Helm chart for K8s deployments Dedicated CSM & 24/7 support Learn more → Contact Sales Open-Source Community Edition Source-available. Self-host with Docker. 148K+ stars on GitHub. Apache-2.0-derivative license Single-command Docker deploy Full agent runtime + workflow editor Community Discord & forum support 148K View on GitHub Everything Teams Need to Build and Ship AI Apps. Turn Prompt L",
+        "uilding blocks and AI prompts to define how an app thinks, retrieves data, makes decisions, uses tools, asks for human input, and completes tasks. The logic stays visible, so teams can test, debug, deploy, and hand it off with confidence. Explore Workflow Studio → Build Agents with Skills , Tools , and Knowledge Build an agent by chatting or configuring it manually. Use it as an app, embed it into a website, or reuse it as an agent node inside a workflow. Learn How to Build an Agent → Prepare the Context Your AI Apps Rely On. Create repeatable pipelines for files, websites, online documents, and drives. Extract, clean, chunk, index, and test retrieval before the knowledge base is c",
+        "eedback, annotations, latency, and usage data to understand what happened and improve the app over time. See Publish Options → ← Workflow ← Agent ← Knowledge Pipeline ← Plugins ← Publish & Monitor Everything Teams Need to Build and Ship AI Apps. Workflow Turn Prompt Logic Into a Visible Execution Path. Use visual building blocks and AI prompts to define how an app thinks, retrieves data, makes decisions, uses tools, asks for human input, and completes tasks. The logic stays visible, so teams can test, debug, deploy, and hand it off with confidence. Explore Workflow Studio → Agent Build Agents with Skills , Tools , and Knowledge Build an agent by chatting or configuring it manually.",
+        "r files, websites, online documents, and drives. Extract, clean, chunk, index, and test retrieval before the knowledge base is connected to agents or workflows. Explore Knowledge Pipeline → Plugins Bring Your AI Stack into One Workspace . Install model providers, tools, data sources, and MCP integrations from the Marketplace or define your own. Teams can reuse approved plugins across apps instead of wiring each project from scratch. Visit the Marketplace → Publish & Monitor Ship the Same Logic as an App, API, or Tool. Publish Dify apps as hosted experiences, API endpoints, embeds, or MCP-compatible tools. Use logs, feedback, annotations, latency, and usage data to understand what h",
+        "diate Business Value . Integrate your operations, data, and workflows into one seamless foundation. Eliminate the overhead between idea and execution, and launch dependable AI solutions that deliver returns from day one. Get Started Contact Sales &rarr; Resources Docs Blog Events Support Roadmap Company Talk to Us Join Us Brand Guidelines Programs Education Partner Terms & Policies Terms of Service Privacy Policy Cookie Policy Brand Usage Terms Data Protection Agreement Marketplace Agreement End User License Agreement Resources Docs Blog Events Support Roadmap Company Talk to Us Join Us Brand Guidelines Programs Education Partner Terms & Policies Terms of Service Privacy Policy Coo"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://flowiseai.com/",
+      "final_url": "https://flowiseai.com/",
+      "status": 200,
+      "type": "page",
+      "sha256": "20b4726c372146ab6ff2d01a5c82e7c30ca204e0e81cfe96dd48cd36dc1660d7",
+      "title": "Flowise - Build AI Agents, Visually",
+      "excerpts": [
+        "Flowise - Build AI Agents, Visually We&#x27;re sunsetting Flowise. Learn more Star Features Case Studies Pricing Community Webinars Docs Get Started Menu Features Case Studies Pricing Community Webinars Docs Get Started Build AI Agents Visually Open source agentic systems development platform Get Started GitHub Trusted and used by teams around the globe Iterate, fast Flowise provides modular building blocks for you to build any agentic systems, from simple compositional workflows to autonomous agents $ npm install -g flowise $ npx flowise start Get Started Agentf",
+        "ration distributed across multiple coordinated agents TXT PDF RTF DOC HTML CSS JS JSON XML CSV MD SQL Chatflow Chat Assistants Build single-agent systems and chatbots with support for tool calling and knowledge retrieval (RAG) from various data sources HITL Human In the Loop Allow humans to review tasks performed by agents within the feedback loop Observability Execution Traces Full execution traces, support Prometheus, OpenTelemetry and other observability tools import requests url = &quot;/api/v1/prediction/:id&quot; def query ( payload ) : response = requests.post ( url, json = payload ) return response.json ( ) output = query ( { question : &quot;hello!&quot; ) } Developer Frie",
+        "idea in minutes, yet powerful enough to take all the way to production David Micotto, Senior Director of DX & AI Pricing Start building for free, then scale with your users and teams Free $0 /month 2 Flows & Assistants 100 Predictions / month 5MB Storage Evaluations & Metrics Custom Embedded Chatbot Branding Community Support Get Started Most Popular Starter For individuals & small teams $35 /month Everything in Free Unlimited Flows & Assistants 10,000 Predictions / month 1GB Storage Community Support Get Started - First Month Free Pro For medium-sized businesses $65 /month Everything in Starter 50,000 Predictions / month 10GB Storage Unlimited Workspaces 5 Users + $15/user/month A",
+        " X 2:43 PM · Oct 10, 2023 259 Reply Copy link Read 31 replies Shubham Saboo @ Saboo_Shubham_ · Follow Flowise is trending on GitHub It's an open-source drag & drop UI tool that lets you build custom LLM apps in just minutes. Powered by LangChain, it features: - Ready-to-use app templates - Conversational agents that remember - Seamless deployment on cloud platforms Show more Watch on X 4:05 AM · Aug 16, 2023 518 Reply Copy link Read 18 replies Eugene @ sudo_eugene · Follow Using our new AI bot called Koos with @FlowiseAI to create project management tasks in Notion, right from Slack 🤯 Let me know who would like to see a 5min explainer on how we did this 🎉 8:39 AM · Sep 20, 2023 1",
+        "ing a simple drag & drop UI. You can even use built-in templates with logic and conditions connected to LangChain and GPT: ▸ Conversational agent with memory ▸ Chat with PDF and Excel Show more Watch on X 4:33 PM · Aug 10, 2023 810 Reply Copy link Read 26 replies Derek Cheung @ derekcheungsa · Follow A multi-modal chatbot that effortlessly merges text and image generation into seamless conversations. 🚀 📢 Watch the demo with conversation starting with asking for advice on building strong financial habits (sped up slightly for demo) 🪄Chatbot magically generates a visual Show more Watch on X 3:11 AM · Oct 2, 2023 21 Reply Copy link Read 4 replies armand @ armand_ruiz · Follow Creat"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://zapier.com/pricing",
+      "final_url": "https://zapier.com/pricing",
+      "status": 200,
+      "type": "page",
+      "sha256": "d95d41ced573af4b90fd6a68b3d28a92e5ae5c6cdcd1438afc60dc723b5ea3a7",
+      "title": "Plans & Pricing | Zapier | Zapier",
+      "excerpts": [
+        "lar Zap workflows Do-it-yourself automation for workflows Zapier MCP Add Zapier to your AI chat Zapier SDK Install Zapier to your AI coding agent Tables Store data your Zap workflows can read and update Capabilities App integrations Explore 9,000+ app connections AI automation 🪄 Cutting-edge AI to upgrade your workflows Security Enterprise-grade security Explore templates Explore use cases Join Zapier Early Access Industry comparisons More Products Forms Capture inputs that trigger workflows Canvas Plan and map your workflows with AI Agents Create your own AI assistants for any task Chatbots Answer customer questions with AI chatbots Solutions Solutions How Zapier can help you aut",
+        "Customer Support Elevate customer satisfaction Leaders Streamline decision-making processes Executive Assistants Eliminate repetitive admin tasks By app NetSuite Salesforce HubSpot Slack ChatGPT (OpenAI) Microsoft Dynamics CRM Microsoft Teams Zendesk Jira Software Cloud View all apps By use case Lead management Automate your way to more conversions Sales pipeline Automate handoffs and streamline sales Marketing campaigns Boost your marketing campaign&#x27;s impact Customer support Quickly route tickets and responses Data management Connect app data for more insights Project management Deliver projects seamlessly Tickets and incidents Resolve issues and incidents faster Explore temp",
+        "er quick-start guide Automate with confidence Webhooks and Zapier Connect your favorite apps with Zapier’s webhooks Zapier Academy Build AI skills to transform work Help Center Find answers to your questions Zapier Support Get help and find support options Hire a Zapier Solution Partner Find a consultant to help you do more AI & Zapier AI orchestration at work Your guide to intelligent systems Zapier Copilot A personalized automation assistant Zapier&#x27;s AI tools An AI tool for every need How to use Zapier MCP Connect AI to thousands of apps—code-free Explore templates Explore use cases Join Zapier Early Access Industry comparisons Implement AI orchestration Three phases to move",
+        " Most Popular Zap workflows Zapier MCP Zapier SDK Tables Capabilities App integrations AI automation 🪄 Security More Products Forms Canvas Agents Chatbots Solutions By team RevOps Marketing IT HR Sales Customer Support Leaders Executive Assistants By app NetSuite Salesforce HubSpot Slack ChatGPT (OpenAI) Microsoft Dynamics CRM Microsoft Teams Zendesk Jira Software Cloud View all apps By use case Lead management Sales pipeline Marketing campaigns Customer support Data management Project management Tickets and incidents Zapier for Startups Small and medium businesses Enterprise Resources Get inspired 5 things to automate today Create custom chatbots Guides Webinars Customer stories ",
+        "es, Forms, and Zapier MCP bring together automated workflows, structured data, custom forms, and an AI action layer in one platform. Try it free AI orchestration Platform Add-ons Agents Chatbots How many tasks do you need? 100 2K 10K 100K 1M 2M Select a task tier Select an item 100 tasks /mo 750 tasks /mo 1.5K tasks /mo 2K tasks /mo 5K tasks /mo 10K tasks /mo 20K tasks /mo 50K tasks /mo 100K tasks /mo 200K tasks /mo 300K tasks /mo 400K tasks /mo 500K tasks /mo 750K tasks /mo 1M tasks /mo 1.5M tasks /mo 1.75M tasks /mo 2M tasks /mo Custom task limit About task usage rates Pay monthly Pay yearly (Save 33%) Currency USD ($) AUD ($) BRL (R$) CAD ($) CHF (Fr) DKK (kr.) EUR (€) GBP (£) H",
+        "D ($) PLN (zł) SEK (kr) SGD ($) USD ($) ZAR (R) Free Free forever $0 /month Start automating with AI. Zaps, Tables, and Forms included (100 tasks per month). Try it free Key features: Zapier automation platform Unlimited Zaps, Tables, and Forms Two-step Zaps Zapier Copilot* Professional Starting from $19.99 /month Unlock the full power of the Zapier platform with unlimited access to Zaps, Tables, and Forms. Try it free Key features: Multi-step Zaps Unlimited premium apps Webhooks Email and live chat** support AI fields Conditional form logic Team Starting from $69 /month Collaborate with your team to build and manage complete AI-powered systems. Try it free Contact Sales Key featur",
+        "ct sales More about Enterprise Key features: Unlimited users Advanced admin permissions and app controls Advanced deployment options Annual task limits Observability Technical Account Manager*** Priority support with screen sharing All plans include access to the full Zapier platform, including Zap workflows, Forms, and Tables. See all plan features Compare all features Admin controls Free Professional Team Enterprise Two-factor authentication Pay-per-task billing Static IP Audit log Owner access SAML single sign-on (SSO) User provisioning (SCIM) Domain capture Super Admin Advanced admin permissions App access controls Action restrictions Custom data retention Observability API New",
+        " New Annual task limits New Managed app connections Domain restrictions Bring Your Own Model Log Streams Workspaces New Collaboration tools Free Professional Team Enterprise Seats 1 1 25 Unlimited Shared app connections Shared workspace Folder permissions Approval requests Beta Support Free Professional Team Enterprise Email support Live chat** Priority support Screen sharing Technical Account Manager*** ** Live Chat is included starting at the Professional 2,000 task tier plan and up. ***Technical Account Managers are included at a set threshold or as an optional add-on. AI products Free Professional Team Enterprise Zapier Agents Zapier Chatbots Zapier Canvas Zapier MCP AI by Zapi",
+        "p Polling time 15 min 2 min 1 min 1 min Visual editor Custom test records Filters & Paths Formatter Global variables AI tools in the editor Free Professional Team Enterprise Copilot Beta Daily message limit Unlimited Unlimited Unlimited Code by Zapier 1 second included runtime per step 30 seconds included runtime per step 30 seconds included runtime per step 2 minutes included runtime per step AI troubleshooting Beta AI Custom Actions Beta Formatter with AI Beta Zap Management Free Professional Team Enterprise Drafts Autoreplay Customized error settings Customized polling time Flood protection settings Versions Compare Versions New Alerts New Integrations Free Professional Team Ent",
+        " views per table 50+ views per table Formulas Linked Record fields AI fields AI enrichment Advanced roles and permissions Coming soon Forms Free Professional Team Enterprise Free tasks in Zapier Form Project limit Unlimited Unlimited Unlimited Unlimited Number of pages 10 per account 50 per account 150 per account Contact Sales Editors Managed access 100 users 500 users Contact Sales Basic components Navigation Web embedding File uploads 5 MB at 3 files max 10 MB at 100 files max 25 MB at 100 files max 25 MB+ Dynamic filtering Conditional form logic Branding Custom colors Password protect Custom domain Remove Zapier logo All paid plans include The full building power of Zapier Visu"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://www.make.com/en/pricing",
+      "final_url": "https://www.make.com/en/pricing",
+      "status": 403,
+      "type": "page",
+      "sha256": "91e49f1b66fe8e2a19f5d233b8636bcd7025f70b26cefa5e8ab1f9a1804cc0fa"
+    },
+    {
+      "url": "https://www.make.com/en/ai-agents",
+      "final_url": "https://www.make.com/en/ai-agents",
+      "status": 403,
+      "type": "page",
+      "sha256": "704db4a6899d12e30d1719baf48aa5898914e95a91ebda082e50623e4dd1cd68"
+    },
+    {
+      "url": "https://zapier.com/agents",
+      "final_url": "https://zapier.com/agents",
+      "status": 200,
+      "type": "page",
+      "sha256": "020a53d2f31ae2218296a3ae0de082aa1bd7d57cd1341fea194d7c19c8b66c0c",
+      "title": "Build AI teammates with Zapier Agents",
+      "excerpts": [
+        "Build AI teammates with Zapier Agents Get early access to Next Gen Zaps Meet your new AI teammates Create your own superhuman teammates in minutes. Equip your Agents with company knowledge and have them do work across 9,000+ apps — on command and while you sleep. Create your own superhuman teammates in minutes. Equip your Agents with company knowledge and have them do work across 9,000+ apps — on command and while you sleep. Chatbots is the easiest way to automate any customer interaction, helping your business scale support and generate more leads. Get started free See temp",
+        " View pricing View pricing Zapier is trusted by 3.4 million companies Zapier is trusted by over 2.2 million companies worldwide ')\"> Zapier Agents are the easiest way to delegate real work to AI Build your agent Monitor activity Chat when needed Work on the web Create specialized agents—with the help of Zapier Copilot—to connect to your business data and perform tasks across 9,000+ apps. Zapier Agents are the easiest way to delegate real work to AI Build your agent Monitor activity Chat when needed Work on the web Analyze Add FAQs, docs, and public links so your chatbot can provide accurate answers instantly—responding just like you would. Zapier Agents are the easiest way to deleg",
+        "k on the web Add FAQs, docs, and public links so your chatbot can provide accurate answers instantly—responding just like you would. Zapier Agents are the easiest way to delegate real work to AI Build your agent Monitor activity Chat when needed Work on the web Create specialized agents—with the help of Zapier Copilot—to connect to your business data and perform tasks across 9,000+ apps. Get started free Get started free Product Demo Watch Zapier Agents in action Customer TESTIMONIALS See why customers love Zapier Agents Zapier Agent’s fine-tuned model for research and task management can do things that other models just can’t do. It’s the least lazy AI I’ve found - it keeps trying",
+        "ships at Slate Read the story I truly love the fact that Zapier is already connected to all of these different apps. We’re all waiting for ‘Agents,’ but Zapier already has them. We can make Agents! Andrew Fair Owner @ Website Genii Zapier Agent’s Chrome extension is one of the most underrated AI tools right now. Rowan Cheung Founder @ The Rundown AI Build your AI-powered dream team Add intelligent agents to handle day-to-day tasks — letting your team focus on what humans do best. MEETINGS Prep for external meetings Confidently go into every meeting with a dossier on attendees, prepared by your Meeting Agent. Try the Meeting Prep Agent Try the Meeting Prep Agent -&gt; sales Qualify ",
+        "nt alerts when qualified leads come through your forms—complete with enriched data and smart scoring. Try the Enterprise Lead Qualification Agent -&gt; Try the Enterprise Lead Qualification Agent MARKETING Create viral content Stay ahead of trends with researched, scripted content delivered in a ready-to-use document. Try the Viral Content Creator Agent Try the Viral Content Creator Agent -&gt; sales Offload Zendesk tickets Reduce response times by auto-answering common questions while escalating complex issues. Try the Zendesk Ticket Agent Try the Zendesk Ticket Agent -&gt; Customer TESTIMONIALS See why customers love Zapier Agents I truly love the fact that Zapier is already conn",
+        "e different apps. We’re all waiting for ‘Agents,’ but Zapier already has them. We can make Agents! Andrew Fair Owner @ Website Genii Zapier Agent’s Chrome extension is one of the most underrated AI tools right now. Rowan Cheung Founder @ The Rundown AI Zapier Agent’s fine-tuned model for research and task management can do things that other models just can’t do. It’s the least lazy AI I’ve found - it keeps trying different approaches until it gets results. Evan Nison Founder @ Nisonco Read the story -&gt; [The agent] generated over 2,000 leads in a single month. It’s generated so many leads that we’re still working through them months later. Andrew Harding VP Marketing and Content ",
+        " customers love Zapier Agents I truly love the fact that Zapier is already connected to all of these different apps. We’re all waiting for ‘Agents,’ but Zapier already has them. We can make Agents! Andrew Fair Owner @ Website Genii Zapier Agent’s Chrome extension is one of the most underrated AI tools right now. Rowan Cheung Founder @ The Rundown AI Zapier Agent’s fine-tuned model for research and task management can do things that other models just can’t do. It’s the least lazy AI I’ve found - it keeps trying different approaches until it gets results. Evan Nison Founder @ Nisonco Read the story -&gt; [The agent] generated over 2,000 leads in a single month. It’s generated so many",
+        "ter. Andrew Harding VP Marketing and Content Partnerships at Slate Read the story -&gt; Get started with your new teammates Lead Enrichment Agent This agent researches new leads and enriches them with key details. IT Helpdesk Slack Responder This agent provides timely responses to new questions in the IT helpdesk Slack channel. Viral Content Creation Agent This agent researches trends, scripts videos, sets up engagement automation, and compiles everything into a shareable document. Support Email Agent This agent drafts customer replies using your knowledge base. Candidate Ranking System This agent ranks candidate resumes based on various factors like qualifications, skills, etc. Gi",
+        " Slack Notifier This agent monitors new pull requests by a specific user and notifies a Slack channel. Slack Thread Insights Extractor This agent summarizes key points from a Slack thread and appends them to a Google Doc for easy reference. Sales Email Writer This agent creates personalized sales emails by automatically pulling information from a website. SEO Blog Writer This agent takes a product link and topic, then writes a keyword-focused article. Expense Classifier This agent automatically organizes and categorizes expense data. Lead Enrichment Agent This agent researches new leads and enriches them with key details. IT Helpdesk Slack Responder This agent provides timely respo",
+        "is agent researches trends, scripts videos, sets up engagement automation, and compiles everything into a shareable document. Support Email Agent This agent drafts customer replies using your knowledge base. Candidate Ranking System This agent ranks candidate resumes based on various factors like qualifications, skills, etc. Github PR Slack Notifier This agent monitors new pull requests by a specific user and notifies a Slack channel. Slack Thread Insights Extractor This agent summarizes key points from a Slack thread and appends them to a Google Doc for easy reference. Sales Email Writer This agent creates personalized sales emails by automatically pulling information from a websi"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://flowiseai.com/sunset",
+      "final_url": "https://flowiseai.com/sunset",
+      "status": 200,
+      "type": "page",
+      "sha256": "bc452bfe2feaff05b4a3a8b253324dad084b4159ae2abbbab7ac937f6e8adc0f",
+      "title": "The Future of Flowise",
+      "excerpts": [
+        " how people build. As AI models become more capable at reasoning, we&#x27;ve noticed that developers are increasingly relying on new coding agents such as Claude Code/OpenClaw to handle complex tasks. The typical rigid workflow low code approach quickly hits the limit when it comes to complexity. It&#x27;s with these shifts in mind that we&#x27;ve decided to wind down our operations for Flowise. We know many of you rely on this tool every day, so we want to be as clear as possible about what happens next. This gives you time to fork the code and figure out your next steps. Date Milestone Impact on OSS Repository July 29, 2026 Announcement & Code Freeze Active feature development ce",
+        "ommunity moderation will be handed off where applicable. Moving forward, Flowise source code will still remain on Github and the Apache 2.0 licensed code is yours to keep building on. We encourage teams to fork the repo ( https://github.com/flowiseai/flowise ) to maintain their own internal updates or community-led forks. This has been an incredible ride, and we wouldn&#x27;t be here today without each and every one of you. We&#x27;ve built friendships along the way, and we are deeply grateful for your support over the years. Thank you for building with us, and here&#x27;s to what&#x27;s next! Henry & Flowise Team Terms of Service Privacy Policy © FlowiseAI Inc. All rights reserved"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://raw.githubusercontent.com/activepieces/activepieces/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/activepieces/activepieces/main/README.md",
+      "status": 200,
+      "type": "page",
+      "sha256": "b159d84d19ea2505143a1d369416b8f5ef63540e9530bd2f20f8bd0e3e0c70bf",
+      "title": "",
+      "excerpts": [
+        "An open source replacement for Zapier Documentation 🌪️ Create a Piece 🖉 Deploy 🔥 Join Discord # 🤯 Welcome to Activepieces All-in-one AI automation designed to be **extensible** through a **type-safe** pieces framework written in **TypeScript**. When you contribute pieces to Activepieces they become automatically available as MCP servers that you can use with LLMs through Claude Desktop, Cursor or Windsurf! ## 🔥 Why Activepieces is Different: - **💖 Loved by Everyone**: Intuitive interface and great experience for both technical and non-techni",
+        "Ecosystem:** All pieces are open source and available on npmjs.com, **60% of the pieces are contributed by the community**. - **🛠️ Largest open source MCP toolkit**: All our pieces (280+) are available as MCP that you can use with LLMs on Claude Desktop, Cursor or Windsurf. - **🛠️ Pieces are written in Typescript**: Pieces are npm packages in TypeScript, offering full customization with the best developer experience, including **hot reloading** for **local** piece development on your machine. 😎 - **🤖 AI-First**: Native AI pieces let you experiment with various providers, or create your own agents using our AI SDK to help you build flows inside the builder. - **🏢 Enterprise-Rea",
+        " tools, and anyone in the organization can use the no-code builder. Full customization from branding to control. - **🔒 Secure by Design**: Self-hosted and network-gapped for maximum security and control over your data. - **🧠 Human in the Loop**: Delay execution for a period of time or require approval. These are just pieces built on top of the piece framework, and you can build many pieces like that. 🎨 - **💻 Human Input Interfaces**: Built-in support for human input triggers like \"Chat Interface\" 💬 and \"Form Interface\" 📝 ## 🛠️ Builder Features: - [x] Loops - [x] Branches - [x] Auto Retries - [x] HTTP - [x] Code with **NPM** - [x] ASK AI in Code Piece (Non technical user can ",
+        "etailed instructions, please refer to our [Contributor's Guide](https://www.activepieces.com/docs/build-pieces/building-pieces/overview). # License Activepieces' Community Edition is released as open source under the [MIT license](https://github.com/activepieces/activepieces/blob/main/LICENSE) and enterprise features are released under [Commercial License](https://github.com/activepieces/activepieces/blob/main/packages/ee/LICENSE) Read more about the feature comparison here https://www.activepieces.com/pricing # 💭 Join Our Community # 🌐 Contributions We welcome contributions big or small and in different directions. The best way to do this is to check this [document](https://www."
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://raw.githubusercontent.com/windmill-labs/windmill/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/windmill-labs/windmill/main/README.md",
+      "status": 200,
+      "type": "page",
+      "sha256": "00250541779184e5b14b2554301bf73f41f004d1351ca8e822a5fe267012e7ef",
+      "title": "",
+      "excerpts": [
+        "Open-source, self-hostable code-first platform for workflows, apps and AI agents, running on the fastest self-hostable orchestrator. Engineers write code in 20+ languages and sync it with Git. Business teams build on the same platform with AI, while review, promotion between environments and isolated workers keep engineers in control of what ships. Self-hostable alternative to Lovable, Retool, n8n and a simplified Temporal. Scripts are turned into sharable UIs, APIs and cron jobs automatically, and can be composed together into flows, data pipe",
+        "erShell, Rust, and more. Try it - Website - Docs - Discord - Hub - Contributing # Windmill - Code-first platform for workflows, apps and AI agents Windmill is fully open-sourced (AGPLv3) and Windmill Labs offers dedicated instances and commercial support and licenses. ![Windmill Diagram](./imgs/stacks.svg) https://github.com/user-attachments/assets/d80de1d9-64de-4d89-aacd-6df23fa81fc4 - [Windmill - Code-first platform for workflows, apps and AI agents](#windmill---code-first-platform-for-workflows-apps-and-ai-agents) - [Build with AI, ship with review](#build-with-ai-ship-with-review) - [Main Concepts](#main-concepts) - [What the code looks like](#what-the-code-looks-like) - [Data:",
+        "ata-data-tables-duckdb-and-ducklake) - [Develop locally or in the browser](#develop-locally-or-in-the-browser) - [Stack](#stack) - [Fastest Self-Hostable Workflow Engine](#fastest-self-hostable-workflow-engine) - [Security](#security) - [Performance](#performance) - [Architecture](#architecture) - [How to self-host](#how-to-self-host) - [Docker compose](#docker-compose) - [Kubernetes (Helm charts)](#kubernetes-helm-charts) - [Cloud providers](#cloud-providers) - [OAuth, SSO \\& SMTP](#oauth-sso--smtp) - [License](#license) - [Integrations](#integrations) - [Environment Variables](#environment-variables) - [Contributing](#contributing) - [Copyright](#copyright) ## Build with AI, ship",
+        "I sessions](https://www.windmill.dev/docs/core_concepts/ai_sessions) build scripts, flows and apps with AI in a workspace fork, with a live preview and a diff to review before deploying. - [Workspace roles](https://www.windmill.dev/docs/core_concepts/roles_and_permissions#workspace-roles) decide what each team can author, and [folders](https://www.windmill.dev/docs/core_concepts/groups_and_folders) scope the resources, skills and MCP servers its AI can reach. - [Protection rulesets](https://www.windmill.dev/docs/core_concepts/protection_rulesets) block direct deployment, so changes reach production only after an engineer reviews and deploys them. - [Dev workspaces](https://www.wind",
+        "www.windmill.dev/docs/advanced/cli), the [VS Code extension](https://www.windmill.dev/docs/cli_local_dev/vscode-extension) and their coding agent, synced with [Git](https://www.windmill.dev/docs/advanced/git_sync). ## Main Concepts 1. Define a minimal and generic script in Python, TypeScript, Go or Bash that solves a specific task. The code can be defined in the provided Web IDE or synchronized with your own GitHub repo (e.g. through VS Code extension): [provided Web IDE](https://www.windmill.dev/docs/code_editor) or [synchronized with your own GitHub repo](https://www.windmill.dev/docs/advanced/cli/sync) (e.g. through [VS Code](https://www.windmill.dev/docs/cli_local_dev/vscode-ex",
+        "{customerId}`); // logs stream live in the UI return { customerId, plan, trialEnd }; // returned as JSON } ``` Workflows are code too. Each task runs as its own job with its own logs, and waiting for an approval releases the worker: ```typescript import { task, waitForApproval, workflow } from \"windmill-client\"; async function plan(env: string) { return { env, changes: 3 }; } async function apply(plan: { env: string; changes: number }) { return `applied ${plan.changes} changes to ${plan.env}`; } export const main = workflow(async (env: string) => { const changes = await task(plan)(env); const approval = await waitForApproval({ timeout: 3600 }); if (!approval.approved) { return `rej",
+        "ww.windmill.dev/docs/getting_started/pipeline_quickstart). ## Develop locally or in the browser Engineers work from their editor and coding agent, business teams build with AI in the browser, and both land in the same workspace: | Tool | Description | |------|-------------| | **[CLI](https://www.windmill.dev/docs/advanced/cli)** | Sync a workspace with local files and Git, run scripts and flows from the command line. `wmill init` generates `AGENTS.md` and [skill files](https://www.windmill.dev/docs/misc/guides/local_dev_with_ai) for Claude Code, Cursor and other AI tools | | **[VS Code extension](https://www.windmill.dev/docs/cli_local_dev/vscode-extension)** | Edit and test script",
+        "Two-way sync between a workspace and your Git repository | | **[MCP server](https://www.windmill.dev/docs/core_concepts/mcp)** | Let coding agents and AI clients run scripts, manage resources and monitor jobs in a workspace | | **[AI sessions](https://www.windmill.dev/docs/core_concepts/ai_sessions)** | The same agent loop in the browser, with nothing to install: plan mode, skills and MCP servers, a live preview, and a diff to review before deploying, in a fork of the workspace | https://github.com/user-attachments/assets/c541c326-e9ae-4602-a09a-1989aaded1e9 You can run scripts locally by passing the right environment variables for the `wmill` client library to fetch resources and ",
+        "hon3 with uv for dependency management - PHP: only on the `windmill-full` images - Go, Bash, PowerShell, Rust, C#, Java, Ansible ## Fastest Self-Hostable Workflow Engine We have compared Windmill to other self-hostable workflow engines (Airflow, Prefect & Temporal) and Windmill is the most performant solution for both benchmarks: one flow composed of 40 lightweight tasks & one flow composed of 10 long-running tasks. All methodology & results on our [Benchmarks](https://www.windmill.dev/docs/misc/benchmarks/competitors#airflow-setup) page. ![Fastest workflow engine](./imgs/fastest.png) ## Security - **Sandboxing**: [nsjail](https://github.com/google/nsjail) for filesystem/resource i",
+        "tal. ## Architecture Stateless API servers and workers share a PostgreSQL database that holds the job queue and all workspace state (remote agent workers go through the API servers instead). Workers pull jobs by tag, so each worker group can run in its own network, for example dev workers that only reach dev systems and prod workers that only run reviewed code. ## How to self-host For detailed setup options, see [Self-Host documentation](https://www.windmill.dev/docs/advanced/self_host). ### Docker compose Deploy Windmill with 3 files ([docker-compose.yml](./docker-compose.yml), [Caddyfile](./Caddyfile), [.env](./.env)): ```bash curl https://raw.githubusercontent.com/windmill-labs/"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://raw.githubusercontent.com/langgenius/dify/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/langgenius/dify/main/README.md",
+      "status": 200,
+      "type": "page",
+      "sha256": "81a960f6d59aeffa60a319dfe84ebb6d2372679d7343c4a0a60cf86d7faf8146",
+      "title": "",
+      "excerpts": [
+        "![cover-v5-optimized](./images/GitHub_README_if.png) Dify Cloud · Self-hosting · Documentation · Dify edition overview Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features (including [Opik](https://www.comet.com/docs/opik/integrations/dify), [Langfuse](https://docs.langfuse.com), and [Arize Phoenix](https://docs.arize.com/phoenix)) and more, letting you quickly go from prototype to production. Here's a list of the core features: ## Quick start > Before installing Dify, make sure your machin",
+        "README.md#review-configuration-after-an-upgrade). ```bash cd docker cp .env.example .env openssl rand -hex 32 ``` Open `.env` and set `DIFY_AGENT_LOCAL_SANDBOX_AUTH_TOKEN` to the generated value. Keep the default `COMPOSE_PROFILES` value for the bundled services. Service defaults load automatically; no additional configuration files are required. From the same `docker` directory, start the services: ```bash docker compose up -d docker compose ps --all ``` Once the services are running, open [http://localhost/install](http://localhost/install) to complete the initial setup. The one-time `init_permissions` service is expected to exit with code `0`. For optional settings and service o",
+        "deployment guide](docker/README.md#configure-dify). ### Seeking help Please refer to our [FAQ](https://docs.dify.ai/getting-started/install-self-hosted/faqs) if you encounter problems setting up Dify. Reach out to [the community and us](#community--contact) if you are still having issues. > If you'd like to contribute to Dify or do additional development, refer to our [guide to deploying from source code](https://docs.dify.ai/getting-started/install-self-hosted/local-source-code) ## Key features **1. Workflow**: Build and test powerful AI workflows on a visual canvas, leveraging all the following features and beyond. **2. Comprehensive model support**: Seamless integration with hun",
+        " from document ingestion to retrieval, with out-of-box support for text extraction from PDFs, PPTs, and other common document formats. **5. Agent**: Autonomous agents with a sandbox of their own: they run commands, install software, and handle files to get open-ended tasks done. Describe the agent you want and it builds itself. Give it skills, connect tools from [Dify Marketplace](https://marketplace.dify.ai/?category=tool), MCP servers, or your own APIs, and put it to work as a chat app or as a step in any workflow. **6. LLMOps**: Monitor and analyze application logs and performance over time. You could continuously improve prompts, datasets, and models based on production data an",
+        " allowances. If you run into issues, [contact our Cloud support team](mailto:cloud@dify.ai?subject=%5BGitHub%5DDify%20Cloud%20Support). - **Self-hosting Dify Community Edition ** Quickly get Dify running in your environment with this [starter guide](#quick-start). Use our [documentation](https://docs.dify.ai) for further references and more in-depth instructions. - **[Dify Enterprise](https://dify.ai/dify-enterprise) ** For organizations requiring self-hosting, SSO, RBAC Security and Enterprise Support SLAs, please fill out [this form](https://share-na2.hsforms.com/14-09ff5HS92Sh4m3f4yrcw40s9fk) to speak to a solution representative. ## Staying ahead Star Dify on GitHub and be inst",
+        "Security Advisories, following our [security policy](SECURITY.md). Do not disclose them in public issues, discussions, or pull requests. ## License This repository is licensed under the [Dify Open Source License](LICENSE), based on Apache 2.0 with additional conditions."
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "url": "https://raw.githubusercontent.com/FlowiseAI/Flowise/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/FlowiseAI/Flowise/main/README.md",
+      "status": 200,
+      "type": "page",
+      "sha256": "21b4384ec2e295295dee10992fd9ee7ef4b0a0c9cb77a493bca39174a1c09a51",
+      "title": "",
+      "excerpts": [
+        "/i18n/README-KR.md) Flowise has been archived. Refer to [Future of Flowise](https://github.com/FlowiseAI/Flowise/discussions/6727) Build AI Agents, Visually ## 📚 Table of Contents - [⚡ Quick Start](#-quick-start) - [🐳 Docker](#-docker) - [👨‍💻 Developers](#-developers) - [🌱 Env Variables](#-env-variables) - [📖 Documentation](#-documentation) - [🌐 Self Host](#-self-host) - [☁️ Flowise Cloud](#️-flowise-cloud) - [🙋 Support](#-support) - [🙌 Contributing](#-contributing) - [📄 License](#-license) ## ⚡Quick Start Download and Install [NodeJS](https://nodejs.org/en/download) >= 20.0.0 1. Install Flowise ```bash npm install -g flowise ``` 2. Start Flowise ```bash npx flowise start",
+        "l dependencies of all modules: ```bash pnpm install ``` 4. Build all the code: ```bash pnpm build ``` Exit code 134 (JavaScript heap out of memory) If you get this error when running the above `build` script, try increasing the Node.js heap size and run the script again: ```bash # macOS / Linux / Git Bash export NODE_OPTIONS=\"--max-old-space-size=4096\" # Windows PowerShell $env:NODE_OPTIONS=\"--max-old-space-size=4096\" # Windows CMD set NODE_OPTIONS=--max-old-space-size=4096 ``` Then run: ```bash pnpm build ``` 5. Start the app: ```bash pnpm start ``` You can now access the app on [http://localhost:3000](http://localhost:3000) 6. For development build: - Create `.env` file and speci",
+        "owise/blob/main/CONTRIBUTING.md#-env-variables) ## 📖 Documentation You can view the Flowise Docs [here](https://docs.flowiseai.com/) ## 🌐 Self Host Deploy Flowise self-hosted in your existing infrastructure, we support various [deployments](https://docs.flowiseai.com/configuration/deployment) - [AWS](https://docs.flowiseai.com/configuration/deployment/aws) - [Azure](https://docs.flowiseai.com/configuration/deployment/azure) - [Digital Ocean](https://docs.flowiseai.com/configuration/deployment/digital-ocean) - [GCP](https://docs.flowiseai.com/configuration/deployment/gcp) - [Alibaba Cloud](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName",
+        "on/deployment/render) - [HuggingFace Spaces](https://docs.flowiseai.com/configuration/deployment/hugging-face) - [Elestio](https://elest.io/open-source/flowiseai) [![Deploy on Elestio](https://elest.io/images/logos/deploy-to-elestio-btn.png)](https://elest.io/open-source/flowiseai) - [Sealos](https://template.sealos.io/deploy?templateName=flowise) [![Deploy on Sealos](https://sealos.io/Deploy-on-Sealos.svg)](https://template.sealos.io/deploy?templateName=flowise) - [RepoCloud](https://repocloud.io/details/?app_id=29) [![Deploy on RepoCloud](https://d16t0pc4846x52.cloudfront.net/deploy.png)](https://repocloud.io/details/?app_id=29) ## ☁️ Flowise Cloud Get Started with [Flowise Cloud",
+        "ory Chart](https://api.star-history.com/svg?repos=FlowiseAI/Flowise&type=Timeline)](https://star-history.com/#FlowiseAI/Flowise&Date) ## 📄 License Source code in this repository is made available under the [Apache License Version 2.0](LICENSE.md)."
+      ],
+      "agent_directed_flags": []
+    }
+  ],
+  "publication_note": "Release notes omitted; licence excerpts capped at 3400 characters; first ten bounded page excerpts retained. Full sources are linked."
+}
