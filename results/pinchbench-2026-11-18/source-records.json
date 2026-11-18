@@ -1,0 +1,788 @@
+{
+  "checked_at": "2026-11-18T09:29:49.477Z",
+  "method": "Public documentation and static source inspection only; no benchmark installation, model call or result upload.",
+  "skill_commit": "819384ae830492365b8363fc26bc2602e73f216d",
+  "scripts_commit": "92a27eca2f57af0194aa89ff4c9ea3d0e2ca2661",
+  "sources": [
+    {
+      "kind": "repository",
+      "url": "https://api.github.com/repos/pinchbench/skill",
+      "final_url": "https://api.github.com/repos/pinchbench/skill",
+      "status": 200,
+      "sha256": "29fd9ddb3956e95963784e944b672f74e4fb8e2f2304c94ba31d356183518f3b",
+      "data": {
+        "full_name": "pinchbench/skill",
+        "archived": false,
+        "pushed_at": "2026-07-02T01:44:55Z",
+        "default_branch": "main",
+        "license": "MIT"
+      },
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "release",
+      "url": "https://api.github.com/repos/pinchbench/skill/releases?per_page=1",
+      "final_url": "https://api.github.com/repos/pinchbench/skill/releases?per_page=1",
+      "status": 200,
+      "sha256": "bd459179cda60e5633333923de56910aa4f98f0a4f63bbd5697ab0b3d6112872",
+      "data": [
+        {
+          "tag_name": "v2.0.0",
+          "published_at": "2026-05-06T14:50:42Z",
+          "html_url": "https://github.com/pinchbench/skill/releases/tag/v2.0.0",
+          "summary": [
+            "- **148 tasks** (up from ~25 in v1.x) — nearly 6x more comprehensive benchmark coverage",
+            "- **Haiku judge by default** — faster grading without sacrificing accuracy",
+            "- Default judge backend changed from `openclaw` to `api`"
+          ]
+        }
+      ],
+      "observations_or_excerpts": [
+        "v2.0.0 release notes advertise 148 tasks and changed judge defaults."
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "advisories",
+      "url": "https://api.github.com/repos/pinchbench/skill/security-advisories",
+      "final_url": "https://api.github.com/repos/pinchbench/skill/security-advisories",
+      "status": 200,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "data": [],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "tree",
+      "url": "https://api.github.com/repos/pinchbench/skill/git/trees/819384ae830492365b8363fc26bc2602e73f216d?recursive=1",
+      "final_url": "https://api.github.com/repos/pinchbench/skill/git/trees/819384ae830492365b8363fc26bc2602e73f216d?recursive=1",
+      "status": 200,
+      "sha256": "db974a275bcdf9ec42e88cd267a2479baa38377f2c94dcc3426b4a5824cb0697",
+      "data": {
+        "truncated": false,
+        "task_files": [
+          {
+            "path": "tasks/task_access_log_anomaly.md",
+            "sha": "287bf54d414f67240634685116b6d1782d9c64a2"
+          },
+          {
+            "path": "tasks/task_blog.md",
+            "sha": "6621bc4d8e8d37ecef7891cf6ddfb0d6ec53faef"
+          },
+          {
+            "path": "tasks/task_browser_automation.md",
+            "sha": "0fb58872200f0602fd5324a8f190c69e1e2bc880"
+          },
+          {
+            "path": "tasks/task_byok_best_practices.md",
+            "sha": "a54d6178fdba25709dc2dcc51d74a8db627d079d"
+          },
+          {
+            "path": "tasks/task_calendar.md",
+            "sha": "e3e1b141bf2dc884cd4df6c5992a4fd51ee9a916"
+          },
+          {
+            "path": "tasks/task_cicd_pipeline_debug.md",
+            "sha": "17c61617af9f114a64784e376ddbf073a1bb1584"
+          },
+          {
+            "path": "tasks/task_clawdhub.md",
+            "sha": "357f7a4461b75c46393b627923c47a867acd6b41"
+          },
+          {
+            "path": "tasks/task_codebase_navigation.md",
+            "sha": "1a371a6c5c95148ae0038b131e9404fc5843e6f1"
+          },
+          {
+            "path": "tasks/task_commit_message_writer.md",
+            "sha": "e5610f89c981bef4313ff4e1d4db61bbda5990ba"
+          },
+          {
+            "path": "tasks/task_competitive_research.md",
+            "sha": "561a012371b489943c252ebef440c0b9b0a743b3"
+          },
+          {
+            "path": "tasks/task_contract_analysis.md",
+            "sha": "dab64578a58bc430029e9b52276f49ff8795f7e5"
+          },
+          {
+            "path": "tasks/task_cron_organizer.md",
+            "sha": "cc7c5551d2391f5e12ec38e17427d492ec9572dc"
+          },
+          {
+            "path": "tasks/task_csv_cities_density.md",
+            "sha": "c26f92b6375929eb4fd5ae5a4e950a412de35adc"
+          },
+          {
+            "path": "tasks/task_csv_cities_filter.md",
+            "sha": "eda46a5dff9a659d1a6bc3e5e7abb210414c6f26"
+          },
+          {
+            "path": "tasks/task_csv_cities_growth.md",
+            "sha": "b893e11cf29bc786a627180324d18b1739290019"
+          },
+          {
+            "path": "tasks/task_csv_cities_ranking.md",
+            "sha": "fb8146ae0eb24fcbd341ddea630c3a585f3fb4ad"
+          },
+          {
+            "path": "tasks/task_csv_finance_report.md",
+            "sha": "290f07c19a45a409766201fc9991a1dddd654ef7"
+          },
+          {
+            "path": "tasks/task_csv_gdp_per_capita.md",
+            "sha": "79459e0bd0402f871d037afc98b6e3406b36ee04"
+          },
+          {
+            "path": "tasks/task_csv_gdp_ranking.md",
+            "sha": "9276db9969a5d0de6daa23ca75c8faaada3fcadf"
+          },
+          {
+            "path": "tasks/task_csv_gdp_regions.md",
+            "sha": "223e49db50779f33fc5834ed72848e64902a5be2"
+          },
+          {
+            "path": "tasks/task_csv_iris_classify.md",
+            "sha": "811352a0efc400183b9e8fc5cf4435d6b690e2ab"
+          },
+          {
+            "path": "tasks/task_csv_iris_outliers.md",
+            "sha": "371862bdc6d5ea107b1c4d51a7e087b5ad4c538c"
+          },
+          {
+            "path": "tasks/task_csv_iris_summary.md",
+            "sha": "2b3b399235eaff22ac7afd7d937d904d9a9fe269"
+          },
+          {
+            "path": "tasks/task_csv_life_exp_change.md",
+            "sha": "d62888889e0ee08778c3e6758c74f91f3f99215f"
+          },
+          {
+            "path": "tasks/task_csv_life_exp_outliers.md",
+            "sha": "074ef104375288283641638df5f16353e3f9c369"
+          },
+          {
+            "path": "tasks/task_csv_life_exp_ranking.md",
+            "sha": "19f95a475687ed70d18f579228789e3c4a9f13b6"
+          },
+          {
+            "path": "tasks/task_csv_pension_liability.md",
+            "sha": "b716bcc86430394430955b580ac431057910d25e"
+          },
+          {
+            "path": "tasks/task_csv_pension_ranking.md",
+            "sha": "f3e1db40f60160184f4e7b99aea2d2433af33199"
+          },
+          {
+            "path": "tasks/task_csv_pension_risk.md",
+            "sha": "79c5e6e6915546a794a0031ca8fe80f53f2874e9"
+          },
+          {
+            "path": "tasks/task_csv_stations_by_elevation.md",
+            "sha": "32f3304a4aefd8ba00c1984cb0f12a1425993b0d"
+          },
+          {
+            "path": "tasks/task_csv_stations_coverage.md",
+            "sha": "e02eb25137991dbdd2d47907923abb45b5097678"
+          },
+          {
+            "path": "tasks/task_csv_stations_filter.md",
+            "sha": "928154afeb56678036e4a01b427f89ddf50cc081"
+          },
+          {
+            "path": "tasks/task_csv_stock_best_worst.md",
+            "sha": "07e2fd53431d091fcafaf7d0f78daee8f7825f13"
+          },
+          {
+            "path": "tasks/task_csv_stock_trend.md",
+            "sha": "c9cb490e07ff654d9227fa6577f67f9334fe60c6"
+          },
+          {
+            "path": "tasks/task_csv_stock_volatility.md",
+            "sha": "177139a9f9c5212aa703d2bbbfac691ec6414ca4"
+          },
+          {
+            "path": "tasks/task_csv_temp_anomalies.md",
+            "sha": "549bc2ac96ea2149bdb191c47d88b2f2fbcf317f"
+          },
+          {
+            "path": "tasks/task_csv_temp_decades.md",
+            "sha": "a1cfe2e2ab48746f0bff73e68b27d335edb73555"
+          },
+          {
+            "path": "tasks/task_csv_temp_trend.md",
+            "sha": "faf1341140e55e261dd292c577285bf901d057a7"
+          },
+          {
+            "path": "tasks/task_cve_security_triage.md",
+            "sha": "07b4cb55366b25e79bebdfdced262184cb703f48"
+          },
+          {
+            "path": "tasks/task_daily_summary.md",
+            "sha": "f5a1c7b4b260771acdaa0db55abd8085e143491e"
+          },
+          {
+            "path": "tasks/task_deep_research.md",
+            "sha": "28f66fad769e23a9a5b0221cedad0e792ba34830"
+          },
+          {
+            "path": "tasks/task_dockerfile_optimization.md",
+            "sha": "88b72079760106dd4b506773bb8c58abffedcea6"
+          },
+          {
+            "path": "tasks/task_earnings_analysis.md",
+            "sha": "1e61d3d69ff8ca5505f40d35dc8e90f1d284edda"
+          },
+          {
+            "path": "tasks/task_eli5_pdf_summary.md",
+            "sha": "d33b25bf15d5c623dfd9a74664c6feee72729f22"
+          },
+          {
+            "path": "tasks/task_email.md",
+            "sha": "64321664f66a45530da35e0b72ea2d40388860af"
+          },
+          {
+            "path": "tasks/task_email_reply_drafting.md",
+            "sha": "a2c5920464911d4c849ffb68d3e89868247ef692"
+          },
+          {
+            "path": "tasks/task_email_search.md",
+            "sha": "db081013c95d98d3dd3da1782a3ec3b43eeda0a9"
+          },
+          {
+            "path": "tasks/task_email_triage.md",
+            "sha": "1390844da3f568f51ec97079f253d1414baebf35"
+          },
+          {
+            "path": "tasks/task_eu_regulation_research.md",
+            "sha": "ee568cb96e87511c637e1a9bc2cb1c6773a895f9"
+          },
+          {
+            "path": "tasks/task_events.md",
+            "sha": "c915e84c164d3132a096ad43b5a0be6c9a3b360a"
+          },
+          {
+            "path": "tasks/task_executive_lookup.md",
+            "sha": "fc9e57baac8024a1ca1896dd4a7749de921bb742"
+          },
+          {
+            "path": "tasks/task_files.md",
+            "sha": "3e8f2827cfe796a1af7bbe2129e3b0f971c5c678"
+          },
+          {
+            "path": "tasks/task_financial_ratio_calculation.md",
+            "sha": "3c585128a09c5906d3da493a4026e0a7fab94ae5"
+          },
+          {
+            "path": "tasks/task_gh_issue_triage.md",
+            "sha": "341ade8d247a9b177ad03872285cc5ec4c0e2ce0"
+          },
+          {
+            "path": "tasks/task_git_rescue_recovery.md",
+            "sha": "edb61bebf93bafd26ae33cd04a310e927f59f01a"
+          },
+          {
+            "path": "tasks/task_gws_cross_service.md",
+            "sha": "719d75b760ac45885a25c31568a8c7c07cc19316"
+          },
+          {
+            "path": "tasks/task_gws_email_triage.md",
+            "sha": "477ebc4caed410bd622e0f34ad776721a3ed3748"
+          },
+          {
+            "path": "tasks/task_gws_task_management.md",
+            "sha": "d9f3e5b9935667ae951bf1efdcb452fa38e6a1c4"
+          },
+          {
+            "path": "tasks/task_humanizer.md",
+            "sha": "fe4f908fe08a5fe59e43c37caa953c15750860f9"
+          },
+          {
+            "path": "tasks/task_image_gen.md",
+            "sha": "b4def829a4eae1eb5907c50c6f22b0d0d203d637"
+          },
+          {
+            "path": "tasks/task_image_identification.md",
+            "sha": "5d4246e091ac45716c71393de7aebfb9c756f1e5"
+          },
+          {
+            "path": "tasks/task_it_procurement.md",
+            "sha": "1b9ac8910f38cb367e148a3b96135d38b49d4160"
+          },
+          {
+            "path": "tasks/task_iterative_code_refine.md",
+            "sha": "bc061e8080763e4de05ec6941a32a9038355629c"
+          },
+          {
+            "path": "tasks/task_k8s_debugging.md",
+            "sha": "49df4beb32b312d67e479a1fe237b04bab3cd126"
+          },
+          {
+            "path": "tasks/task_log_apache_client_issues.md",
+            "sha": "57b0006f397191dbc69184fa20d8be9606321896"
+          },
+          {
+            "path": "tasks/task_log_apache_critical.md",
+            "sha": "2102db84a737d3811f1109c4a564f950978d332f"
+          },
+          {
+            "path": "tasks/task_log_apache_error_summary.md",
+            "sha": "7bb9a7c67130257b035331fa1c7009ec76864b0f"
+          },
+          {
+            "path": "tasks/task_log_apache_timeline.md",
+            "sha": "a2c41029927c9e441c6a18885706ec37ae8ff04e"
+          },
+          {
+            "path": "tasks/task_log_apache_top_errors.md",
+            "sha": "d60f5f3b0940ac846dbd3b6d0f52fd45c2140500"
+          },
+          {
+            "path": "tasks/task_log_hdfs_block_ops.md",
+            "sha": "e8b7e5bb9b3c88f1d4f5768ccce29a2cd91e8c12"
+          },
+          {
+            "path": "tasks/task_log_hdfs_connections.md",
+            "sha": "35ec348d2a16bfb7a672b9f790e54b66b07cb684"
+          },
+          {
+            "path": "tasks/task_log_hdfs_failures.md",
+            "sha": "5dc5df09de42ea09865f83434cdbfdd7e7e86f4d"
+          },
+          {
+            "path": "tasks/task_log_hdfs_slow_ops.md",
+            "sha": "0a1205fa2667b2301f6a6347b6316e0bb7eb7d4f"
+          },
+          {
+            "path": "tasks/task_log_hdfs_storage.md",
+            "sha": "f7c56e5f0eeda87994be174059b6fd73da6d5121"
+          },
+          {
+            "path": "tasks/task_log_mapreduce_failures.md",
+            "sha": "f7a27a9e7004c38dc384ddc27fa633513a5c4feb"
+          },
+          {
+            "path": "tasks/task_log_mapreduce_jobs.md",
+            "sha": "82f81e230a46d4ea24d5f9bb55d1c3f94c834f35"
+          },
+          {
+            "path": "tasks/task_log_mapreduce_resources.md",
+            "sha": "6a596175eeec1b8f64a6bb37d8525aeaad925ebf"
+          },
+          {
+            "path": "tasks/task_log_mapreduce_slow_tasks.md",
+            "sha": "a16b08d673bc515363012d570866f89013f8505c"
+          },
+          {
+            "path": "tasks/task_log_mapreduce_timeline.md",
+            "sha": "65aed5e0614dcc3c944f76dd952c6be230f455ca"
+          },
+          {
+            "path": "tasks/task_log_nginx_errors.md",
+            "sha": "6883f30f675cc8c3d18388a7a254b8cccfef3369"
+          },
+          {
+            "path": "tasks/task_log_nginx_slow_requests.md",
+            "sha": "2a7e5e330436cf816cded14e09e2e2a84f60001c"
+          },
+          {
+            "path": "tasks/task_log_nginx_status_codes.md",
+            "sha": "595eefd2fa2d1f3a5f11005354a8eea084404601"
+          },
+          {
+            "path": "tasks/task_log_nginx_traffic.md",
+            "sha": "cc490cf58fd8aba5a18f65b019ef1e7cb2a3a4c5"
+          },
+          {
+            "path": "tasks/task_log_nginx_user_agents.md",
+            "sha": "e1fa29b502054679c714daf311bf629df9f3e139"
+          },
+          {
+            "path": "tasks/task_log_ssh_brute_force.md",
+            "sha": "93a330b0e526d9953e2f5860c171485fc8e243ee"
+          },
+          {
+            "path": "tasks/task_log_ssh_failed_logins.md",
+            "sha": "546185cbe2a878bc29d95e43ec6a2c81b9e06ae4"
+          },
+          {
+            "path": "tasks/task_log_ssh_successful.md",
+            "sha": "ec4dd1ffec0ec7e5c0f861f2dbe0f4412b780a01"
+          },
+          {
+            "path": "tasks/task_log_ssh_unusual_times.md",
+            "sha": "c8e2910dfb0466a39562167a1bbb0c19247e3641"
+          },
+          {
+            "path": "tasks/task_log_ssh_user_activity.md",
+            "sha": "4224f5a8fa4ba92b406595fa4d50229e52d41b90"
+          },
+          {
+            "path": "tasks/task_log_syslog_anomalies.md",
+            "sha": "81bbc0f3da3592eb6e4c28fb481778cc044e90f1"
+          },
+          {
+            "path": "tasks/task_log_syslog_auth_failures.md",
+            "sha": "5573f17e80e3e2be89c434151a4cdee4213aaf5f"
+          },
+          {
+            "path": "tasks/task_log_syslog_boot.md",
+            "sha": "83059fb1cfd0577b246fa98c2c9f6f0525b2b4f0"
+          },
+          {
+            "path": "tasks/task_log_syslog_cron.md",
+            "sha": "b4e42b61f1d3c25263cd9fd4b2209515e277522b"
+          },
+          {
+            "path": "tasks/task_log_syslog_services.md",
+            "sha": "d74db4c3f8df1af88d15f1eefad25c7df0364dea"
+          },
+          {
+            "path": "tasks/task_market_research.md",
+            "sha": "bfe8760849ae240689ac52a01b8b14af28d44683"
+          },
+          {
+            "path": "tasks/task_meeting_advisory_acronyms.md",
+            "sha": "784060ee67f3935896d3a7b3e637cb45e6946f9d"
+          },
+          {
+            "path": "tasks/task_meeting_advisory_attendees.md",
+            "sha": "cdf010f28fdd243cdd8da042107f4118e0201551"
+          },
+          {
+            "path": "tasks/task_meeting_advisory_stakeholders.md",
+            "sha": "d478e2eb8da99840669881874d69572d2d7f3095"
+          },
+          {
+            "path": "tasks/task_meeting_advisory_technical.md",
+            "sha": "1c4a0e666a9ab050bd66932fe8f7f143ccce0004"
+          },
+          {
+            "path": "tasks/task_meeting_advisory_timeline.md",
+            "sha": "7e3599e82332a7a871e556787e6950565cebc60a"
+          },
+          {
+            "path": "tasks/task_meeting_blog_post.md",
+            "sha": "f57eccff65fb8c91bb8762ca35ca30ca68e90666"
+          },
+          {
+            "path": "tasks/task_meeting_council_budget.md",
+            "sha": "5be58e78206b0656437caa88dd5997005d70f92d"
+          },
+          {
+            "path": "tasks/task_meeting_council_contact_info.md",
+            "sha": "d84dc325b72b8cff74f0be68533e7aa7bd259205"
+          },
+          {
+            "path": "tasks/task_meeting_council_neighborhood.md",
+            "sha": "07ba56fe19b7c0668d8870fc671a1fb831da7933"
+          },
+          {
+            "path": "tasks/task_meeting_council_public_comment.md",
+            "sha": "065dc0633df4f055ba51a83a072f169c75dac21f"
+          },
+          {
+            "path": "tasks/task_meeting_council_upcoming.md",
+            "sha": "5ac0fdc2d3b57bd5362c54126a184fba87b55478"
+          },
+          {
+            "path": "tasks/task_meeting_council_votes.md",
+            "sha": "eea081652e2cade1f55829f8d6c782503264a36b"
+          },
+          {
+            "path": "tasks/task_meeting_executive_summary.md",
+            "sha": "6b05db07c99813f8804e970900d16670b2e97bf8"
+          },
+          {
+            "path": "tasks/task_meeting_follow_up_email.md",
+            "sha": "100211fda6bda75f751cad49cc5e5d8f0deb320b"
+          },
+          {
+            "path": "tasks/task_meeting_gov_controversy.md",
+            "sha": "37649ca9f7b5d648cb40767923f5d68761aadd32"
+          },
+          {
+            "path": "tasks/task_meeting_gov_data_sources.md",
+            "sha": "ff1b7ad0ac0a9cc6a3b2f955f4b1991da93b5504"
+          },
+          {
+            "path": "tasks/task_meeting_gov_next_steps.md",
+            "sha": "346933a699572627786f42b12905386853def68b"
+          },
+          {
+            "path": "tasks/task_meeting_gov_qa_extract.md",
+            "sha": "aa510f1f1c58ff80db656368e6ae9c34d2c7724a"
+          },
+          {
+            "path": "tasks/task_meeting_gov_recommendations.md",
+            "sha": "233cdb9621dedea5e91f32eb273e414d1098f9dc"
+          },
+          {
+            "path": "tasks/task_meeting_gov_speaker_summary.md",
+            "sha": "1781d952dd1b0959cddcf1b3bb4a5ca84e99bc60"
+          },
+          {
+            "path": "tasks/task_meeting_searchable_index.md",
+            "sha": "351358518129d46d3ef84b3e1d0c6e8cc260d1e7"
+          },
+          {
+            "path": "tasks/task_meeting_sentiment_analysis.md",
+            "sha": "2d431c4eb7266ad38c3f7dd28fab9dfc51f8604c"
+          },
+          {
+            "path": "tasks/task_meeting_tech_action_items.md",
+            "sha": "88d640e7fe9dcab6a02a588958fe723575288c59"
+          },
+          {
+            "path": "tasks/task_meeting_tech_competitors.md",
+            "sha": "96ab78df1be14168532c838f5988309c2861ab4f"
+          },
+          {
+            "path": "tasks/task_meeting_tech_decisions.md",
+            "sha": "7562c07b73714e1accbbaa2788016b264b532fca"
+          },
+          {
+            "path": "tasks/task_meeting_tech_messaging.md",
+            "sha": "38df6074f6158ea5e8c42fc2f98cb1c17631a215"
+          },
+          {
+            "path": "tasks/task_meeting_tech_product_features.md",
+            "sha": "787a576671ea4bc4d2139e8c2722408dfbbdbff9"
+          },
+          {
+            "path": "tasks/task_meeting_tldr.md",
+            "sha": "a4cf536d5ad38882ff9ad8c461f9cf6b01185f56"
+          },
+          {
+            "path": "tasks/task_memory.md",
+            "sha": "f76cd0d7b165c7e30a62ac7c16e68c56a5c4357e"
+          },
+          {
+            "path": "tasks/task_multi_file_refactoring.md",
+            "sha": "06981dd54169f333f5901f6d29d092ab6814982b"
+          },
+          {
+            "path": "tasks/task_openclaw_comprehension.md",
+            "sha": "9ed707291438bc153d1efe777909099fe324e066"
+          },
+          {
+            "path": "tasks/task_oss_alternative_research.md",
+            "sha": "1725cdefa04a6172118c0d62cf7ca1724feb5f02"
+          },
+          {
+            "path": "tasks/task_pdf_to_calendar.md",
+            "sha": "26708ccacf6e1968574a0c4bd7bc034608fc65aa"
+          },
+          {
+            "path": "tasks/task_playwright_e2e.md",
+            "sha": "82aed45480c111acb0bb2435ebc3f74b3d2a652f"
+          },
+          {
+            "path": "tasks/task_polymarket_briefing.md",
+            "sha": "e57c1ca9ead20a69e9d4ef273d72cd90e1c687d5"
+          },
+          {
+            "path": "tasks/task_pricing_research.md",
+            "sha": "a5ecc1d59b03a6c8a84ef2772f8a5d274a996a2b"
+          },
+          {
+            "path": "tasks/task_readme_generation.md",
+            "sha": "ddbf2bd67bcc022973ec02e2153010a9313baac8"
+          },
+          {
+            "path": "tasks/task_sanity.md",
+            "sha": "cac5878aca9fcf7ef9a7ffeb3559d3b04557be7b"
+          },
+          {
+            "path": "tasks/task_second_brain.md",
+            "sha": "1c2881beeedf66b3fa959649575c1294b3637cc6"
+          },
+          {
+            "path": "tasks/task_selector_fix.md",
+            "sha": "bfa24e2361491b53b630151ee748313d79a97fae"
+          },
+          {
+            "path": "tasks/task_session_chain_analysis.md",
+            "sha": "d7a212512cce487608d4fff4da8933e0f9b88774"
+          },
+          {
+            "path": "tasks/task_shell_command_generator.md",
+            "sha": "d90333c2ef387c0976a502bd015ab852dc3d281f"
+          },
+          {
+            "path": "tasks/task_skill_search.md",
+            "sha": "5a189645e02fc3295b9cf9df489671c4f6b9a5fe"
+          },
+          {
+            "path": "tasks/task_spreadsheet_summary.md",
+            "sha": "8ca088d0b87294ddba0b4ed85a24ededfcf48f3c"
+          },
+          {
+            "path": "tasks/task_stock.md",
+            "sha": "c78d1c35d06d2aab4c708d782eed42a38d0c07fb"
+          },
+          {
+            "path": "tasks/task_subway_navigation.md",
+            "sha": "f8e157ddc739674fca73c2daf72223830333a867"
+          },
+          {
+            "path": "tasks/task_summary.md",
+            "sha": "c06a65d414318f21e92c59f87317ed0cf17969c1"
+          },
+          {
+            "path": "tasks/task_test_generation.md",
+            "sha": "b5a083b89e9b6f6187894a7a8eba982147efcc58"
+          },
+          {
+            "path": "tasks/task_todo_list_cleanup.md",
+            "sha": "cbfbdba00df9311442dd5386e2d94bbbddfa74e3"
+          },
+          {
+            "path": "tasks/task_video_transcript_extraction.md",
+            "sha": "5347fe2cd2910fc2694f71ea70f045f62f0f700c"
+          },
+          {
+            "path": "tasks/task_weather.md",
+            "sha": "0dec7d5356e5f98b88a1c1eb9205552a162faf31"
+          },
+          {
+            "path": "tasks/task_workflow.md",
+            "sha": "66f537d2876ac28bc50c760af76ecc429cf546a3"
+          }
+        ]
+      },
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "readme",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/README.md",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/README.md",
+      "status": 200,
+      "sha256": "f13daea9ee0d552e4d0919daf6c7876f534852eb283098e0974e32781489e22c",
+      "observations_or_excerpts": [
+        "![Tasks](https://img.shields.io/badge/tasks-53-orange)",
+        "It is NOT the source of official leaderboard results."
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "manifest",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/tasks/manifest.yaml",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/tasks/manifest.yaml",
+      "status": 200,
+      "sha256": "38d7cd1bddfa5e9fefc7b6945c91955f36dc5c88c32c994bf8676344b1069a7b",
+      "observations_or_excerpts": [
+        "core selection is defined separately"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "version",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/BENCHMARK_VERSION",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/BENCHMARK_VERSION",
+      "status": 200,
+      "sha256": "c28fcca53637bc88e124af1725df13cb98c69dedefd62fb3cdbe1cdb6b760624",
+      "observations_or_excerpts": [
+        "2.0.0"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "runner",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/scripts/run.sh",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/scripts/run.sh",
+      "status": 200,
+      "sha256": "56b34bced165dabd53a65b166518362330eaf4a4254bc021e07ab09e19dc8dd1",
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "license",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/LICENSE",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/LICENSE",
+      "status": 200,
+      "sha256": "f942b9b066da3d762e171514094917a887fe76cf72d057e2884f03fed5f6b2b0",
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "about",
+      "url": "https://pinchbench.com/about",
+      "final_url": "https://pinchbench.com/about",
+      "status": 200,
+      "sha256": "83ad070a66e284315b3a3a2998f12a89bd845baf7e2b878f855733b0cd794856",
+      "observations_or_excerpts": [
+        "This page lists 147 tasks across 11 categories",
+        "LLM Judge Claude Opus evaluates qualitative aspects",
+        "Models scoring above 80% on the benchmark are generally reliable for production coding workflows."
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "official-runner",
+      "url": "https://raw.githubusercontent.com/pinchbench/scripts/92a27eca2f57af0194aa89ff4c9ea3d0e2ca2661/bench_runner.sh",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/scripts/92a27eca2f57af0194aa89ff4c9ea3d0e2ca2661/bench_runner.sh",
+      "status": 200,
+      "sha256": "15043df96a6a3d99ccc827efba2cbffee894df0fad983bd67531ad323ee9af4e",
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "official-models",
+      "url": "https://raw.githubusercontent.com/pinchbench/scripts/92a27eca2f57af0194aa89ff4c9ea3d0e2ca2661/default-models.yml",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/scripts/92a27eca2f57af0194aa89ff4c9ea3d0e2ca2661/default-models.yml",
+      "status": 200,
+      "sha256": "5cdc4f3cfdf51950997c76d113725966b2ba067942cb5a17567b1205eb0b3a1c",
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "task-calendar",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/tasks/task_calendar.md",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/tasks/task_calendar.md",
+      "status": 200,
+      "sha256": "3ed30a4927d463c4dff73cd2f7dea4bc302753d4cb9d048a5c6f09e60b60314b",
+      "observations_or_excerpts": [
+        "Prompt explicitly simulates calendar creation by writing an ICS file; no external calendar access."
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "task-blog",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/tasks/task_blog.md",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/tasks/task_blog.md",
+      "status": 200,
+      "sha256": "1696ba83967e345f27222e4dbd88d872c5c50abc174c9f839248e7ced2f95c1f",
+      "observations_or_excerpts": [
+        "LLM-judge rubric awards partial credit at multiple score levels."
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "task-csv",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/tasks/task_csv_cities_ranking.md",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/tasks/task_csv_cities_ranking.md",
+      "status": 200,
+      "sha256": "c4f7d77c9e5a8712652961fb1ab19f55852db39809653b47a99c023abf1d629d",
+      "observations_or_excerpts": [
+        "grading_type: hybrid; grading_weights automated: 0.6, llm_judge: 0.4"
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "benchmark",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/scripts/benchmark.py",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/scripts/benchmark.py",
+      "status": 200,
+      "sha256": "a9cdc608774c16bbaa835311bbc532c9a309dd4d28c4feb7359e688a3c609e1b",
+      "observations_or_excerpts": [
+        "--runs has default=1",
+        "Final aggregation sums task mean scores; maximum = number of included tasks."
+      ],
+      "agent_directed_flags": []
+    },
+    {
+      "kind": "task-loader",
+      "url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/scripts/lib/task_loader.py",
+      "final_url": "https://raw.githubusercontent.com/pinchbench/skill/819384ae830492365b8363fc26bc2602e73f216d/scripts/lib/task_loader.py",
+      "status": 404,
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "agent_directed_flags": []
+    }
+  ]
+}
